@@ -1,0 +1,11 @@
+extends _layout
+
+block content
+	//- some navbar or something to get to categories idk
+	//- some way to feature posts
+	//- etc other stuff
+	ul
+		each post in contentful.blog_posts
+			li
+				h2= post.title
+				!= markdown(post.body)

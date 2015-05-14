@@ -1,0 +1,5 @@
+extends _bloglayout
+
+block content
+	h1= entry.title
+	!= markdown(entry.body)

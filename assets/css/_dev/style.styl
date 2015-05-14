@@ -1,0 +1,290 @@
+@import '_settings'
+
+// ~~~~~~~~~
+// ~ Setup ~
+// ~~~~~~~~~
+
+normalize-css()
+
+@font-face
+	font-family enmod
+	font-style normal
+	src url(fonts/enmod.ttf)
+
+typographic()
+
+// ~~~~~~~~~~
+// ~ Mixins ~
+// ~~~~~~~~~~
+link(style = linkStyle)
+	a:link,a:visited,a:active
+		font-size 1em
+		color linkBase
+		text-decoration style
+	a:hover 
+		color linkHover
+		text-decoration style
+
+// ~~~~~~~~~~~~~~~~
+// ~ Main Styling ~
+// ~~~~~~~~~~~~~~~~
+html
+	+at(4)
+		font-size 15px
+	+at(3)
+		font-size 17px
+	+at(2)
+		font-size 16px
+	+density(2)
+		font-size 26px
+	+density(3)
+		font-size 28px
+	// overflow-y scroll
+	-webkit-margin-before 0
+	-webkit-margin-after 0
+
+h1, h2, h3, h4, h5, h6
+	no-select()
+	
+h1, h2, h3, h4, h5, h6, p
+	-webkit-margin-before 0
+	-webkit-margin-after 0
+
+h1
+	margin-bottom 0
+
+h3
+	font-family $body-font
+	
+h5
+	margin-bottom 1em
+	
+// ~ Number of rows for sizing ~
+rows = 10
+
+section
+	lost-row: 7.5/rows
+		
+// have the four sections be in a rectangle as they are, and rearrange when clicked
+header
+	lost-row: 2/rows
+	+between(2,4)
+		h1
+			font-size 56px	
+		h3
+			font-size 37px
+	+at(2)
+		h1
+			font-size 54px	
+		h3
+			font-size 35px
+	
+footer
+	lost-row: 0.5/rows
+	display block
+	margin 0 auto
+	
+header
+footer
+	margin-bottom 0
+	text-align center
+.descript h3
+	opacity 0
+body
+	height 100vh
+	// lost-utility edit
+	
+// ~ Content Page Styles ~
+// ~~~~~~~~~~~~~~~~~~~~~~~
+
+// ~ Main Content ~
+
+#frontends-item,
+#games-item,
+#stories-item,
+#fresh-beats-item,
+#contact-item
+	height 100%
+	lost-center 50rem
+	position absolute
+	left 0
+	right 0
+	margin-left auto
+	margin-right auto
+	-webkit-perspective 1000
+	//min-width 50rem
+	+at(4)
+		// lost-center 30rem
+		// min-width 5rem
+		margin-top 15px
+	+at(2)
+		lost-center 40rem
+	+mobile()
+		lost-center 90%
+	+density(3)
+		lost-center 90%
+	h4
+		+at(4)
+			font-size 30px
+		// +at(2)
+		// 	font-size 30px
+		// +mobile()
+		// 	font-size 30px
+		// +density(3)
+		// 	font-size 30px
+		text-align center
+		width 100%
+	link(underline)
+
+#frontends-item
+	background url(/img/frontends-bg.png) no-repeat center 
+	background-size contain
+	opacity 0
+	.slick-frontends
+		lost-center 50rem
+		+mobile()
+			lost-center 40rem
+		+density(2)
+			lost-center 90%
+		+density(3)
+			lost-center 90%
+		.info
+			lost-column: 1/2
+			h4,h5
+				text-align left
+				font-family $body-font
+			h4
+				+at(4)
+					font-size 23px
+				+at(3)
+					font-size 21px
+				+at(2)
+					font-size 20px
+				+mobile()
+					font-size 25px					
+				+density(3)
+					font-size 25px
+			h5
+				+at(4)
+					font-size 20px
+				+at(3)
+					font-size 18px
+				+at(2)
+					font-size 17px
+				+mobile()
+					font-size 22px
+				+density(3)
+					font-size 22px
+			link(underline)
+		.img
+			lost-column: 1/2
+			a img
+				max-height 350px
+				max-width 100%
+				+at(4)
+					max-height 250px
+				+at(2)
+					max-height 300px
+				+mobile()
+					max-height 450px
+				+density(3)
+					max-height 450px
+				lost-center 1140px
+				transition(all 0.1s ease-in-out-sine)
+				hover-pop()
+		
+		img
+			lost-center 100%
+			max-height 350px
+			+at(4)
+				max-height 250px
+			+at(2)
+				max-height 300px
+			+mobile()
+				max-height 450px
+			+density(3)
+				max-height 450px
+			transition(all 0.1s ease-in-out-sine)
+			hover-pop()
+
+#games-item,
+#stories-item,
+#fresh-beats-item
+#contact-item
+	display none
+
+#games-item
+	background url(/img/games-bg.png) no-repeat center 
+	background-size contain
+#stories-item
+	background url(/img/stories-bg.png) no-repeat center 
+	background-size contain
+#fresh-beats-item
+	background url(/img/fresh-beats-bg.png) no-repeat center 
+	background-size contain
+	iframe
+		opacity 0.7
+		height 450px
+		+at(4)
+			height 340px
+		+at(3)
+			height 400px
+		+at(2)
+			height 300px
+		+mobile()
+			height 600px
+			font-size 25px
+		+density(3)
+			height 600px
+			font-size 25px
+		
+	p
+		margin-bottom 1em
+#contact-item
+	background url(/img/contact-bg.png) no-repeat center 
+	background-size contain
+	h5,h6
+		text-align left
+		font-family $body-font
+
+hr
+	border 0
+	background-color #eee
+	height 2px
+	margin 1em 0 1em 0
+
+
+link(none)
+
+// ~ Stage Select ~
+
+// set SS origins to center, remember max limit for sections is - 4 -
+
+.stage-select
+	height 100%
+	width 100%
+	-webkit-perspective 1000
+	.mainnav
+		lost-row: 9/rows
+		+at(2)
+			h4
+				font-size 25px
+	.subnav
+		opacity 0
+		lost-row: 1/rows
+		lost-center: 95%
+		a.subnav-item
+			height 50px
+			color black
+			display block
+			text-align center
+			font-family $header-font
+			+at(4)
+				font-size 0.9em
+			+at(2)
+				font-size 0.8em
+			text-align center
+			lost-column: 1/navitems
+			hover-pop(1.1)
+			transition(all 0.1s linear)
+		

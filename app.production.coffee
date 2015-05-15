@@ -15,6 +15,15 @@ module.exports =
 	extensions: [
 		js_pipeline(files: 'assets/js/*.ls', out: 'js/main.js', minify: true, hash: true),
 		css_pipeline(files: 'assets/css/_dev/*.styl', out: 'css/style.css', minify: true, hash: true)
+		contentful
+			access_token: my_access_token
+			space_id: space_key
+			content_types:
+				blog_posts:
+					id: posts_key
+					name: 'posts'
+					template: 'views/_post.jade'
+					path: (e) -> "bleigposts/#{e.date}/#{slugify(e.title)}"
 	]
 
 	stylus:

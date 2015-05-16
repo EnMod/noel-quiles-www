@@ -12,17 +12,17 @@ slugify 		= require 'underscore.string/slugify'
 
 module.exports =
 	ignores: ['readme.md', 'gulpfile.js', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
-	output: mainsitedevdir
+	output: process.env.mainsitedevdir
 	extensions: [
 		js_pipeline(files: 'assets/js/*.ls'),
 		css_pipeline(files: 'assets/css/_dev/*.styl')
 		dynamic_content()
 		contentful
-			access_token: my_access_token
-			space_id: space_key
+			access_token: process.env.my_access_token
+			space_id: process.env.space_key
 			content_types:
 				blog_posts:
-					id: posts_key
+					id: process.env.posts_key
 					name: 'posts'
 					template: 'views/_post.jade'
 					path: (e) -> "bleigposts/#{e.date}/#{slugify(e.title)}"

@@ -24,6 +24,6 @@ gulp.task('styles', function() {
     .pipe(gulp.dest(paths.cssDestination));
 });
 
-gulp.watch(paths.cssSource + '**/*.css', ['styles']);
+// gulp.watch(paths.cssSource + '**/*.css', ['styles']);
 
 gulp.task('default', ['styles']);

@@ -9,7 +9,7 @@ var paths = {
 
   // My workaround for PostCSS (and Lost) to work locally is to handle PostCSS processing in a 'dev' folder, outputting to production.
 
-  cssSource: 'public/css/dev/',
+  cssSource: 'public/css/_dev/',
   cssDestination: 'public/css/'
 };
 

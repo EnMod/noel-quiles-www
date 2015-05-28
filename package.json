@@ -1,8 +1,8 @@
 {
-  "name": "testsite",
-  "description": "Testing Roots",
+  "name": "noelquiles.com",
+  "description": "The online presence of Noel Quiles",
   "dependencies": {
-    "LiveScript": "^1.3.1",
+    "LiveScript": "^1.2.x",
     "autoprefixer-stylus": "^0.5.x",
     "axis": "^0.3.x",
     "coffee-script": "^1.8.x",
@@ -10,20 +10,14 @@
     "dynamic-content": "^0.2.0",
     "jade": "^1.x",
     "js-pipeline": "^0.2.x",
+    "jstransformer-marked": "^0.0.1",
     "marked": "^0.3.x",
-    "postcss": "^4.1.5",
-    "roots-contentful": "^0.0.7",
+    "postcss": "^4.1.11",
     "rupture": "^0.6.x",
-    "string": "^3.1.1",
     "stylus": "^0.49.x",
-    "typographic": "^2.9.3",
-    "underscore.string": "^3.0.3"
+    "typographic": "^2.9.3"
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.2.0",
-    "gulp-postcss": "^5.1.3",
-    "gulp-sourcemaps": "^1.5.2",
     "lost": "^6.0.1"
   }
 }

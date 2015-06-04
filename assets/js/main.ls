@@ -14,7 +14,7 @@ $ '.slick-frontends' .slick-lightbox {
 nameTime = 1500
 
 $ '.subnav' .velocity {translateY:'-70vh'}
-$ '.title' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {duration: nameTime, stagger:300 }
+$ '.title' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/2, duration: nameTime, stagger:300 }
 $ '.descript h3' .velocity {opacity:1} {delay: nameTime/2, duration: 1000, stagger:300}
 $ '.descript h3' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/2, duration: 1000, stagger:300 } 
 $ '.subnav' .velocity {opacity:1} {delay:nameTime,duration:nameTime} .velocity {translateY:[0,'-70vh']} {duration:nameTime,easing: [0 0.9 0.75 1]}

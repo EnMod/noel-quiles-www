@@ -1,27 +1,27 @@
 <- $
 
-$ '.slick-frontends' .slick {
+$ '#slick-frontends' .slick {
 	dots: true,
 	slidesToShow:1
 }
 
-$ '.slick-frontends' .slick-lightbox {
-	itemSelector: '.item .img img',
+$ '#slick-frontends' .slick-lightbox {
+	itemSelector: '#slick-frontends div.item div.img img',
 	src:'src',
 	caption:'caption'
 }
 
 nameTime = 1500
 
-$ '.subnav' .velocity {translateY:'-70vh'}
-$ '.title' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/2, duration: nameTime, stagger:300 }
-$ '.descript h3' .velocity {opacity:1} {delay: nameTime/2, duration: 1000, stagger:300}
-$ '.descript h3' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/2, duration: 1000, stagger:300 } 
-$ '.subnav' .velocity {opacity:1} {delay:nameTime,duration:nameTime} .velocity {translateY:[0,'-70vh']} {duration:nameTime,easing: [0 0.9 0.75 1]}
+$ 'div.subnav' .velocity {translateY:'-70vh'}
+$ 'h1.title' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/2, duration: nameTime, stagger:300 }
+$ 'div.descript h3' .velocity {opacity:1} {delay: nameTime/2, duration: 1000, stagger:300}
+$ 'div.descript h3' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/2, duration: 1000, stagger:300 } 
+$ 'div.subnav' .velocity {opacity:1} {delay:nameTime,duration:nameTime} .velocity {translateY:[0,'-70vh']} {duration:nameTime,easing: [0 0.9 0.75 1]}
 
 animationDur = 300
 
-$ '.subnav a' .click (e) ->
+$ 'div.subnav a' .click (e) ->
 	rel = $ this .attr 'rel'         
 	$ '#'+rel
 		.velocity {scale:[1,0.5],opacity:1} {display:'block',duration:animationDur, easing:'easeInOutSine'}

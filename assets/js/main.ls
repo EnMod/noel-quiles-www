@@ -6,7 +6,7 @@ $ '#slick-frontends' .slick {
 }
 
 $ '#slick-frontends' .slick-lightbox {
-	itemSelector: '#slick-frontends div.item div.img img',
+	itemSelector: 'div.item div.img img',
 	src:'src',
 	caption:'caption'
 }
@@ -14,9 +14,9 @@ $ '#slick-frontends' .slick-lightbox {
 nameTime = 1500
 
 $ 'div.subnav' .velocity {translateY:'-70vh'}
-$ 'h1.title' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/2, duration: nameTime, stagger:300 }
-$ 'div.descript h3' .velocity {opacity:1} {delay: nameTime/2, duration: 1000, stagger:300}
-$ 'div.descript h3' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/2, duration: 1000, stagger:300 } 
+$ 'h1.title' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/4, duration: nameTime, stagger:300 }
+$ 'div.descript h3' .velocity {opacity:1} {delay: nameTime/4, duration: 1000, stagger:300}
+$ 'div.descript h3' .blast { delimiter:'word' } .velocity 'transition.slideUpIn' {delay: nameTime/4, duration: 1000, stagger:300 } 
 $ 'div.subnav' .velocity {opacity:1} {delay:nameTime,duration:nameTime} .velocity {translateY:[0,'-70vh']} {duration:nameTime,easing: [0 0.9 0.75 1]}
 
 animationDur = 300

@@ -1,26 +1,42 @@
-axis         	= require 'axis'
-rupture      	= require 'rupture'
-typographic  	= require 'typographic'
+axis            = require 'axis'
+rupture         = require 'rupture'
+typographic     = require 'typographic'
 dynamic_content = require 'dynamic-content'
-autoprefixer 	= require 'autoprefixer-stylus'
-lost			= require 'lost'
+autoprefixer    = require 'autoprefixer-stylus'
+js_pipeline     = require 'js-pipeline'
+css_pipeline    = require 'css-pipeline'
+lost            = require 'lost'
+rimraf          = require 'rimraf'
 
 module.exports =
-	ignores: ['readme.md', '**/_*', '.gitignore']
+  ignores: ['readme.md', '**/_*', '.gitignore', '.gitattributes', 'ship.*conf', 'bower.json']
 
-	extensions: [
-		dynamic_content()
-	]
+  extensions: [
+    js_pipeline(manifest:'jsmanifest.yml', out: 'js/reqs.js')
+    js_pipeline(files: 'assets/js/*.ls', out: 'js/main.js')
+    css_pipeline(manifest:'cssmanifest.yml', out: 'css/style.css')
+    dynamic_content()
+  ]
 
-	stylus:
-		use: [axis(), rupture(), typographic(), autoprefixer()]
-		sourcemap: true
+  stylus:
+    use: [axis(), rupture(), typographic(), autoprefixer()]
+    sourcemap: true
 
-	postcss:
-		use: [lost()]
+  postcss:
+    use: [lost()]
 
-	'livescript':
-		sourcemap: true
+  jade:
+    pretty: true
 
-	jade:
-		pretty: true
+  server:
+    clean_urls: true
+
+  after: ->
+    rimraf('public/libs', (err) ->
+      if err
+        console.warn err
+    )
+    rimraf('public/bower_components', (err) ->
+      if err
+        console.warn err
+    )

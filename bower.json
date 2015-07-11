@@ -23,9 +23,10 @@
     "blast-text": "~2.0.0"
   },
   "resolutions": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "slick-carousel": "~1.5.5"
   },
-  "install" : {
-    "path" : "libs"
+  "install": {
+    "path": "libs"
   }
 }

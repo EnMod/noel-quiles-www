@@ -1,3 +1,4 @@
+- libs/slick-carousel/slick.css
+- libs/slick-carousel/slick-theme.css
 - libs/slick-lightbox/*.css
-- libs/slick-carousel/*.css
 - assets/css/style.css.styl

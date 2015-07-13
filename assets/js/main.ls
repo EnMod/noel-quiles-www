@@ -23,7 +23,11 @@ animationDur = 300
 
 $ 'div.subnav a' .click (e) ->
 	rel = $ this .attr 'rel'         
-	$ '#'+rel
+	$ '#'+rel+'-item'
+		.velocity {scale:[1,0.5],opacity:1} {display:'block',duration:animationDur, easing:'easeInOutSine'}
+		.siblings 'div'
+		.velocity {scale:0.5,opacity:0} {duration:animationDur, easing:'easeInOutSine', display:'none'}
+	$ '#'+rel+'-bg'
 		.velocity {scale:[1,0.5],opacity:1} {display:'block',duration:animationDur, easing:'easeInOutSine'}
 		.siblings 'div'
 		.velocity {scale:0.5,opacity:0} {duration:animationDur, easing:'easeInOutSine', display:'none'}

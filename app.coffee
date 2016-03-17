@@ -6,7 +6,7 @@ autoprefixer    = require 'autoprefixer-stylus'
 js_pipeline     = require 'js-pipeline'
 css_pipeline    = require 'css-pipeline'
 lost            = require 'lost'
-rimraf          = require 'rimraf'
+# browserify      = require 'roots-browserify'
 
 module.exports =
   ignores: ['readme.md', '**/_*', '.gitignore', '.gitattributes', 'ship.*conf', 'bower.json']
@@ -25,18 +25,5 @@ module.exports =
   postcss:
     use: [lost()]
 
-  jade:
-    pretty: true
-
   server:
     clean_urls: true
-
-  after: ->
-    rimraf('public/libs', (err) ->
-      if err
-        console.warn err
-    )
-    rimraf('public/bower_components', (err) ->
-      if err
-        console.warn err
-    )

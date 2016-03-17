@@ -6,7 +6,6 @@ autoprefixer 	  = require 'autoprefixer-stylus'
 js_pipeline		  = require 'js-pipeline'
 css_pipeline	  = require 'css-pipeline'
 lost            = require 'lost'
-rimraf          = require 'rimraf'
 
 module.exports =
 	ignores: ['readme.md', '**/_*', '.gitignore', '.gitattributes', 'ship.*conf', 'bower.json']
@@ -14,7 +13,7 @@ module.exports =
 	extensions: [
 		js_pipeline(manifest:'jsmanifest.yml', out: 'js/reqs.js', minify: true, hash: false)
 		js_pipeline(files: 'assets/js/*.ls', out: 'js/main.js', minify: true, hash: false)
-		css_pipeline(manifest:'cssmanifest.yml', out: 'css/style.css', minify: true, hash: false)
+		css_pipeline(manifest:'cssmanifest.yml', out: 'css/style.css', minify: false, hash: false)
 		dynamic_content()
 	]
 
@@ -23,13 +22,3 @@ module.exports =
 
 	postcss:
 	  use: [lost()]
-
-	after: ->
-    rimraf('public/libs', (err) ->
-      if err
-        console.warn err
-    )
-    rimraf('public/bower_components', (err) ->
-      if err
-        console.warn err
-    )

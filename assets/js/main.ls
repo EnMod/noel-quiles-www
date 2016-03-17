@@ -1,14 +1,6 @@
-<- $
-
-$ '#slick-frontends' .slick {
-	dots: true,
-	slidesToShow:1
-}
-
-$ '#slick-frontends' .slick-lightbox {
-	itemSelector: 'div.item div.img img',
-	src:'src',
-	caption:'caption'
+$ '#frontends-owl' .owlCarousel {
+	singleItem: true,
+	lazyLoad: true
 }
 
 nameTime = 1500

@@ -15,67 +15,28 @@ link(style = linkStyle)
 // ~~~~~~~~~~~~~~~~
 // ~ Main Styling ~
 // ~~~~~~~~~~~~~~~~
-html
-	text-size-adjust 100%
-	+at(4)
-		font-size 15px
-	+at(3)
-		font-size 17px
-	+at(2)
-		font-size 16px
-	+density(2)
-		font-size 18px
-	+density(3)
-		font-size 20px
-	// overflow-y scroll
-	-webkit-margin-before 0
-	-webkit-margin-after 0
-	// box-sizing border-box
+*, *::after, *::before
+	box-sizing border-box
 
+html
+	font-size 62.5%
+
+body
+	font-size 1.6rem
+	font-family "Sintony", sans-serif
+	color #eaf2e3
+	background-color #3a2c41
+	-webkit-font-smoothing antialiased
+	-moz-font-smoothing grayscale
+
+a
+	color #c0a672
+	text-decoration none
+		
 h1, h2, h3, h4, h5, h6
 	no-select()
-	-webkit-margin-before 0
-	-webkit-margin-after 0
-
-h1
-	margin-bottom 0
-
-h3
-	font-family $body-font
 	
-h5
-	margin-bottom 1em
-	
-body
-	height 100vh
-// ~ Number of rows for sizing ~
-rows = 10
-
-section
-	lost-row: 7.5/rows
-		
-// have the four sections be in a rectangle as they are, and rearrange when clicked
-header
-	lost-row: 2/rows
-	+between(2,4)
-		h1
-			font-size 56px	
-		h3
-			font-size 37px
-	+at(2)
-		h1
-			font-size 54px	
-		h3
-			font-size 35px
-	
-footer
-	lost-row: 0.5/rows
-	display block
-	margin 0 auto
-	
-header
-footer
-	margin-bottom 0
+header, footer
 	text-align center
 .descript h3
 	opacity 0
@@ -91,31 +52,7 @@ footer
 #stories-item,
 #fresh-beats-item,
 #contact-item
-	// height 100%
-	lost-center 50rem
-	position absolute
-	left 0
-	right 0
-	margin-left auto
-	margin-right auto
-	-webkit-perspective 1000
-	+at(4)
-		margin-top 15px
-	+at(2)
-		lost-center 40rem
-	+mobile()
-		lost-center 90%
-	+density(3)
-		lost-center 90%
 	h4
-		+at(4)
-			font-size 30px
-		// +at(2)
-		// 	font-size 30px
-		// +mobile()
-		// 	font-size 30px
-		// +density(3)
-		// 	font-size 30px
 		text-align center
 		width 100%
 	link(underline)
@@ -125,183 +62,374 @@ footer
 	opacity 0
 	#frontends-owl
 		lost-center 50rem
-		+mobile()
-			lost-center 40rem
-		+density(2)
-			lost-center 90%
-		+density(3)
-			lost-center 90%
 		.info
 			lost-column: 1/2
 			h4,h5
 				text-align left
 				font-family $body-font
-			h4
-				+at(4)
-					font-size 23px
-				+at(3)
-					font-size 21px
-				+at(2)
-					font-size 20px
-				+mobile()
-					font-size 25px					
-				+density(3)
-					font-size 25px
-			h5
-				+at(4)
-					font-size 20px
-				+at(3)
-					font-size 18px
-				+at(2)
-					font-size 17px
-				+mobile()
-					font-size 22px
-				+density(3)
-					font-size 22px
 			link(underline)
 		.img
 			lost-column: 1/2
 			a img
-				max-height 350px
-				max-width 100%
-				+at(4)
-					max-height 250px
-				+at(2)
-					max-height 300px
-				+mobile()
-					max-height 450px
-				+density(3)
-					max-height 450px
-				lost-center 1140px
 				transition(all 0.1s ease-in-out-sine)
 				hover-pop()
 		
 		img
-			lost-center 100%
-			max-height 350px
-			+at(4)
-				max-height 250px
-			+at(2)
-				max-height 300px
-			+mobile()
-				max-height 450px
-			+density(3)
-				max-height 450px
 			transition(all 0.1s ease-in-out-sine)
 			hover-pop()
-#contact-item h5
-	lost-column 1/3
-#games-item,
-#stories-item,
-#fresh-beats-item
-#contact-item
-	display none
-	
-// ~ backgrounds ~
-// ~~~~~~~~~~~~~~~
-
-#frontends-bg,
-#games-bg,
-#stories-bg,
-#fresh-beats-bg,
-#contact-bg
-	position fixed
-	top 0
-	left 0
-	z-index -100
-	height 100vh
-	width 100vw
-	display none
-
-#frontends-bg
-	background url(/img/frontends-bg.png) no-repeat center 
-	background-size contain
-#games-bg
-	background url(/img/games-bg.png) no-repeat center 
-	background-size contain
-#stories-bg
-	background url(/img/stories-bg.png) no-repeat center 
-	background-size contain
-#fresh-beats-bg
-	background url(/img/fresh-beats-bg.png) no-repeat center 
-	background-size contain
-#contact-bg
-	background url(/img/contact-bg.png) no-repeat center 
-	background-size contain
-#fresh-beats-item
-	iframe
-		opacity 0.7
-		height 450px
-		+at(4)
-			height 340px
-		+at(3)
-			height 400px
-		+at(2)
-			height 300px
-		+mobile()
-			height 600px
-			font-size 25px
-		+density(3)
-			height 600px
-			font-size 25px
-		
-	p
-		margin-bottom 1em
-#contact-item
-	p
-		text-align center
-	h5,h6
-		text-align left
-		font-family $body-font
-	.contact
-		text-align center
-		h6
-			text-align center
-		lost-column 1/3 0
-hr
-	border 0
-	background-color #eee
-	height 2px
-	margin 1em 0 1em 0
 
 link(none)
 
 // ~ Stage Select ~
 
-// set SS origins to center, remember max limit for sections is - 4 -
-
-.stage-select
-	height 100%
-	width 100%
-	-webkit-perspective 1000
-	.mainnav
-		lost-row: 9/rows
-		+at(2)
-			h4
-				font-size 25px
-	.subnav
-		opacity 0
-		lost-row: 1/rows
-		lost-center: 95%
-		a.subnav-item
-			height 50px
-			color black
-			display block
-			text-align center
-			font-family $header-font
-			+at(4)
-				font-size 0.9em
-			+at(2)
-				font-size 0.8em
-			text-align center
-			lost-column: 1/navitems
-			hover-pop(1.1)
-			transition(all 0.1s linear)
-			span
-				display none
-			// 	&:hover
-			// 		display block
-			// 		transition(all 0.1s linear)
-
 .title > *
 	opacity 0
+
+.cd-image-replace
+	display inline-block
+	overflow hidden
+	text-indent 100%
+	white-space nowrap
+	color transparent
+
+.cd-nav-trigger
+	display block
+	position fixed
+	z-index 2
+	bottom 30px
+	right 5%
+	height 44px
+	width 44px
+	border-radius 0.25em
+	background rgba(234, 242, 227, 0.9)
+	cursor pointer
+	-webkit-appearance none
+	-ms-appearance none
+	appearance none
+	border none
+	outline none
+	span
+		position absolute
+		height 4px
+		width 4px
+		background-color #3a2c41
+		border-radius 50%
+		left 50%
+		top 50%
+		bottom auto
+		right auto
+		-webkit-transform translateX(-50%) translateY(-50%)
+		-ms-transform translateX(-50%) translateY(-50%)
+		transform translateX(-50%) translateY(-50%)
+		&::before
+			top -9px
+		&::after
+			bottom -9px
+
+.cd-nav-trigger span::before, .cd-nav-trigger span::after
+	content ''
+	position absolute
+	left 0
+	height 100%
+	width 100%
+	background-color #3a2c41
+	border-radius inherit
+
+@media only screen and (min-width: 800px)
+	.cd-nav-trigger
+		display none
+
+.cd-vertical-nav
+	position fixed
+	z-index 1
+	right 5%
+	bottom 30px
+	width 90%
+	max-width 400px
+	max-height 90%
+	overflow-y auto
+	-webkit-transform scale(0)
+	-ms-transform scale(0)
+	transform scale(0)
+	-webkit-transform-origin right bottom
+	-ms-transform-origin right bottom
+	transform-origin right bottom
+	-webkit-transition -webkit-transform 0.2s
+	transition transform 0.2s
+	border-radius 0.25em
+	background-color rgba(234, 242, 227, 0.9)
+	a
+		display block
+		padding 1em
+		color #3a2c41
+		font-weight bold
+		border-bottom 1px solid rgba(58, 44, 65, 0.1)
+		&.active
+			color #c0a672
+	&.open
+		-webkit-transform scale(1)
+		-moz-transform scale(1)
+		-ms-transform scale(1)
+		-o-transform scale(1)
+		transform scale(1)
+		-webkit-overflow-scrolling touch
+		& + .cd-nav-trigger
+			background-color transparent
+			span
+				background-color rgba(58, 44, 65, 0)
+				&::before
+					-webkit-transform rotate(45deg)
+					-ms-transform rotate(45deg)
+					transform rotate(45deg)
+					top 1px
+				&::after
+					-webkit-transform rotate(135deg)
+					-ms-transform rotate(135deg)
+					transform rotate(135deg)
+					bottom 0
+
+.cd-vertical-nav.open + .cd-nav-trigger span::before, .cd-vertical-nav.open + .cd-nav-trigger span::after
+	height 3px
+	width 20px
+	border-radius 0
+	left -8px
+
+@media only screen and (min-width: 800px)
+	.cd-vertical-nav
+		right 0
+		top 0
+		bottom auto
+		height 100vh
+		width 90px
+		max-width none
+		max-height none
+		-webkit-transform scale(1)
+		-ms-transform scale(1)
+		transform scale(1)
+		background-color transparent
+		display table
+		&::before
+			content ''
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			background rgba(0, 0, 0, 0.8)
+			-webkit-transform translateX(100%)
+			-ms-transform translateX(100%)
+			transform translateX(100%)
+			-webkit-transition -webkit-transform 0.4s
+			transition transform 0.4s
+		ul
+			display table-cell
+			vertical-align middle
+			text-align center
+		a
+			position relative
+			padding 3em 0 0
+			margin 1.4em auto
+			border-bottom none
+			font-size 1.2rem
+			color #eaf2e3
+			&.active
+				color #eaf2e3
+			&::before
+				top 0
+				height 32px
+				width 32px
+				border-radius 50%
+				background #eaf2e3
+				-webkit-transform translateX(-50%) scale(0.25)
+				-ms-transform translateX(-50%) scale(0.25)
+				transform translateX(-50%) scale(0.25)
+				-webkit-transition -webkit-transform 0.4s, background-color 0.2s
+				-moz-transition -moz-transform 0.4s, background-color 0.2s
+				transition transform 0.4s, background-color 0.2s
+			&::after
+				opacity 0
+				top 8px
+				height 16px
+				width 16px
+				background url(../img/cd-nav-icons.svg) no-repeat
+				-webkit-transform translateX(-50%) scale(0)
+				-ms-transform translateX(-50%) scale(0)
+				transform translateX(-50%) scale(0)
+				-webkit-transition -webkit-transform 0.4s 0s, opacity 0.1s 0.3s
+				transition transform 0.4s 0s, opacity 0.1s 0.3s
+		li
+			&:first-of-type
+				a
+					&::after
+						background-position 0px -48px
+						-webkit-transform translateX(-50%) translateY(4.5em) scale(0.01)
+						-ms-transform translateX(-50%) translateY(4.5em) scale(0.01)
+						transform translateX(-50%) translateY(4.5em) scale(0.01)
+					&::before
+						-webkit-transform translateX(-50%) translateY(4.5em) scale(0.25)
+						-ms-transform translateX(-50%) translateY(4.5em) scale(0.25)
+						transform translateX(-50%) translateY(4.5em) scale(0.25)
+			&:nth-of-type(2)
+				a
+					&::after
+						background-position 0px -32px
+						-webkit-transform translateX(-50%) translateY(1.5em) scale(0.01)
+						-ms-transform translateX(-50%) translateY(1.5em) scale(0.01)
+						transform translateX(-50%) translateY(1.5em) scale(0.01)
+					&::before
+						-webkit-transform translateX(-50%) translateY(1.5em) scale(0.25)
+						-ms-transform translateX(-50%) translateY(1.5em) scale(0.25)
+						transform translateX(-50%) translateY(1.5em) scale(0.25)
+			&:nth-of-type(3)
+				a
+					&::after
+						background-position 0px -16px
+						-webkit-transform translateX(-50%) translateY(-1.5em) scale(0.01)
+						-ms-transform translateX(-50%) translateY(-1.5em) scale(0.01)
+						transform translateX(-50%) translateY(-1.5em) scale(0.01)
+					&::before
+						-webkit-transform translateX(-50%) translateY(-1.5em) scale(0.25)
+						-ms-transform translateX(-50%) translateY(-1.5em) scale(0.25)
+						transform translateX(-50%) translateY(-1.5em) scale(0.25)
+			&:nth-of-type(4)
+				a
+					&::after
+						background-position 0px 0px
+						-webkit-transform translateX(-50%) translateY(-4.5em) scale(0.01)
+						-ms-transform translateX(-50%) translateY(-4.5em) scale(0.01)
+						transform translateX(-50%) translateY(-4.5em) scale(0.01)
+					&::before
+						-webkit-transform translateX(-50%) translateY(-4.5em) scale(0.25)
+						-ms-transform translateX(-50%) translateY(-4.5em) scale(0.25)
+						transform translateX(-50%) translateY(-4.5em) scale(0.25)
+		.label
+			display block
+			-webkit-backface-visibility hidden
+			backface-visibility hidden
+			-webkit-transform translateZ(0)
+			-ms-transform translateZ(0)
+			transform translateZ(0)
+			-webkit-transform translateX(100%)
+			-ms-transform translateX(100%)
+			transform translateX(100%)
+			-webkit-transition -webkit-transform 0.4s
+			transition transform 0.4s
+
+@media only screen and (min-width: 800px) .no-touch .cd-vertical-nav:hover::before, .touch .cd-vertical-nav::before
+	-webkit-transform translateX(0)
+	-ms-transform translateX(0)
+	transform translateX(0)
+
+@media only screen and (min-width: 800px) .cd-vertical-nav a::before, .cd-vertical-nav a::after
+	content ''
+	position absolute
+	left 50%
+	-webkit-backface-visibility hidden
+	backface-visibility hidden
+	-webkit-transform translateZ(0)
+	-ms-transform translateZ(0)
+	transform translateZ(0)
+
+@media only screen and (min-width: 800px) .cd-vertical-nav a.active::before, .no-touch .cd-vertical-nav a:hover::before
+	background-color #c0a672
+
+@media only screen and (min-width: 800px) .no-touch .cd-vertical-nav:hover a::before, .no-touch .cd-vertical-nav:hover a::after, .touch .cd-vertical-nav li:nth-of-type(n) a::before, .touch .cd-vertical-nav li:nth-of-type(n) a::after
+	-webkit-transform translateX(-50%) scale(1)
+	-ms-transform translateX(-50%) scale(1)
+	transform translateX(-50%) scale(1)
+
+@media only screen and (min-width: 800px) .no-touch .cd-vertical-nav:hover a::after, .touch .cd-vertical-nav a::after
+	opacity 1
+	-webkit-transition -webkit-transform 0.4s, opacity 0s
+	transition transform 0.4s, opacity 0s
+
+@media only screen and (min-width: 800px) .no-touch .cd-vertical-nav:hover .label, .touch .cd-vertical-nav .label
+	-webkit-transform translateX(0)
+	-ms-transform translateX(0)
+	transform translateX(0)
+
+.cd-section
+	display table
+	width 100%
+	height 100vh
+	background #3a2c41
+	&:nth-of-type(even)
+		background-color #70557e
+	& > div
+		display table-cell
+		vertical-align middle
+		text-align center
+	p
+		margin 1em auto 0
+		line-height 1.6
+		width 90%
+		max-width 680px
+		color rgba(234, 242, 227, 0.6)
+
+.cd-section h1, .cd-section h2
+	width 90%
+	margin 0 auto
+	text-transform uppercase
+	font-size 2.4rem
+	line-height 1.4
+
+.cd-section h1 b, .cd-section h2 b
+	color #584c5e
+
+@media only screen and (min-width: 800px)	 .cd-section h1, .cd-section h2
+	font-size 3rem
+
+@media only screen and (min-width: 800px)
+	.cd-section
+		p
+			font-size 2rem
+
+.cd-scroll-down
+	position absolute
+	left 50%
+	right auto
+	-webkit-transform translateX(-50%)
+	-ms-transform translateX(-50%)
+	transform translateX(-50%)
+	bottom 20px
+	width 44px
+	height 44px
+	background url(../img/cd-arrow-bottom.svg) no-repeat center center
+
+.no-js
+	.cd-nav-trigger
+		display none
+	.cd-vertical-nav
+		position static
+		height auto
+		width 100%
+		max-width none
+		background-color rgba(0, 0, 0, 0.8)
+		border-radius 0
+		-webkit-transform scale(1)
+		-ms-transform scale(1)
+		transform scale(1)
+		&::before
+			display none
+		ul
+			&::after
+				clear both
+				content ""
+				display table
+		li
+			display inline-block
+			float left
+		a
+			padding 0 1em
+			margin 1.5em 1em
+			color #eaf2e3
+			&.active
+				color #c0a672
+		.label
+			-webkit-transform translateX(0)
+			-ms-transform translateX(0)
+			transform translateX(0)
+
+.no-js .cd-vertical-nav a::after, .no-js .cd-vertical-nav a::before
+	display none
+

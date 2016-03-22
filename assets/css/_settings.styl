@@ -57,7 +57,7 @@ pie-path = '/pie.htc'
 
 @import "rupture"
 @import "axis"
-@import "typographic"
+// @import "typographic"
 
 // ~~~~~~~~~~~~~
 // ~ Variables ~
@@ -78,15 +78,15 @@ rupture = {
 rupture.scale = 0 (rupture.mobile-cutoff) 1024px 1280px (rupture.desktop-cutoff) (rupture.hd-cutoff)
 rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
 
-$vertical-rhythm = false
+// $vertical-rhythm = false
 
 linkBase = #aaa
 linkHover = #ccc
 linkStyle = underline
 $header-font = enmod
 $body-font = 'Lato'
-$max-font = 21px
-$header-ratio = $octave
+// $max-font = 21px
+// $header-ratio = $octave
 rows = 6
 navitems = 5
 
@@ -96,7 +96,6 @@ transition(arguments)
   transition: arguments
 
 normalize-css()
-typographic()
 
 @font-face
   font-family enmod

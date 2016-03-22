@@ -1,31 +1,26 @@
 doctype html
-html
+html.no-js(lang='en')
 	head
 		meta(charset='utf-8')
 		title Noel Quiles (.com)
 		meta(content='Noel Quiles: Developer of frontends, games, stories, and fresh beats.' name='description')
 		meta(content='Noel Quiles' name='author')
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(href='https://fonts.googleapis.com/css?family=Sintony:400,700', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='css/reset.css')
+		link(rel='stylesheet', href='css/style.css')
+			
 		!= css()
 
+		script(type='text/javascript' src='js/modernizr.js')
 		script(type='text/javascript' src='js/reqs.js')
 
 	body
-		#frontends-bg
-		#games-bg
-		#stories-bg
-		#fresh-beats-bg
-		#contact-bg
-		header
-			h1.title noel quiles
-			.descript
-				h3 Developer of . . .
 
 		section
 			block content
 		footer
-			span Noel Quiles's personal site <a href='http://github.com/enmod/noelquiles.com'>v2.0</a>. © 2015 Noel Quiles
+			span Noel Quiles's personal site <a href='http://github.com/enmod/noelquiles.com'>v3.0</a>. © 2016 Noel Quiles
 		
 		script(type='text/javascript' src='js/main.js')
 		script.

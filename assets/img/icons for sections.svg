@@ -20,88 +20,7 @@
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
-     id="defs4">
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter4993">
-      <feColorMatrix
-         values="0.1 0 0 0 0.9 0 0.1 0 0 0.9 0 0 0.1 0 0.9 0 0 0 1 0"
-         id="feColorMatrix4995" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter5019">
-      <feColorMatrix
-         values="0.1 0 0 0 0.9 0 0.1 0 0 0.9 0 0 0.1 0 0.9 0 0 0 1 0"
-         id="feColorMatrix5021" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter5247">
-      <feColorMatrix
-         values="0.1 0 0 0 0.9 0 0.1 0 0 0.9 0 0 0.1 0 0.9 0 0 0 1 0"
-         id="feColorMatrix5249" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter5261">
-      <feColorMatrix
-         values="0.1 0 0 0 0.9 0 0.1 0 0 0.9 0 0 0.1 0 0.9 0 0 0 1 0"
-         id="feColorMatrix5263" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter5327">
-      <feColorMatrix
-         values="0.1 0 0 0 0.9 0 0.1 0 0 0.9 0 0 0.1 0 0.9 0 0 0 1 0"
-         id="feColorMatrix5329" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter5436">
-      <feColorMatrix
-         values="0.4 0 0 0 0.6 0 0.4 0 0 0.6 0 0 0.4 0 0.6 0 0 0 1 0"
-         id="feColorMatrix5438" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter5440">
-      <feColorMatrix
-         values="0.4 0 0 0 0.6 0 0.4 0 0 0.6 0 0 0.4 0 0.6 0 0 0 1 0"
-         id="feColorMatrix5442" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter5444">
-      <feColorMatrix
-         values="0.4 0 0 0 0.6 0 0.4 0 0 0.6 0 0 0.4 0 0.6 0 0 0 1 0"
-         id="feColorMatrix5446" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter5448">
-      <feColorMatrix
-         values="0.4 0 0 0 0.6 0 0.4 0 0 0.6 0 0 0.4 0 0.6 0 0 0 1 0"
-         id="feColorMatrix5450" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Fade to Black or White"
-       id="filter5452">
-      <feColorMatrix
-         values="0.4 0 0 0 0.6 0 0.4 0 0 0.6 0 0 0.4 0 0.6 0 0 0 1 0"
-         id="feColorMatrix5454" />
-    </filter>
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -109,19 +28,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="-126.43675"
-     inkscape:cy="-167.27463"
+     inkscape:zoom="0.067931279"
+     inkscape:cx="-1636.8227"
+     inkscape:cy="-818.33166"
      inkscape:document-units="px"
      inkscape:current-layer="g5251"
      showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:object-paths="false"
      inkscape:snap-midpoints="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-9"
-     inkscape:window-y="1015"
+     inkscape:window-width="1280"
+     inkscape:window-height="972"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      units="px"
      showguides="true"
@@ -142,7 +61,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1430,11 +1349,11 @@
     <g
        transform="matrix(0.20979662,0,0,0.21521411,2231.8419,979.06032)"
        id="g4620"
-       style="filter:url(#filter4993)">
+       style="">
       <g
          id="g5025"
          transform="translate(7397.6407,-51.337649)"
-         style="filter:url(#filter5440)">
+         style="">
         <g
            inkscape:export-ydpi="2.8486726"
            inkscape:export-xdpi="2.8486726"
@@ -2344,11 +2263,11 @@
     <g
        transform="matrix(0.19990739,0,0,0.19990739,3428.8786,601.52184)"
        id="g4997"
-       style="filter:url(#filter5019)">
+       style="">
       <g
          id="g5369"
          transform="translate(-6961.8064,0)"
-         style="filter:url(#filter5436)">
+         style="">
         <rect
            y="1252.3623"
            x="-4038.3752"
@@ -2413,11 +2332,11 @@
        inkscape:export-ydpi="3.7330999"
        inkscape:export-xdpi="3.7330999"
        id="g5203"
-       style="filter:url(#filter5247)">
+       style="">
       <g
          id="g5381"
          transform="translate(-1499.2168,0)"
-         style="filter:url(#filter5444)">
+         style="">
         <g
            transform="translate(1136,-2713.4213)"
            id="g5205">
@@ -2536,7 +2455,7 @@
       <g
          id="g5363"
          transform="translate(-8637.7325,0)"
-         style="filter:url(#filter5452)">
+         style="">
         <rect
            y="-31.919373"
            x="-2878.9482"
@@ -2567,11 +2486,11 @@
     <g
        transform="matrix(0.24000891,0,0,0.24000891,1924.2252,1299.2409)"
        id="g5265"
-       style="filter:url(#filter5327)">
+       style="">
       <g
          id="g5331"
          transform="translate(-4126.1084,0)"
-         style="filter:url(#filter5448)">
+         style="">
         <path
            inkscape:connector-curvature="0"
            id="path5267"

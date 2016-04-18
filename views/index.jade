@@ -1,7 +1,9 @@
 extends _layout
 
 block content	
-	nav
+	nav.cd-stretchy-nav
+		a.cd-nav-trigger(href='#0')
+			span(aria-hidden='true')
 		ul
 			li
 				a.active(href='#frontends')
@@ -18,7 +20,10 @@ block content
 			li
 				a(href='#contact')
 					span.label contact
-	
+
+			// other list items here
+		span.stretchy-nav-bg(aria-hidden='true')
+
 	section#title-screen
 		h1.title noel quiles
 		.descript
@@ -40,7 +45,7 @@ block content
 						You can view Melissa's site <a target='_blank' href='http://melissadeleon.me'>here</a>.
 
 				.img
-					img(src="img/melissa.jpg" data-caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
+					img.lazyOwl(data-src="img/melissa.jpg" data-caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
 
 			.item
 				.info
@@ -53,7 +58,7 @@ block content
 						Check it out <a target='_blank' href='https://teach.mccc.edu'>here</a>, but remember: **it's a work in progress!**
 
 				.img
-					img(src="img/mteach.jpg" data-caption='MCCC Teach Page' alt="MCCC Teach Page")
+					img.lazyOwl(data-src="img/mteach.jpg" data-caption='MCCC Teach Page' alt="MCCC Teach Page")
 			
 			.item
 				.info
@@ -66,7 +71,7 @@ block content
 						You can check out the page <a target='_blank' href='http://www.mccc.edu/~virtcoll/summerinfo'>here</a>.
 
 				.img
-					img(src="img/summerinfo.jpg" data-caption="MCCC Summer Session 2015 Information Page" alt="MCCC Summer Session 2015 Information Page")
+					img.lazyOwl(data-src="img/summerinfo.jpg" data-caption="MCCC Summer Session 2015 Information Page" alt="MCCC Summer Session 2015 Information Page")
 			
 			.item
 				.info
@@ -79,7 +84,7 @@ block content
 						Click <a target='_blank' href='http://www.abirdwithoutwings.com'>here</a> to go to the site. If you like, go to the <a target='_blank' href='http://www.abirdwithoutwings.com/news'>news section</a> to check out the blog.
 
 				.img
-					img(src="img/abwow.jpg" data-caption="A Bird Without Wings Information Site/Blog" alt="A Bird Without Wings Information Site/Blog")
+					img.lazyOwl(data-src="img/abwow.jpg" data-caption="A Bird Without Wings Information Site/Blog" alt="A Bird Without Wings Information Site/Blog")
 			
 			.item
 				.info
@@ -92,7 +97,7 @@ block content
 						Click <a href='http://www.sjhg.org'>here</a> to check out the site.
 
 				.img
-					img(src="img/sjhg.jpg" data-caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
+					img.lazyOwl(data-src="img/sjhg.jpg" data-caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
 
 			.item
 				.info
@@ -103,7 +108,7 @@ block content
 						Made this flyer to advertise an event for the Humanist Chaplaincy at Rutgers University, in which the (then) president of American Atheists would be giving a talk.  Not my idea to use the meme, but in retrospect its inclusion worked well considering the event featured the man who inspired it.
 
 				.img
-					img(src="img/daveflyer.jpg" data-caption='David Silverman Talk Flyer' alt="David Silverman Talk Flyer")
+					img.lazyOwl(data-src="img/daveflyer.jpg" data-caption='David Silverman Talk Flyer' alt="David Silverman Talk Flyer")
 
 			//- .item
 			//- 	img(src="img/", alt="Hand sketches")
@@ -143,7 +148,7 @@ block content
 	
 	section#contact
 		h2 contact
-
+		
 		p Let's get in touch!  I'm all over the web, but here's some places I stop in at more than the rest:
 
 		.contact

@@ -8,7 +8,7 @@ css_pipeline	  = require 'css-pipeline'
 lost            = require 'lost'
 
 module.exports =
-	ignores: ['readme.md', '**/_*', '.gitignore', '.gitattributes', 'ship.*conf', 'bower.json']
+	ignores: ['readme.md', '**/_*', '.gitignore', '.gitattributes', 'ship.*conf']
 
 	extensions: [
 		js_pipeline(manifest:'jsmanifest.yml', out: 'js/reqs.js', minify: true, hash: false)

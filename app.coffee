@@ -6,10 +6,10 @@ autoprefixer    = require 'autoprefixer-stylus'
 js_pipeline     = require 'js-pipeline'
 css_pipeline    = require 'css-pipeline'
 lost            = require 'lost'
-# browserify      = require 'roots-browserify'
+browserify      = require 'roots-browserify'
 
 module.exports =
-  ignores: ['readme.md', '**/_*', '.gitignore', '.gitattributes', 'ship.*conf', 'bower.json']
+  ignores: ['readme.md', '**/_*', '.gitignore', '.gitattributes', 'ship.*conf']
 
   extensions: [
     js_pipeline(manifest:'jsmanifest.yml', out: 'js/reqs.js')

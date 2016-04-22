@@ -10,6 +10,7 @@
     "coffee-script": "^1.x",
     "css-pipeline": "^0.2.1",
     "dynamic-content": "^0.2.0",
+    "jade": "^1.11.0",
     "jquery": "^2.2.1",
     "jquery-migrate": "^1.4.0",
     "js-pipeline": "^0.2.1",

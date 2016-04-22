@@ -8,17 +8,17 @@ css_pipeline	  = require 'css-pipeline'
 lost            = require 'lost'
 
 module.exports =
-	ignores: ['readme.md', '**/_*', '.gitignore', '.gitattributes', 'ship.*conf']
+  ignores: ['readme.md', '**/_*', '.gitignore', '.gitattributes', 'ship.*conf']
 
-	extensions: [
-		js_pipeline(manifest:'jsmanifest.yml', out: 'js/reqs.js', minify: true, hash: false)
-		js_pipeline(files: 'assets/js/*.ls', out: 'js/main.js', minify: true, hash: false)
-		css_pipeline(manifest:'cssmanifest.yml', out: 'css/style.css', minify: false, hash: false)
-		dynamic_content()
-	]
+  extensions: [
+    js_pipeline(manifest:'jsmanifest.yml', out: 'js/reqs.js', minify: true, hash: false)
+    js_pipeline(files: 'assets/js/*.ls', out: 'js/main.js', minify: true, hash: false)
+    css_pipeline(manifest:'cssmanifest.yml', out: 'css/style.css', minify: false, hash: false)
+    dynamic_content()
+  ]
 
-	stylus:
-		use: [axis(), rupture(), typographic(), autoprefixer()]
+  stylus:
+    use: [axis(), rupture(), typographic(), autoprefixer()]
 
-	postcss:
-	  use: [lost()]
+  postcss:
+    use: [lost()]

@@ -34,33 +34,35 @@ link(style = linkStyle)
 
 body
 	font-family $body-font, sans-serif
-	-webkit-font-smoothing antialiased
-	-moz-font-smoothing antialiased
 	
 h1
 	font-family $header-font
 h2, h3
 	font-family sans-serif
-	
-.descript h3
-	opacity 0
+
 // ~ Content Page Styles ~
 // ~~~~~~~~~~~~~~~~~~~~~~~
 
 // ~ Main Sections ~
 section
 	height 100vh
-	+between(2, 6)
-		padding 5% 35%
-	padding 5% 10%
-	
+	padding 7%
+	max-width 50em
+	margin 0 auto	
 link(none)
 
+.soundcloud-box
+	width 100%
+	height 400px
+	background-color gray
 // ~ Stage Select ~
 .contact__item
-	lost-column 1/3
+	text-align center
+	lost-row 1/6
+	+above(2)
+		lost-column 1/3
 #frontends-owl
-	lost-center: 100rem
+	// lost-center: 100rem
 	.frontends-owl__info
 		lost-column: 1/2
 		link(underline)

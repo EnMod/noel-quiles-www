@@ -24,7 +24,9 @@
     "traceur": "0.0.107",
     "typographic": "^2.9.3",
     "velocity-animate": "^1.2.3",
-    "vue": "^1.0.21"
+    "vue": "^1.0.21",
+    "vue-router": "^0.7.13",
+    "vuex": "^0.6.3"
   },
   "devDependencies": {
     "lost": "^6.x"

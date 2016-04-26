@@ -1,4 +1,5 @@
 # manifest.yml
+- assets/js/modernizr.js
 - assets/js/jquery.js
 - assets/js/jquery-migrate.js
 - assets/js/velocity.js

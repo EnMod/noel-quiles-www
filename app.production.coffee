@@ -12,7 +12,6 @@ module.exports =
 
   extensions: [
     js_pipeline(manifest:'jsmanifest.yml', out: 'js/reqs.js', minify: true, hash: false)
-    js_pipeline(files: 'assets/js/*.ls', out: 'js/main.js', minify: true, hash: false)
     css_pipeline(manifest:'cssmanifest.yml', out: 'css/style.css', minify: false, hash: false)
     dynamic_content()
   ]

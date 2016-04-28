@@ -1,3 +1,50 @@
+<template lang="jade">
+nav.cd-stretchy-nav
+	a.cd-nav-trigger(href='#0')
+		span(aria-hidden='true')
+	ul
+		li
+			a.active(href='#frontends')
+				span.label frontends
+		li
+			a(href='#games')
+				span.label games
+		li
+			a(href='#stories')
+				span.label stories
+		li
+			a(href='#fresh-beats')
+				span.label fresh beats
+		li
+			a(href='#contact')
+				span.label contact
+
+		//- other list items here
+	span.stretchy-nav-bg(aria-hidden='true')
+</template>
+
+<script>
+jQuery(document).ready(function(){
+	if( $('.cd-stretchy-nav').length > 0 ) {
+		var stretchyNavs = $('.cd-stretchy-nav');
+		stretchyNavs.each(function(){
+			var stretchyNav = $(this),
+				stretchyNavTrigger = stretchyNav.find('.cd-nav-trigger');
+			
+			stretchyNavTrigger.on('click', function(event){
+				event.preventDefault();
+				stretchyNav.toggleClass('nav-is-visible');
+			});
+		});
+
+		$(document).on('click', function(event){
+			( !$(event.target).is('.cd-nav-trigger') && !$(event.target).is('.cd-nav-trigger span') ) && stretchyNavs.removeClass('nav-is-visible');
+		});
+	}
+});
+</script>
+
+<style>
 .cd-stretchy-nav {
   position: fixed;
   z-index: 2;
@@ -780,3 +827,4 @@ keyframes
     transform: translateX(0);
   }
 }
+</style>

@@ -6,11 +6,6 @@ new Vue({
 	}
 });
 
-$('#frontends-owl').owlCarousel({
-	singleItem: true,
-	lazyLoad: true
-})
-
 const nameTime = 1500
 const animationStagger = 300
 

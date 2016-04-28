@@ -1,34 +1,37 @@
 {
-  "name": "noelquiles.com",
-  "description": "The online presence of Noel Quiles",
+  "name": "-testproj",
+  "description": "it is a thing",
+  "version": "0.0.1",
+  "author": "Carrot Creative",
+  "ava": {
+    "require": [
+      "babel-core/register"
+    ],
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/EnMod/-testproj/issues",
   "dependencies": {
-    "LiveScript": "^1.x",
-    "autoprefixer-stylus": "^0.x",
-    "axis": "^0.x",
-    "blast-text": "^2.0.0",
-    "brunch": "^2.6.6",
-    "coffee-script": "^1.x",
-    "css-pipeline": "^0.2.1",
-    "dynamic-content": "^0.2.0",
-    "jade": "^1.11.0",
-    "jquery": "^2.2.1",
-    "jquery-migrate": "^1.4.0",
-    "js-pipeline": "^0.2.1",
-    "jstransformer-marked": "^1.x",
-    "owlcarousel": "^1.3.3",
-    "postcss": "^5.x",
-    "pug": "^2.0.0-alpha6",
-    "roots-browserify": "^0.5.0",
-    "rupture": "^0.6.x",
-    "stylus": "^0.x",
-    "traceur": "0.0.107",
-    "typographic": "^2.9.3",
-    "velocity-animate": "^1.2.3",
-    "vue": "^1.0.21",
-    "vue-router": "^0.7.13",
-    "vuex": "^0.6.3"
+    "babel-preset-es2015": "6.x",
+    "babel-preset-stage-2": "6.x",
+    "lost": "6.x",
+    "postcss-cssnext": "2.5.x",
+    "rucksack-css": "0.8.x",
+    "sugarss": "0.1.x"
   },
   "devDependencies": {
-    "lost": "^6.x"
+    "ava": "0.14.x",
+    "rimraf": "2.5.x",
+    "snazzy": "3.0.x",
+    "standard": "6.0.x"
+  },
+  "homepage": "https://github.com/EnMod/-testproj",
+  "main": "app.js",
+  "private": "true",
+  "repository": "https://github.com/EnMod/-testproj",
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
   }
 }

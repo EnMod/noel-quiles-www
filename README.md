@@ -1,6 +1,12 @@
-# testsite
+# Noel Quiles' Portfolio
 
-Testing Roots
+Made with Jade (now Pug), Stylus, LiveScript, and Roots for builds.  
+
+Icons designed and created in Inkscape, as well as the header font, which can be found in this repo as `enmod.ttf`.
+
+Uses a simple JS pattern for switching divs in and out using jQuery-selected elements, along with Velocity and Blast for element animations and section transitions.  Uses Lost grid for positioning pretty much everything, with Rupture for mobile adjustments.
+
+Check out the `roots-mini` branch for development of my next version of this site!
 
 ### Setup
 
@@ -9,7 +15,7 @@ Testing Roots
 - run `npm install`
 - run `roots watch`
 - ???
-- get money
+- done
 
 ### Deploying
 

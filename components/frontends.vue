@@ -110,5 +110,5 @@ $('#frontends-owl').owlCarousel({
     transition(all 0.1s ease-in-out-sine)
     hover-pop(0.9)
 #frontends-owl img
-    max-width 100%
+    max-width: 100%
 </style>

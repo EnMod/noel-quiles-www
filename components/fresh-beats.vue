@@ -13,7 +13,7 @@ section#fresh-beats
 
 <style lang="stylus">
 .soundcloud-box
-	width 100%
-	height 400px
-	background-color gray
+	width: 100%
+	height: 400px
+	background-color: gray
 </style>

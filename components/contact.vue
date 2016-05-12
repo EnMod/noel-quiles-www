@@ -23,8 +23,8 @@ section#contact
 
 <style lang="stylus">
 .contact__item
-	text-align center
-	lost-row 1/6
+	text-align: center
+	lost-row: 1/6
 	+above(2)
-		lost-column 1/3
+		lost-column: 1/3
 </style>

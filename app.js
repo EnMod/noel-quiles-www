@@ -1,14 +1,18 @@
-import cssnext from 'postcss-cssnext'
-import rucksack from 'rucksack-css'
-import sugarss from 'sugarss'
-import lost from 'lost'
+const cssnext = require('postcss-cssnext')
+const rucksack = require('rucksack-css')
+const sugarss = require('sugarss')
+const lost = require('lost')
 
-export default {
-  postcss: {
-    plugins: [cssnext, rucksack, lost],
-    parser: sugarss
-  },
-  babelConfig: { presets: ['es2015', 'stage-2'] },
-  locals: { foo: 'bar' },
-  ignore: ['**/layout.jade', '**/_*', '**/.*']
+module.exports = {
+    postcss: {
+        plugins: [cssnext, rucksack, lost],
+        parser: sugarss
+    },
+    babelConfig: {
+        presets: ['es2015', 'stage-2']
+    },
+    locals: {
+        foo: 'bar'
+    },
+    ignore: ['**/layout.jade', '**/_*', '**/.*']
 }

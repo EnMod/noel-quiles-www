@@ -1,37 +1,47 @@
 {
-    "name": "noelquiles.com",
-    "description": "it is a thing",
-    "version": "0.0.1",
-    "author": "Noel Quiles",
-    "ava": {
-        "require": [
-            "babel-core/register"
-        ],
-        "verbose": "true"
-    },
-    "bugs": "https://github.com/EnMod/noelquiles.com/issues",
-    "dependencies": {
-        "babel-preset-es2015": "6.x",
-        "babel-preset-stage-2": "6.x",
-        "lost": "6.x",
-        "postcss-cssnext": "2.5.x",
-        "rucksack-css": "0.8.x",
-        "sugarss": "0.1.x"
-    },
-    "devDependencies": {
-        "ava": "0.14.x",
-        "rimraf": "2.5.x",
-        "snazzy": "3.0.x",
-        "standard": "6.0.x"
-    },
-    "homepage": "https://github.com/EnMod/noelquiles.com",
-    "main": "app.js",
-    "private": true,
-    "repository": "https://github.com/EnMod/noelquiles.com",
-    "scripts": {
-        "lint": "standard --verbose | snazzy",
-        "precommit": "npm run lint -s",
-        "pretest": "npm run lint -s",
-        "test": "NODE_ENV=test ava"
-    }
+  "name": "noelquiles.com",
+  "description": "it is a thing",
+  "version": "0.0.1",
+  "author": "Noel Quiles",
+  "ava": {
+    "require": [
+      "babel-core/register"
+    ],
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/EnMod/noelquiles.com/issues",
+  "dependencies": {
+    "animate.css-js": "0.0.9",
+    "babel-preset-es2015": "6.x",
+    "babel-preset-stage-2": "6.x",
+    "blast-text": "^2.0.0",
+    "jquery": "^2.2.4",
+    "jquery-migrate": "^1.4.1",
+    "lost": "6.x",
+    "owl.carousel": "^2.1.1",
+    "postcss-cssnext": "2.5.x",
+    "rucksack-css": "^0.8.6",
+    "sugarss": "0.1.x",
+    "vue": "^1.0.24",
+    "vue-loader": "^8.3.1",
+    "vue-router": "^0.7.13",
+    "vuex": "^0.6.3",
+    "webpack": "^1.13.0"
+  },
+  "devDependencies": {
+    "ava": "0.14.x",
+    "rimraf": "2.5.x",
+    "snazzy": "3.0.x",
+    "standard": "6.0.x"
+  },
+  "homepage": "https://github.com/EnMod/noelquiles.com",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com/EnMod/noelquiles.com",
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
+  }
 }

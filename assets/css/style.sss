@@ -1,53 +1,35 @@
-@import '_settings'
+/*@import '_settings.sss'*/
 
-// ~~~~~~~~~~~~~~~~
-// ~ Font Imports ~
-// ~~~~~~~~~~~~~~~~
-
-@font-face
+/*@font-face
 	font-family: 'enmod'
 	font-style: normal
-	src: url(fonts/enmod.ttf)
-
-// ~ Lato includes ~
+	src: url(fonts/enmod.ttf)*/
 
 /* latin-ext */
 
-// ~~~~~~~~~~
-// ~ Mixins ~
-// ~~~~~~~~~~
-
-link(style = linkStyle)
+/*link(style = linkStyle)
 	a:link,a:visited,a:active
 		color: linkBase
 		text-decoration: style
-	a:hover 
+	a:hover
 		color: linkHover
-		text-decoration: style
-
-// ~~~~~~~~~~~~~~~~
-// ~ Main Styling ~
-// ~~~~~~~~~~~~~~~~
+		text-decoration: style*/
 
 *, *::after, *::before
 	box-sizing: border-box
 
 body
-	font-family: $body-font, sans-serif
-	
-h1
-	font-family: $header-font
-h2, h3
 	font-family: sans-serif
 
-// ~ Main Sections ~
+h1
+	font-family: serif
+
+h2, h3
+	font-family: sans-serif
 
 section
 	height: 100vh
 	padding: 7%
 	max-width: 50em
-	margin: 0 auto	
-link(none)
-
-
-
+	margin: 0 auto
+/*link(none)*/

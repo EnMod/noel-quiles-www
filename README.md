@@ -6,7 +6,7 @@ Icons designed and created in Inkscape, as well as the header font, which can be
 
 Uses a simple JS pattern for switching divs in and out using jQuery-selected elements, along with Velocity and Blast for element animations and section transitions.  Uses Lost grid for positioning pretty much everything, with Rupture for mobile adjustments.
 
-Check out the `roots-mini` branch for development of my next version of this site!
+Check out the `spike-rework` branch for development of my next version of this site!
 
 ### Setup
 

@@ -7,4 +7,4 @@ This will be the third version of my site, coming from the `master` branch's ove
 - [ ] Completely redesigning for mobile first, which in my initial shortsightedness was woefully neglected
 - [ ] Follow the tenets of motherfuckingwebsite.com, basically just focusing on being as painfully minimal as possible to get into that habit
 - [ ] In that vein, reduce reliance on Velocity or Blast or external libraries for effects, instead using CSS transitions/animations wherever possible (although Blast isn't really reproducible in CSS)
-- [ ] Retool the source to use Roots-Mini, as I'm very familiar with Roots and the webpack-only vue-loader is essential to developing with Vue's single-file components
+- [ ] Retool the source to use Spike, as I'm very familiar with Roots and the webpack-only vue-loader is essential to developing with Vue's single-file components. Sure I could use roots-browserify with vueify, but that method is much too haphazard for my taste.

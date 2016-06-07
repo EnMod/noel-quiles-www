@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
 section#fresh-beats
     h2 fresh beats
 
@@ -11,9 +11,9 @@ section#fresh-beats
 
 </script>
 
-<style lang="stylus">
-.soundcloud-box
+<style>
+/*.soundcloud-box
 	width: 100%
 	height: 400px
-	background-color: gray
+	background-color: gray*/
 </style>

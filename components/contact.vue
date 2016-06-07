@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
 section#contact
     h2 contact
 
@@ -21,10 +21,10 @@ section#contact
 
 </script>
 
-<style lang="stylus">
-.item
+<style scoped>
+/*.item
 	text-align: center
 	lost-row: 1/6
 	+above(2)
-		lost-column: 1/3
+		lost-column: 1/3*/
 </style>

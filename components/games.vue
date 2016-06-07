@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
 section#games
     h2 games
 
@@ -15,6 +15,6 @@ section#games
 
 </script>
 
-<style lang="stylus">
+<style>
 
 </style>

@@ -6,11 +6,27 @@ const sugarss = require('sugarss')
 const lost = require('lost')
 
 module.exports = {
-  postcss: {
-    plugins: [mixins, simpleVars, cssnext, rucksack, lost],
-    parser: sugarss
-  },
-  babelConfig: { presets: ['es2015', 'stage-2'] },
-  locals: { foo: 'bar' },
-  ignore: ['**/layout.jade', '**/_*', '**/.*']
+    module: {
+        loaders: [
+            {
+                test: /\.vue$/,
+                loader: 'vue'
+            }
+        ]
+    },
+    vue: {
+        postcss:{
+            plugins: [mixins, simpleVars, cssnext, rucksack, lost],
+            options: {
+                parser: sugarss
+            }
+        },
+        autoprefixer: false
+    },
+    postcss: {
+        plugins: [mixins, simpleVars, cssnext, rucksack, lost],
+        parser: sugarss
+    },
+    babelConfig: { presets: ['es2015', 'stage-2'] },
+    ignore: ['**/layout.jade', '**/_*', '**/.*']
 }

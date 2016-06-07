@@ -7,13 +7,13 @@
 
 /* latin-ext */
 
-/*link(style = linkStyle)
+@define-mixin link $linkStyle:none, $linkBase:black, $linkStyle:gray
 	a:link,a:visited,a:active
-		color: linkBase
-		text-decoration: style
+		color: $linkBase
+		text-decoration: $linkStyle
 	a:hover
-		color: linkHover
-		text-decoration: style*/
+		color: $linkHover
+		text-decoration: $linkStyle
 
 *, *::after, *::before
 	box-sizing: border-box
@@ -32,4 +32,16 @@ section
 	padding: 7%
 	max-width: 50em
 	margin: 0 auto
-/*link(none)*/
+
+/*frontends*/
+
+.frontends-owl__info,
+    /*lost-column: 1/2*/
+    /*link(underline)*/
+.frontends-owl__img,
+    /*lost-column: 1/2*/
+    /*transition(all 0.1s ease-in-out-sine)
+    hover-pop(0.9)*/
+#frontends-owl img
+    max-width: 100%
+@mixin link none

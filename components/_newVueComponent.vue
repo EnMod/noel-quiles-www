@@ -1,11 +1,11 @@
-<template lang="jade">
-
+<template lang="pug">
+p lol
 </template>
 
 <script>
 
 </script>
 
-<style lang="stylus">
+<style>
 
 </style>

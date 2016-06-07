@@ -5,11 +5,11 @@ const Vue = require('vue')
 // const letterify = require('letterify')
 
 // include Vue single-file components
-const frontends = require('../../components/frontends.vue')
-const games = require('../../components/games.vue')
-const stories = require('../../components/stories.vue')
-const freshbeats = require('../../components/freshbeats.vue')
-const contact = require('../../components/contact.vue')
+const frontends = require('/home/enmod/Documents/github/noelquiles.com/components/frontends.vue')
+const games = require('/home/enmod/Documents/github/noelquiles.com/components/games.vue')
+const stories = require('/home/enmod/Documents/github/noelquiles.com/components/stories.vue')
+const freshbeats = require('/home/enmod/Documents/github/noelquiles.com/components/freshbeats.vue')
+const contact = require('/home/enmod/Documents/github/noelquiles.com/components/contact.vue')
 
 // initialize Vue with above components
 new Vue({

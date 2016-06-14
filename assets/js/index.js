@@ -1,5 +1,4 @@
 // include libs
-// const $ = require('jquery')
 const animateCss = require('animate.css-js')
 const Vue = require('vue')
 // const letterify = require('letterify')
@@ -20,7 +19,8 @@ new Vue({
 		stories,
 		freshbeats,
 		contact
-	}
+	},
+	replace:true
 });
 
 // init vars for animation

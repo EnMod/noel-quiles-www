@@ -1,5 +1,3 @@
-/*@import '_settings.sss'*/
-
 /*@font-face
 	font-family: 'enmod'
 	font-style: normal
@@ -7,13 +5,25 @@
 
 /* latin-ext */
 
-@define-mixin link $linkStyle:none, $linkBase:black, $linkStyle:gray
-	a:link,a:visited,a:active
+/*<====>*/
+/*Mixins*/
+/*<====>*/
+
+@define-mixin link $linkStyle:none, $linkBase:black
+	& a:link,
+	& a:visited,
+	& a:active
 		color: $linkBase
 		text-decoration: $linkStyle
-	a:hover
+
+@define-mixin linkHover $linkStyle:none, $linkHover:gray
+	& a:hover
 		color: $linkHover
 		text-decoration: $linkStyle
+
+/*<==-==>*/
+/*Globals*/
+/*<==-==>*/
 
 *, *::after, *::before
 	box-sizing: border-box
@@ -33,15 +43,96 @@ section
 	max-width: 50em
 	margin: 0 auto
 
-/*frontends*/
+/*<===>*/
+/*Pages*/
+/*<===>*/
 
-.frontends-owl__info,
-    /*lost-column: 1/2*/
-    /*link(underline)*/
-.frontends-owl__img,
-    /*lost-column: 1/2*/
-    /*transition(all 0.1s ease-in-out-sine)
-    hover-pop(0.9)*/
-#frontends-owl img
-    max-width: 100%
+#frontends
+	& #gallery
+		background-color: black
+		& .item
+			lost-utility: clearfix
+			background-color: green
+			& .info
+				@mixin link underline
+				lost-column: 1/2
+			& .img
+				lost-column: 1/2
+				/*transition(all 0.1s ease-in-out-sine)*/
+				/*hover-pop(0.9)*/
+			& img
+				max-width: 100%
 @mixin link none
+@mixin linkHover none
+
+#gallery
+	max-width: 600px
+	text-align: center
+	margin: 0 auto
+
+#slides
+	& .inner
+		width: 400%
+
+	& .inner
+		-webkit-transform: translateZ(0)
+		-moz-transform: translateZ(0)
+		-o-transform: translateZ(0)
+		-ms-transform: translateZ(0)
+		transform: translateZ(0)
+
+		-webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+		-moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+		-o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+		-ms-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+		transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+
+		-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000)
+		-moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000)
+		-o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000)
+		-ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000)
+		transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000)
+
+#slides article
+	width: 100%
+	float: left
+
+#overflow
+	width: 100%
+	overflow: hidden
+#slide1:checked ~ #slides .inner
+	margin-left: 0
+
+#slide2:checked ~ #slides .inner
+	margin-left: -100%
+
+#slide3:checked ~ #slides .inner
+	margin-left: -200%
+
+#slide4:checked ~ #slides .inner
+	margin-left: -300%
+
+#slide5:checked ~ #slides .inner
+	margin-left: -400%
+
+#slide6:checked ~ #slides .inner
+	margin-left: -500%
+
+input[type="radio"]
+	display: none
+
+label
+	background: #CCC
+	display: inline-block
+	cursor: pointer
+	width: 10px
+	height: 10px
+	border-radius: 5px
+
+#slide1:checked ~ label[for="slide1"],
+#slide2:checked ~ label[for="slide2"],
+#slide3:checked ~ label[for="slide3"],
+#slide4:checked ~ label[for="slide4"],
+#slide5:checked ~ label[for="slide5"],
+#slide6:checked ~ label[for="slide6"]
+	background: #333

@@ -1,27 +1,18 @@
+// <==------==>
 // include libs
+// <==------==>
+
 const animateCss = require('animate.css-js')
 const Vue = require('vue')
 // const letterify = require('letterify')
 
-// include Vue single-file components
-const frontends = require('../../components/frontends.vue')
-const games = require('../../components/games.vue')
-const stories = require('../../components/stories.vue')
-const freshbeats = require('../../components/freshbeats.vue')
-const contact = require('../../components/contact.vue')
+// <==----------------==>
+// Vue component registry
+// <==----------------==>
+
 const slide = require('vue-slide')
-// initialize Vue with above components
-new Vue({
-	el: 'body',
-	components: {
-		frontends,
-		games,
-		stories,
-		freshbeats,
-		contact,
-		slide
-	},
-	replace:true,
+Vue.component('frontends', {
+	template:'#frontends-template',
 	methods:{
 		turnTo (num){
 			console.log(num)
@@ -33,8 +24,25 @@ new Vue({
 		slidePre (){
 			this.$broadcast('slidePre')
 		}
-	},
-	data:{
+	}
+})
+Vue.component('games', {
+	template:'#games-template'
+})
+Vue.component('stories', {
+	template:'#stories-template'
+})
+Vue.component('freshbeats', {
+	template:'#freshbeats-template'
+})
+Vue.component('contact', {
+	template:'#contact-template'
+})
+
+// initialize Vue with above components
+new Vue({
+	el: 'body',
+	data: {
 		itemList:[
 			// Melissa's Site
 			{
@@ -119,6 +127,11 @@ new Vue({
 		}
 	}
 });
+
+
+// <==-==>
+// Core JS
+// <==-==>
 
 // init vars for animation
 const nameTime = 1500

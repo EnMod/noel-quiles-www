@@ -21,7 +21,7 @@ module.exports = {
 		]
 	},
 	matchers: {
-		html:['**/*.jade','**/*.pug'],
+		html:'**/*.jade',
 		css: '**/*.sss'
 	},
 	vue: {

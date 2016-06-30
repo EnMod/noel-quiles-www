@@ -11,11 +11,20 @@ html.no-js(lang='en')
 		link(rel="stylesheet", href="css/style.css")
 
 	body
+		script#frontends-template(type='x/template')
+			include ./frontends.jade
+		script#games-template(type='x/template')
+			include ./games.jade
+		script#stories-template(type='x/template')
+			include ./stories.jade
+		script#freshbeats-template(type='x/template')
+			include ./freshbeats.jade
+		script#contact-template(type='x/template')
+			include ./contact.jade
+
 		section#title-screen
 			h1 noel quiles
 			h3 Developer of . . .
-		script.
-			
 
 		frontends
 		games
@@ -23,7 +32,10 @@ html.no-js(lang='en')
 		freshbeats
 		contact
 
-		footer Noel Quiles's personal site <a href='http://github.com/enmod/noelquiles.com'>v3.0</a>. © 2016 Noel Quiles
+		footer
+			|Noel Quiles's personal site
+			a(href='http://github.com/enmod/noelquiles.com') v3.0
+			|. © 2016 Noel Quiles
 
 		script(src='js/main.js')
 		script.

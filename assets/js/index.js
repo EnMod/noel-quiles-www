@@ -1,15 +1,5 @@
 const $ = require('jquery')
 const animateCss = require('animate.css-js')
-const Vue = require('vue')
-// const blast = require('blast-text')
-
-new Vue({
-	el: '#title-screen',
-	data: {
-		title: '',
-		description:''
-	}
-});
 
 const nameTime = 1500
 const animationStagger = 300

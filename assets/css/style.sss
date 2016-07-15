@@ -1,5 +1,3 @@
-/*@import '_settings.sss'*/
-
 /*@font-face
 	font-family: 'enmod'
 	font-style: normal
@@ -7,13 +5,25 @@
 
 /* latin-ext */
 
-/*link(style = linkStyle)
-	a:link,a:visited,a:active
-		color: linkBase
-		text-decoration: style
-	a:hover
-		color: linkHover
-		text-decoration: style*/
+/*<====>*/
+/*Mixins*/
+/*<====>*/
+
+@define-mixin link $linkStyle:none, $linkBase:black
+	& a:link,
+	& a:visited,
+	& a:active
+		color: $linkBase
+		text-decoration: $linkStyle
+
+@define-mixin linkHover $linkStyle:none, $linkHover:gray
+	& a:hover
+		color: $linkHover
+		text-decoration: $linkStyle
+
+/*<==-==>*/
+/*Globals*/
+/*<==-==>*/
 
 *, *::after, *::before
 	box-sizing: border-box
@@ -32,4 +42,38 @@ section
 	padding: 7%
 	max-width: 50em
 	margin: 0 auto
-/*link(none)*/
+
+/*<===>*/
+/*Pages*/
+/*<===>*/
+
+#frontends
+	& .container
+		height: 300px
+		background-color: black
+		& .slider-item
+			lost-utility: clearfix
+			background-color: green
+			& .info
+				@mixin link underline
+				lost-column: 1/2
+			& .img
+				lost-column: 1/2
+				/*transition(all 0.1s ease-in-out-sine)*/
+				/*hover-pop(0.9)*/
+			& img
+				max-width: 100%
+
+.item
+	text-align: center
+	lost-row: 1/6
+	+above(2)
+		lost-column: 1/3
+
+.soundcloud-box
+    width: 100%
+    height: 400px
+    background-color: gray
+
+@mixin link none
+@mixin linkHover none

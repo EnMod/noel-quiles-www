@@ -26,6 +26,8 @@
     "postcss-simple-vars": "^2.0.0",
     "posthtml-jade": "^0.8.2",
     "posthtml-md": "^1.1.0",
+    "retext": "^3.0.0",
+    "retext-smartypants": "^2.0.0",
     "rucksack-css": "^0.8.6",
     "spike-rooftop": "0.0.3",
     "spike-util": "^0.2.1",

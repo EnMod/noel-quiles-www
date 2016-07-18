@@ -9,6 +9,8 @@ const stage2 = require('babel-preset-stage-2')
 const Util = require('spike-util')
 const jade = require('posthtml-jade')
 const md = require('posthtml-md')
+const retext = require('posthtml-retext')
+const smartypants = require('retext-smartypants')
 const postcssImport = require('postcss-import')
 
 module.exports = {
@@ -26,7 +28,11 @@ module.exports = {
 	posthtml: (ctx) => {
 		const f = Util.filePathFromLoader(ctx).absolute
 		return {
-			defaults: [jade({ filename: f, pretty: true, foo: 'bar' })]
+			defaults: [
+				jade({ filename: f, pretty: true, foo: 'bar' }),
+				md(),
+				retext([smartypants])
+			]
 		}
 	},
 	babel: { presets: [es2015, stage2] },

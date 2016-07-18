@@ -6,15 +6,15 @@ section#contact
 
     .item
         h3 Gmail
-        <a href='mailto:noelquilesgraphics@gmail.com'>noelquilesgraphics@gmail.com</a>
+        a(href='mailto:noelquilesgraphics@gmail.com') noelquilesgraphics@gmail.com
 
     .item
         h3 Twitter
-        <a href='https://twitter.com/NoelQuiles'>@NoelQuiles</a>
+        a(href='https://twitter.com/NoelQuiles') @NoelQuiles
 
     .item
         h3 GitHub
-        <a href='https://www.github.com/enmod'>EnMod</a>
+        a(href='https://www.github.com/enmod') EnMod
 </template>
 
 <script>

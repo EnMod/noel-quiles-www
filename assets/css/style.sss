@@ -50,9 +50,13 @@ section
 #frontends
 	& #frontends-car
 		background-color: black
+		overflow: hidden
+		position: relative
+		transition: transform .5s
 		& .car-item
 			height: 300px
-			lost-utility: clearfix
+			float: left
+			width: 100%
 			background-color: green
 			& .info
 				@mixin link underline

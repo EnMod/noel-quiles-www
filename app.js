@@ -35,6 +35,7 @@ module.exports = {
 			]
 		}
 	},
+	vendor: 'assets/vendor/**',
 	babel: { presets: [es2015, stage2] },
 	ignore: ['**/layout.jade', '**/_*', '**/.*']
 }

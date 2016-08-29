@@ -1,12 +1,11 @@
 <template lang="pug">
 section#stories
     h2 stories
-    :markdown
     p
         |If there's one thing I pride myself on, it's how to tell a story.  I always enjoy giving life to a world through characters, plot, insane thematic elements, anything I can illustrate through words.
     p
         |You'll be able to find my stories on my blog which, like this section itself, is
-        strong under construction.  
+        strong under construction.
         |Once it's completed you can read my stories there.
 </template>
 

@@ -3,7 +3,7 @@ html.no-js(lang='en')
 	head
 		meta(charset='utf-8')
 		title Noel Quiles (.com)
-		meta(content='Noel Quiles: Developer of frontends, games, stories, and fresh beats.' name='description')
+		meta(content='Noel Quiles: I make frontends, games, stories, and fresh beats.' name='description')
 		meta(content='Noel Quiles' name='author')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		script(src="js/owl.carousel.min.js")
@@ -15,11 +15,11 @@ html.no-js(lang='en')
 	body
 		section#title-screen
 			h1 noel quiles
-			h3 Developer of . . .
+			h3 I make . . .
 
 		section#frontends
 			h2 frontends
-			p UI/UX for websites, graphics, flyers...if a user's going to look at it I make it. Here's a few I've done:
+			p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've done:
 
 			#frontends-car
 				.car-item
@@ -29,10 +29,7 @@ html.no-js(lang='en')
 
 						p Personal website and logo for Melissa De Leon, a Greater New York area independent filmmaker with experience in producing.  The site features galleries of her film and photography work, as well as her bio and professional contact info.  Give her a shout!
 
-						p
-							|You can view Melissa's site
-							a(href='http://melissadeleon.me') here
-							|.
+						p(md) You can view Melissa's site [here](http://melissadeleon.me).
 
 					.img
 						img.lazyOwl(data-src="img/melissa.jpg" data-caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
@@ -43,10 +40,8 @@ html.no-js(lang='en')
 						h3 Mercer County Community College
 
 						p Currently a work in progress.  With MercerOnline providing content and support, I'm putting together a site for our faculty which will provide teaching resources, LMS resources, and training information.
-						p
-							|Check it out
-							a(href='https://teach.mccc.edu') here
-							|.
+
+						p(md) Check it out [here](https://teach.mccc.edu).
 
 					.img
 						img.lazyOwl(data-src="img/mteach.jpg" data-caption='MCCC Teach Page' alt="MCCC Teach Page")
@@ -58,10 +53,7 @@ html.no-js(lang='en')
 
 						p Information page for the MCCC Summer Session of 2015.  Designed to reduce scrolling and provide relevant information for students taking summer courses online.
 
-						p
-							|You can check out the page
-							a(href='http://www.mccc.edu/~virtcoll/summerinfo') here
-							|.
+						p(md) You can check out the page [here](http://www.mccc.edu/~virtcoll/summerinfo') here.
 
 					.img
 						img.lazyOwl(data-src="img/summerinfo.jpg" data-caption="MCCC Summer Session 2015 Information Page" alt="MCCC Summer Session 2015 Information Page")
@@ -71,14 +63,9 @@ html.no-js(lang='en')
 						h2 Information Site/Blog
 						h3 A Bird Without Wings
 
-						p Site created for the independent documentary *A Bird Without Wings*, currently in production.  First venture into using Anchor CMS, styled with heavy modification of the default Anchor theme.
+						p(md) Site created for the independent documentary *A Bird Without Wings*, currently in production.  First venture into using Anchor CMS, styled with heavy modification of the default Anchor theme.
 
-						p
-							|Click
-							a(href='http://www.abirdwithoutwings.com') here
-							|to go to the site. If you like, go to the
-							a(href='http://www.abirdwithoutwings.com/news') news section
-							|to check out the blog.
+						p(md) Click [here](http://www.abirdwithoutwings.com) to go to the site. If you like, go to the [news section](http://www.abirdwithoutwings.com/news) to check out the blog.
 
 					.img
 						img.lazyOwl(data-src="img/abwow.jpg" data-caption="A Bird Without Wings Information Site/Blog" alt="A Bird Without Wings Information Site/Blog")
@@ -90,10 +77,7 @@ html.no-js(lang='en')
 
 						p Site created for the South Jersey Heart Group of NJ's Our Lady of Lourdes hospital. This is my second time using Squarespace for design and layout, as well as updating site contents. Currently, SJHG has responsibility for handling updates and minor design; the current color scheme is their creation.
 
-						p
-							|Click
-							a(href='http://www.sjhg.org') here
-							|to check out the site.
+						p(md) Click [here](http://www.sjhg.org) to check out the site.
 
 					.img
 						img.lazyOwl(data-src="img/sjhg.jpg" data-caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
@@ -125,32 +109,22 @@ html.no-js(lang='en')
 
 			p I have done quite a bit of game design during and since my college days (ca. 2013).  I've run the design gamut, from level progression and layout, to asset creation, to music, to 3D modeling, to writing...the list goes on.  Programming, however...let's just say that my TCNJ capstone project involved countless conditionals and a mess of spaghetti code.
 
-			p
-				|You can find my senior games course project
-				a(href='https://github.com/EnMod/Hawk-Z') on GitHub
-				|, where I've run the aforementioned gamut. There, you can download the master and try it out.  You'll also be able to find my list of credits, as well as that of the team, in the readme.
+			p(md) You can find my senior games course project [on GitHub](https://github.com/EnMod/Hawk-Z), where I've run the aforementioned gamut. There, you can download the master and try it out.  You'll also be able to find my list of credits, as well as that of the team, in the readme.
 
-			p
-				|I also did a case study of sorts for my capstone project,
-				a href='https://github.com/EnMod/Memory-Lane') also on GitHub
-				|. Mind, this one uses motion tracking tech that has since become vaporware, more details in the readme. Once I get my hands on an HTC Vive I'll see what I can do to bring it up to speed!
+			p(md) I also did a case study of sorts for my capstone project, [also on Github]https://github.com/EnMod/Memory-Lane'). Mind, this one uses motion tracking tech that has since become vaporware, more details in the readme. Once I get my hands on an HTC Vive I'll see what I can do to bring it up to speed!
 
-			p Currently, I'm working on an autobiographical RPG heavily inspired by Makai Toushi SaGa and Star Ocean, in very early development.  More on that further in 2016!
+			p Currently, I'm working on a narrative-driven action-RPG in the style of Diablo, Torchlight, and the like, in the last stages of pre-production planning.  Also in the works is an autobiographical RPG heavily inspired by Makai Toushi SaGa and Star Ocean, in very early development.  More on those further in 2016!
 
 		section#stories
 			h2 stories
-			:markdown
-				If there's one thing I pride myself on, it's how to tell a story.  I always enjoy giving life to a world through characters, plot, insane thematic elements, anything I can illustrate through words.
+			p If there's one thing I pride myself on, it's how to tell a story. I always enjoy giving life to a world through characters, plot, insane thematic elements, anything I can illustrate through words.
 
-				You'll be able to find my stories on my blog which, like this section itself, is **under construction.**  Once it's completed you can read my stories there.
+			p(md) You'll be able to find my stories on my blog which, like this section itself, is **under construction.**  Once it's completed you can read my stories there.
 
 		section#fresh-beats
 			h2 fresh beats
 
-			p
-				|Ok, so maybe these beats aren't as fresh as advertised, but there's more where this came from on
-				a(href='https://soundcloud.com/enmod') my SoundCloud
-				|.
+			p(md) Ok, so maybe these beats aren't as fresh as advertised, but there's more where this came from on [my SoundCloud](https://soundcloud.com/enmod).
 			.soundcloud-box
 
 		section#contact
@@ -160,7 +134,7 @@ html.no-js(lang='en')
 
 			.item
 				h3 Gmail
-				a(href='mailto:noelquilesgraphics@gmail.com') noelquilesgraphics@gmail.com
+				a(href='mailto:contact@noelquiles.com') contact@noelquiles.com
 
 			.item
 				h3 Twitter
@@ -170,9 +144,6 @@ html.no-js(lang='en')
 				h3 GitHub
 				a(href='https://www.github.com/enmod') EnMod
 
-		footer
-			|Noel Quiles's personal site
-			a(href='http://github.com/enmod/noelquiles.com') v3.0.
-			|© 2016 Noel Quiles
+		footer(md) Noel Quiles's personal/portfolio site [v3.0](http://github.com/enmod/noelquiles.com). © 2016 Noel Quiles
 
 		script(src='js/main.js')

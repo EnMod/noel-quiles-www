@@ -1,5 +1,5 @@
 const animateCss = require('animate.css-js')
-const $ = require('jquery')
+const tnt = require('tnt-carousel')
 
 const nameTime = 1500
 const animationStagger = 300
@@ -7,7 +7,10 @@ const titleLine1 = document.querySelector('#title-screen > *')
 const titleLine2 = document.querySelector('#title-screen > h3')
 
 // call owlCarousel on the frontends gallery
-$('#frontends-car').owlCarousel();
+new tnt(document.getElementById('frontendscar'), {
+	autoplay: true,
+	autoplayInterval: 5000
+})
 
 // Animate the words in #title-screen individually
 animateCss.animate(titleLine1, {

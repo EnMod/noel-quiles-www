@@ -1,6 +1,5 @@
-const mixins = require('postcss-mixins')
-const simpleVars = require('postcss-simple-vars')
-const lost = require('lost')
+// const mixins = require('postcss-mixins')
+// const lost = require('lost')
 const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('babel-preset-latest')
@@ -19,10 +18,9 @@ module.exports = {
 		})
 	},
 	postcss: (ctx) => {
-		return {
-			cssStandards({webpack: ctx}),
-			plugins: [mixins(), lost()]
-		}
+		css = cssStandards({webpack: ctx})
+		css.plugins.push(require('lost')(),require('postcss-mixins')())
+		return css
 	},
 	babel: { presets: [jsStandards] }
 }

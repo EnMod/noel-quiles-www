@@ -17,11 +17,11 @@
     "jquery-migrate": "^1.4.1",
     "letterify": "^1.0.0",
     "lost": "^7.1.0",
-    "owl.carousel": "^2.1.4",
     "postcss-mixins": "^4.0.2",
     "reshape-standard": "^0.2.0",
     "spike-css-standards": "^0.1.1",
     "spike-page-id": "^0.1.0",
+    "tnt-carousel": "^1.3.2",
     "webpack": "^1.13.0"
   },
   "devDependencies": {

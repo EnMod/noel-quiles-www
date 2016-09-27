@@ -6,9 +6,6 @@ html.no-js(lang='en')
 		meta(content='Noel Quiles: I make frontends, games, stories, and fresh beats.' name='description')
 		meta(content='Noel Quiles' name='author')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
-		script(src="js/owl.carousel.min.js")
-		link(rel="stylesheet", href="css/owl/owl.theme.default.min.css")
-		link(rel="stylesheet", href="css/owl/owl.carousel.min.css")
 		link(rel="stylesheet", href="css/animate.min.css")
 		link(rel="stylesheet", href="css/style.css")
 
@@ -21,7 +18,7 @@ html.no-js(lang='en')
 			h2 frontends
 			p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've done:
 
-			#frontends-car
+			#frontendscar
 				.car-item
 					.info
 						h2 Melissa's Website
@@ -32,7 +29,7 @@ html.no-js(lang='en')
 						p(md) You can view Melissa's site [here](http://melissadeleon.me).
 
 					.img
-						img.lazyOwl(data-src="img/melissa.jpg" data-caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
+						img(src="img/melissa.jpg" caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
 
 				.car-item
 					.info
@@ -44,7 +41,7 @@ html.no-js(lang='en')
 						p(md) Check it out [here](https://teach.mccc.edu).
 
 					.img
-						img.lazyOwl(data-src="img/mteach.jpg" data-caption='MCCC Teach Page' alt="MCCC Teach Page")
+						img(src="img/mteach.jpg" caption='MCCC Teach Page' alt="MCCC Teach Page")
 
 				.car-item
 					.info
@@ -56,7 +53,7 @@ html.no-js(lang='en')
 						p(md) You can check out the page [here](http://www.mccc.edu/~virtcoll/summerinfo') here.
 
 					.img
-						img.lazyOwl(data-src="img/summerinfo.jpg" data-caption="MCCC Summer Session 2015 Information Page" alt="MCCC Summer Session 2015 Information Page")
+						img(src="img/summerinfo.jpg" caption="MCCC Summer Session 2015 Information Page" alt="MCCC Summer Session 2015 Information Page")
 
 				.car-item
 					.info
@@ -68,7 +65,7 @@ html.no-js(lang='en')
 						p(md) Click [here](http://www.abirdwithoutwings.com) to go to the site. If you like, go to the [news section](http://www.abirdwithoutwings.com/news) to check out the blog.
 
 					.img
-						img.lazyOwl(data-src="img/abwow.jpg" data-caption="A Bird Without Wings Information Site/Blog" alt="A Bird Without Wings Information Site/Blog")
+						img(src="img/abwow.jpg" caption="A Bird Without Wings Information Site/Blog" alt="A Bird Without Wings Information Site/Blog")
 
 				.car-item
 					.info
@@ -80,7 +77,7 @@ html.no-js(lang='en')
 						p(md) Click [here](http://www.sjhg.org) to check out the site.
 
 					.img
-						img.lazyOwl(data-src="img/sjhg.jpg" data-caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
+						//- img(src="img/sjhg.jpg" caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
 
 				.car-item
 					.info
@@ -90,7 +87,7 @@ html.no-js(lang='en')
 						p Made this flyer to advertise an event for the Humanist Chaplaincy at Rutgers University, in which the (then) president of American Atheists would be giving a talk.  Not my idea to use the meme, but in retrospect its inclusion worked well considering the event featured the man who inspired it.
 
 					.img
-						img.lazyOwl(data-src="img/daveflyer.jpg" data-caption='David Silverman Talk Flyer' alt="David Silverman Talk Flyer")
+						img(src="img/daveflyer.jpg" caption='David Silverman Talk Flyer' alt="David Silverman Talk Flyer")
 
 				//- .car-item
 				//- 	img(src="img/", alt="Hand sketches")

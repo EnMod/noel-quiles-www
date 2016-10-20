@@ -1,6 +1,6 @@
 # Noel Quiles' Portfolio v3
 
-This will be the third version of my site, coming from the `master` branch's overhauled edition of my first foray into non-Dreamweaver webdev a while back. Goals for this new edition are: 
+This will be the third version of my site, the `master` branch is an overhaul of the first JAMstack site I made a while back. Goals for this new edition are: 
 
 - [ ] Integrating VueJS to more accurately pull off the original vision I had for the site, in a well-performing and maintainable manner (single file Vue components are my long-awaited holy grail)
 - [ ] Using a newly-designed logo for my background/other areas, that incorporates my tagline

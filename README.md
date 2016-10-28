@@ -1,6 +1,6 @@
-# My Portfolio
+# Colophon
 
-Made with Jade (now Pug), Stylus, LiveScript, and Roots for builds.  
+HTML written in Jade (now Pug), CSS in Stylus, JS in LiveScript, and uses Roots for builds.  
 
 Icons designed and created in Inkscape, as well as the header font, which can be found in this repo as `enmod.ttf`.
 

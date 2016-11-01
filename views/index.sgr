@@ -1,146 +1,122 @@
 doctype html
 html.no-js(lang='en')
-	head
-		meta(charset='utf-8')
-		title Noel Quiles (.com)
-		meta(content='Noel Quiles: I make frontends, games, stories, and fresh beats.' name='description')
-		meta(content='Noel Quiles' name='author')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-		link(rel="stylesheet", href="css/animate.min.css")
-		link(rel="stylesheet", href="css/style.css")
+  head
+    meta(charset='utf-8')
+    title Noel Quiles (.com)
+    meta(content='Noel Quiles: I make frontends, games, stories, and fresh beats.' name='description')
+    meta(content='Noel Quiles' name='author')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="css/animate.min.css")
+    link(rel="stylesheet", href="css/style.css")
 
-	body
-		section#title-screen
-			h1 noel quiles
-			h3 I make . . .
+  body
+    section#title-screen
+      h1 noel quiles
+      h3 I make . . .
 
-		section#frontends
-			h2 frontends
-			p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've done:
+    section#frontends
+      h2 frontends
+      p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've done:
 
-			#frontendscar
-				.car-item
-					.info
-						h2 Melissa's Website
-						h3 Independent Filmmaker
+      .frontendsGrid
+        .car-item
+          .img
+            img(src="img/melissa.jpg" caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
+          .info
+            h2 Melissa's Website
+            h3 Independent Filmmaker
 
-						p Personal website and logo for Melissa De Leon, a Greater New York area independent filmmaker with experience in producing.  The site features galleries of her film and photography work, as well as her bio and professional contact info.  Give her a shout!
+            p Personal website and logo for Melissa De Leon, a Greater New York area independent filmmaker with experience in producing.  The site features galleries of her film and photography work, as well as her bio and professional contact info.  Give her a shout!
 
-						p(md) You can view Melissa's site [here](http://melissadeleon.me).
+            p(md) You can view Melissa's site [here](http://melissadeleon.me).
 
-					.img
-						img(src="img/melissa.jpg" caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
+        .car-item
+          .img
+            img(src="img/mteach.jpg" caption='MCCC Teach Page' alt="MCCC Teach Page")
+          .info
+            h2 MCCC Teach Page
+            h3 Mercer County Community College
 
-				.car-item
-					.info
-						h2 MCCC Teach Page
-						h3 Mercer County Community College
+            p Currently a work in progress.  With MercerOnline providing content and support, I'm putting together a site for our faculty which will provide teaching resources, LMS resources, and training information.
 
-						p Currently a work in progress.  With MercerOnline providing content and support, I'm putting together a site for our faculty which will provide teaching resources, LMS resources, and training information.
+            p(md) Check it out [here](https://teach.mccc.edu).
 
-						p(md) Check it out [here](https://teach.mccc.edu).
+        .car-item
+          .img
+            img(src="img/abwow.jpg" caption="A Bird Without Wings Information Site/Blog" alt="A Bird Without Wings Information Site/Blog")
+          .info
+            h2 Information Site/Blog
+            h3 A Bird Without Wings
 
-					.img
-						img(src="img/mteach.jpg" caption='MCCC Teach Page' alt="MCCC Teach Page")
+            p(md) Site created for the independent documentary *A Bird Without Wings*, currently in production.  First venture into using Anchor CMS, styled with heavy modification of the default Anchor theme.
 
-				.car-item
-					.info
-						h2 Summer Session 2015 Info
-						h3 Mercer County Community College
+            p(md) Click [here](http://www.abirdwithoutwings.com) to go to the site. If you like, go to the [news section](http://www.abirdwithoutwings.com/news) to check out the blog.
 
-						p Information page for the MCCC Summer Session of 2015.  Designed to reduce scrolling and provide relevant information for students taking summer courses online.
 
-						p(md) You can check out the page [here](http://www.mccc.edu/~virtcoll/summerinfo') here.
+        .car-item
+          .info
+            h2 Squarespace Design/Layout
+            h3 South Jersey Heart Group
 
-					.img
-						img(src="img/summerinfo.jpg" caption="MCCC Summer Session 2015 Information Page" alt="MCCC Summer Session 2015 Information Page")
+            p Site created for the South Jersey Heart Group of NJ's Our Lady of Lourdes hospital. This is my second time using Squarespace for design and layout, as well as updating site contents. Currently, SJHG has responsibility for handling updates and minor design; the current color scheme is their creation.
 
-				.car-item
-					.info
-						h2 Information Site/Blog
-						h3 A Bird Without Wings
+            p(md) Click [here](http://www.sjhg.org) to check out the site.
 
-						p(md) Site created for the independent documentary *A Bird Without Wings*, currently in production.  First venture into using Anchor CMS, styled with heavy modification of the default Anchor theme.
+          .img
+            //- img(src="img/sjhg.jpg" caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
 
-						p(md) Click [here](http://www.abirdwithoutwings.com) to go to the site. If you like, go to the [news section](http://www.abirdwithoutwings.com/news) to check out the blog.
+        //- .car-item
+        //-   img(src="img/", alt="Hand sketches")
+        //- .car-item
+        //-   img(src="img/", alt="Eye sketches")
+        //- .car-item
+        //-   img(src="img/", alt="find")
+        //- .car-item
+        //-   img(src="img/", alt="some")
+        //- .car-item
+        //-   img(src="img/", alt="more")
+        //- .car-item
+        //-   img(src="img/", alt="examples")
+    section#games
+      h2 games
 
-					.img
-						img(src="img/abwow.jpg" caption="A Bird Without Wings Information Site/Blog" alt="A Bird Without Wings Information Site/Blog")
+      p I have done quite a bit of game design during and since my college days (ca. 2013).  I've run the design gamut, from level progression and layout, to asset creation, to music, to 3D modeling, to writing...the list goes on.  Programming, however...let's just say that my TCNJ capstone project involved countless conditionals and a mess of spaghetti code.
 
-				.car-item
-					.info
-						h2 Squarespace Design/Layout
-						h3 South Jersey Heart Group
+      p(md) You can find my senior games course project [on GitHub](https://github.com/EnMod/Hawk-Z), where I've run the aforementioned gamut. There, you can download the master and try it out.  You'll also be able to find my list of credits, as well as that of the team, in the readme.
 
-						p Site created for the South Jersey Heart Group of NJ's Our Lady of Lourdes hospital. This is my second time using Squarespace for design and layout, as well as updating site contents. Currently, SJHG has responsibility for handling updates and minor design; the current color scheme is their creation.
+      p(md) I also did a case study of sorts for my capstone project, [also on Github](https://github.com/EnMod/Memory-Lane'). Mind, this one uses motion tracking tech that has since become vaporware, more details in the readme. Once I get my hands on an HTC Vive I'll see what I can do to bring it up to speed!
 
-						p(md) Click [here](http://www.sjhg.org) to check out the site.
+      p Currently, I'm working on a narrative-driven action-RPG in the style of Diablo, Torchlight, and the like, in the last stages of pre-production planning.  Also in the works is an autobiographical RPG heavily inspired by Makai Toushi SaGa and Star Ocean, in very early development.  More on those further in 2016!
 
-					.img
-						//- img(src="img/sjhg.jpg" caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
+    section#stories
+      h2 stories
+      p If there's one thing I pride myself on, it's how to tell a story. I always enjoy giving life to a world through characters, plot, insane thematic elements, anything I can illustrate through words.
 
-				.car-item
-					.info
-						h2 David Silverman Talk Flyer
-						h3 Humanist Chaplaincy at Rutgers University
+      p(md) You'll be able to find my stories on my blog which, like this section itself, is **under construction.**  Once it's completed you can read my stories there.
 
-						p Made this flyer to advertise an event for the Humanist Chaplaincy at Rutgers University, in which the (then) president of American Atheists would be giving a talk.  Not my idea to use the meme, but in retrospect its inclusion worked well considering the event featured the man who inspired it.
+    section#fresh-beats
+      h2 fresh beats
 
-					.img
-						img(src="img/daveflyer.jpg" caption='David Silverman Talk Flyer' alt="David Silverman Talk Flyer")
+      p(md) Ok, so maybe these beats aren't as fresh as advertised, but there's more where this came from on [my SoundCloud](https://soundcloud.com/enmod).
+      iframe.soundcloud-box(scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/12296997%3Fsecret_token%3Ds-FWGol&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false")
 
-				//- .car-item
-				//- 	img(src="img/", alt="Hand sketches")
-				//- .car-item
-				//- 	img(src="img/", alt="Eye sketches")
-				//- .car-item
-				//- 	img(src="img/", alt="find")
-				//- .car-item
-				//- 	img(src="img/", alt="some")
-				//- .car-item
-				//- 	img(src="img/", alt="more")
-				//- .car-item
-				//- 	img(src="img/", alt="examples")
-		section#games
-			h2 games
+    section#contact
+      h2 contact
 
-			p I have done quite a bit of game design during and since my college days (ca. 2013).  I've run the design gamut, from level progression and layout, to asset creation, to music, to 3D modeling, to writing...the list goes on.  Programming, however...let's just say that my TCNJ capstone project involved countless conditionals and a mess of spaghetti code.
+      p Let's keep in touch!  I'm all over the web, but here's some places I stop in at more than the rest:
 
-			p(md) You can find my senior games course project [on GitHub](https://github.com/EnMod/Hawk-Z), where I've run the aforementioned gamut. There, you can download the master and try it out.  You'll also be able to find my list of credits, as well as that of the team, in the readme.
+      .item
+        h3 Email
+        a(href='mailto:contact@noelquiles.com') contact@noelquiles.com
 
-			p(md) I also did a case study of sorts for my capstone project, [also on Github]https://github.com/EnMod/Memory-Lane'). Mind, this one uses motion tracking tech that has since become vaporware, more details in the readme. Once I get my hands on an HTC Vive I'll see what I can do to bring it up to speed!
+      .item
+        h3 Twitter
+        a(href='https://twitter.com/NoelQuiles') @NoelQuiles
 
-			p Currently, I'm working on a narrative-driven action-RPG in the style of Diablo, Torchlight, and the like, in the last stages of pre-production planning.  Also in the works is an autobiographical RPG heavily inspired by Makai Toushi SaGa and Star Ocean, in very early development.  More on those further in 2016!
+      .item
+        h3 GitHub
+        a(href='https://www.github.com/enmod') EnMod
 
-		section#stories
-			h2 stories
-			p If there's one thing I pride myself on, it's how to tell a story. I always enjoy giving life to a world through characters, plot, insane thematic elements, anything I can illustrate through words.
+    footer(md) Noel Quiles's personal/portfolio site [v3.0](http://github.com/enmod/noelquiles.com). © 2016 Noel Quiles
 
-			p(md) You'll be able to find my stories on my blog which, like this section itself, is **under construction.**  Once it's completed you can read my stories there.
-
-		section#fresh-beats
-			h2 fresh beats
-
-			p(md) Ok, so maybe these beats aren't as fresh as advertised, but there's more where this came from on [my SoundCloud](https://soundcloud.com/enmod).
-			.soundcloud-box
-
-		section#contact
-			h2 contact
-
-			p Let's keep in touch!  I'm all over the web, but here's some places I stop in at more than the rest:
-
-			.item
-				h3 Gmail
-				a(href='mailto:contact@noelquiles.com') contact@noelquiles.com
-
-			.item
-				h3 Twitter
-				a(href='https://twitter.com/NoelQuiles') @NoelQuiles
-
-			.item
-				h3 GitHub
-				a(href='https://www.github.com/enmod') EnMod
-
-		footer(md) Noel Quiles's personal/portfolio site [v3.0](http://github.com/enmod/noelquiles.com). © 2016 Noel Quiles
-
-		script(src='js/main.js')
+    script(src='js/main.js')

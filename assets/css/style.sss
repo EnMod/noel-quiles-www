@@ -1,7 +1,7 @@
 /*@font-face
-	font-family: 'enmod'
-	font-style: normal
-	src: url(fonts/enmod.ttf)*/
+  font-family: 'enmod'
+  font-style: normal
+  src: url(fonts/enmod.ttf)*/
 
 /* latin-ext */
 
@@ -10,78 +10,47 @@
 /*<====>*/
 
 @define-mixin link $linkStyle:none, $linkBase:black
-	a:link,	a:visited, a:active
-		color: $linkBase
-		text-decoration: $linkStyle
+  a:link,  a:visited, a:active
+    color: $linkBase
+    text-decoration: $linkStyle
 
 @define-mixin linkHover $linkStyle:none, $linkHover:gray
-	a:hover
-		color: $linkHover
-		text-decoration: $linkStyle
+  a:hover
+    color: $linkHover
+    text-decoration: $linkStyle
 
 /*<==-==>*/
 /*Globals*/
 /*<==-==>*/
 
 *, *::after, *::before
-	box-sizing: border-box
-
-body
-	font-family: sans-serif
+  box-sizing: border-box
 
 h1
-	font-family: serif
+  font-family: serif
 
-h2, h3
-	font-family: sans-serif
+body, h2, h3
+  font-family: sans-serif
 
 section
-	height: 100vh
-	padding: 7%
-	max-width: 50em
-	margin: 0 auto
+  /*height: 100vh*/
+  max-width: 50em
+  margin: 0 auto
+
+.frontendsGrid img
+  max-width: 200px
+
+.car-item
+  width: 200px
+
 
 /*<===>*/
 /*Pages*/
 /*<===>*/
 
-#frontends
-	& #frontendscar
-		background-color: black
-		overflow: hidden
-		position: relative
-		transition: transform .5s
-		& .car-item
-			float: left
-			width: 100%
-			height: 500px
-			background-color: green
-			lost-utility: clearfix
-			& .info
-				lost-column: 1/2
-			& .img
-				lost-column: 1/2
-			& img
-				width: 100%
-		& .carousel-prev-button,
-		& .carousel-next-button
-			position: absolute
-			top: 50%
-			width: 30px
-			height: 30px
-			margin-top: -15px
-		& .carousel-prev-button
-			left:0
-		& .carousel-next-button
-			right:0
-.item
-	text-align: center
-	lost-row: 1/6
-
 .soundcloud-box
-	width: 100%
-	height: 400px
-	background-color: gray
+  width: 100%
+  background-color: gray
 
-@mixin link none
-@mixin linkHover none
+@mixin link underline
+@mixin linkHover underline

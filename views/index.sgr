@@ -55,6 +55,8 @@ html.no-js(lang='en')
             p(md) Click [here](http://www.abirdwithoutwings.com) to go to the site. If you like, go to the [news section](http://www.abirdwithoutwings.com/news) to check out the blog.
 
         .car-item
+          .img
+            img(src="http://placehold.it/400x300" caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
           .info
             h2 Squarespace Design/Layout
             h3 South Jersey Heart Group
@@ -63,8 +65,6 @@ html.no-js(lang='en')
 
             p(md) Click [here](http://www.sjhg.org) to check out the site.
 
-          .img
-            img(src="img/sjhg.jpg" caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
 
         //- .car-item
         //-   img(src="img/", alt="Hand sketches")
@@ -109,7 +109,7 @@ html.no-js(lang='en')
       .content
         h2 fresh beats
 
-        p(md) More of an expression...sorry to disappoint those thinking I'm a producer. I mean hey, if you like what you hear there's more where this came from on [my SoundCloud](https://soundcloud.com/enmod).
+        p(md) More of an expression...sorry to disappoint those thinking I'm a producer (for those who have, I'm flattered). I mean hey, if you like what you hear there's more where this came from on [my SoundCloud](https://soundcloud.com/enmod).
         iframe.soundcloud-box(scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/12296997%3Fsecret_token%3Ds-FWGol&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false")
     section.section#contact
       .content
@@ -157,15 +157,15 @@ html.no-js(lang='en')
             p.title Gitlab
             p.subtitle: a(href='https://gitlab.com/enmod') @enmod
 
-        //- Github
-        .box
-          .media
-            .media-left
-              figure.image.is-64x64
-                img(src='http://placehold.it/64x64' alt='Gitlab Avatar')
-            .media-content
-              p.title GitHub
-              p.subtitle: a(href='https://www.github.com/EnMod') EnMod
+      //- Github
+      .box
+        .media
+          .media-left
+            figure.image.is-64x64
+              img(src='http://placehold.it/64x64' alt='Gitlab Avatar')
+          .media-content
+            p.title GitHub
+            p.subtitle: a(href='https://www.github.com/EnMod') EnMod
 
 
 

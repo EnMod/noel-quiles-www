@@ -5,19 +5,12 @@
 
 /* latin-ext */
 
-/*<====>*/
-/*Mixins*/
-/*<====>*/
-
-@define-mixin link $linkStyle:none, $linkBase:black
-  a:link,  a:visited, a:active
-    color: $linkBase
-    text-decoration: $linkStyle
-
-@define-mixin linkHover $linkStyle:none, $linkHover:gray
-  a:hover
-    color: $linkHover
-    text-decoration: $linkStyle
+a:link,  a:visited, a:active
+  color: black
+  text-decoration: none
+a:hover
+  color: gray
+  text-decoration: none
 
 /*<==-==>*/
 /*Globals*/
@@ -32,25 +25,19 @@ h1
 body, h2, h3
   font-family: sans-serif
 
-section
-  /*height: 100vh*/
-  max-width: 50em
-  margin: 0 auto
-
 .frontendsGrid img
-  max-width: 200px
+  max-width: 400px
 
 .car-item
-  width: 200px
-
-
-/*<===>*/
-/*Pages*/
-/*<===>*/
+  width: 400px
 
 .soundcloud-box
   width: 100%
   background-color: gray
 
-@mixin link underline
-@mixin linkHover underline
+// Bulma changes
+// =============
+.card
+  width: 400px
+.box
+  border-radius: 0px

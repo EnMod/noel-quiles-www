@@ -9,7 +9,7 @@ const masonryGrid = document.querySelector('.frontendsGrid')
 
 const msnry = new Masonry(masonryGrid, {
   itemSelector: '.car-item',
-  columnWidth: 200
+  columnWidth: 400
 })
 // Animate the words in #title-screen individually
 animateCss.animate(titleLine1, {

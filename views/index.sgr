@@ -3,22 +3,39 @@ html.no-js(lang='en')
   head
     meta(charset='utf-8')
     title Noel Quiles (.com)
-    meta(content='Noel Quiles: I make frontends, games, stories, and fresh beats.' name='description')
+    meta(content='I make frontends, games, stories, and fresh beats.' name='description')
     meta(content='Noel Quiles' name='author')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css')
+    meta(name="application-name" content="&nbsp;")
+    meta(name="msapplication-TileColor" content="#FFFFFF")
+    meta(name="msapplication-TileImage" content="mstile-144x144.png")
+    meta(name="msapplication-square70x70logo" content="mstile-70x70.png")
+    meta(name="msapplication-square150x150logo" content="mstile-150x150.png")
+    meta(name="msapplication-wide310x150logo" content="mstile-310x150.png")
+    meta(name="msapplication-square310x310logo" content="mstile-310x310.png")
+    link(rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png")
+    link(rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png")
+    link(rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png")
+    link(rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png")
+    link(rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png")
+    link(rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png")
+    link(rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png")
+    link(rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196")
+    link(rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96")
+    link(rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32")
+    link(rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16")
+    link(rel="icon" type="image/png" href="favicon-128.png" sizes="128x128")
     link(rel="stylesheet", href="css/animate.min.css")
     link(rel="stylesheet", href="css/style.css")
 
   body
-    section.section#title-screen
-      .content
-        h1 noel quiles
-        h3 I make . . .
-    section.section#frontends
-      .content
-        h2 frontends
-        p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've done:
+    section#title-screen
+      h1 noel quiles
+      h3 I make . . .
+    section#frontends
+      h1 frontends
+      p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've done:
 
       .frontendsGrid
         .car-item
@@ -78,94 +95,80 @@ html.no-js(lang='en')
         //-   img(src="img/", alt="more")
         //- .car-item
         //-   img(src="img/", alt="examples")
-    section.section#games
-      .content
-        h2 games
+    section#games
+      h1 games
 
-        p I have done quite a bit of game design during and since my college days (ca. 2013).  I've run the design gamut, from level progression and layout, to asset creation, to music, to 3D modeling, to writing, the list goes on.  Programming, however...let's just say that most projects involve countless conditionals and a mess of spaghetti code.
+      p I have done quite a bit of game design during and since my college days (ca. 2013).  I've run the design gamut, from level progression and layout, to asset creation, to music, to 3D modeling, to writing, the list goes on.  Programming, however...let's just say that most projects involve countless conditionals and a mess of spaghetti code.
 
-        h3 Hawk-Z
+      h3 Hawk-Z
 
-        p(md) You can find my senior games course project [on GitHub](https://github.com/EnMod/Hawk-Z), where I've run the aforementioned gamut. From there you can download the master and try it out on Windows. You'll also be able to find the team's list of credits in the repo's readme.
+      p(md) You can find my senior games course project [on GitHub](https://github.com/EnMod/Hawk-Z), where I've run the aforementioned gamut. From there you can download the master and try it out on Windows. You'll also be able to find the team's list of credits in the repo's readme.
 
-        h3 Memory Lane
+      h3 Memory Lane
 
-        p(md) I also did a case study of sorts for my TCNJ capstone project, [also on Github](https://github.com/EnMod/Memory-Lane'), regarding the effects of advanced human-computer interaction on an otherwise passive video game experience. Mind, this project uses motion tracking tech that has since become vaporware, more details in the readme. Once I get my hands on an HTC Vive I'll see what I can do to bring it up to speed!
+      p(md) I also did a case study of sorts for my TCNJ capstone project, [also on Github](https://github.com/EnMod/Memory-Lane'), regarding the effects of advanced human-computer interaction on an otherwise passive video game experience. Mind, this project uses motion tracking tech that has since become vaporware, more details in the readme. Once I get my hands on an HTC Vive I'll see what I can do to bring it up to speed!
 
-        h3 GBJam 2016 Entry: Neci's Nightmare
+      h3 GBJam 2016 Entry: Neci's Nightmare
 
-        p(md)
+      p(md)
 
-        h3 Upcoming Projects
+      h3 Upcoming Projects
 
-        p Currently I'm working on a narrative-driven ARPG in the style of Diablo and Torchlight, which is in the last stages of pre-production planning. Also in the works is an autobiographical adventure heavily inspired by elements of Makai Toushi SaGa and the Star Ocean series. More on those further in 2017!
-    section.section#stories
-      .content
-        h2 stories
-        p If there's one thing I pride myself on, it's how to tell a story. I always enjoy giving life to a world through characters, plot, insane thematic elements, anything I can illustrate through words, or whatever else becomes my medium.
+      p Currently I'm working on a narrative-driven ARPG in the style of Diablo and Torchlight, which is in the last stages of pre-production planning. Also in the works is an autobiographical adventure heavily inspired by elements of Makai Toushi SaGa and the Star Ocean series. More on those further in 2017!
+    section#stories
+      h1 stories
+      p If there's one thing I pride myself on, it's how to tell a story. I always enjoy giving life to a world through visual design, characters, plot, insane thematic elements, anything I can illustrate through whatever becomes my medium.
 
-        p(md) All of my prose, poetry, and musings are available on [my blog](https://blog.noelquiles.com)!
-    section.section#fresh-beats
-      .content
-        h2 fresh beats
+      p(md) For all of my written word including prose, poetry, you can peruse [my blog](https://blog.noelquiles.com)! Here's a selection:
+      
+      .prose
+      .poetry
+      .musing
+      .something-else
+    section#fresh-beats
+      h1 fresh beats
 
-        p(md) More of an expression...sorry to disappoint those thinking I'm a producer (for those who have, I'm flattered). I mean hey, if you like what you hear there's more where this came from on [my SoundCloud](https://soundcloud.com/enmod).
-        iframe.soundcloud-box(scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/12296997%3Fsecret_token%3Ds-FWGol&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false")
-    section.section#contact
-      .content
-        h2 contact
+      p(md) More of an expression...sorry to disappoint those thinking I'm a producer (for those who have, I'm flattered). I mean hey, if you like what you hear there's more where this came from on [my SoundCloud](https://soundcloud.com/enmod).
+      iframe.soundcloud-box(scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/12296997%3Fsecret_token%3Ds-FWGol&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false")
+    section#contact
+      h1 contact
 
-        p Let's keep in touch!  I'm all over the web, but here are some places I frequent more than others:
+      p Let's keep in touch!  I'm all over the web, but here are some places I frequent more than others:
 
-        //- E-mail
-        .box
-          .media
-            .media-left
-              figure.image.is-64x64
-                img(src='http://placehold.it/64x64' alt='E-mail Icon')
-            .media-content
-              p.title E-mail
-              p.subtitle: a(href='mailto:contact@noelquiles.com') contact@noelquiles.com
+      //- E-mail
+      .item
+        figure
+          img(src='http://placehold.it/64x64' alt='E-mail Icon')
+        p.title E-mail
+        p.subtitle: a(href='mailto:contact@noelquiles.com') contact@noelquiles.com
 
-        //- Reddit
-        .box
-          .media
-            .media-left
-              figure.image.is-64x64
-                img(src='http://placehold.it/64x64' alt='Reddit Icon')
-            .media-content
-              p.title Reddit
-              p.subtitle: a(href='https://reddit.com/u/EnlightenedModifier') EnlightenedModifier
+      //- Reddit
+      .item
+        figure
+          img(src='http://placehold.it/64x64' alt='Reddit Icon')
+        p.title Reddit
+        p.subtitle: a(href='https://reddit.com/u/EnlightenedModifier') EnlightenedModifier
 
-        //- Twitter
-        .box
-          .media
-            .media-left
-              figure.image.is-64x64
-                img(src='http://placehold.it/64x64' alt='Email Icon')
-            .media-content
-              p.title Twitter
-              p.subtitle: a(href='https://twitter.com/NoelQuiles') @NoelQuiles
+      //- Twitter
+      .item
+        figure
+          img(src='http://placehold.it/64x64' alt='Email Icon')
+        p.title Twitter
+        p.subtitle: a(href='https://twitter.com/NoelQuiles') @NoelQuiles
 
-        //- Gitlab
-       .box
-        .media
-          .media-left
-            figure.image.is-64x64
-              img(src='http://placehold.it/64x64' alt='Gitlab Avatar')
-          .media-content
-            p.title Gitlab
-            p.subtitle: a(href='https://gitlab.com/enmod') @enmod
+      //- Gitlab
+      .item
+        figure
+          img(src='http://placehold.it/64x64' alt='Gitlab Avatar')
+        p.title Gitlab
+        p.subtitle: a(href='https://gitlab.com/enmod') @enmod
 
       //- Github
-      .box
-        .media
-          .media-left
-            figure.image.is-64x64
-              img(src='http://placehold.it/64x64' alt='Gitlab Avatar')
-          .media-content
-            p.title GitHub
-            p.subtitle: a(href='https://www.github.com/EnMod') EnMod
+      .item
+        figure
+          img(src='http://placehold.it/64x64' alt='Gitlab Avatar')
+        p.title GitHub
+        p.subtitle: a(href='https://www.github.com/EnMod') EnMod
 
 
 

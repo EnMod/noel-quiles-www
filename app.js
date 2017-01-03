@@ -17,7 +17,7 @@ module.exports = {
   },
   postcss: (ctx) => {
     const css = cssStandards({webpack: ctx})
-    css.plugins.push(require('lost')(), require('postcss-mixins')())
+    css.plugins.push(require('lost')(), require('postcss-mixins')(), require('postcss-breakpoints')())
     return css
   },
   babel: { presets: [jsStandards] }

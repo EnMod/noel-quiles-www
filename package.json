@@ -18,6 +18,7 @@
     "letterify": "^1.0.0",
     "lost": "^7.1.0",
     "masonry-layout": "^4.1.1",
+    "postcss-breakpoints": "^1.1.0",
     "postcss-mixins": "^4.0.2",
     "reshape-standard": "^0.4.0",
     "spike-css-standards": "^0.1.1",

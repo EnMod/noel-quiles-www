@@ -33,6 +33,12 @@ html.no-js(lang='en')
     #title-screen
       h1 noel quiles
       h3 I make . . .
+    #stage-select
+      #fbox
+      #gbox
+      #sbox
+      #bbox
+      #cbox
     #frontends
       h1 frontends
       p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've done:
@@ -115,7 +121,6 @@ html.no-js(lang='en')
       h3 Upcoming Projects
 
       p Currently I'm working on *The Origin*, a narrative-driven ARPG in the style of Diablo and Torchlight, which is in the last stages of pre-production planning. Also in the works is an autobiographical adventure heavily inspired by elements of Makai Toushi SaGa and the Star Ocean series. More on those further in 2017!
-
     #stories
       h1 stories
       p If there's one thing I pride myself on, it's how to tell a story. I always enjoy giving life to a world through visual design, characters, plot, insane thematic elements, anything I can illustrate through whatever becomes my medium.

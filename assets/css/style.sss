@@ -45,32 +45,42 @@ img
   flex-flow: row wrap
   margin: 0 auto
 
-
-#fbox, #gbox, #sbox, #bbox
+#stage-select .box
   width: 50%
   height: 50%
   background-size: contain
   background-repeat: no-repeat
 
-#cbox
+#c.box
   width: 100%
   height: 50%
-  background-position: center
 
-#fbox
+#f
   background-image: url('../img/frontends.png')
-#gbox
+#g
   background-image: url('../img/games.png')
-#sbox
+#s
   background-image: url('../img/stories.png')
-#bbox
+#b
   background-image: url('../img/freshbeats.png')
+
+#frontends
+  display: flex
+  flex-flow: row wrap
+  margin: 0 auto
+
+#frontends .box
+  width: 50%
+  height: 50%
+  background-size: contain
+  background-repeat: no-repeat
 
 @breakpoint-down sm
   #stage-select
     width: 350px
     height: 350px
+
 @breakpoint-up md
   #stage-select
-    height: 600px
     width: 600px
+    height: 600px

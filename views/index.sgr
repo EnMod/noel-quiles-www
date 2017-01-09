@@ -46,6 +46,7 @@ html.no-js(lang='en')
       #teach.box
       #abwow.box
       #sjhg.box
+      
       #melissasite
         .img
           img(src="img/melissa.jpg" caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
@@ -103,6 +104,7 @@ html.no-js(lang='en')
         //-   img(src="img/", alt="more")
         //- .car-item
         //-   img(src="img/", alt="examples")
+    
     #games
       h1 games
 
@@ -122,16 +124,16 @@ html.no-js(lang='en')
 
       h3 Upcoming Projects
 
-      p(md) Currently I'm working on *The Origin*, a narrative-driven ARPG in the style of Diablo and Torchlight, which is in the last stages of pre-production planning. Also in the works is an autobiographical adventure heavily inspired by elements of Makai Toushi SaGa and the Star Ocean series. More on those further in 2017!
+      p(md) Currently I'm working on *The Origin*, an ARPG in the style of Diablo and Torchlight, which is in the last stages of pre-production planning. Also in the works is an autobiographical adventure heavily inspired by elements of Makai Toushi SaGa and the Star Ocean series. More on those further in 2017!
     #stories
       h1 stories
-      p If there's one thing I pride myself on, it's how to tell a story. I always enjoy giving life to a world through visual design, characters, plot, insane thematic elements, anything I can illustrate through whatever becomes my medium.
+      p If there's one thing I pride myself on it's how to tell a story. I always enjoy giving life to a world through visual design, characters, plot, insane thematic elements, anything I can illustrate through whatever becomes my medium.
 
-      p(md) For all of my written word including prose, poetry, you can peruse [my blog](https://blog.noelquiles.com)! Here's a selection:
+      p(md) For all of my written word including prose, poetry, musings, and reviews, you can peruse [my blog](https://blog.noelquiles.com)! Here's a selection:
 
       .prose
       .poetry
-      .musing
+      .musings
       .something-else
     #fresh-beats
       h1 fresh beats

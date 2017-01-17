@@ -40,12 +40,12 @@ img
   width: 100%
   background-color: gray
 
-#stage-select
+.container
   display: flex
   flex-flow: row wrap
   margin: 0 auto
 
-#stage-select .box
+.container .box
   width: 50%
   height: 50%
   background-size: contain
@@ -64,23 +64,26 @@ img
 #b
   background-image: url('../img/freshbeats.png')
 
-#frontends
-  display: flex
-  flex-flow: row wrap
-  margin: 0 auto
+#melissa
+  background-image: url('../img/melissa.jpg')
+#teach
+  background-image: url('../img/mteach.jpg')
+#abwow
+  background-image: url('../img/abwow.jpg')
+#sjhg
+  background-image: url('https://placehold.it/400x300')
 
-#frontends .box
-  width: 50%
-  height: 50%
-  background-size: contain
-  background-repeat: no-repeat
+
+// ---------------
+// ~ Breakpoints ~
+// ---------------
 
 @breakpoint-down sm
-  #stage-select
+  .container
     width: 350px
     height: 350px
 
 @breakpoint-up md
-  #stage-select
+  .container
     width: 600px
     height: 600px

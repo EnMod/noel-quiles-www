@@ -33,20 +33,21 @@ html.no-js(lang='en')
     #title-screen
       h1 noel quiles
       h3 I make . . .
-    #stage-select
+    #stage-select.container
       #f.box
       #g.box
       #s.box
       #b.box
       #c.box
-    #frontends
+    #frontends.container
       h1 frontends
       p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've done:
+
       #melissa.box
       #teach.box
       #abwow.box
       #sjhg.box
-      
+
       #melissasite
         .img
           img(src="img/melissa.jpg" caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
@@ -104,11 +105,18 @@ html.no-js(lang='en')
         //-   img(src="img/", alt="more")
         //- .car-item
         //-   img(src="img/", alt="examples")
-    
-    #games
+
+    #games.container
       h1 games
 
       p I have done quite a bit of game design during and since my college days (ca. 2013).  I've run the design gamut, from level progression and layout, to asset creation, to music, to 3D modeling, to writing, the list goes on.  Programming, however...let's just say that most projects involve countless conditionals and a mess of spaghetti code.
+
+      p That said, more information below:
+
+      #hawk.box
+      #mem.box
+      #neci.box
+      #soon.box
 
       h3 Hawk-Z
 
@@ -139,7 +147,8 @@ html.no-js(lang='en')
       h1 fresh beats
 
       p(md) More of an expression...sorry to disappoint those thinking I'm a producer (for those who have, I'm flattered). I mean hey, if you like what you hear there's more where this came from on [my SoundCloud](https://soundcloud.com/enmod).
-      //- iframe.soundcloud-box(scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/12296997%3Fsecret_token%3Ds-FWGol&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false")
+
+      audio
     #contact
       h1 contact
 

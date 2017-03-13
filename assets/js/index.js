@@ -1,4 +1,5 @@
 const animateCss = require('animate.css-js')
+// const
 const nameTime = 1500
 const animationStagger = 300
 const titleLine1 = document.querySelector('#title-screen > *')

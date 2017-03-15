@@ -196,6 +196,6 @@ html.no-js(lang='en')
     br
     br
     br
-    footer(md) Version [3.0.0](https://gitlab.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/), [Flexr](http://flexrgrid.com/), blood, sweat, and tears.
+    footer(md) Version [3.0.1](https://gitlab.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/), [Flexr](http://flexrgrid.com/), blood, sweat, and tears.
 
     script(src='js/main.js')

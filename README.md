@@ -1,10 +1,8 @@
-# Noel Quiles' Portfolio v3
+# Noel Quiles' Site v3
 
-This will be the third version of my site, the `master` branch is an overhaul of the first JAMstack site I made a while back. Goals for this new edition are: 
+Made with [Spike](https://spike.cf) and all of its standard tooling. Also employs some [Flexr](http://flexrgrid.com) gridding. Here are the relevant parsers used by Spike's standard tooling, for the curious:
+- [SugarML](https://github.com/posthtml/sugarml)
+- [SugarSS](https://github.com/postcss/sugarss)
+- [Babel](https://babeljs.io/)
 
-- [ ] Integrating VueJS to more accurately pull off the original vision I had for the site, in a well-performing and maintainable manner (single file Vue components are my long-awaited holy grail)
-- [ ] Using a newly-designed logo for my background/other areas, that incorporates my tagline
-- [ ] Completely redesigning for mobile first, which in my initial shortsightedness was woefully neglected
-- [ ] Follow the tenets of motherfuckingwebsite.com, basically just focusing on being as painfully minimal as possible to get into that habit
-- [ ] In that vein, reduce reliance on Velocity or Blast or external libraries for effects, instead using CSS transitions/animations wherever possible (although Blast isn't really reproducible in CSS)
-- [ ] Retool the source to use Spike, as I'm very familiar with Roots and the webpack-only vue-loader is essential to developing with Vue's single-file components. Sure I could use roots-browserify with vueify, but that method is much too haphazard for my taste.
+Seriously check out Spike, it's grand :sparkles:

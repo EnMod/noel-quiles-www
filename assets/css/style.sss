@@ -1,13 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css?family=Lato')*/
 @import url('https://fonts.googleapis.com/css?family=Play')
 
-/*a:link,  a:visited, a:active
-  color: black
-  text-decoration: none
-a:hover
-  color: gray
-  text-decoration: none*/
-
 /*<==-==>*/
 /*Globals*/
 /*<==-==>*/
@@ -18,20 +11,38 @@ a:hover
 h1, h2, h3, h4, h5, h6
   line-height: 1.2
 
+h1
+  font-family: 'enmod'
+  text-align: center
+
+h2
+  margin-top: 0px
+  margin-bottom: 0px
+
 body
   line-height: 1.4
   margin: 0 auto
-  max-width: 700px
+  max-width: 800px
   font-size: 18px
   font-family: 'Play'
   padding: 0 10px
+  color: #333
+
+a, a:link, a:visited
+  color: #333
+a:hover
+  color: #aaa
+
+hr
+  height: 0.5px
+  border: 1px #aaa solid
+
+.row
+  max-width: 800px
 
 #title-screen
   font-size: 135%
   text-align: center
-
-h1
-  font-family: 'enmod'
 
 img
   max-width: 100%
@@ -40,27 +51,17 @@ img
   display: flex
   flex-flow: row wrap
   margin: 0 auto
-  & .box
+  & a
     width: 50%
     height: 50%
-    background-size: contain
-    background-repeat: no-repeat
+    /*background-size: contain
+    background-repeat: no-repeat*/
 
-.page
-  display: none
+.contact
+  text-align: center
 
-#c.box
-  width: 100%
-  height: 50%
-
-#f
-  background-image: url('../img/frontends.png')
-#g
-  background-image: url('../img/games.png')
-#s
-  background-image: url('../img/stories.png')
-#b
-  background-image: url('../img/freshbeats.png')
+footer
+  text-align: center
 
 // ---------------
 // ~ Breakpoints ~

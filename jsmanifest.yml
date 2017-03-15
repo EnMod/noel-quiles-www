@@ -1,8 +1,0 @@
-# manifest.yml
-- libs/jquery/*.js
-- bower_components/jquery-migrate/*.js
-- libs/velocity/velocity.js
-- libs/velocity/velocity.ui.js
-- libs/blast-text/*.js
-- bower_components/slick-carousel/slick/slick.js
-- libs/slick-lightbox/slick-lightbox.js

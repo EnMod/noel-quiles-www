@@ -1,8 +1,16 @@
-# Noel Quiles' Site v3
+# Noel Quiles&#39;s Portfolio
 
-Made with [Spike](https://spike.cf) and all of its standard tooling. Also employs some [Flexr](http://flexrgrid.com) gridding. Here are the relevant parsers used by Spike's standard tooling, for the curious:
-- [SugarML](https://github.com/posthtml/sugarml)
-- [SugarSS](https://github.com/postcss/sugarss)
-- [Babel](https://babeljs.io/)
+Noel Quiles&#39;s portfolio/personal site
 
-Seriously check out Spike, it's grand :sparkles:
+## Setup
+
+- make sure [node.js](http://nodejs.org) is at version >= `6`
+- `npm i spike -g`
+- clone this repo down and `cd` into the folder
+- run `npm install`
+- run `spike watch` or `spike compile`
+
+## Testing
+Tests are located in `test/**` and are powered by [ava](https://github.com/sindresorhus/ava)
+- `npm install` to ensure devDeps are installed
+- `npm test` to run test suite

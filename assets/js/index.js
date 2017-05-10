@@ -1,4 +1,4 @@
-const animateCss = require('animate.css-js')
+import animateCss from 'animate.css-js'
 const nameTime = 1500
 const animationStagger = 300
 const titleLine1 = document.querySelector('div#title-screen > h1')

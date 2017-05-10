@@ -1,44 +1,33 @@
 {
-  "name": "noelquiles.com",
-  "description": "it is a thing",
-  "version": "2.5.0",
-  "author": "Noel Quiles",
+  "name": "noel-quiles-s-portfolio",
+  "description": "Noel Quiles&#39;s portfolio/personal site",
+  "version": "0.0.1",
+  "author": "EnMod",
   "ava": {
-    "require": [
-      "babel-core/register"
-    ],
     "verbose": "true"
   },
-  "bugs": "https://github.com/EnMod/noelquiles.com/issues",
+  "bugs": "https://github.com/EnMod/noel-quiles-s-portfolio/issues",
   "dependencies": {
-    "animate.css-js": "^0.0.9",
-    "babel-preset-latest": "^6.14.0",
-    "jquery": "^2.2.4",
-    "jquery-migrate": "^1.4.1",
-    "letterify": "^1.0.0",
-    "lost": "^7.1.0",
-    "masonry-layout": "^4.1.1",
-    "mediaelement": "^3.2.4",
-    "postcss-breakpoints": "^1.1.0",
-    "postcss-mixins": "^4.0.2",
-    "reshape-standard": "^0.4.0",
-    "spike-css-standards": "^0.1.1",
-    "spike-page-id": "^0.1.0",
-    "webpack": "^1.13.0"
+    "animate.css-js": "0.0.9",
+    "reshape-standard": "^1.0.0",
+    "spike-css-standards": "^1.0.0",
+    "spike-js-standards": "^2.0.1",
+    "spike-page-id": "^1.0.0",
+    "webpack": "^2.3.3"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "rimraf": "^2.5.4",
-    "snazzy": "^5.0.0",
-    "spike-core": "^0.12.1",
-    "standard": "^8.0.0"
+    "ava": "^0.19.0",
+    "rimraf": "^2.6.0",
+    "snazzy": "^6.0.0",
+    "spike-core": "^1.0.0",
+    "standard": "^10.0.0"
   },
-  "homepage": "https://github.com/EnMod/noelquiles.com",
+  "homepage": "https://github.com/EnMod/noel-quiles-s-portfolio",
   "main": "app.js",
   "private": true,
-  "repository": "https://github.com/EnMod/noelquiles.com",
+  "repository": "https://github.com/EnMod/noel-quiles-s-portfolio",
   "scripts": {
-    "lint": "standard --verbose | snazzy",
+    "lint": "standard | snazzy",
     "precommit": "npm run lint -s",
     "pretest": "npm run lint -s",
     "test": "NODE_ENV=test ava"

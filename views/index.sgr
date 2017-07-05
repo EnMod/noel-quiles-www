@@ -26,7 +26,7 @@ html.no-js(lang='en')
     link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-32x32.png" sizes="32x32")
     link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-16x16.png" sizes="16x16")
     link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-128.png" sizes="128x128")
-    link(rel="stylesheet", href="https://cdn.jsdelivr.net/flexr/1.1.0/flexr.css")
+    link(rel="stylesheet", href="https://cdn.rawgit.com/dmbdesignpdx/flexr/3070d3e1/flexr.css")
     link(rel="stylesheet", href="css/animate.min.css")
     link(rel="stylesheet", href="css/style.css")
 

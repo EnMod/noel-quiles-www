@@ -52,6 +52,25 @@ html.no-js(lang='en')
       h1 frontends
       p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've done:
 
+
+      #mteach.row
+        .col-6
+          img(src="img/mteach.png" caption='MCCC Teach Page' alt="MCCC Teach Page")
+        .col-6
+          a(href='https://teach.mccc.edu')
+            h2 MCCC Teach Page
+          h3 Mercer County Community College
+          p With MercerOnline providing content and support, I've created a site for MCCC which provides teaching/LMS resources, and training information. The site is also the home of various conferences held at the college, including the EL12C conference and the Leaders' Symposium.
+
+      #coursedoc.row
+        .col-6
+          img(src="img/coursedoc.png" caption="Course Alignment Document Webapp" alt="Course Alignment Document Webapp")
+        .col-6
+          a(href='https://teach.mccc.edu/coursedoctool')
+            h2 Course Alignment Document Webapp
+          h3 Mercer County Community College
+          p(md) Webapp developed to assist MCCC faculty in creating Course Alignment Documents. Allows interactive input of repetitive elements and granular building of document sections. Frontend developed with vanilla JS, jQueryUI, and Semantic UI.  Backend developed with PHP, using TinyButStrong and its [OpenTBS plugin](http://www.tinybutstrong.com/opentbs.php?demo) to produce the document files.
+
       #geargirls.row
         .col-6
           img(src="img/gg.png" caption="Gear Girls logo" alt="Gear girls logo")
@@ -60,7 +79,16 @@ html.no-js(lang='en')
             h2 Key Graphic/Team Logo
           h3 <em>Gear Girls</em>
           p(md) Graphic created for the independent documentary *Gear Girls*, currently in production. Also in use by the subject of the doc, an all-girls, all-minorities robotics team.
-      br
+
+      //- #samandsaah.row
+      //-   .col-6
+      //-     img(src="img/samandsaah.jpg" caption="Sam and Saah site" alt="Sam and Saah site")
+      //-   .col-6
+      //-     h2
+      //-       a(href='https://samandsaah.com') Information Site
+      //-     h3(md) *Sam and Saah*
+      //-     p(md) Site created for the independent webseries *Sam and Saah*, currently in production.  Static site using Vex.js for informative modals, and elements of [Bulma](http://bulma.io) for grid layout and navigation.
+
       #melissadeleon.row
         .col-6
           img(src="img/melissa.jpg" caption="Melissa De Leon's Website" alt="Melissa De Leon's Website")
@@ -69,17 +97,7 @@ html.no-js(lang='en')
             h2 Portfolio Website
           h3 Melissa De Leon
           p Personal website and logo for Melissa De Leon, a Greater New York area independent filmmaker with experience in producing, writing, and being a production assistant. Give her a shout!
-      br
-      #mteach.row
-        .col-6
-          img(src="img/mteach.jpg" caption='MCCC Teach Page' alt="MCCC Teach Page")
-        .col-6
-          a(href='https://teach.mccc.edu')
-            h2 MCCC Teach Page
-          h3 Mercer County Community College
-          p With MercerOnline providing content and support, I've created a site for MCCC which provides teaching/LMS resources, and training information. The site is also the home of various conferences held at the college, including the EL12C conference and the Leaders' Symposium.
 
-      br
       #abirdwithoutwings.row
         .col-6
           img(src="img/abwow.jpg" caption="A Bird Without Wings Information Site/Blog" alt="A Bird Without Wings Information Site/Blog")
@@ -91,15 +109,7 @@ html.no-js(lang='en')
           h3 <em>A Bird Without Wings</em>
           p(md) Site created for the independent documentary *A Bird Without Wings*, currently in post-production.  First time using Anchor CMS (0.9.5), styled with heavy modification of the default theme.
 
-      br
-      #sjhgorg.row
-        .col-6
-          img(src="img/sjhg.png" caption="South Jersey Heart Group Site" alt="South Jersey Heart Group Site")
-        .col-6
-          a(href='http://www.sjhg.org')
-            h2 Squarespace Design/Layout
-          h3 South Jersey Heart Group
-          p Site created for the South Jersey Heart Group of New Jersey's Our Lady of Lourdes hospital. This is my second time using Squarespace for design and layout, as well as updating site contents. Currently, SJHG has responsibility for handling updates and minor design.
+
     hr
     #games
       h1 games
@@ -112,7 +122,7 @@ html.no-js(lang='en')
           a(href='https://enmod.itch.io/necis-nightmare')
             h2 GBJam 2016 Entry: Neci's Nightmare
           p(md) In a blaze of inspiration I was compelled to create something for 2016's GBJam, and I felt it had to be related to an upcoming project. Thus, *Neci's Nightmare* was born!  It's a short "How long can you last?" type of game featuring the protagonist from that project, in which she runs from beasts in her nightmares.  Windows only.
-      br
+
       #hawkz.row
         .col-6
           img(src='img/hawkz.jpg')
@@ -120,7 +130,7 @@ html.no-js(lang='en')
           a(href='https://github.com/EnMod/Hawk-Z')
             h2 Hawk-Z
           p(md) This was my senior games project at TCNJ. It's more or less a Starfox clone with a little narrative thrown in, and lasts until the boss is met and conversed with, not fought.  I wore so many hats on this one, but as most small teams do, we all wore about as many.  Windows only for now.
-      br
+
       #memorylane.row
         .col-6
           img(src='img/mem.png')
@@ -128,18 +138,20 @@ html.no-js(lang='en')
           a(href='https://github.com/EnMod/Memory-Lane')
             h2 Memory Lane
           p(md) I did a case study of sorts for my TCNJ capstone project, studying the effects of advanced human-computer interaction on an otherwise passive video game experience. Mind, this project uses motion tracking tech that has since become vaporware, more details in the readme. Once I get my hands on an HTC Vive I'll be bringing the idea up to speed!
-      br
+
       #upcomingprojects.row
         .col-6
           img(src='img/upcoming.png')
         .col-6
           h2 Upcoming Projects
           p(md) Currently I'm working on an ARPG in the style of Diablo and Torchlight, which is in the last stages of pre-production planning. Also in the works is an autobiographical adventure heavily inspired by elements of Makai Toushi SaGa and the Star Ocean series. More on those further in 2017!
+
     hr
     #stories
       h1 stories
       p If there's one thing I'd say I'm decent at, it's storytelling. I always enjoy giving life to a world through visual design, characters, plot, insane thematic elements, anything I can illustrate through whatever becomes my medium.
       p(md) Think I'm embellishing a bit? You be the judge over on [my blog](https://blog.noelquiles.com)!  There you can find all my prose, poetry, and other musings.
+    
     hr
     #fresh-beats
       h1 fresh beats

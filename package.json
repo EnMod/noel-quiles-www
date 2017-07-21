@@ -10,6 +10,7 @@
   "dependencies": {
     "animate.css-js": "0.0.9",
     "reshape-standard": "^1.0.0",
+    "spike": "^2.0.2",
     "spike-contentful": "^1.0.0",
     "spike-css-standards": "^1.0.0",
     "spike-js-standards": "^2.0.1",

@@ -9,6 +9,7 @@
   "bugs": "https://github.com/EnMod/noel-quiles-s-portfolio/issues",
   "dependencies": {
     "animate.css-js": "0.0.9",
+    "marked": "^0.3.6",
     "reshape-standard": "^1.0.0",
     "spike": "^2.0.2",
     "spike-contentful": "^1.0.0",

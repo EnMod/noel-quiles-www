@@ -32,7 +32,7 @@ html.no-js(lang='en')
 
   body
     #title-screen
-      h1 noel quiles
+      h1 {{ process.env.test }}
       h3 I make . . .
     #stage-select
       .container

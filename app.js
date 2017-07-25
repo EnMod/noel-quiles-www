@@ -6,9 +6,27 @@ const marked = require('marked')
 
 // let's get...Contentful *shudder*
 const Contentful = require('spike-contentful')
-// const locals = {}
+const locals = {}
 
 module.exports = {
+  plugins: [
+    new Contentful({
+      addDataTo: locals,
+      accessToken: process.env.accessToken,
+      spaceId: process.env.spaceId,
+      contentTypes: [
+        {
+          name: 'frontends',
+          id: 'homeFrontend',
+          transform: true,
+          filters: {
+            order: '-fields.order'
+          }
+        }
+      ],
+      json: 'data.json'
+    })
+  ],
   devtool: 'source-map',
   matchers: {
     html: '*(**/)*.sgr',
@@ -16,25 +34,8 @@ module.exports = {
   },
   ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
   reshape: htmlStandards({
-    locals: (ctx) => { return { pageId: pageId(ctx), foo: 'bar', md: marked } }
+    locals: (ctx) => Object.assign({ md: marked }, locals)
   }),
   postcss: cssStandards(),
   babel: jsStandards()
-  // plugins: [
-  //   new Contentful({
-  //     addDataTo: locals,
-  //     accessToken: 'process.env.accessToken',
-  //     spaceId: 'process.env.spaceId',
-  //     contentTypes: [
-  //       {
-  //         name: 'posts',
-  //         id: '633fTeiMaxxxxxxxxx',
-  //       },
-  //       {
-  //         name: 'authors',
-  //         id: '223gTahLaxxxxxxxxx',
-  //       }
-  //     ]
-  //   })
-  // ]
 }

@@ -142,6 +142,10 @@ ansi-escapes@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-2.0.0.tgz#5bae52be424878dd9783e8910e3fc2922e83c81b"
 
+ansi-font@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/ansi-font/-/ansi-font-0.0.2.tgz#890301bd5841462fd39c0b7709afd1f525143331"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -3920,6 +3924,12 @@ markdown-it@^8.2.2:
     mdurl "^1.0.1"
     uc.micro "^1.0.3"
 
+markdown-js@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/markdown-js/-/markdown-js-0.0.3.tgz#416fc9e4afb650f2cc02bf9ffb030e8cd487793e"
+  dependencies:
+    test ">=0.0.5"
+
 marked@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
@@ -6618,6 +6628,12 @@ term-size@^1.2.0:
   resolved "https://registry.yarnpkg.com/term-size/-/term-size-1.2.0.tgz#458b83887f288fc56d6fffbfad262e26638efa69"
   dependencies:
     execa "^0.7.0"
+
+test@>=0.0.5:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/test/-/test-0.6.0.tgz#5986ac445ec17754322512d104ba32c8a63e938e"
+  dependencies:
+    ansi-font "0.0.2"
 
 text-table@^0.2.0, text-table@~0.2.0:
   version "0.2.0"

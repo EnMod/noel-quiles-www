@@ -2,7 +2,8 @@ const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const pageId = require('spike-page-id')
-const marked = require('marked')
+const dotenv = require('dotenv').config()
+// const marked = require('marked')
 
 // let's get...Contentful *shudder*
 const Contentful = require('spike-contentful')
@@ -16,9 +17,29 @@ module.exports = {
       spaceId: process.env.spaceId,
       contentTypes: [
         {
+          name: 'beats',
+          id: 'homeFreshBeat',
+          filters: {
+            order: '-fields.order'
+          }
+        },
+        {
           name: 'frontends',
           id: 'homeFrontend',
-          transform: true,
+          filters: {
+            order: '-fields.order'
+          }
+        },
+        {
+          name: 'games',
+          id: 'homeGame',
+          filters: {
+            order: '-fields.order'
+          }
+        },
+        {
+          name: 'sections',
+          id: 'homeSection',
           filters: {
             order: '-fields.order'
           }
@@ -33,9 +54,7 @@ module.exports = {
     css: '*(**/)*.sss'
   },
   ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
-  reshape: htmlStandards({
-    locals: (ctx) => Object.assign({ md: marked }, locals)
-  }),
+  reshape: htmlStandards({ locals: () => locals }),
   postcss: cssStandards(),
   babel: jsStandards()
 }

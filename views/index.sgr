@@ -31,6 +31,7 @@ html.no-js(lang='en')
     link(rel="stylesheet", href="css/style.css")
 
   body
+    p {{{ JSON.stringify(contentful.frontends) }}}
     #title-screen
       h1 noel quiles
       h3 I make . . .
@@ -50,67 +51,63 @@ html.no-js(lang='en')
     
     hr
     #frontends
-      h1 frontends
-      p UI/UX for websites, graphics, flyers...if a user needs to look at something that isn't a spreadsheet, I'll make it. Here's a few I've donee:
+      h1 {{ contentful.sections[0].fields.heading }}
+      p(md) {{ contentful.sections[0].fields.blurb }}
 
       each(loop='frontend of contentful.frontends')
         .row
           .col-6
-            img(src='{{ frontend.title }}' caption='{{ frontend.title }}' alt='{{ frontend.title }}')
+            img(src='{{ frontend.fields.image.fields.file.url }}' caption='{{ frontend.fields.title }}' alt='{{ frontend.fields.title }}')
           .col-6
-            a(href='{{ frontend.link }}')
-              h2 {{ frontend.title }}
-            h3 {{ frontend.client }}
-            p {{ frontend.info }}
+            a(href='{{ frontend.fields.link }}')
+              h2 {{ frontend.fields.title }}
+            h3(md) {{ frontend.fields.client }}
+            p(md) {{ frontend.fields.info }}
 
     hr
     #games
-      h1 games
-      p Games are my passion, and I've designed them during and since my college days (ca. 2013).  I've run the design gamut, from level progression and layout, to asset creation, to music, to 3D modeling, to writing, the list goes on.  Programming, however...let's just say that most projects involve countless conditionals and a mess of spaghetti code.
+      h1 {{ contentful.sections[1].fields.heading }}
+      p(md) {{ contentful.sections[1].fields.blurb }}
 
       each(loop='game of contentful.games')
         .row
           .col-6
-            img(src='{{ game.fields.image.file }}' caption='{{ game.fields.title }}' alt='{{ game.fields.title }}')
+            img(src='{{ game.fields.image.fields.file.url }}' caption='{{ game.fields.title }}' alt='{{ game.fields.title }}')
           .col-6
-            a(href='{{ game.fields.link }}')
+            if(condition="{{ game.fields.link }} == undefined")
+              a(href='{{ game.fields.link }}')
+                h2 {{ game.fields.title }}
+            else
               h2 {{ game.fields.title }}
-            p {{ game.fields.info }}
+            p(md) {{ game.fields.info }}
 
     hr
     #stories
-      h1 stories
-      p If there's one thing I'd say I'm decent at, it's storytelling. I always enjoy giving life to a world through visual design, characters, plot, insane thematic elements, anything I can illustrate through whatever becomes my medium.
-      p(md) Think I'm embellishing a bit? You be the judge over on [my blog](https://blog.noelquiles.com)!  There you can find all my prose, poetry, and other musings.
+      h1 {{ contentful.sections[2].fields.heading }}
+      p(md) {{ contentful.sections[2].fields.blurb }}
     
     hr
     #fresh-beats
-      h1 fresh beats
-
-      p(md) More of an expression...sorry to disappoint those thinking I'm a producer (for those who have, I'm flattered). I mean hey, if you like what you hear there's more where this came from on [my SoundCloud](https://soundcloud.com/enmod).
+      h1 {{ contentful.sections[3].fields.heading }}
+      p(md) {{ contentful.sections[3].fields.blurb }}
       
       each(loop='beat of contentful.beats')
         .row
           .col-6
-            h2 {{ beat.title }}
+            h2 {{ beat.fields.title }}
           .col-6
             audio(controls='controls')
-              source(src='{{ beat.songmp3 }}' type='audio/mpeg')
-              source(src='{{ beat.songogg }}' type='audio/ogg')
+              source(src='{{ beat.fields.songmp3.fields.file.url }}' type='audio/mpeg')
+              source(src='{{ beat.fields.songogg.fields.file.url }}' type='audio/ogg')
 
     hr
     #contact
-      h1 contact
-
-      p(md).
-        Let's keep in touch!  You can:
-        * Send me an email ([contact@noelquiles.com](mailto:contact@noelquiles.com)),
-        * Send me a tweet ([@NoelQuiles](https://twitter.com/NoelQuiles)),
-        * Or write me an issue (On [Gitlab](https://gitlab.com/enmod) or [GitHub](https://www.github.com/EnMod)).
+      h1 {{ contentful.sections[4].fields.heading }}
+      p(md) {{ contentful.sections[4].fields.blurb }}
 
     br
     br
     br
-    footer(md) Version [3.1](https://gitlab.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/), [Flexr](http://flexrgrid.com/), blood, sweat, and tears.
+    footer(md) Version [3.1](https://gitlab.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/), [Flexr](http://flexrgrid.com/), blood, sweat, and tears.  Managed with [Contentful](https://www.contentful.com) and built/hosted by [Netlify](https://www.netlify.com).
 
     script(src='js/main.js')

@@ -1546,7 +1546,7 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@^2.2.0:
+commander@^2.2.0, commander@~2.11.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
@@ -2023,6 +2023,10 @@ dot-prop@^4.1.0:
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-4.2.0.tgz#1f19e0c2e1aa0e32797c49799f2837ac6af69c57"
   dependencies:
     is-obj "^1.0.0"
+
+dotenv@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -3185,7 +3189,7 @@ is-binary-path@^2.0.0:
   dependencies:
     binary-extensions "^1.0.0"
 
-is-buffer@^1.1.5:
+is-buffer@^1.1.4, is-buffer@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.5.tgz#1f3b26ef613b214b88cbca23cc6c01d87961eecc"
 
@@ -3350,7 +3354,7 @@ is-path-inside@^1.0.0:
   dependencies:
     path-is-inside "^1.0.1"
 
-is-plain-obj@^1.0.0:
+is-plain-obj@^1.0.0, is-plain-obj@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
 
@@ -4514,9 +4518,9 @@ parse-json@^2.2.0:
   dependencies:
     error-ex "^1.2.0"
 
-parse-latin@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/parse-latin/-/parse-latin-3.2.0.tgz#cfe4b420982b1d20fc16c71dfb33f148de4f1d0b"
+parse-latin@^4.0.0:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/parse-latin/-/parse-latin-4.0.3.tgz#b84d9715b72f8a95428a0e3ddce4fb31fef313bd"
   dependencies:
     nlcst-to-string "^2.0.0"
     unist-util-modify-children "^1.0.0"
@@ -5620,6 +5624,10 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
+replace-ext@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
+
 request@2.81.0, request@2.x, request@^2.81.0:
   version "2.81.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
@@ -5693,6 +5701,14 @@ reshape-content@^0.2.0:
     reshape-plugin-util "^0.2.1"
     when "^3.7.7"
 
+reshape-eval-code@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/reshape-eval-code/-/reshape-eval-code-0.3.3.tgz#a366ff29f893a16beb94c48722c028ac54af29a8"
+  dependencies:
+    reshape-code-gen "^0.2.1"
+    reshape-parser "^0.2.1"
+    reshape-plugin-util "^0.2.1"
+
 reshape-expressions@^0.1.4, reshape-expressions@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/reshape-expressions/-/reshape-expressions-0.1.5.tgz#28c12bf35de40263362499cead0b044321e4a78c"
@@ -5714,9 +5730,9 @@ reshape-loader@^1.0.0, reshape-loader@^1.1.0:
     reshape "^0.4.1"
     reshape-include "^1.0.0"
 
-reshape-minify@^0.1.1:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/reshape-minify/-/reshape-minify-0.1.2.tgz#c3608f92ce8c81fd521b7e8dccd9da80ed890dae"
+reshape-minify@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/reshape-minify/-/reshape-minify-1.1.0.tgz#40bc402b99f3d38359135ce2ef955f071abd8f7e"
   dependencies:
     cssnano "^3.7.4"
     indx "^0.2.3"
@@ -5724,7 +5740,7 @@ reshape-minify@^0.1.1:
     reshape-parser "^0.2.1"
     reshape-plugin-util "^0.2.1"
     svgo "^0.7.0"
-    uglify-js "^2.7.3"
+    uglify-js "^3.0.26"
 
 reshape-parser@^0.2.1:
   version "0.2.1"
@@ -5738,28 +5754,29 @@ reshape-plugin-util@^0.2.0, reshape-plugin-util@^0.2.1:
   dependencies:
     when "^3.7.7"
 
-reshape-retext@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/reshape-retext/-/reshape-retext-0.3.0.tgz#6f4b44b56d3f86a6fa7e3bb4bbae3d7a54166055"
+reshape-retext@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/reshape-retext/-/reshape-retext-1.0.0.tgz#879730f6e5b5d108913e28ee210fc42fb8848cda"
   dependencies:
     reshape-plugin-util "^0.2.0"
-    retext "^3.0.0"
-    when "^3.7.7"
+    retext "^5.0.0"
+    when "^3.7.8"
 
-reshape-standard@^1.0.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/reshape-standard/-/reshape-standard-1.2.0.tgz#120f7d0a2c945cdbb455661352fc617dc32be4c4"
+reshape-standard@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/reshape-standard/-/reshape-standard-2.1.1.tgz#cf23b06403927f47211512a7ce7849f94d939d73"
   dependencies:
     markdown-it "^8.2.2"
     reshape-beautify "^0.1.2"
     reshape-content "^0.2.0"
+    reshape-eval-code "^0.3.3"
     reshape-expressions "^0.1.5"
     reshape-include "^1.0.0"
     reshape-layouts "^1.0.0"
-    reshape-minify "^0.1.1"
+    reshape-minify "^1.0.0"
     reshape-parser "^0.2.1"
-    reshape-retext "^0.3.0"
-    retext-smartypants "^2.0.0"
+    reshape-retext "^1.0.0"
+    retext-smartypants "^3.0.0"
     sugarml "^0.6.0"
 
 reshape@^0.4.1:
@@ -5822,33 +5839,33 @@ restore-cursor@^2.0.0:
     onetime "^2.0.0"
     signal-exit "^3.0.2"
 
-retext-latin@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/retext-latin/-/retext-latin-1.0.0.tgz#57f41257b4d857b6c6df631ca5788d10080d7051"
+retext-latin@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/retext-latin/-/retext-latin-2.0.0.tgz#b11bd6cae9113fa6293022a4527cd707221ac4b6"
   dependencies:
-    parse-latin "^3.1.0"
+    parse-latin "^4.0.0"
     unherit "^1.0.4"
 
-retext-smartypants@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/retext-smartypants/-/retext-smartypants-2.0.0.tgz#390897c500cbcb959b83a0772609e174b1dcf44c"
+retext-smartypants@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/retext-smartypants/-/retext-smartypants-3.0.0.tgz#0ce916c4e2b1c32a4607fe8f691f852d793ad84e"
   dependencies:
     nlcst-to-string "^2.0.0"
     unist-util-visit "^1.0.0"
 
-retext-stringify@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/retext-stringify/-/retext-stringify-1.0.0.tgz#0032e4be3254ea56b19242ef406515479a3346a9"
+retext-stringify@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/retext-stringify/-/retext-stringify-2.0.0.tgz#00238facc5491f5bcdc589703a4658db2e54415b"
   dependencies:
     nlcst-to-string "^2.0.0"
 
-retext@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/retext/-/retext-3.0.0.tgz#aa4c73611bc55823ce6f3912fa86069980807190"
+retext@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/retext/-/retext-5.0.0.tgz#5d9018c4a677d6103c142362d76f50eb1d398bf6"
   dependencies:
-    retext-latin "^1.0.0"
-    retext-stringify "^1.0.0"
-    unified "^4.1.1"
+    retext-latin "^2.0.0"
+    retext-stringify "^2.0.0"
+    unified "^6.0.0"
 
 rgb-hex@^1.0.0:
   version "1.0.0"
@@ -6783,7 +6800,7 @@ uc.micro@^1.0.1, uc.micro@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/uc.micro/-/uc.micro-1.0.3.tgz#7ed50d5e0f9a9fb0a573379259f2a77458d50192"
 
-uglify-js@^2.7.3, uglify-js@^2.8.27, uglify-js@^2.8.29:
+uglify-js@^2.8.27, uglify-js@^2.8.29:
   version "2.8.29"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.29.tgz#29c5733148057bb4e1f75df35b7a9cb72e6a59dd"
   dependencies:
@@ -6791,6 +6808,13 @@ uglify-js@^2.7.3, uglify-js@^2.8.27, uglify-js@^2.8.29:
     yargs "~3.10.0"
   optionalDependencies:
     uglify-to-browserify "~1.0.0"
+
+uglify-js@^3.0.26:
+  version "3.0.26"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.0.26.tgz#ba279ca597b13fe6c62c2d87dd5188e57a7a3233"
+  dependencies:
+    commander "~2.11.0"
+    source-map "~0.5.1"
 
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
@@ -6838,16 +6862,17 @@ unherit@^1.0.4:
     inherits "^2.0.1"
     xtend "^4.0.1"
 
-unified@^4.1.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/unified/-/unified-4.2.1.tgz#76ff43aa8da430f6e7e4a55c84ebac2ad2cfcd2e"
+unified@^6.0.0:
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/unified/-/unified-6.1.5.tgz#716937872621a63135e62ced2f3ac6a063c6fb87"
   dependencies:
     bail "^1.0.0"
     extend "^3.0.0"
-    has "^1.0.1"
-    once "^1.3.3"
+    is-plain-obj "^1.1.0"
     trough "^1.0.0"
-    vfile "^1.0.0"
+    vfile "^2.0.0"
+    x-is-function "^1.0.4"
+    x-is-string "^0.1.0"
 
 union-value@^0.2.3:
   version "0.2.4"
@@ -6891,6 +6916,10 @@ unist-util-modify-children@^1.0.0:
   resolved "https://registry.yarnpkg.com/unist-util-modify-children/-/unist-util-modify-children-1.1.1.tgz#66d7e6a449e6f67220b976ab3cb8b5ebac39e51d"
   dependencies:
     array-iterate "^1.0.0"
+
+unist-util-stringify-position@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/unist-util-stringify-position/-/unist-util-stringify-position-1.1.1.tgz#3ccbdc53679eed6ecf3777dd7f5e3229c1b6aa3c"
 
 unist-util-visit-children@^1.0.0:
   version "1.1.1"
@@ -7014,9 +7043,13 @@ verror@1.3.6:
   dependencies:
     extsprintf "1.0.2"
 
-vfile@^1.0.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/vfile/-/vfile-1.4.0.tgz#c0fd6fa484f8debdb771f68c31ed75d88da97fe7"
+vfile@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/vfile/-/vfile-2.2.0.tgz#ce47a4fb335922b233e535db0f7d8121d8fced4e"
+  dependencies:
+    is-buffer "^1.1.4"
+    replace-ext "1.0.0"
+    unist-util-stringify-position "^1.0.0"
 
 viewport-dimensions@^0.2.0:
   version "0.2.0"
@@ -7230,6 +7263,14 @@ ws@1.1.1:
 wtf-8@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wtf-8/-/wtf-8-1.0.0.tgz#392d8ba2d0f1c34d1ee2d630f15d0efb68e1048a"
+
+x-is-function@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/x-is-function/-/x-is-function-1.0.4.tgz#5d294dc3d268cbdd062580e0c5df77a391d1fa1e"
+
+x-is-string@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/x-is-string/-/x-is-string-0.1.0.tgz#474b50865af3a49a9c4657f05acd145458f77d82"
 
 xdg-basedir@^3.0.0:
   version "3.0.0"

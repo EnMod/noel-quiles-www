@@ -1,5 +1,5 @@
-# Noel Quiles's Portfolio: Contentful Edition 📢📢📢📢📢
+# Noel Quiles' Site v3.5
 
-Time to get my site's guts in a manageable place, and make the skeleton amorphous.  Rather grotesque, no?
+Made with [Spike](https://spike.cf) and all of its standard tooling. Also employs some [Flexr](http://flexrgrid.com) gridding. Site content is managed with [Contentful](https://www.contentful.com), and the site itself is built/hosted by [Netflify](https://www.netlify.com)
 
-Going to be using Netlify as a CI solution, with `spike-contentful` doing the Contentful API consumption and subsequent transformation into usable locals. 
+Check out these tools, they're grand :sparkles:

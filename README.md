@@ -1,16 +1,5 @@
-# Noel Quiles&#39;s Portfolio
+# Noel Quiles's Portfolio: Contentful Edition 📢📢📢📢📢
 
-Noel Quiles&#39;s portfolio/personal site
+Time to get my site's guts in a manageable place, and make the skeleton amorphous.  Rather grotesque, no?
 
-## Setup
-
-- make sure [node.js](http://nodejs.org) is at version >= `6`
-- `npm i spike -g`
-- clone this repo down and `cd` into the folder
-- run `npm install`
-- run `spike watch` or `spike compile`
-
-## Testing
-Tests are located in `test/**` and are powered by [ava](https://github.com/sindresorhus/ava)
-- `npm install` to ensure devDeps are installed
-- `npm test` to run test suite
+Going to be using Netlify as a CI solution, with `spike-contentful` doing the Contentful API consumption and subsequent transformation into usable locals. 

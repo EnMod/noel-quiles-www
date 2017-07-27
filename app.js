@@ -17,35 +17,33 @@ module.exports = {
       spaceId: process.env.spaceId,
       contentTypes: [
         {
-          name: 'beats',
-          id: 'homeFreshBeat',
+          name: 'fullPosts',
+          id: 'blogPost',
           filters: {
-            order: '-fields.order'
+            order: '-fields.date'
+          }
+          // template: {
+          //   path: 'views/_post.sgr',
+          //   output: (post) => { return `views/posts/${post.slug}.html` }
+          // }
+        },
+        {
+          name: 'indexPosts',
+          id: 'blogPost',
+          filters: {
+            order: '-fields.date',
+            limit: 10
           }
         },
         {
-          name: 'frontends',
-          id: 'homeFrontend',
+          name: 'categories',
+          id: 'blogCategory',
           filters: {
-            order: '-fields.order'
+            order: 'fields.order'
           }
-        },
-        {
-          name: 'games',
-          id: 'homeGame',
-          filters: {
-            order: '-fields.order'
-          }
-        },
-        {
-          name: 'sections',
-          id: 'homeSection',
-          filters: {
-            order: '-fields.order'
-          }
+          // TODO: make a category.sgr template that creates pages for each the categories; find a way to add all posts into their respective category.htmls
         }
       ],
-      json: 'data.json'
     })
   ],
   devtool: 'source-map',

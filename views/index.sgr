@@ -1,114 +1,15 @@
-doctype html
-html.no-js(lang='en')
-  head
-    meta(charset='utf-8')
-    title Noel Quiles (.com)
-    meta(content='I make frontends, games, stories, and fresh beats.' name='description')
-    meta(content='Noel Quiles' name='author')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name="application-name" content="Noel Quiles (.com)")
-    meta(name="msapplication-TileColor" content="#FFFFFF")
-    meta(name="msapplication-TileImage" content="mstile-144x144.png")
-    meta(name="msapplication-square70x70logo" content="mstile-70x70.png")
-    meta(name="msapplication-square150x150logo" content="mstile-150x150.png")
-    meta(name="msapplication-wide310x150logo" content="mstile-310x150.png")
-    meta(name="msapplication-square310x310logo" content="mstile-310x310.png")
-    link(rel="apple-touch-icon-precomposed" sizes="57x57" href="https://noelquiles.com/apple-touch-icon-57x57.png")
-    link(rel="apple-touch-icon-precomposed" sizes="114x114" href="https://noelquiles.com/apple-touch-icon-114x114.png")
-    link(rel="apple-touch-icon-precomposed" sizes="72x72" href="https://noelquiles.com/apple-touch-icon-72x72.png")
-    link(rel="apple-touch-icon-precomposed" sizes="144x144" href="https://noelquiles.com/apple-touch-icon-144x144.png")
-    link(rel="apple-touch-icon-precomposed" sizes="60x60" href="https://noelquiles.com/apple-touch-icon-60x60.png")
-    link(rel="apple-touch-icon-precomposed" sizes="120x120" href="https://noelquiles.com/apple-touch-icon-120x120.png")
-    link(rel="apple-touch-icon-precomposed" sizes="76x76" href="https://noelquiles.com/apple-touch-icon-76x76.png")
-    link(rel="apple-touch-icon-precomposed" sizes="152x152" href="https://noelquiles.com/apple-touch-icon-152x152.png")
-    link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-196x196.png" sizes="196x196")
-    link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-96x96.png" sizes="96x96")
-    link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-32x32.png" sizes="32x32")
-    link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-16x16.png" sizes="16x16")
-    link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-128.png" sizes="128x128")
-    link(rel="stylesheet", href="https://cdn.rawgit.com/dmbdesignpdx/flexr/3070d3e1/flexr.css")
-    link(rel="stylesheet", href="css/animate.min.css")
-    link(rel="stylesheet", href="css/style.css")
+extends(src='./_layout.sgr')
+  block(name='title')
+    title Enlightened Modifications
 
-  body
-    #title-screen
-      h1 noel quiles
-      h3 I make . . .
-    #stage-select
-      .container
-        a(href='#frontends')
-          img.box(src='img/frontends.png')
-        a(href='#games')
-          img.box(src='img/games.png')
-        a(href='#stories')
-          img.box(src='img/stories.png')
-        a(href='#fresh-beats')
-          img.box(src='img/freshbeats.png')
-      .contact
-        a(href='#contact')
-          h2 Want to contact me?
-    
-    hr
-    #frontends
-      h1 {{ contentful.sections[0].fields.heading }}
-      p(md) {{ contentful.sections[0].fields.blurb }}
+  block(name='content')
+    include(src='./_nav.sgr')
+    h1 enlightened modifications
+    h3 Thoughts on webdev, gamedev, life, and writing.
 
-      each(loop='frontend of contentful.frontends')
-        .row
-          .col-6
-            img(src='{{ frontend.fields.image.fields.file.url }}' caption='{{ frontend.fields.title }}' alt='{{ frontend.fields.title }}')
-          .col-6
-            a(href='{{ frontend.fields.link }}')
-              h2 {{ frontend.fields.title }}
-            h3(md) {{ frontend.fields.client }}
-            p(md) {{ frontend.fields.info }}
+    each(loop='post of contentful.indexPosts')
+      a(href='posts/{{ post.fields.slug }}.html')
+        h2 {{ post.fields.title }}
+      p.excerpt(md) {{ post.fields.body }}
 
-    hr
-    #games
-      h1 {{ contentful.sections[1].fields.heading }}
-      p(md) {{ contentful.sections[1].fields.blurb }}
-
-      each(loop='game of contentful.games')
-        .row
-          .col-6
-            img(src='{{ game.fields.image.fields.file.url }}' caption='{{ game.fields.title }}' alt='{{ game.fields.title }}')
-          .col-6
-            if(condition="{{ game.fields.link }} == undefined")
-              a(href='{{ game.fields.link }}')
-                h2 {{ game.fields.title }}
-            else
-              h2 {{ game.fields.title }}
-            p(md) {{ game.fields.info }}
-
-    hr
-    #stories
-      h1 {{ contentful.sections[2].fields.heading }}
-      p(md) {{ contentful.sections[2].fields.blurb }}
-    
-    hr
-    #fresh-beats
-      h1 {{ contentful.sections[3].fields.heading }}
-      p(md) {{ contentful.sections[3].fields.blurb }}
-      
-      each(loop='beat of contentful.beats')
-        .row
-          .col-6
-            h2 {{ beat.fields.title }}
-          .col-6
-            audio(controls='controls')
-              source(src='{{ beat.fields.songmp3.fields.file.url }}' type='audio/mpeg')
-              source(src='{{ beat.fields.songogg.fields.file.url }}' type='audio/ogg')
-
-    hr
-    #contact
-      h1 {{ contentful.sections[4].fields.heading }}
-      p(md) {{ contentful.sections[4].fields.blurb }}
-
-    br
-    br
-    br
-    footer(md).
-      Version [3.5](https://gitlab.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/), [Flexr](http://flexrgrid.com/), blood, sweat, and tears.  
-      Managed with [Contentful](https://www.contentful.com) and built/hosted by [Netlify](https://www.netlify.com).
-
-    script(src='js/main.js')
+    p(md) Looking for more? Check out the [post archive](https://blog.noelquiles.com/posts)!

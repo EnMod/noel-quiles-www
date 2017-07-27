@@ -4,8 +4,9 @@ extends(src='./_layout.sgr')
 
   block(name='content')
     include(src='./_nav.sgr')
-    h1 enlightened modifications
-    h3 Thoughts on webdev, gamedev, life, and writing.
+    #title
+      h1 enlightened modifications
+      h3 Thoughts on webdev, gamedev, life, and writing.
 
     each(loop='post of contentful.indexPosts')
       a(href='posts/{{ post.fields.slug }}.html')

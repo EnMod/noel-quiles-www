@@ -4,9 +4,9 @@
   font-family: enmod
   src: url(enmod.ttf)
 
-/*<==-==>*/
-/*Globals*/
-/*<==-==>*/
+/* ~~~~~~~~~~~ */
+/* ~ Globals ~ */
+/* ~~~~~~~~~~~ */
 
 *, *::after, *::before
   box-sizing: border-box
@@ -53,6 +53,11 @@ hr
 
 img
   max-width: 100%
+.excerpt
+  height: 2em
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
 
 .container
   display: flex
@@ -71,12 +76,5 @@ footer
 // ~ Breakpoints ~
 // ---------------
 
-@breakpoint-down sm
-  .container
-    width: 350px
-    height: 350px
-
-@breakpoint-up md
-  .container
-    width: 600px
-    height: 600px
+/* @breakpoint-down sm  .container    width: 350px    height: 350px */
+/* @breakpoint-up md  .container    width: 600px    height: 600px */

@@ -2,6 +2,9 @@ const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const pageId = require('spike-page-id')
+const sugarml = require('sugarml')
+const sugarss = require('sugarss')
+const env = process.env.NODE_ENV
 const dotenv = require('dotenv').config()
 // const marked = require('marked')
 
@@ -20,7 +23,7 @@ module.exports = {
           name: 'js30exercises',
           id: 'js30Exercise',
           filters: {
-            order: 'fields.title'
+            order: 'fields.order'
           }
         },
         {
@@ -36,7 +39,12 @@ module.exports = {
     css: '*(**/)*.sss'
   },
   ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
-  reshape: htmlStandards({ locals: () => locals }),
-  postcss: cssStandards(),
+  reshape: htmlStandards({
+    parser: sugarml,
+    locals: () => locals 
+  }),
+  postcss: cssStandards({
+    parser: sugarss
+  }),
   babel: jsStandards()
 }

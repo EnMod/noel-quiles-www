@@ -17,35 +17,17 @@ module.exports = {
       spaceId: process.env.spaceId,
       contentTypes: [
         {
-          name: 'beats',
-          id: 'homeFreshBeat',
+          name: 'js30exercises',
+          id: 'js30Exercise',
           filters: {
-            order: '-fields.order'
+            order: 'fields.title'
           }
         },
         {
-          name: 'frontends',
-          id: 'homeFrontend',
-          filters: {
-            order: '-fields.order'
-          }
-        },
-        {
-          name: 'games',
-          id: 'homeGame',
-          filters: {
-            order: '-fields.order'
-          }
-        },
-        {
-          name: 'sections',
-          id: 'homeSection',
-          filters: {
-            order: '-fields.order'
-          }
+          name: 'js30info',
+          id: 'js30Info'
         }
-      ],
-      json: 'data.json'
+      ]
     })
   ],
   devtool: 'source-map',

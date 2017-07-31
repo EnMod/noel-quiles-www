@@ -142,10 +142,6 @@ ansi-escapes@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-2.0.0.tgz#5bae52be424878dd9783e8910e3fc2922e83c81b"
 
-ansi-font@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/ansi-font/-/ansi-font-0.0.2.tgz#890301bd5841462fd39c0b7709afd1f525143331"
-
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -1646,7 +1642,7 @@ contentful-sdk-core@^3.13.3:
     platform "1.3.3"
     qs "^6.1.0"
 
-contentful@^4.1.2:
+contentful@^4.5.0:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/contentful/-/contentful-4.5.2.tgz#344a0525ea0e469428ce253c92fd5b7eb1b90d9a"
   dependencies:
@@ -2233,6 +2229,10 @@ es6-weak-map@^2.0.1:
     es5-ext "^0.10.14"
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
+
+es6bindall@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/es6bindall/-/es6bindall-0.0.9.tgz#71e00afa69f8dd59ac5ac898a0d31c978df817d5"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -3126,7 +3126,7 @@ inquirer@^0.12.0:
     strip-ansi "^3.0.0"
     through "^2.3.6"
 
-inquirer@^3.2.0:
+inquirer@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-3.2.1.tgz#06ceb0f540f45ca548c17d6840959878265fa175"
   dependencies:
@@ -3533,7 +3533,7 @@ jest-validate@^19.0.2:
     leven "^2.0.0"
     pretty-format "^19.0.0"
 
-joi@^10.0.0, joi@^10.2.0, joi@^10.4.1, joi@^10.5.2, joi@^10.6.0:
+joi@^10.0.0, joi@^10.2.0, joi@^10.5.2, joi@^10.6.0:
   version "10.6.0"
   resolved "https://registry.yarnpkg.com/joi/-/joi-10.6.0.tgz#52587f02d52b8b75cdb0c74f0b164a191a0e1fc2"
   dependencies:
@@ -3927,12 +3927,6 @@ markdown-it@^8.2.2:
     linkify-it "^2.0.0"
     mdurl "^1.0.1"
     uc.micro "^1.0.3"
-
-markdown-js@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/markdown-js/-/markdown-js-0.0.3.tgz#416fc9e4afb650f2cc02bf9ffb030e8cd487793e"
-  dependencies:
-    test ">=0.0.5"
 
 marked@^0.3.6:
   version "0.3.6"
@@ -6259,14 +6253,13 @@ spdx-license-ids@^1.0.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
 
-spike-contentful@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/spike-contentful/-/spike-contentful-1.0.0.tgz#8fa7efa7fe3339fc7d06471978bc0a5aa3d4881e"
+spike-contentful@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/spike-contentful/-/spike-contentful-2.0.0.tgz#ad075aed10816e0cd3d7ddd065d520409374c0a7"
   dependencies:
-    contentful "^4.1.2"
-    joi "^10.4.1"
-    reshape "^0.4.1"
-    reshape-loader "^1.0.0"
+    contentful "^4.5.0"
+    es6bindall "^0.0.9"
+    joi "^10.6.0"
     when "^3.7.8"
 
 spike-core@^1.0.0:
@@ -6295,9 +6288,9 @@ spike-core@^1.0.0:
     webpack "^2.6.1"
     when "^3.7.8"
 
-spike-core@^2.0.2:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/spike-core/-/spike-core-2.1.0.tgz#b6b6e2df932f23b5594f09c8796cfee1f6f4951f"
+spike-core@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/spike-core/-/spike-core-2.2.0.tgz#ace3f6015b30cb84a9250fee42f4418c2fcfea11"
   dependencies:
     babel-core "^6.25.0"
     babel-loader "^7.1.1"
@@ -6318,7 +6311,7 @@ spike-core@^2.0.2:
     source-loader "^1.0.0"
     spike-util "^1.3.0"
     sprout "^1.2.1"
-    webpack "^3.3.0"
+    webpack "^3.4.1"
     when "^3.7.8"
 
 spike-css-standards@^1.0.0:
@@ -6351,15 +6344,15 @@ spike-util@^1.2.0, spike-util@^1.3.0:
     micromatch "^3.0.4"
     when "^3.7.7"
 
-spike@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/spike/-/spike-2.0.2.tgz#e60ad9c3be44204e4b1fb44290e9b78c1c45d0aa"
+spike@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/spike/-/spike-2.2.0.tgz#f274f941391252f61e311c3fa4e90e8d8fd9e025"
   dependencies:
     argparse "^1.0.9"
     chalk "^2.0.0"
-    inquirer "^3.2.0"
+    inquirer "^3.2.1"
     lodash.reduce "^4.6.0"
-    spike-core "^2.0.2"
+    spike-core "^2.2.0"
     universal-analytics "^0.4.13"
 
 split-string@^2.1.0:
@@ -6645,12 +6638,6 @@ term-size@^1.2.0:
   resolved "https://registry.yarnpkg.com/term-size/-/term-size-1.2.0.tgz#458b83887f288fc56d6fffbfad262e26638efa69"
   dependencies:
     execa "^0.7.0"
-
-test@>=0.0.5:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/test/-/test-0.6.0.tgz#5986ac445ec17754322512d104ba32c8a63e938e"
-  dependencies:
-    ansi-font "0.0.2"
 
 text-table@^0.2.0, text-table@~0.2.0:
   version "0.2.0"
@@ -7102,9 +7089,36 @@ webpack@^2.6.1:
     webpack-sources "^1.0.1"
     yargs "^6.0.0"
 
-webpack@^3.3.0, webpack@^3.4.0:
+webpack@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.4.0.tgz#e9465b660ad79dd2d33874d968b31746ea9a8e63"
+  dependencies:
+    acorn "^5.0.0"
+    acorn-dynamic-import "^2.0.0"
+    ajv "^5.1.5"
+    ajv-keywords "^2.0.0"
+    async "^2.1.2"
+    enhanced-resolve "^3.4.0"
+    escope "^3.6.0"
+    interpret "^1.0.0"
+    json-loader "^0.5.4"
+    json5 "^0.5.1"
+    loader-runner "^2.3.0"
+    loader-utils "^1.1.0"
+    memory-fs "~0.4.1"
+    mkdirp "~0.5.0"
+    node-libs-browser "^2.0.0"
+    source-map "^0.5.3"
+    supports-color "^4.2.1"
+    tapable "^0.2.7"
+    uglifyjs-webpack-plugin "^0.4.6"
+    watchpack "^1.4.0"
+    webpack-sources "^1.0.1"
+    yargs "^8.0.2"
+
+webpack@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.4.1.tgz#4c3f4f3fb318155a4db0cb6a36ff05c5697418f4"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"

@@ -4,7 +4,6 @@ const jsStandards = require('spike-js-standards')
 const pageId = require('spike-page-id')
 const sugarml = require('sugarml')
 const sugarss = require('sugarss')
-const env = process.env.NODE_ENV
 const dotenv = require('dotenv').config()
 // const marked = require('marked')
 
@@ -40,6 +39,7 @@ module.exports = {
   },
   ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
   reshape: htmlStandards({
+    root: 'views/',
     parser: sugarml,
     locals: () => locals 
   }),

@@ -28,16 +28,17 @@ html.no-js(lang='en')
     link(href='favicon-128.png', rel='icon', sizes='128x128', type='image/png')
     link(href='css/style.css', rel='stylesheet')
   body
-    h1
-      {{ contentful.js30Info[0].title1 }}
-      br
-      {{ contentful.js30Info[0].title2 }}
-    p(md) {{ contentful.js30Info[0].body }}
+    each(loop='info in contentful.js30info')
+      h1
+        |{{ info.fields.title1 }}
+        br
+        |{{ info.fields.title2 }}
+      p(md) {{ info.fields.body }}
     
-    each(loop='exercise in contentful.js30Exercises') 
+    each(loop='exercise in contentful.js30exercises')
       h2(md) {{ exercise.fields.title }}
       p(md) {{ exercise.fields.body }}
-
+ 
     br
     br
     br

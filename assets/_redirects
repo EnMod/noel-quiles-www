@@ -1,2 +1,8 @@
 # Netlify redirects to fix my lack of planning
-/js30/*             https://js30.noelquiles.com/exercises/:splat
+/js30               https://js30.noelquiles.com/
+/js30/1             https://js30.noelquiles.com/exercises/1
+/js30/2             https://js30.noelquiles.com/exercises/2
+/js30/3             https://js30.noelquiles.com/exercises/3
+/js30/4             https://js30.noelquiles.com/exercises/4
+/js30/5             https://js30.noelquiles.com/exercises/5
+/js30/6             https://js30.noelquiles.com/exercises/6

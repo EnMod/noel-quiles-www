@@ -12,6 +12,7 @@ const Contentful = require('spike-contentful')
 const locals = {}
 
 module.exports = {
+  vendor: 'assets/exercises/**',
   plugins: [
     new Contentful({
       addDataTo: locals,

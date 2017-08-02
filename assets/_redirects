@@ -1,0 +1,2 @@
+# Netlify redirects to fix my lack of planning
+/js30/*             https://js30.noelquiles.com/exercises/:splat

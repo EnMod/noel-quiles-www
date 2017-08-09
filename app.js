@@ -2,8 +2,9 @@ const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const pageId = require('spike-page-id')
+const sugarml = require('sugarml')
+const sugarss = require('sugarss')
 const dotenv = require('dotenv').config()
-// const marked = require('marked')
 
 // let's get...Contentful *shudder*
 const Contentful = require('spike-contentful')
@@ -21,11 +22,11 @@ module.exports = {
           id: 'blogPost',
           filters: {
             order: '-fields.date'
+          },
+          template: {
+            path: 'post.sgr',
+            output: (post) => { return `posts/${post.slug}.html` }
           }
-          // template: {
-          //   path: 'views/_post.sgr',
-          //   output: (post) => { return `views/posts/${post.slug}.html` }
-          // }
         },
         {
           name: 'indexPosts',
@@ -51,8 +52,15 @@ module.exports = {
     html: '*(**/)*.sgr',
     css: '*(**/)*.sss'
   },
-  ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
-  reshape: htmlStandards({ locals: () => locals }),
-  postcss: cssStandards(),
+  ignore: ['**/layout.sgr', '**/_*', '**/.*','**/JavaScript30_source', 'readme.md', 'yarn.lock'],
+  reshape: htmlStandards({
+    root: 'views/',
+    parser: sugarml,
+    locals: () => locals 
+  }),
+  postcss: cssStandards({
+    parser: sugarss
+  }),
   babel: jsStandards()
+
 }

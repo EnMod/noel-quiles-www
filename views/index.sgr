@@ -1,9 +1,8 @@
-extends(src='./_layout.sgr')
+extends(src='layout.sgr')
   block(name='title')
     title Enlightened Modifications
 
   block(name='content')
-    include(src='./_nav.sgr')
     #title
       h1 enlightened modifications
       h3 Thoughts on webdev, gamedev, life, and writing.

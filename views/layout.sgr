@@ -33,7 +33,9 @@ html.no-js(lang='en')
     link(rel="stylesheet", href="/css/style.css")
 
   body
-    block(name='content')
+    include(src='nav.sgr')
+    #main
+      block(name='content')
 
     br
     br

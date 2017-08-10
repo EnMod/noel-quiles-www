@@ -8,8 +8,15 @@
 /* ~ Globals ~ */
 /* ~~~~~~~~~~~ */
 
+:root
+  --fontFam: 'Play'
+  --textColor: #333
+
 *, *::after, *::before
   box-sizing: border-box
+
+body
+  margin: 0
 
 h1, h2, h3, h4, h5, h6
   line-height: 1.2
@@ -22,24 +29,26 @@ h2
   margin-top: 0px
   margin-bottom: 0px
 
+nav
+  font-family: var(--fontFam)
+
 #main
   line-height: 1.4
   margin: 0 auto
-  max-width: 800px
+  max-width: 700px
   font-size: 18px
-  font-family: 'Play'
+  font-family: var(--fontFam)
   padding: 0 10px
-  color: #333
+  color: var(--textColor)
 
 a, a:link, a:visited
-  color: #333
+  color: var(--textColor)
 a:hover
   color: #aaa
-
 hr
   height: 5px
-  border: 1px #333 solid
-  background-color: #333
+  border: 1px var(--textColor) solid
+  background-color: var(--textColor)
 
 .row
   max-width: 800px

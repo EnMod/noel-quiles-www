@@ -8,6 +8,7 @@
   },
   "bugs": "https://github.com/EnMod/noel-quiles-s-portfolio/issues",
   "dependencies": {
+    "datejs": "^1.0.0-rc3",
     "dotenv": "^4.0.0",
     "reshape-standard": "^3.1.0",
     "spike": "^2.2.0",

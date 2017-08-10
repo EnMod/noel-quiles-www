@@ -5,6 +5,7 @@ const pageId = require('spike-page-id')
 const sugarml = require('sugarml')
 const sugarss = require('sugarss')
 const dotenv = require('dotenv').config()
+const datejs = require('datejs')
 
 // let's get...Contentful *shudder*
 const Contentful = require('spike-contentful')
@@ -44,10 +45,10 @@ module.exports = {
           }
           // TODO: make a category.sgr template that creates pages for each the categories; find a way to add all posts into their respective category.htmls
         }
-      ],
+      ]
     })
   ],
-  devtool: 'source-map',
+  // devtool: 'source-map',
   matchers: {
     html: '*(**/)*.sgr',
     css: '*(**/)*.sss'
@@ -56,7 +57,7 @@ module.exports = {
   reshape: htmlStandards({
     root: 'views/',
     parser: sugarml,
-    locals: () => locals 
+    locals: () => {locals,  
   }),
   postcss: cssStandards({
     parser: sugarss

@@ -12,7 +12,7 @@ nav.nav
 
   //- the main menu
   #nav-menu.nav-menu
-    a.nav-item.home.active(href='index.html') Home
+    a.nav-item.home.active(href='/index.html') Home
     a.nav-item.posts(href='/posts') Archive
-    a.nav-item.about(href='about.html') About
-    a.nav-item.contact(href='contact.html') Contact
+    a.nav-item.about(href='/about.html') About
+    a.nav-item.contact(href='/contact.html') Contact

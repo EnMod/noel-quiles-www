@@ -11,8 +11,7 @@ extends(src='layout.sgr')
     each(loop='post of contentful.indexPosts')
       a(href='posts/{{ post.fields.slug }}.html')
         h2 {{ post.fields.title }}
-      h6 {{ Date.parse(post.fields.date) }}
       .excerpt
         p(md) {{ post.fields.body }}
-      br
+
     p(md) Looking for more? Check out the [post archive](https://blog.noelquiles.com/posts)!

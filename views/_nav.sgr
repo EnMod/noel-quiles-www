@@ -1,18 +1,17 @@
 //- main wrapper
 nav.nav
-  
   //- always-on items
   .nav-brand
     .nav-item.hide-desk
       p Enlightened Modifications
-    .nav-burger.burger(data-target="nav-menu")
+    .nav-burger.burger(data-target="nav-menu").hide-desk
       span
       span
       span
-
   //- the main menu
   #nav-menu.nav-menu
-    a.nav-item.home.active(href='/index.html') Home
-    a.nav-item.posts(href='/posts') Archive
-    a.nav-item.about(href='/about.html') About
-    a.nav-item.contact(href='/contact.html') Contact
+    .nav-end
+      a.nav-item.home.active(href='/index.html') Home
+      a.nav-item.posts(href='/posts') Archive
+      a.nav-item.about(href='/about.html') About
+      a.nav-item.contact(href='/contact.html') Contact

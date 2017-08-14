@@ -29,22 +29,45 @@ h2
   margin-top: 0px
   margin-bottom: 0px
 
-nav
-  font-family: var(--fontFam)
+.nav
+  position: fixed
+  top: 0
+  background: #ddd
+  width: 100%
+  & a, 
+  & a:link, 
+  & a:visited
+    color: var(--textColor)
+    text-decoration: none
+
+/*a.nav-item.active,
+.nav-link.active,
+a.nav-item.active:not(:hover), 
+.nav-link.active:not(:hover)
+  text-decoration: none
+  background-color: transparent
+
+a.nav-item.active,
+.nav-link.active
+  background-color: #eee*/
 
 #main
   line-height: 1.4
-  margin: 0 auto
+  margin: 78px auto 0 auto
   max-width: 700px
   font-size: 18px
   font-family: var(--fontFam)
-  padding: 0 10px
+  padding: 0 15px
   color: var(--textColor)
+
+.nav, footer
+  font-family: var(--fontFam)
 
 a, a:link, a:visited
   color: var(--textColor)
 a:hover
   color: #aaa
+
 hr
   height: 5px
   border: 1px var(--textColor) solid
@@ -59,6 +82,14 @@ hr
 #title
   font-size: 135%
   text-align: center
+  @media (max-width: 1000px)
+    font-size: 80%
+
+.post
+  margin-bottom: 2em
+
+.date
+  margin-top: 1em
 
 img
   max-width: 100%
@@ -70,16 +101,6 @@ img
 
 code
   background: #eee
-
-.container
-  display: flex
-  flex-flow: row wrap
-  margin: 0 auto
-  & a
-    width: 50%
-    height: 50%
-    /*background-size: contain
-    background-repeat: no-repeat*/
 
 footer
   text-align: center

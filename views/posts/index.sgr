@@ -6,6 +6,6 @@ extends(src='layout.sgr')
     h1 post archive
 
     each(loop='post of contentful.fullPosts')
-      a(href='/posts/{{ post.fields.slug }}.html')
+      a(href='/{{ post.fields.slug }}.html')
         h2 {{ post.fields.title }}
       p.excerpt(md) {{ post.fields.body }}

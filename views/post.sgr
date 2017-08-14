@@ -1,7 +1,7 @@
 extends(src='layout.sgr')
   
   block(name='title')
-    //- title {{ item.title }} - Enlightened Modifications
+    title {{{JSON.stringify(item)}}} - Enlightened Modifications
 
   block(name='content')
     |{{{JSON.stringify(item)}}}

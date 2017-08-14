@@ -4,7 +4,7 @@ html.no-js(lang='en')
     meta(charset='utf-8')
 
     block(name='title')
-        title Enlightened Modifications
+      title Enlightened Modifications
     meta(content='Thoughts on webdev, gamedev, life, and writing.' name='description')
     meta(content='Noel Quiles' name='author')
     meta(name='viewport', content='width=device-width, initial-scale=1')

@@ -57,7 +57,7 @@ module.exports = {
   reshape: htmlStandards({
     root: 'views/',
     parser: sugarml,
-    locals: () => {locals,  
+    locals: () => locals
   }),
   postcss: cssStandards({
     parser: sugarss

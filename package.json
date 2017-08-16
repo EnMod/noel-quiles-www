@@ -18,7 +18,8 @@
     "spike-optimize": "^0.1.2",
     "spike-page-id": "^1.0.0",
     "sugarml": "^0.6.0",
-    "sugarss": "^1.0.0"
+    "sugarss": "^1.0.0",
+    "webpack-dashboard": "^0.4.0"
   },
   "devDependencies": {
     "ava": "^0.19.1",

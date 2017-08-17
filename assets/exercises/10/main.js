@@ -35,16 +35,12 @@ function checkMeister(e){
         item.checked = true
       }
     })
-
-    // set inBetween to true after you hit the first checked box, then false again after the second checked box
   }
 
   // set this clicked box to be the last one checked
   checkedLast = this
 }
 
-// add event listeners to all of them so checkMeister can run on check or change
+// add event listeners to all of the list items so checkMeister can run on check or change
 // 'click' works with keyboard presses too...go figure
 items.forEach(item => item.addEventListener('click', checkMeister))
-// make a function to run on item click that checks inputs, then shift-selects those between initial and destination
-

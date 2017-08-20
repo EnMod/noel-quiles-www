@@ -4,4 +4,4 @@ Welcome! Go into the `assets/exercises` folder to view a day's work! You can als
 
 Have any comments or concerns?  Want to respond to something I point out in my walls of comments in the code? Email me at [contact@noelquiles.com](mailto:contact@noelquiles.com) or Tweet me at [@NoelQuiles](https://twitter.com/NoelQuiles)! I'm more than willing to chat/discuss.
 
-Main page is made with [Spike](https://spike.cf) and integrates [Contentful](https://www.contentful.com) through the [`spike-contentful`](https://github.com/static-dev/spike-contentful) plugin. The site itself is built/hosted by [Netflify](https://www.netlify.com).
+The project is built with [Spike](https://spike.cf) and integrates [Contentful](https://www.contentful.com) through the [`spike-contentful`](https://github.com/static-dev/spike-contentful) plugin for the main page. The site itself is built/hosted by [Netflify](https://www.netlify.com).

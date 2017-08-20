@@ -1,4 +1,4 @@
-# Noel Quiles' Site v3.5
+# Personal/Portfolio Site v3.5
 
 Made with [Spike](https://spike.cf) and all of its standard tooling. Also 
 employs some [Flexr](http://flexrgrid.com) gridding. Site content is managed 

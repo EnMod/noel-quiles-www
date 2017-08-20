@@ -108,7 +108,7 @@ html.no-js(lang='en')
     br
     br
     footer(md).
-      Version [3.5](https://gitlab.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/), [Flexr](http://flexrgrid.com/), blood, sweat, and tears.  
+      Version [3.5](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/), [Flexr](http://flexrgrid.com/), blood, sweat, and tears.  
       Managed with [Contentful](https://www.contentful.com) and built/hosted by [Netlify](https://www.netlify.com).
 
     script(src='js/main.js')

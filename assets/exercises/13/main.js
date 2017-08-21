@@ -82,9 +82,6 @@ function debounce(func, wait = 20, immediate = true) {
 // When do these things happen?
 // ----------------------------
 
-// debounce() when
-// fight.addEventListener('domonIsNearVictory', eruptingBurningFinger)
-
 // slideIn() when the window is scrolled
 // since its frequency of execution is being slowed down by debounce(),
 // that needs to wrap it here

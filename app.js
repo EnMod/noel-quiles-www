@@ -25,9 +25,10 @@ module.exports = {
             order: '-fields.date'
           },
           template: {
-            path: 'post.sgr',
-            output: (post) => { return `posts/${post.slug}.html` }
-          }
+            path: 'views/post.sgr',
+            output: (post) => { return `post/${post.fields.slug}.html` }
+          },
+          json:'data.json'
         },
         {
           name: 'indexPosts',

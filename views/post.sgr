@@ -1,13 +1,12 @@
 extends(src='layout.sgr')
-  
+
   block(name='title')
-    title {{{JSON.stringify(item)}}} - Enlightened Modifications
+    title {{ item.fields.title }} - Enlightened Modifications
 
   block(name='content')
-    |{{{JSON.stringify(item)}}}
-    //- h1 {{ item.title }}
-    //- p(md) {{ item.body }}
+    h1 {{ item.fields.title }}
+    p(md) {{ item.fields.body }}
 
-    //- p.categories(md) filed under 
-    //-   each(loop='category of item.category')
-    //-     span: a(href='categories/{{ category }}.html') {{ category }}
+    p.categories(md) filed under
+      each(loop='category of item.fields.category')
+        span: a(href='categories/{{ category.fields.slug}}.html') {{ category.fields.title }}

@@ -26,7 +26,7 @@ module.exports = {
           },
           template: {
             path: 'views/post.sgr',
-            output: (post) => { return `post/${post.fields.slug}.html` }
+            output: (post) => { return `${post.fields.slug}.html` }
           },
           json:'data.json'
         },

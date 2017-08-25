@@ -1,0 +1,19 @@
+extends(src='layout.sgr')
+
+  block(name='title')
+    title Enlightened Modifications
+
+  block(name='content')
+    #index
+      .g-title
+        h1 {{ item.fields.title }}
+        h3 {{ item.fields.title }}
+
+      each(loop='post of contentful.fullPosts')
+        if(condition="{{post.fields.slug}} === {{item.fields.slug}}")
+          .g-post
+            a(href='{{ post.fields.slug }}.html')
+              h2 {{ post.fields.title }}
+            h5.g-date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
+            .g-excerpt
+              p(md) {{ post.fields.body }}

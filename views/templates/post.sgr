@@ -1,0 +1,16 @@
+extends(src='layout.sgr')
+
+  block(name='title')
+    title {{ item.fields.title }} - Enlightened Modifications
+
+  block(name='content')
+    #single-post
+      h1 {{ item.fields.title }}
+      h3#categories
+        |Filed under:
+        each(loop='category of item.fields.category')
+          span
+            a(href='categories/{{category.fields.slug}}.html') {{ category.fields.title }}
+
+      p(md) {{ item.fields.body }}
+

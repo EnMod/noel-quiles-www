@@ -1,0 +1,85 @@
+// Vars
+
+:root
+  --fontFam: 'Titillium Web'
+  --textColor: #333
+  --siteWidth: 700px
+
+// -----
+// General tags
+// -----
+
+*, *::after, *::before
+  box-sizing: border-box
+
+body
+  font-family: var(--fontFam)
+  margin: 0
+  padding: 0
+
+footer
+  margin-top: 3em
+  text-align: center
+
+// -----
+// Typography
+// -----
+
+@font-face
+  font-family: enmod
+  src: url(enmod.ttf)
+
+h1, h2, h3, h4, h5, h6
+  line-height: 1.4
+
+h2
+  margin-top: 0px
+  margin-bottom: 0px
+
+code
+  background: #eee
+
+// -----
+// Main section styling
+// -----
+
+#main
+  line-height: 1.4
+  margin: 78px auto 0 auto
+  max-width: var(--siteWidth)
+  font-size: 20px
+  padding: 0 15px
+  color: var(--textColor)
+  & a,
+  & a:link,
+  & a:visited
+    color: var(--textColor)
+  & a:hover
+    color: #aaa
+  & hr
+    height: 5px
+    border: 1px var(--textColor) solid
+    background-color: var(--textColor)
+  & .g-title h1
+    font-family: enmod
+    line-height: 1em
+
+// -----
+// Globals
+// -----
+
+// Page titles
+
+.g-title
+  font-size: 120%
+  text-align: center
+  @media (max-width: 1000px)
+    font-size: 80%
+
+// Post listings
+
+.g-post
+  margin-bottom: 2em
+
+.g-date
+  margin-top: 1em

@@ -25,10 +25,9 @@ module.exports = {
             order: '-fields.date'
           },
           template: {
-            path: 'views/post.sgr',
+            path: 'views/templates/post.sgr',
             output: (post) => { return `${post.fields.slug}.html` }
-          },
-          json:'data.json'
+          }
         },
         {
           name: 'indexPosts',
@@ -43,8 +42,12 @@ module.exports = {
           id: 'blogCategory',
           filters: {
             order: 'fields.order'
-          }
-          // TODO: make a category.sgr template that creates pages for each the categories; find a way to add all posts into their respective category.htmls
+          },
+          json:'data.json'
+          // template: {
+          //   path: 'views/templates/cats.sgr',
+          //   output: (cat) => { return `categories/${cat.fields.slug}.html` }
+          // }
         }
       ]
     })

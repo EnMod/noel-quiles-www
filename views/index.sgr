@@ -4,17 +4,21 @@ extends(src='layout.sgr')
     title Enlightened Modifications
 
   block(name='content')
-    #title
-      h1 enlightened modifications
-      h3 Thoughts on webdev, gamedev, life, and writing.
+    #index
+      .g-title
+        h1 enlightened modifications
+        h3 Thoughts on webdev, gamedev, life, and writing.
 
-    each(loop='post of contentful.indexPosts')
-      .post
-        a(href='{{ post.fields.slug }}.html')
-          h2 {{ post.fields.title }}
-        //- I CAN'T BELIEVE THIS WORKS SPIKE RULES
-        //- ...*ahem* by importing DateJS and using its methods here, I can transform the date to something more palatable at build time
-        h5.date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
-        .excerpt
-          p(md) {{ post.fields.body }}
-    p(md) Looking for more? Check out the [post archive](https://blog.noelquiles.com/posts)!
+      each(loop='post of contentful.indexPosts')
+        .g-post
+          a(href='{{ post.fields.slug }}.html')
+            h2 {{ post.fields.title }}
+
+          //- I CAN'T BELIEVE THIS WORKS SPIKE RULES
+          //- ...*ahem* by importing DateJS and using its methods here,
+          //- I can transform the date to something more palatable at build time
+          h5.g-date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
+          .g-excerpt
+            p(md) {{ post.fields.body }}
+
+      p(md) Looking for more? Check out the [post archive](https://blog.noelquiles.com/archive)!

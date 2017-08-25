@@ -1,0 +1,11 @@
+extends(src='layout.sgr')
+  block(name='title')
+    title Post Archive - Enlightened Modifications
+
+  block(name='content')
+    h1 Post Archive
+
+    each(loop='post of contentful.fullPosts')
+      a(href='/{{ post.fields.slug }}.html')
+        h2 {{ post.fields.title }}
+      p.excerpt(md) {{ post.fields.body }}

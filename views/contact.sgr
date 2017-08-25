@@ -1,17 +1,16 @@
 extends(src='layout.sgr')
 
   block(name='title')
-    title Enlightened Modifications
+    title Contact | Enlightened Modifications
 
   block(name='content')
-    #title
-      h1 enlightened modifications
-      h3 Thoughts on webdev, gamedev, life, and writing.
+    #contact
+      .g-title
+        h1 Contact
+        h3 Let's keep in touch!
 
-    each(loop='post of contentful.indexPosts')
-      a(href='posts/{{ post.fields.slug }}.html')
-        h2 {{ post.fields.title }}
-      .excerpt
-        p(md) {{ post.fields.body }}
-
-    p(md) Looking for more? Check out the [post archive](https://blog.noelquiles.com/posts)!
+      //- .g-info
+      //-   .row
+      //-     .col
+      //-     .col
+      //-     .col

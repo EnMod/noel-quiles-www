@@ -1,13 +1,10 @@
 const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
-const pageId = require('spike-page-id')
 const sugarml = require('sugarml')
 const sugarss = require('sugarss')
 const dotenv = require('dotenv').config()
 const datejs = require('datejs')
-
-// let's get...Contentful *shudder*
 const Contentful = require('spike-contentful')
 const locals = {}
 
@@ -27,7 +24,8 @@ module.exports = {
           template: {
             path: 'views/templates/post.sgr',
             output: (post) => { return `${post.fields.slug}.html` }
-          }
+          },
+          json: 'data.json'
         },
         {
           name: 'indexPosts',
@@ -42,12 +40,7 @@ module.exports = {
           id: 'blogCategory',
           filters: {
             order: 'fields.order'
-          },
-          json:'data.json'
-          // template: {
-          //   path: 'views/templates/cats.sgr',
-          //   output: (cat) => { return `categories/${cat.fields.slug}.html` }
-          // }
+          }
         }
       ]
     })

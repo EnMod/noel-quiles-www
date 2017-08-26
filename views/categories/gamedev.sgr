@@ -1,0 +1,24 @@
+extends(src='layout.sgr')
+
+  block(name='title')
+    title Gamedev | Enlightened Modifications
+
+  block(name='content')
+    main#gamedev(role='main')
+      each(loop='cat of contentful.categories')
+        if(condition="cat.fields.slug === 'gamedev'")
+          .g-title
+            h1 {{ cat.fields.title }}
+            h3 {{ cat.fields.description }}
+      // loop through each of the posts in total
+      each(loop='post of contentful.fullPosts')
+        // then for each one, loop through their categories
+        each(loop='postCat of post.fields.category')
+          // if any match this page, post them
+          if(condition="postCat.fields.slug === 'gamedev'")
+            .g-post
+              a(href='/{{ post.fields.slug }}.html')
+                h2 {{ post.fields.title }}
+              h5.g-date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
+              .g-excerpt
+                p(md) {{ post.fields.body }}

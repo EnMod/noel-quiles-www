@@ -1,0 +1,21 @@
+extends(src='layout.sgr')
+
+  block(name='title')
+    title Writing | Enlightened Modifications
+
+  block(name='content')
+    main#writing(role='main')
+      each(loop='cat of contentful.categories')
+        if(condition="cat.fields.slug === 'writing'")
+          .g-title
+            h1 {{ cat.fields.title }}
+            h3 {{ cat.fields.description }}
+      each(loop='post of contentful.fullPosts')
+        each(loop='postCat of post.fields.category')
+          if(condition="postCat.fields.slug === 'writing'")
+            .g-post
+              a(href='/{{ post.fields.slug }}.html')
+                h2 {{ post.fields.title }}
+              h5.g-date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
+              .g-excerpt
+                p(md) {{ post.fields.body }}

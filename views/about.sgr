@@ -4,9 +4,13 @@ extends(src='layout.sgr')
     title About | Enlightened Modifications
 
   block(name='content')
-    #about
+    main#about(role='main')
       .g-title
-        h1 Contact
-        h3 Let's keep in touch!
-      //- .g-info
+        h1 About
+
+      p(md).
+        I make frontends, games, stories, and fresh beats.
+
+        What, too vague and/or short? There's more details at [my main site](https://noelquiles.com).
+
 

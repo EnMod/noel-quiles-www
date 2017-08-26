@@ -4,9 +4,10 @@ extends(src='layout.sgr')
     title {{ item.fields.title }} - Enlightened Modifications
 
   block(name='content')
-    #single-post
+    main#single-post(role='main')
       h1 {{ item.fields.title }}
-      h3#categories
+      h3.g-date {{ Date.parse(item.fields.date).toString('MMMM dS, yyyy') }}
+      h4#categories
         |Filed under:
         each(loop='category of item.fields.category')
           span

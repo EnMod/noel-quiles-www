@@ -3,9 +3,11 @@ extends(src='layout.sgr')
     title Post Archive - Enlightened Modifications
 
   block(name='content')
-    h1 Post Archive
+    main#archive(role='main')
+      h1 Post Archive
 
-    each(loop='post of contentful.fullPosts')
-      a(href='/{{ post.fields.slug }}.html')
-        h2 {{ post.fields.title }}
-      p.excerpt(md) {{ post.fields.body }}
+      each(loop='post of contentful.fullPosts')
+        a(href='/{{ post.fields.slug }}.html')
+          h2 {{ post.fields.title }}
+        h4.g-date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
+        p.excerpt(md) {{ post.fields.body }}

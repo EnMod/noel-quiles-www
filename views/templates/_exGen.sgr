@@ -7,7 +7,7 @@
   // I can transform the date to something more palatable at build time
   h3.g-date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
   h3.g-categories
-    |Categorized as:
+    |Filed under:
     each(loop='category of post.fields.category')
       span
         a(href='categories/{{category.fields.slug}}.html') {{ category.fields.title }}

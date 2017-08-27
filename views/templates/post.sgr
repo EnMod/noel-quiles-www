@@ -4,14 +4,37 @@ extends(src='templates/layout.sgr')
     title {{ item.fields.title }} - Enlightened Modifications
 
   block(name='content')
-    main#single-post(role='main')
-      h1 {{ item.fields.title }}
-      h2.g-date {{ Date.parse(item.fields.date).toString('MMMM dS, yyyy') }}
-      h3#categories
-        |Categorized as:
-        each(loop='category of item.fields.category')
-          span
-            a(href='categories/{{category.fields.slug}}.html') {{ category.fields.title }}
+    main(role='main')
+      #single-post
+        h1 {{ item.fields.title }}
+        h3.g-date {{ Date.parse(item.fields.date).toString('MMMM dS, yyyy') }}
+        h3#categories
+          |Filed under:
+          each(loop='category of item.fields.category')
+            span
+              a(href='categories/{{category.fields.slug}}.html') {{ category.fields.title }}
+        p: .body(md) {{ item.fields.body }}
+        hr
+        #disqus_thread
+        script.
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
 
-      p: .body(md) {{ item.fields.body }}
+            var disqus_config = function () {
+                this.page.url = 'https://blog.noelquiles.com/{{item.fields.slug}}/';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '{{item.fields.slug}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
 
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                var d = document, s = d.createElement('script');
+
+                s.src = '//enmodblog.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        noscript
+          |Please enable JavaScript to view the
+          a(href="https://disqus.com/?ref_noscript" rel="nofollow") comments powered by Disqus.

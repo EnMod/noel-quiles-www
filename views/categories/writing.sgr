@@ -1,4 +1,4 @@
-extends(src='layout.sgr')
+extends(src='templates/layout.sgr')
 
   block(name='title')
     title Writing | Enlightened Modifications
@@ -13,9 +13,4 @@ extends(src='layout.sgr')
       each(loop='post of contentful.fullPosts')
         each(loop='postCat of post.fields.category')
           if(condition="postCat.fields.slug === 'writing'")
-            .g-post
-              a(href='/{{ post.fields.slug }}.html')
-                h2 {{ post.fields.title }}
-              h5.g-date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
-              .g-excerpt
-                p(md) {{ post.fields.body }}
+            include(src='/templates/_exGen.sgr')

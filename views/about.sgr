@@ -1,4 +1,4 @@
-extends(src='layout.sgr')
+extends(src='templates/layout.sgr')
 
   block(name='title')
     title About | Enlightened Modifications
@@ -12,5 +12,3 @@ extends(src='layout.sgr')
         I make frontends, games, stories, and fresh beats.
 
         What, too vague and/or short? There's more details at [my main site](https://noelquiles.com).
-
-

@@ -1,4 +1,4 @@
-extends(src='layout.sgr')
+extends(src='templates/layout.sgr')
 
   block(name='title')
     title Enlightened Modifications
@@ -6,19 +6,10 @@ extends(src='layout.sgr')
   block(name='content')
     main#index(role='main')
       .g-title
-        h1 enlightened modifications
+        h1 Enlightened Modifications
         h3 Thoughts on webdev, gamedev, life, and writing.
 
       each(loop='post of contentful.indexPosts')
-        .g-post
-          a(href='/{{ post.fields.slug }}.html')
-            h2 {{ post.fields.title }}
+        include(src='/templates/_exGen.sgr')
 
-          // I CAN'T BELIEVE THIS WORKS SPIKE RULES
-          // ...*ahem* by importing DateJS and using its methods here,
-          // I can transform the date to something more palatable at build time
-          h5.g-date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
-          .g-excerpt
-            p(md) {{ post.fields.body }}
-
-      p(md) Looking for more? Check out the [post archive](https://blog.noelquiles.com/archive)!
+      p(md) Looking for more? Browse through other categories or the full archive via the navigation menu up top!

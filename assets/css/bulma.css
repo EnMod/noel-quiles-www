@@ -4,7 +4,7 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~ Complete credit for everything except ~~ */
-/* ~ the "edits" portions goes to the Bulma ~ */ 
+/* ~ the "edits" portions goes to the Bulma ~ */
 /* ~ project! Go use it, star it on GitHub,~~ */
 /* ~ it's a great framework! ~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -17,11 +17,11 @@
 /* ~ Bulma's grid system ~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* 
+/*
 
 edits:
 
-.columns => .row 
+.columns => .row
 .column => .col
 mobile/.is-mobile => .mobi-on
 desktop => desk
@@ -1351,9 +1351,9 @@ is-1 => s1 (size 1)
 /* ~ Bulma's helpers/responsive helpers ~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* 
+/*
 
-edits: 
+edits:
 
 is-hidden => hide
 mobile => mobi-on
@@ -1387,6 +1387,9 @@ tablet => tab
 @media screen and (max-width: 999px) {
   .hide-touch {
     display: none !important;
+  }
+  .hide-touch.active {
+    display: block !important;
   }
 }
 
@@ -1647,7 +1650,7 @@ a.nav-item:hover, a.nav-item.active,
             transform: translateY(0);
   }
   .nav-link::after {
-    border: 1px solid #00d1b2;
+    border: 1px solid #333;
     border-right: 0;
     border-top: 0;
     content: " ";
@@ -1683,13 +1686,7 @@ a.nav-item:hover, a.nav-item.active,
   }
   .nav-dropdown {
     background-color: white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top: 1px solid #dbdbdb;
-    -webkit-box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
-            box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
     display: none;
-    font-size: 0.875rem;
     left: 0;
     min-width: 100%;
     position: absolute;
@@ -1709,13 +1706,10 @@ a.nav-item:hover, a.nav-item.active,
   }
   .nav-dropdown a.nav-item.active {
     background-color: whitesmoke;
-    color: #00d1b2;
+    color: #333;
   }
   .nav-dropdown.is-boxed {
-    border-radius: 5px;
     border-top: none;
-    -webkit-box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     display: block;
     opacity: 0;
     pointer-events: none;
@@ -1739,10 +1733,6 @@ a.nav-item:hover, a.nav-item.active,
   a.nav-item.active,
   .nav-link.active {
     color: #0a0a0a;
-  }
-  a.nav-item.active:not(:hover),
-  .nav-link.active:not(:hover) {
-    background-color: transparent;
   }
   .nav-item.has-dropdown:hover .nav-link, .nav-item.has-dropdown.active .nav-link {
     background-color: whitesmoke;

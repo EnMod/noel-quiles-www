@@ -1,4 +1,4 @@
-extends(src='layout.sgr')
+extends(src='templates/layout.sgr')
 
   block(name='title')
     title {{ item.fields.title }} - Enlightened Modifications
@@ -6,12 +6,12 @@ extends(src='layout.sgr')
   block(name='content')
     main#single-post(role='main')
       h1 {{ item.fields.title }}
-      h3.g-date {{ Date.parse(item.fields.date).toString('MMMM dS, yyyy') }}
-      h4#categories
-        |Filed under:
+      h2.g-date {{ Date.parse(item.fields.date).toString('MMMM dS, yyyy') }}
+      h3#categories
+        |Categorized as:
         each(loop='category of item.fields.category')
           span
             a(href='categories/{{category.fields.slug}}.html') {{ category.fields.title }}
 
-      p(md) {{ item.fields.body }}
+      p: .body(md) {{ item.fields.body }}
 

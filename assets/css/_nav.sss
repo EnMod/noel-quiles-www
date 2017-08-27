@@ -1,10 +1,46 @@
 .nav
   position: fixed
   top: 0
+  left: 0
   background: #ddd
   width: 100%
+  font-family: var(--headFont)
   & a,
   & a:link,
   & a:visited
     color: var(--textColor)
     text-decoration: none
+  & .nav-link::after
+    @media (max-width: 1000px)
+      border: 1px solid #333
+      border-top-width: 1px
+      border-right-width: 1px
+      border-top-style: solid
+      border-right-style: solid
+      border-top-color: rgb(51, 51, 51)
+      border-right-color: rgb(51, 51, 51)
+      border-right: 0
+      border-top: 0
+      content: " "
+      display: block
+      height: 0.5em
+      pointer-events: none
+      position: absolute
+      -webkit-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      width: 0.5em
+      margin-top: -0.375em
+      right: 1.125em
+      top: 50%
+  & .nav-link.active::after
+    @media (max-width: 1000px)
+      transform: rotate(135deg)
+      top: 60%
+  & a.nav-item.active
+    color: var(--textColor)
+    background-color: var(--backgroundColor)
+  & .nav-burger.active span
+    background-color: var(--textColor)
+  & .nav-dropdown
+    padding: 0
+    background-color: #ddd

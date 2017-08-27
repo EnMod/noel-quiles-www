@@ -1,25 +1,52 @@
 // Vars
 
 :root
-  // --fontFam: 'Cabin'
-  // --fontFam: 'Hind'
-  // --fontFam: 'Hind Siliguri'
-  // --fontFam: 'Noto Sans'
-  --fontFam: 'Palanquin'
+  // 14px - 20px
+  // --bodyFont: 'Donegal One'
+  // 12px - 18px
+  --bodyFont: 'Quando'
+  // 14px - 20px
+  // --bodyFont: 'Volkhov'
+  // --headFont: 'Noto Sans'
+  // --bodyFont: 'charter'
+  --headFont: 'Palanquin'
   --textColor: #333
+  --backgroundColor: rgb(248, 248, 248)
   --siteWidth: 700px
-
+// content behind the scenes), then slowly lowering into the box (to
+// lowering into the box (to check for size). It will stop with
 // -----
 // General tags
 // -----
 
+be able to work on two additional sites, both more challenging than
 *, *::after, *::before
   box-sizing: border-box
 
 body
-  font-family: var(--fontFam)
+  font-family: var(--bodyFont)
   margin: 0
   padding: 0
+  background-color: var(--backgroundColor)
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+  padding: 0 15px
+
+main,
+footer
+  font-size: 18px
+  line-height: 1.6
+  @media (max-width: 700px)
+    font-size: 12px
+  color: var(--textColor)
+  & a
+    color: var(--textColor)
+  & a:hover
+    color: #aaa
+
+main
+  flex: 1
 
 footer
   margin-top: 3em
@@ -27,6 +54,8 @@ footer
 
 img
   max-width: 100%
+  display: block
+  margin: 0 auto
 
 // -----
 // Typography
@@ -34,6 +63,7 @@ img
 
 h1, h2, h3, h4, h5, h6
   line-height: 1.4
+  font-family: var(--headFont)
 
 h2
   margin-top: 0px
@@ -41,12 +71,10 @@ h2
 
 code
   background: #eee
-  font-size: 90%
 
 code[class*="language-"],
 pre[class*="language-"]
   font-size: 90%
-
 
 
 // -----
@@ -54,27 +82,14 @@ pre[class*="language-"]
 // -----
 
 main
-  line-height: 1.4
-  margin: 78px auto 0 auto
+  margin: 5rem auto 0 auto
   max-width: var(--siteWidth)
-  font-size: 23px
   @media (max-width: 700px)
-    font-size: 16px
-  padding: 0 15px
-  color: var(--textColor)
-  & a,
-  & a:link,
-  & a:visited
-    color: var(--textColor)
-  & a:hover
-    color: #aaa
+    max-width: 100%
   & hr
     height: 5px
     border: 1px var(--textColor) solid
     background-color: var(--textColor)
-  & .g-title h1
-    font-family: enmod
-    line-height: 1em
 
 // -----
 // Globals
@@ -88,15 +103,28 @@ main
   & > h1,
   & > h3
     margin: 0
+  & h1
+    font-size: 3em
+    @media (max-width: 1000px)
+      font-size: 2.5em
   & h3
-    font-size: 120%
-  @media (max-width: 1000px)
-    font-size: 75%
+    font-size: 1.4em
+    @media (max-width: 1000px)
+      font-size: 1.6em
 
 // Post listings
 
 .g-post
-  margin-bottom: 2em
+  margin-bottom: 3em
+  & h1,
+  & h3
+    margin: 0
+  & > a
+    text-decoration: none
 
-.g-date
-  margin-top: 1em
+.g-date,
+.g-readmore,
+.g-categories,
+.g-categories a
+  color: #888
+

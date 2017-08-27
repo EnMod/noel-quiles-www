@@ -3579,6 +3579,10 @@ items@2.x.x:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/items/-/items-2.1.1.tgz#8bd16d9c83b19529de5aea321acaada78364a198"
 
+javascript-text-truncate@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/javascript-text-truncate/-/javascript-text-truncate-2.0.1.tgz#34c39c77d00260ba2afb0cc440d1a99b3c4f717b"
+
 jest-diff@19.0.0, jest-diff@^19.0.0:
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-19.0.0.tgz#d1563cfc56c8b60232988fbc05d4d16ed90f063c"

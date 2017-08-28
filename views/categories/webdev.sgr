@@ -13,5 +13,5 @@ extends(src='templates/layout.sgr')
       each(loop='post of contentful.fullPosts')
         each(loop='postCat of post.fields.category')
           if(condition="postCat.fields.slug === 'webdev'")
-            include(src='/templates/_exGen.sgr')
+            include(src='/templates/_exGenNoCat.sgr')
 

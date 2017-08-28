@@ -17,4 +17,4 @@ extends(src='templates/layout.sgr')
           // if any match this page, post them by including
           // the category generator
           if(condition="postCat.fields.slug === 'gamedev'")
-            include(src='/templates/_exGen.sgr')
+            include(src='/templates/_exGenNoCat.sgr')

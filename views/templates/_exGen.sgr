@@ -10,7 +10,7 @@
     |Filed under:
     each(loop='category of post.fields.category')
       span
-        a(href='categories/{{category.fields.slug}}.html') {{ category.fields.title }}
+        a(href='/categories/{{category.fields.slug}}.html') {{ category.fields.title }}
 
   p(md) {{ post.fields.excerpt }}
   a(href='/{{ post.fields.slug }}.html' class='g-readmore')

@@ -32,8 +32,7 @@ html.no-js(lang='en')
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quando")
 
     link(rel="stylesheet" href="/css/bulma.css")
-    link(rel="stylesheet" href="/css/prism.css")
-    link(rel="stylesheet" href="/css/prism-solarizedlight.css")
+    link(rel="stylesheet" href="/css/solarized-light.css")
     link(rel="stylesheet" href="/css/style.css")
   body
     include(src='_nav.sgr')

@@ -1,4 +1,6 @@
-const Prism = require('prismjs')
+const hljs = require('highlight.js')
+
+hljs.initHighlightingOnLoad()
 
 // ---
 // bulma nav trigger
@@ -42,8 +44,6 @@ const currentPage = document.querySelector('main')
 navLinks.forEach(link => {
   if (link.classList.contains(currentPage.id)) link.classList.add('active')
 })
-
-Prism.highlightAll()
 
 
 

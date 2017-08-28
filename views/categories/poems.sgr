@@ -4,7 +4,7 @@ extends(src='templates/layout.sgr')
     title Poems | Enlightened Modifications
 
   block(name='content')
-    main#poems(role='main')
+    #poems
       each(loop='cat of contentful.categories')
         if(condition="cat.fields.slug === 'poems'")
           .g-title

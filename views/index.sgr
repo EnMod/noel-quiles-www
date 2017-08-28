@@ -4,7 +4,7 @@ extends(src='templates/layout.sgr')
     title Enlightened Modifications
 
   block(name='content')
-    main#index(role='main')
+    #index
       .g-title
         h1 Enlightened Modifications
         h3 Thoughts on webdev, gamedev, life, and writing.

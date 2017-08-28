@@ -4,11 +4,13 @@ extends(src='templates/layout.sgr')
     title About | Enlightened Modifications
 
   block(name='content')
-    main#about(role='main')
+    #about
       .g-title
         h1 About
 
       p(md).
         I make frontends, games, stories, and fresh beats.
 
-        What, too vague and/or short? There's more details at [my main site](https://noelquiles.com).
+        What, too vague and/or short? A more expanded synopsis: I'm a web developer and graphic designer who's made some games and music in his time. What I love to do most is create stories, be they a static or interactive experience. In this blog you'll find dozens of the former with some links to the latter.
+
+        Still not enough? There's more at [my main site](https://noelquiles.com)!

@@ -4,7 +4,7 @@ extends(src='templates/layout.sgr')
     title Announcements | Enlightened Modifications
 
   block(name='content')
-    main#announcements(role='main')
+    #announcements
       each(loop='cat of contentful.categories')
         if(condition="cat.fields.slug === 'announcements'")
           .g-title

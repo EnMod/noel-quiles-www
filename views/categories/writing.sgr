@@ -4,7 +4,7 @@ extends(src='templates/layout.sgr')
     title Writing | Enlightened Modifications
 
   block(name='content')
-    main#writing(role='main')
+    #writing
       each(loop='cat of contentful.categories')
         if(condition="cat.fields.slug === 'writing'")
           .g-title

@@ -38,7 +38,8 @@ html.no-js(lang='en')
   body
     include(src='_nav.sgr')
 
-    block(name='content')
+    main(role='main')
+      block(name='content')
 
     footer(md).
       Version [1.0](https://github.com/enmod/noelquiles.com/tree/blog). Made with [Spike](https://www.spike.cf/), [Bulma](http://bulma.io/), blood, sweat, and tears.

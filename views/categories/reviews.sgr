@@ -4,7 +4,7 @@ extends(src='templates/layout.sgr')
     title Reviews | Enlightened Modifications
 
   block(name='content')
-    main#reviews(role='main')
+    #reviews
       each(loop='cat of contentful.categories')
         if(condition="cat.fields.slug === 'reviews'")
           .g-title

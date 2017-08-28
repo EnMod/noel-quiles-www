@@ -4,16 +4,14 @@ extends(src='templates/layout.sgr')
     title Contact | Enlightened Modifications
 
   block(name='content')
-    main#contact(role='main')
+    #contact
       .g-title
         h1 Contact
         h3 Let's keep in touch!
 
       p(md).
         You can:
-
         * Drop me a comment on one of my posts
         * Shoot me [an email](mailto:contact@noelquiles.com)
         * Send me [a Tweet](https://twitter.com/NoelQuiles)
-        * Or even write me [an issue](https://github.com/EnMod)
-
+        * Or write me [an issue](https://github.com/EnMod)

@@ -4,7 +4,7 @@ extends(src='templates/layout.sgr')
     title Life | Enlightened Modifications
 
   block(name='content')
-    main#life(role='main')
+    #life
       each(loop='cat of contentful.categories')
         if(condition="cat.fields.slug === 'life'")
           .g-title

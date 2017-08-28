@@ -2,12 +2,7 @@
 .g-post
   a(href='/{{ post.fields.slug }}.html')
     h1 {{ post.fields.title }}
-  // I CAN'T BELIEVE THIS WORKS SPIKE RULES
-  // ...*ahem* by importing DateJS and using its methods here,
-  // I can transform the date to something more palatable at build time
   h3.g-date {{ Date.parse(post.fields.date).toString('MMMM dS, yyyy') }}
-
   p(md) {{ post.fields.excerpt }}
-
   a(href='/{{ post.fields.slug }}.html' class='g-readmore')
     p Full post >>

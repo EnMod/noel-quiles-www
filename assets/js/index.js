@@ -40,7 +40,7 @@ if (burgers.length > 0) {
 // active tab logic
 // -----
 
-const currentPage = document.querySelector('main')
+const currentPage = document.querySelector('main > div')
 navLinks.forEach(link => {
   if (link.classList.contains(currentPage.id)) link.classList.add('active')
 })

@@ -2,11 +2,7 @@
 
 @font-face
   font-family: enmod
-  src: url(enmod.ttf)
-
-/*<==-==>*/
-/*Globals*/
-/*<==-==>*/
+  src: url('enmod.woff') format('woff'), url('enmod.ttf') format('truetype')
 
 *, *::after, *::before
   box-sizing: border-box
@@ -31,10 +27,13 @@ body
   padding: 0 10px
   color: #333
 
-a, a:link, a:visited
+a
   color: #333
-a:hover
-  color: #aaa
+  &:link,
+  &:visited
+    color: #333
+  &:hover
+    color: #aaa
 
 hr
   height: 5px
@@ -44,7 +43,8 @@ hr
 .row
   max-width: 800px
 
-#frontends .row, #games .row
+#frontends .row,
+#games .row
   margin-bottom: 1em
 
 #title-screen

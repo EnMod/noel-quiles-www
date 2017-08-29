@@ -53,6 +53,7 @@ module.exports = {
     html: '*(**/)*.sgr',
     css: '*(**/)*.sss'
   },
+  vendor: ['assets/twine/**'],
   ignore: ['**/layout.sgr', 'assets/css/_*', 'views/**/_*', '**/.*', 'readme.md', 'yarn.lock'],
   reshape: htmlStandards({ locals: () => locals }),
   postcss: cssStandards(),

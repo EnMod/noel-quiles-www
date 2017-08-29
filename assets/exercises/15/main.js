@@ -26,7 +26,7 @@ function addItem(e){
   items.push(item)
 
   // repopulates the list once adding is done
-  populateList(items, itemList)
+  populateList(items, itemsList)
 
   // but how does the list of items persist on page load?  Through local storage!
 

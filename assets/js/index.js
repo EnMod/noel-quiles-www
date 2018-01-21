@@ -7,9 +7,9 @@ hljs.initHighlightingOnLoad()
 // ---
 
 // Get all "nav-burger" elements and nav links
-const burgers = Array.from(document.querySelectorAll('.nav-burger'))
-const navLinks = Array.from(document.querySelectorAll('.nav-menu a'))
-const catsLink = document.querySelector('.nav-drop-link')
+const burgers = Array.from(document.querySelectorAll('.navbar-burger'))
+const navLinks = Array.from(document.querySelectorAll('.navbar-menu a'))
+const catsLink = document.querySelector('.navbar-dropdown-link')
 
 // Check if there are any nav burgers
 if (burgers.length > 0) {
@@ -22,8 +22,8 @@ if (burgers.length > 0) {
       const menu = document.getElementById(target)
 
       // Toggle the class on both the "nav-burger" and the "nav-menu"
-      burger.classList.toggle('active')
-      menu.classList.toggle('active')
+      burger.classList.toggle('is-active')
+      menu.classList.toggle('is-active')
     })
   })
   // little snippet to make the categories link in the mobile menu work similarly
@@ -31,8 +31,8 @@ if (burgers.length > 0) {
     const target = catsLink.dataset.target
     const menu = document.getElementById(target)
 
-    catsLink.classList.toggle('active')
-    menu.classList.toggle('active')
+    catsLink.classList.toggle('is-active')
+    menu.classList.toggle('is-active')
   })
 }
 

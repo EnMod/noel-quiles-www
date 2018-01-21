@@ -1,7 +1,7 @@
 extends(src='templates/layout.sgr')
 
   block(name='title')
-    title Poems | Enlightened Modifications
+    title Poems | {{ blogTitle }}
 
   block(name='content')
     #poems

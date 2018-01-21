@@ -3,6 +3,7 @@ nav.nav
   //- always-on items
   .nav-brand
     .nav-item
+      //- have to hardcode it here for...reasons? Not sure why yet
       p Modified Musings
     .nav-burger.burger(data-target="nav-menu").hide-desk
       span

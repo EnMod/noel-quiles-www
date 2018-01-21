@@ -1,7 +1,7 @@
 extends(src='templates/layout.sgr')
 
   block(name='title')
-    title About | Modified Musings
+    title About | {{ blogTitle }}
 
   block(name='content')
     #about
@@ -9,8 +9,13 @@ extends(src='templates/layout.sgr')
         h1 About
 
       p(md).
-        I make [frontends](https://noelquiles.com#frontends), [games](https://enmod.itch.io), stories, and [fresh beats](https://soundcloud.com/enmod).
+        I'm a game and web developer who's designed some graphics and made some music in his time. What I love to do most is create stories, be they a static or interactive experience. In this blog you'll find dozens of the former with some links to the latter.
 
-        What, too vague and/or short? A more expanded synopsis: I'm a web developer and graphic designer who's made some games and music in his time. What I love to do most is create stories, be they a static or interactive experience. In this blog you'll find dozens of the former with some links to the latter.
+        Not enough info? There's more at these places:
 
-        Still not enough? There's more at [my main site](https://noelquiles.com)!
+        [My main website!](https://noelquiles.com)
+
+        [My Itch.io page!](https://enmod.itch.io)
+
+        [My SoundCloud!](https://soundcloud.com/enmod).
+

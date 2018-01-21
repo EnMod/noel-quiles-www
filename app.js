@@ -6,7 +6,7 @@ const sugarss = require('sugarss')
 const dotenv = require('dotenv').config()
 const datejs = require('datejs')
 const Contentful = require('spike-contentful')
-const locals = {}
+const locals = {blogTitle: 'Modified Musings'}
 
 module.exports = {
   plugins: [

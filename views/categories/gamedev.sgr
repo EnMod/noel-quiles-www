@@ -1,7 +1,7 @@
 extends(src='templates/layout.sgr')
 
   block(name='title')
-    title Gamedev | Enlightened Modifications
+    title Gamedev | {{ blogTitle }}
 
   block(name='content')
     #gamedev

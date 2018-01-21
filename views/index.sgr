@@ -1,12 +1,12 @@
 extends(src='templates/layout.sgr')
 
   block(name='title')
-    title Modified Musings
+    title {{ blogTitle }}
 
   block(name='content')
     #index
       .g-title
-        h1 Modified Musings
+        h1 {{ blogTitle }}
         h3 Thoughts on webdev, gamedev, life, and writing.
 
       each(loop='post of contentful.indexPosts')

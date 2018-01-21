@@ -4,7 +4,7 @@ html.no-js(lang='en')
     meta(charset='utf-8')
 
     block(name='title')
-      title Enlightened Modifications
+      title {{ blogTitle }}
     meta(content='Thoughts on webdev, gamedev, life, and writing.' name='description')
     meta(content='Noel Quiles' name='author')
     meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -40,8 +40,18 @@ html.no-js(lang='en')
     main(role='main')
       block(name='content')
 
-    footer(md).
-      Version [1.0](https://github.com/enmod/noelquiles.com/tree/blog). Made with [Spike](https://www.spike.cf/), [Bulma](http://bulma.io/), blood, sweat, and tears.
-      Managed with [Contentful](https://www.contentful.com) and built/hosted by [Netlify](https://www.netlify.com).
+    footer
+      p(md).
+        [v1.1](https://github.com/enmod/noelquiles.com/tree/blog). Made with [Spike](https://www.spike.cf/) and some help:
+      .row.badges
+        .col.contentful
+          a(href="https://www.contentful.com/" rel="nofollow" target=“_blank”)
+            img(src="https://images.contentful.com/fo9twyrwpveg/7Htleo27dKYua8gio8UEUy/0797152a2d2f8e41db49ecbf1ccffdaa/PoweredByContentful_DarkBackground_MonochromeLogo.svg" style="max-width:100px;width:100%;" alt="Powered by Contentful")
+        .col
+          a(href="https://bulma.io")
+            img(src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24")
+        .col
+          a(href="https://www.netlify.com")
+            img(src="https://www.netlify.com/img/global/badges/netlify-dark.svg")
 
     script(src='/js/main.js')

@@ -1,7 +1,7 @@
 extends(src='templates/layout.sgr')
 
   block(name='title')
-    title {{ item.fields.title }} | Enlightened Modifications
+    title {{ item.fields.title }} | Modified Musings
 
   block(name='content')
     #single-post
@@ -13,27 +13,27 @@ extends(src='templates/layout.sgr')
           span
             a(href='categories/{{category.fields.slug}}.html') {{ category.fields.title }}
       p: .body(md) {{ item.fields.body }}
-      hr
-      #disqus_thread
-      script.
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-        */
+      //- hr
+      //- #disqus_thread
+      //- script.
+      //-   /**
+      //-   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      //-   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+      //-   */
 
-        var disqus_config = function () {
-          this.page.url = 'https://blog.noelquiles.com/{{item.fields.slug}}/';  // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = '{{item.fields.slug}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
+      //-   var disqus_config = function () {
+      //-     this.page.url = 'https://blog.noelquiles.com/{{item.fields.slug}}/';  // Replace PAGE_URL with your page's canonical URL variable
+      //-     this.page.identifier = '{{item.fields.slug}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      //-   };
 
-        (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-          var d = document, s = d.createElement('script');
+      //-   (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+      //-     var d = document, s = d.createElement('script');
 
-          s.src = '//enmodblog.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+      //-     s.src = '//enmodblog.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
 
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      noscript
-        |Please enable JavaScript to view the
-        a(href="https://disqus.com/?ref_noscript" rel="nofollow") comments powered by Disqus.
+      //-     s.setAttribute('data-timestamp', +new Date());
+      //-     (d.head || d.body).appendChild(s);
+      //-   })();
+      //- noscript
+      //-   |Please enable JavaScript to view the
+      //-   a(href="https://disqus.com/?ref_noscript" rel="nofollow") comments powered by Disqus.

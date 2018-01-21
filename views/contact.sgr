@@ -1,7 +1,7 @@
 extends(src='templates/layout.sgr')
 
   block(name='title')
-    title Contact | Enlightened Modifications
+    title Contact | Modified Musings
 
   block(name='content')
     #contact
@@ -11,7 +11,6 @@ extends(src='templates/layout.sgr')
 
       p(md).
         You can:
-        * Drop me a comment on one of my posts
         * Shoot me [an email](mailto:contact@noelquiles.com)
         * Send me [a Tweet](https://twitter.com/NoelQuiles)
         * Or write me [an issue](https://github.com/EnMod)

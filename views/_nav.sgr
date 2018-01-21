@@ -3,7 +3,7 @@ nav.nav
   //- always-on items
   .nav-brand
     .nav-item
-      p Enlightened Modifications
+      p Modified Musings
     .nav-burger.burger(data-target="nav-menu").hide-desk
       span
       span

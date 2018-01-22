@@ -55,8 +55,8 @@ html.no-js(lang='en')
           a(href='#contact')
             h2 Want to contact me?
 
-      hr
       .section#frontends
+        hr
         h1 {{ contentful.sections[0].fields.heading }}
         .info: p(md) {{ contentful.sections[0].fields.blurb }}
 
@@ -70,8 +70,8 @@ html.no-js(lang='en')
               h3(md) {{ frontend.fields.client }}
               p(md) {{ frontend.fields.info }}
 
-      hr
       .section#games
+        hr
         h1 {{ contentful.sections[1].fields.heading }}
         .info: p(md) {{ contentful.sections[1].fields.blurb }}
 
@@ -87,13 +87,13 @@ html.no-js(lang='en')
                 h2 {{ game.fields.title }}
               p(md) {{ game.fields.info }}
 
-      hr
       #stories
+        hr
         h1 {{ contentful.sections[2].fields.heading }}
         .info: p(md) {{ contentful.sections[2].fields.blurb }}
 
-      hr
       .section#fresh-beats
+        hr
         h1 {{ contentful.sections[3].fields.heading }}
         .info: p(md) {{ contentful.sections[3].fields.blurb }}
 

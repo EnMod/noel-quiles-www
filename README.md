@@ -1,8 +1,6 @@
 # Personal/Portfolio Site v3.7
 
-Made with [Spike](https://spike.cf) and all of its standard tooling. Also 
-employs components from [Bulma](https://bulma.io) for pretty fast layout.
-Site content is managed with [Contentful](https://www.contentful.com), 
-and the site itself is built/hosted by [Netflify](https://www.netlify.com).
+It was developed with the [Spike](https://spike.cf) build tool and all of its standard tooling. The design was laid out/conceptualized with help from the [Bulma](https://bulma.io) framework and inspiration from [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com).
 
-Check out these tools, they're grand :sparkles:
+Site content is managed
+with [Contentful](https://www.contentful.com) and delivered through their content delivery API. Hosting and final building/compilation/HTTPS/DNS/EVERYTHING ELSE is handled by [Netlify](https://www.netlify.com).

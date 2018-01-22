@@ -9,7 +9,7 @@ extends(src='templates/layout.sgr')
         h1 About
 
       p(md).
-        I'm a game developer and web developer/designer who loves to create stories, be they static or interactive. Here you'll find mostly the static, with some links to and considerations of the interactive variety. Also, this is where all my devlogs go, so you're in the right place if you want to read monoliths of text on gamedev.
+        I'm a game developer and web developer/designer who loves to create stories, be they static or interactive. Here you'll find mostly the static, with some links to and considerations of the interactive. Oh yeah, this is where all my devlogs go, so you're in the right place if you want to read MONOLITHS of text on gamedev.
 
         Not enough info? There's more of me at these places:
       br

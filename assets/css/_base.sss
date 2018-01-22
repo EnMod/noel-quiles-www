@@ -1,0 +1,86 @@
+@font-face
+  font-family: enmod
+  src: url('enmod.woff') format('woff'), url('enmod.ttf') format('truetype')
+
+// Box reset
+*, *::after, *::before
+  box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+  line-height: 1.2
+
+h1
+  font-family: 'enmod'
+  text-align: center
+
+h2
+  margin-top: 0px
+  margin-bottom: 0px
+
+//  Some "motherfucking" sane defaults for body, with changes
+body
+  margin: 0
+  line-height: 1.4
+  font-size: 18px
+  font-family: 'Play'
+  color: #333
+
+main
+  padding: 0 1em
+  margin: 0 auto
+  max-width: 800px
+
+footer
+  margin-top: 3em
+  text-align: center
+  background-color: #ddd
+  width: 100%
+  padding: 1em
+  & .badges
+    max-width: 450px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    & .contentful
+      filter: invert()
+  & p
+    margin: 0
+
+a
+  color: #333
+  &:link,
+  &:visited
+    color: #333
+  &:hover
+    color: #aaa
+
+hr
+  height: 3px
+  border: 1px #ddd solid
+  background-color: #ddd
+  margin: 2.5em auto
+
+#title-screen
+  font-size: 135%
+  text-align: center
+
+#stage-select
+  max-width: 70%
+  margin: 0 auto
+
+.section .info
+  margin-bottom: 2em
+
+img
+  max-width: 100%
+
+#contact .columns .column
+  text-align: center
+  & img
+    max-width: 70%
+
+.contact
+  text-align: center
+  margin-bottom: 1.5em
+

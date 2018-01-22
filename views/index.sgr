@@ -26,90 +26,121 @@ html.no-js(lang='en')
     link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-32x32.png" sizes="32x32")
     link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-16x16.png" sizes="16x16")
     link(rel="icon" type="image/png" href="https://noelquiles.com/favicon-128.png" sizes="128x128")
-    link(rel="stylesheet", href="https://cdn.rawgit.com/dmbdesignpdx/flexr/3070d3e1/flexr.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Play")
     link(rel="stylesheet", href="css/animate.min.css")
+    link(rel="stylesheet", href="css/bulma.min.css")
     link(rel="stylesheet", href="css/style.css")
 
   body
-    #title-screen
-      h1 noel quiles
-      h3 I make . . .
-    #stage-select
-      .container
-        a(href='#frontends')
-          img.box(src='img/frontends.png')
-        a(href='#games')
-          img.box(src='img/games.png')
-        a(href='#stories')
-          img.box(src='img/stories.png')
-        a(href='#fresh-beats')
-          img.box(src='img/freshbeats.png')
-      .contact
-        a(href='#contact')
-          h2 Want to contact me?
-    
-    hr
-    #frontends
-      h1 {{ contentful.sections[0].fields.heading }}
-      p(md) {{ contentful.sections[0].fields.blurb }}
+    main
+      #title-screen
+        h1 noel quiles
+        h3 I make . . .
+      #stage-select
+        .columns.is-mobile
+          .column
+            a(href='#frontends')
+              img(src='img/frontends.png')
+          .column
+            a(href='#games')
+              img(src='img/games.png')
+        .columns.is-mobile
+          .column
+            a(href='#stories')
+              img(src='img/stories.png')
+          .column
+            a(href='#fresh-beats')
+              img(src='img/freshbeats.png')
+        .contact
+          a(href='#contact')
+            h2 Want to contact me?
 
-      each(loop='frontend of contentful.frontends')
-        .row
-          .col-6
-            img(src='{{ frontend.fields.image.fields.file.url }}' caption='{{ frontend.fields.title }}' alt='{{ frontend.fields.title }}')
-          .col-6
-            a(href='{{ frontend.fields.link }}')
-              h2 {{ frontend.fields.title }}
-            h3(md) {{ frontend.fields.client }}
-            p(md) {{ frontend.fields.info }}
+      hr
+      .section#frontends
+        h1 {{ contentful.sections[0].fields.heading }}
+        .info: p(md) {{ contentful.sections[0].fields.blurb }}
 
-    hr
-    #games
-      h1 {{ contentful.sections[1].fields.heading }}
-      p(md) {{ contentful.sections[1].fields.blurb }}
+        each(loop='frontend of contentful.frontends')
+          .columns
+            .column
+              img(src='{{ frontend.fields.image.fields.file.url }}' caption='{{ frontend.fields.title }}' alt='{{ frontend.fields.title }}')
+            .column
+              a(href='{{ frontend.fields.link }}')
+                h2 {{ frontend.fields.title }}
+              h3(md) {{ frontend.fields.client }}
+              p(md) {{ frontend.fields.info }}
 
-      each(loop='game of contentful.games')
-        .row
-          .col-6
-            img(src='{{ game.fields.image.fields.file.url }}' caption='{{ game.fields.title }}' alt='{{ game.fields.title }}')
-          .col-6
-            if(condition="{{ game.fields.link }} == undefined")
-              a(href='{{ game.fields.link }}')
+      hr
+      .section#games
+        h1 {{ contentful.sections[1].fields.heading }}
+        .info: p(md) {{ contentful.sections[1].fields.blurb }}
+
+        each(loop='game of contentful.games')
+          .columns
+            .column
+              img(src='{{ game.fields.image.fields.file.url }}' caption='{{ game.fields.title }}' alt='{{ game.fields.title }}')
+            .column
+              if(condition="{{ game.fields.link }} == undefined")
+                a(href='{{ game.fields.link }}')
+                  h2 {{ game.fields.title }}
+              else
                 h2 {{ game.fields.title }}
-            else
-              h2 {{ game.fields.title }}
-            p(md) {{ game.fields.info }}
+              p(md) {{ game.fields.info }}
 
-    hr
-    #stories
-      h1 {{ contentful.sections[2].fields.heading }}
-      p(md) {{ contentful.sections[2].fields.blurb }}
-    
-    hr
-    #fresh-beats
-      h1 {{ contentful.sections[3].fields.heading }}
-      p(md) {{ contentful.sections[3].fields.blurb }}
-      
-      each(loop='beat of contentful.beats')
-        .row
-          .col-6
-            h2 {{ beat.fields.title }}
-          .col-6
-            audio(controls='controls')
-              source(src='{{ beat.fields.songmp3.fields.file.url }}' type='audio/mpeg')
-              source(src='{{ beat.fields.songogg.fields.file.url }}' type='audio/ogg')
+      hr
+      #stories
+        h1 {{ contentful.sections[2].fields.heading }}
+        .info: p(md) {{ contentful.sections[2].fields.blurb }}
 
-    hr
-    #contact
-      h1 {{ contentful.sections[4].fields.heading }}
-      p(md) {{ contentful.sections[4].fields.blurb }}
+      hr
+      .section#fresh-beats
+        h1 {{ contentful.sections[3].fields.heading }}
+        .info: p(md) {{ contentful.sections[3].fields.blurb }}
 
-    br
-    br
-    br
-    footer(md).
-      Version [3.5](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/), [Flexr](http://flexrgrid.com/), blood, sweat, and tears.  
-      Managed with [Contentful](https://www.contentful.com) and built/hosted by [Netlify](https://www.netlify.com).
+        each(loop='beat of contentful.beats')
+          .columns
+            .column
+              h2 {{ beat.fields.title }}
+            .column
+              audio(controls='controls')
+                source(src='{{ beat.fields.songmp3.fields.file.url }}' type='audio/mpeg')
+                source(src='{{ beat.fields.songogg.fields.file.url }}' type='audio/ogg')
+
+      hr
+      .section#contact
+        h1 {{ contentful.sections[4].fields.heading }}
+        .info(style='text-align:center;'): h3(md) {{ contentful.sections[4].fields.blurb }}
+        .columns
+          .column
+            a(href='mailto:contact@noelquiles.com')
+              img(src='img/email.png')
+            h2: a(href='mailto:contact@noelquiles.com') Email Me!
+            h3 contact@noelquiles.com
+
+          .column
+            a(href='https://twitter.com/NoelQuiles')
+              img(src='img/twitter.png')
+            h2: a(href='https://twitter.com/NoelQuiles') Tweet Me!
+            h3 @NoelQuiles
+
+          .column
+            a(href='https://github.com/EnMod')
+              img(src='img/github.png')
+            h2: a(href='https://github.com/EnMod') Follow/Star Me!
+            h3  @EnMod
+
+    footer
+      p(md).
+        [v3.6](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
+      .columns.badges
+        .column.contentful
+          a(href="https://www.contentful.com/" rel="nofollow" target=“_blank”)
+            img(src="https://images.contentful.com/fo9twyrwpveg/7Htleo27dKYua8gio8UEUy/0797152a2d2f8e41db49ecbf1ccffdaa/PoweredByContentful_DarkBackground_MonochromeLogo.svg" style="max-width:100px;width:100%;" alt="Powered by Contentful")
+        .column
+          a(href="https://bulma.io")
+            img(src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24")
+        .column
+          a(href="https://www.netlify.com")
+            img(src="https://www.netlify.com/img/global/badges/netlify-light.svg")
 
     script(src='js/main.js')

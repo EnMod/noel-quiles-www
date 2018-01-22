@@ -7,7 +7,7 @@ extends(src='templates/layout.sgr')
     #index
       .g-title
         h1 {{ blogTitle }}
-        h3 Thoughts on webdev, gamedev, life, and writing.
+        h3 On webdev, gamedev, life, and writing.
 
       each(loop='post of contentful.indexPosts')
         include(src='/templates/_exGen.sgr')

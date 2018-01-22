@@ -9,13 +9,25 @@ extends(src='templates/layout.sgr')
         h1 About
 
       p(md).
-        I'm a game and web developer who's designed some graphics and made some music in his time. What I love to do most is create stories, be they a static or interactive experience. In this blog you'll find dozens of the former with some links to the latter.
+        I'm a game developer and web developer/designer who loves to create stories, be they static or interactive. Here you'll find mostly the static, with some links to and considerations of the interactive variety. Also, this is where all my devlogs go, so you're in the right place if you want to read monoliths of text on gamedev.
 
-        Not enough info? There's more at these places:
+        Not enough info? There's more of me at these places:
+      br
 
-        [My main website!](https://noelquiles.com)
+      .columns
+        .column
+          a(href='https://noelquiles.com')
+            img(src='media/frontends.png')
+          h2: a(href='https://noelquiles.com') My Main Site
 
-        [My Itch.io page!](https://enmod.itch.io)
+        .column
+          a(href='https://enmod.itch.io')
+            img(src='media/itch.png')
+          h2: a(href='https://enmod.itch.io') Itch.io
+          h3 @EnMod
 
-        [My SoundCloud!](https://soundcloud.com/enmod)
-
+        .column
+          a(href='https://soundcloud.com/enmod')
+            img(src='media/soundcloud.png')
+          h2: a(href='https://soundcloud.com/enmod') SoundCloud
+          h3  @enmod

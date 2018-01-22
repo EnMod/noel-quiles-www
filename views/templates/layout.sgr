@@ -42,7 +42,7 @@ html.no-js(lang='en')
 
     footer
       p(md).
-        [v1.1](https://github.com/enmod/noelquiles.com/tree/blog). Made with [Spike](https://www.spike.cf/) and some help:
+        [v1.2](https://github.com/enmod/noelquiles.com/tree/blog). Made with [Spike](https://www.spike.cf/) and some help:
       .columns.badges
         .column.contentful
           a(href="https://www.contentful.com/" rel="nofollow" target=“_blank”)

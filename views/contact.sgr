@@ -7,10 +7,23 @@ extends(src='templates/layout.sgr')
     #contact
       .g-title
         h1 Contact
-        h3 Let's keep in touch!
+        h3 Let's keep in touch! You can:
 
-      p(md).
-        You can:
-        * Shoot me [an email](mailto:contact@noelquiles.com)
-        * Send me [a Tweet](https://twitter.com/NoelQuiles)
-        * Or write me [an issue](https://github.com/EnMod)
+      .columns
+        .column
+          a(href='mailto:contact@noelquiles.com')
+            img(src='media/email.png')
+          h2: a(href='https://noelquiles.com') Email Me!
+          h3 contact@noelquiles.com
+
+        .column
+          a(href='https://twitter.com/NoelQuiles')
+            img(src='media/twitter.png')
+          h2: a(href='https://twitter.com/NoelQuiles') Tweet Me!
+          h3 @NoelQuiles
+
+        .column
+          a(href='https://github.com/EnMod')
+            img(src='media/github.png')
+          h2: a(href='https://github.com/EnMod') Follow/Star Me!
+          h3  @EnMod

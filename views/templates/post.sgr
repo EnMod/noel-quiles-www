@@ -1,7 +1,7 @@
 extends(src='templates/layout.sgr')
 
   block(name='title')
-    title {{ item.fields.title }} | {{ blogTitle }}
+    title {{ item.fields.title }} | Modified Musings
 
   block(name='content')
     #single-post

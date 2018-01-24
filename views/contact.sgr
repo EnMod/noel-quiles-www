@@ -18,12 +18,12 @@ extends(src='templates/layout.sgr')
 
         .column
           a(href='https://twitter.com/NoelQuiles')
-            img(src='media/twitter.png')
+            img(src='media/logo.png')
           h2: a(href='https://twitter.com/NoelQuiles') Tweet Me!
           h3 @NoelQuiles
 
         .column
           a(href='https://github.com/EnMod')
-            img(src='media/github.png')
+            img(src='media/frontends.png')
           h2: a(href='https://github.com/EnMod') Follow/Star Me!
           h3  @EnMod

@@ -31,7 +31,7 @@ function shadow(e) {
   }
 
   // distance to push the shadow
-  // (mouse position / the width of the listened element () * pushVal) - (pushVal / 2)
+  // (mouse position / the width of the listened element * pushVal) - (pushVal / 2)
   // ensures a range between pushVal/2 and -pushVal/2 for push distance
   const xPush = Math.round((x / width * pushVal) - (pushVal / 2))
   const yPush = Math.round((y / height * pushVal) - (pushVal / 2))

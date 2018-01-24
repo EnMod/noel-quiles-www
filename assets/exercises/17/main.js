@@ -25,7 +25,7 @@ function strip(bandName){
   // return strip(a) > strip(b) ? 1 : -1
 // })
 
-// OR YOU COULD BE A HOT. SHOT. AND PUT IT ALL IN A HOT. LINE.
+// OR YOU COULD BE A HOTTER. SHOT. AND PUT IT ALL IN A HOT. LINE.
 const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1)
 
 // .filter((a, b) => {

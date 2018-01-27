@@ -3,7 +3,7 @@ html.no-js(lang='en')
   head
     meta(charset='utf-8')
     title Noel Quiles (.com)
-    meta(content='I make frontends, games, stories, and fresh beats.' name='description')
+    meta(content='I make frontends, games, stories, and sounds.' name='description')
     meta(content='Noel Quiles' name='author')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name="application-name" content="Noel Quiles (.com)")
@@ -49,8 +49,8 @@ html.no-js(lang='en')
             a(href='#stories')
               img(src='img/stories.png')
           .column
-            a(href='#fresh-beats')
-              img(src='img/freshbeats.png')
+            a(href='#sounds')
+              img(src='img/sounds.png')
         .contact
           a(href='#contact')
             h2 Want to contact me?
@@ -92,19 +92,19 @@ html.no-js(lang='en')
         h1 {{ contentful.sections[2].fields.heading }}
         .info: p(md) {{ contentful.sections[2].fields.blurb }}
 
-      .section#fresh-beats
+      .section#sounds
         hr
         h1 {{ contentful.sections[3].fields.heading }}
         .info: p(md) {{ contentful.sections[3].fields.blurb }}
 
-        each(loop='beat of contentful.beats')
+        each(loop='sound of contentful.sounds')
           .columns
             .column
-              h2 {{ beat.fields.title }}
+              h2 {{ sound.fields.title }}
             .column
               audio(controls='controls')
-                source(src='{{ beat.fields.songmp3.fields.file.url }}' type='audio/mpeg')
-                source(src='{{ beat.fields.songogg.fields.file.url }}' type='audio/ogg')
+                source(src='{{ sound.fields.songmp3.fields.file.url }}' type='audio/mpeg')
+                source(src='{{ sound.fields.songogg.fields.file.url }}' type='audio/ogg')
 
       hr
       .section#contact
@@ -119,15 +119,15 @@ html.no-js(lang='en')
 
           .column
             a(href='https://twitter.com/NoelQuiles')
-              img(src='img/twitter.png')
+              img(src='img/logo.png')
             h2: a(href='https://twitter.com/NoelQuiles') Tweet Me!
             h3 @NoelQuiles
 
           .column
             a(href='https://github.com/EnMod')
-              img(src='img/github.png')
+              img(src='img/frontends.png')
             h2: a(href='https://github.com/EnMod') Follow/Star Me!
-            h3  @EnMod
+            h3 @EnMod
 
     footer
       p(md).

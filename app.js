@@ -17,8 +17,8 @@ module.exports = {
       spaceId: process.env.spaceId,
       contentTypes: [
         {
-          name: 'beats',
-          id: 'homeFreshBeat',
+          name: 'sounds',
+          id: 'homeSound',
           filters: {
             order: '-fields.order'
           }

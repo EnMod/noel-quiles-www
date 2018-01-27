@@ -125,7 +125,7 @@ html.no-js(lang='en')
 
           .column
             a(href='https://github.com/EnMod')
-              img(src='img/frontends.png')
+              img(src='img/frontends-avatar.png')
             h2: a(href='https://github.com/EnMod') Follow/Star Me!
             h3 @EnMod
 

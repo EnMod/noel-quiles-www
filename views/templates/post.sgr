@@ -5,13 +5,14 @@ extends(src='templates/layout.sgr')
 
   block(name='content')
     #single-post
-      h1 {{ item.fields.title }}
-      h3.g-date {{ Date.parse(item.fields.date).toString('MMMM dS, yyyy') }}
-      h3#categories
-        |Filed under:
-        each(loop='category of item.fields.category')
-          span
-            a(href='categories/{{category.fields.slug}}.html') {{ category.fields.title }}
+      #meta
+        h1 {{ item.fields.title }}
+        h3.g-date {{ Date.parse(item.fields.date).toString('MMMM dS, yyyy') }}
+        h3#categories
+          |Filed under:
+          each(loop='category of item.fields.category')
+            span
+              a(href='categories/{{category.fields.slug}}.html') {{ category.fields.title }}
       p: .body(md) {{ item.fields.body }}
       //- hr
       //- #disqus_thread

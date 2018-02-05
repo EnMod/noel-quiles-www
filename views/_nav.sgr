@@ -20,11 +20,11 @@ nav.navbar
           a.navbar-item(href='/categories/webdev.html' class='webdev') Web Development
           a.navbar-item(href='/categories/gamedev.html' class='gamedev') Game Development
           a.navbar-item(href='/categories/life.html' class='life') Life
-          //- a.navbar-item(href='/categories/writing.html' class='writing') Writing
+          // a.navbar-item(href='/categories/writing.html' class='writing') Writing
           a.navbar-item(href='/categories/reviews.html' class='reviews') Reviews
           a.navbar-item(href='/categories/prose.html' class='prose') Prose
           a.navbar-item(href='/categories/poems.html' class='poems') Poems
-          //- a.navbar-item(href='/categories/announcements.html' class='announcements') Announcements
+          // a.navbar-item(href='/categories/announcements.html' class='announcements') Announcements
       a.navbar-item.archive(href='/archive.html') Archive
       a.navbar-item.about(href='/about.html') About
       a.navbar-item.contact(href='/contact.html') Contact

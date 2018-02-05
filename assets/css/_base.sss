@@ -10,16 +10,15 @@
   // --headFont: 'Noto Sans'
   // --bodyFont: 'charter'
   --headFont: 'Palanquin', sans-serif
-  --textColor: #111
+  --textColor: #333
   --backgroundColor: rgb(248, 248, 248)
   --siteWidth: 700px
-// content behind the scenes), then slowly lowering into the box (to
-// lowering into the box (to check for size). It will stop with
+  --pagePad: 0 30px
+
 // -----
 // General tags
 // -----
 
-be able to work on two additional sites, both more challenging than
 *, *::after, *::before
   box-sizing: border-box
 
@@ -37,7 +36,7 @@ footer
   font-size: 18px
   line-height: 1.6
   @media (max-width: 1023px)
-    font-size: 12px
+    font-size: 14px
   color: var(--textColor)
   & a
     color: var(--textColor)
@@ -51,7 +50,7 @@ footer
   font-family: var(--headFont)
   background-color: #ddd
   @media (max-width: 1023px)
-    padding: 0 15px
+    padding: var(--pagePad)
   & .badges
     max-width: 450px
     margin: 0 auto
@@ -115,7 +114,7 @@ main
     background-color: var(--textColor)
   & > div
     @media (max-width: 1023px)
-      padding: 0 15px
+      padding: var(--pagePad)
 
 // -----
 // Globals

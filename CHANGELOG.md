@@ -1,14 +1,14 @@
 # Modified Musings Changelog
-From this commit onward, this project will have a changelog. It follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).  Current version number determined based on past commits and which change levels they fall under as described by Semantic Versioning.
+This project's changelog follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## 1.3.2 - 2018-02-05
-### Changed
-- Increased body `line-height`, `font-size`, and `padding`
-- Gave headings in posts some breathing room
-- Isolated post metadata info under its own ID
-
 ### Fixed
 - YouTube embeds weren't scaling properly on mobile, causing some overflow-x
+
+### Changed
+- Increased body `line-height`, `font-size`, and `padding` for some breathing room
+- Gave headings in posts some breathing room as well
+- Isolated post metadata info under its own ID in the markup
 
 ## 1.3.1 - 2018-02-05
 ### Fixed

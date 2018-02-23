@@ -1,4 +1,4 @@
-# noelquiles.com v3.7
+# Noel Quiles (.com)
 
 I make stories for the monitor and page.  
 

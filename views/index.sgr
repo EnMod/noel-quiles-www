@@ -120,7 +120,7 @@ html.no-js(lang='en')
 
     footer
       p(md).
-        [v3.7](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
+        [v3.3.0](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
       .columns.badges
         .column.contentful
           a(href="https://www.contentful.com/" rel="nofollow" target=“_blank”)

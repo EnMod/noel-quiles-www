@@ -15,7 +15,7 @@ html.no-js(lang='en')
     link(rel="shortcut icon" href="/favicon.ico?v=wAOoxmobdP")
     meta(name="theme-color" content="#ffffff")
 
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Catamaran")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Cairo")
     link(rel="stylesheet", href="css/animate.min.css")
     link(rel="stylesheet", href="css/bulma.min.css")
     link(rel="stylesheet", href="css/style.css")

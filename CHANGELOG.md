@@ -1,6 +1,14 @@
 # Noel Quiles (.com) Changelog
 This project's changelog follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.3.1 - 2018-02-27
+### Fixed
+- Prevented "Interfaces" from going off the edge, bringing the rest of the headers in line
+
+### Changed
+- Body font changed to "Bitter" to be a little less...weird (not sure how to describe what the condensed nature of Cairo made me feel)
+
+
 ## 3.3.0 - 2018-02-26
 ### Changed
 - Body font changed to a rounder font ("Catamaran") as a contrast to my very rigid/square "EnMod" header font.

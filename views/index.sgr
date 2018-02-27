@@ -15,7 +15,7 @@ html.no-js(lang='en')
     link(rel="shortcut icon" href="/favicon.ico?v=wAOoxmobdP")
     meta(name="theme-color" content="#ffffff")
 
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Cairo")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bitter")
     link(rel="stylesheet", href="css/animate.min.css")
     link(rel="stylesheet", href="css/bulma.min.css")
     link(rel="stylesheet", href="css/style.css")
@@ -120,7 +120,7 @@ html.no-js(lang='en')
 
     footer
       p(md).
-        [v3.3.0](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
+        [v3.3.1](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
       .columns.badges
         .column.contentful
           a(href="https://www.contentful.com/" rel="nofollow" target=“_blank”)

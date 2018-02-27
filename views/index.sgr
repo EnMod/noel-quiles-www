@@ -103,20 +103,17 @@ html.no-js(lang='en')
           .column
             a(href='mailto:contact@noelquiles.com')
               img(src='img/email.png')
-            h2: a(href='mailto:contact@noelquiles.com') Email Me!
-            h3 contact@noelquiles.com
+            h2: a(href='mailto:contact@noelquiles.com') Email
 
           .column
             a(href='https://twitter.com/NoelQuiles')
               img(src='img/logo.png')
-            h2: a(href='https://twitter.com/NoelQuiles') Tweet Me!
-            h3 @NoelQuiles
+            h2: a(href='https://twitter.com/NoelQuiles') Twitter
 
           .column
             a(href='https://github.com/EnMod')
               img(src='img/frontends-avatar.png')
-            h2: a(href='https://github.com/EnMod') Follow/Star Me!
-            h3 @EnMod
+            h2: a(href='https://github.com/EnMod') GitHub
 
     footer
       p(md).

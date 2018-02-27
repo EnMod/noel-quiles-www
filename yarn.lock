@@ -118,7 +118,7 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
 
-animate.css-js@0.0.9:
+animate.css-js@^0.0.9:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/animate.css-js/-/animate.css-js-0.0.9.tgz#0170de1360e1df956e79faf6d43c73d867657257"
   dependencies:

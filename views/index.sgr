@@ -89,7 +89,7 @@ html.no-js(lang='en')
         each(loop='sound of contentful.sounds')
           .columns
             .column
-              h2 {{ sound.fields.title }}
+              strong {{ sound.fields.title }}
             .column
               audio(controls='controls')
                 source(src='{{ sound.fields.songmp3.fields.file.url }}' type='audio/mpeg')
@@ -117,7 +117,7 @@ html.no-js(lang='en')
 
     footer
       p(md).
-        [v3.3.1](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
+        [v3.3.2](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
       .columns.badges
         .column.contentful
           a(href="https://www.contentful.com/" rel="nofollow" target=“_blank”)

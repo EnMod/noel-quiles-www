@@ -5,14 +5,17 @@ const pageId = require('spike-page-id')
 const sugarml = require('sugarml')
 const sugarss = require('sugarss')
 const dotenv = require('dotenv').config()
-// const marked = require('marked')
 
-// let's get...Contentful *shudder*
 const Contentful = require('spike-contentful')
 const locals = {}
 
 module.exports = {
+  ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
   vendor: 'assets/exercises/**',
+  matchers: {
+    html: '*(**/)*.sgr',
+    css: '*(**/)*.sss'
+  },
   plugins: [
     new Contentful({
       addDataTo: locals,
@@ -33,16 +36,10 @@ module.exports = {
       ]
     })
   ],
-  devtool: 'source-map',
-  matchers: {
-    html: '*(**/)*.sgr',
-    css: '*(**/)*.sss'
-  },
-  ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
   reshape: htmlStandards({
     root: 'views/',
     parser: sugarml,
-    locals: () => locals 
+    locals: () => locals
   }),
   postcss: cssStandards({
     parser: sugarss

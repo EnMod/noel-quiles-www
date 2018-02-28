@@ -4,49 +4,25 @@ const jsStandards = require('spike-js-standards')
 const pageId = require('spike-page-id')
 const dotenv = require('dotenv').config()
 
-const Contentful = require('spike-contentful')
+const SpikeDatoCMS = require('spike-datocms')
 const locals = {}
 
 module.exports = {
   plugins: [
-    new Contentful({
+    new SpikeDatoCMS({
       addDataTo: locals,
-      accessToken: process.env.accessToken,
-      spaceId: process.env.spaceId,
-      contentTypes: [
-        {
-          name: 'sounds',
-          id: 'homeSound',
-          filters: {
-            order: '-fields.order'
-          }
-        },
-        {
-          name: 'frontends',
-          id: 'homeFrontend',
-          filters: {
-            order: '-fields.order'
-          }
-        },
-        {
-          name: 'games',
-          id: 'homeGame',
-          filters: {
-            order: '-fields.order'
-          }
-        },
-        {
-          name: 'sections',
-          id: 'homeSection',
-          filters: {
-            order: '-fields.order'
-          }
-        }
+      token: process.env.datoRO,
+      models: [
+        { type: 'interface' },
+        { type: 'game' },
+        { type: 'word' },
+        { type: 'sound' },
+        { type: 'section' }
       ],
       json: 'data.json'
     })
   ],
-  devtool: 'source-map',
+  // devtool: 'source-map',
   matchers: {
     html: '*(**/)*.sgr',
     css: '*(**/)*.sss'

@@ -15,16 +15,17 @@ html.no-js(lang='en')
     link(rel="shortcut icon" href="/favicon.ico?v=wAOoxmobdP")
     meta(name="theme-color" content="#ffffff")
 
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bitter")
-    link(rel="stylesheet", href="css/animate.min.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Palanquin")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Quando")
     link(rel="stylesheet", href="css/bulma.min.css")
     link(rel="stylesheet", href="css/style.css")
 
   body
+    p {{{ JSON.stringify(dato) }}}
     main
       #title-screen
         h1 noel quiles
-        h3 I make . . .
+        h3 I make stories for the monitor and page, in the form of...
       #stage-select
         .columns.is-mobile
           .column
@@ -46,59 +47,53 @@ html.no-js(lang='en')
 
       .section#frontends
         hr
-        h1 {{ contentful.sections[0].fields.heading }}
-        .info: p(md) {{ contentful.sections[0].fields.blurb }}
+        h1 {{ dato.section[0].title }}
+        .info: p(md) {{ dato.section[0].blurb }}
 
-        each(loop='frontend of contentful.frontends')
+        each(loop='interface of dato.interface')
           .columns
             .column
-              img(src='{{ frontend.fields.image.fields.file.url }}' caption='{{ frontend.fields.title }}' alt='{{ frontend.fields.title }}')
+              img(src='https://{{ dato._meta.imgixHost + interface.sample.path }}' caption='{{ interface.title }}' alt='{{ interface.title }}')
             .column
-              a(href='{{ frontend.fields.link }}')
-                h2 {{ frontend.fields.title }}
-              h3(md) {{ frontend.fields.client }}
-              p(md) {{ frontend.fields.info }}
+              h2(md) {{ interface.title }}
+              p(md) {{ interface.description }}
 
       .section#games
         hr
-        h1 {{ contentful.sections[1].fields.heading }}
-        .info: p(md) {{ contentful.sections[1].fields.blurb }}
+        h1 {{ dato.section[1].title }}
+        .info: p(md) {{ dato.section[1].blurb }}
 
-        each(loop='game of contentful.games')
+        each(loop='game of dato.game')
           .columns
             .column
-              img(src='{{ game.fields.image.fields.file.url }}' caption='{{ game.fields.title }}' alt='{{ game.fields.title }}')
+              img(src='https://{{ dato._meta.imgixHost + game.sample.path }}' caption='{{ game.title }}' alt='{{ game.title }}')
             .column
-              if(condition="{{ game.fields.link }} == undefined")
-                a(href='{{ game.fields.link }}')
-                  h2 {{ game.fields.title }}
-              else
-                h2 {{ game.fields.title }}
-              p(md) {{ game.fields.info }}
+              h2(md) {{ game.title }}
+              p(md) {{ game.description }}
 
       #stories
         hr
-        h1 {{ contentful.sections[2].fields.heading }}
-        .info: p(md) {{ contentful.sections[2].fields.blurb }}
+        h1 {{ dato.section[2].title }}
+        .info: p(md) {{ dato.section[2].blurb }}
 
       .section#sounds
         hr
-        h1 {{ contentful.sections[3].fields.heading }}
-        .info: p(md) {{ contentful.sections[3].fields.blurb }}
+        h1 {{ dato.section[3].title }}
+        .info: p(md) {{ dato.section[3].blurb }}
 
-        each(loop='sound of contentful.sounds')
+        each(loop='sound of dato.sound')
           .columns
             .column
-              strong {{ sound.fields.title }}
+              strong {{ sound.title }}
             .column
               audio(controls='controls')
-                source(src='{{ sound.fields.songmp3.fields.file.url }}' type='audio/mpeg')
-                source(src='{{ sound.fields.songogg.fields.file.url }}' type='audio/ogg')
+                source(src='https://{{ dato._meta.imgixHost + sound.mp3.path }}' type='audio/mpeg')
+                source(src='https://{{ dato._meta.imgixHost + sound.ogg.path }}' type='audio/ogg')
 
       hr
       .section#contact
-        h1 {{ contentful.sections[4].fields.heading }}
-        .info(style='text-align:center;'): h3(md) {{ contentful.sections[4].fields.blurb }}
+        h1 {{ dato.section[4].title }}
+        .info(style='text-align:center;'): h3(md) {{ dato.section[4].blurb }}
         .columns
           .column
             a(href='mailto:contact@noelquiles.com')
@@ -117,7 +112,7 @@ html.no-js(lang='en')
 
     footer
       p(md).
-        [v3.3.2](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
+        [v3.4.0](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
       .columns.badges
         .column.contentful
           a(href="https://www.contentful.com/" rel="nofollow" target=“_blank”)

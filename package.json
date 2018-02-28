@@ -1,7 +1,7 @@
 {
   "name": "noel-quiles-s-portfolio",
   "description": "Noel Quiles&#39;s portfolio/personal site",
-  "version": "0.0.1",
+  "version": "3.3.2",
   "author": "EnMod",
   "ava": {
     "verbose": "true"
@@ -16,6 +16,7 @@
     "spike": "^2.0.2",
     "spike-contentful": "^1.0.0",
     "spike-css-standards": "^1.0.0",
+    "spike-datocms": "^2.2.2",
     "spike-js-standards": "^2.0.1",
     "spike-page-id": "^1.0.0",
     "webpack": "^3.4.0"
@@ -37,6 +38,6 @@
     "pretest": "npm run lint -s",
     "test": "NODE_ENV=test ava",
     "compile": "spike compile",
-    "watch": "spike watch"
+    "start": "spike watch"
   }
 }

@@ -1,6 +1,11 @@
 # Noel Quiles (.com) Changelog
 This project's changelog follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.4.0 - 2018-02-28
+### Changed
+- Matched the fonts on this site with the ones for my blog.  I REALLY like the combination.
+- Converted the CMS I'm using to
+
 ## 3.3.2 - 2018-02-27
 ### Changed
 - Made my contact info clearer, I felt like the pertinent information wasn't where it needed to be (read: actually visible on the page)

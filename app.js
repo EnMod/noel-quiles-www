@@ -3,9 +3,7 @@ const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const pageId = require('spike-page-id')
 const dotenv = require('dotenv').config()
-// const marked = require('marked')
 
-// let's get...Contentful *shudder*
 const Contentful = require('spike-contentful')
 const locals = {}
 

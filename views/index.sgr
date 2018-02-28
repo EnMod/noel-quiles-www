@@ -21,7 +21,6 @@ html.no-js(lang='en')
     link(rel="stylesheet", href="css/style.css")
 
   body
-    p {{{ JSON.stringify(dato) }}}
     main
       #title-screen
         h1 noel quiles
@@ -29,8 +28,8 @@ html.no-js(lang='en')
       #stage-select
         .columns.is-mobile
           .column
-            a(href='#frontends')
-              img(src='img/frontends.png')
+            a(href='#interfaces')
+              img(src='img/interfaces.png')
           .column
             a(href='#games')
               img(src='img/games.png')
@@ -42,10 +41,9 @@ html.no-js(lang='en')
             a(href='#sounds')
               img(src='img/sounds.png')
         .contact
-          a(href='#contact')
-            h2 Want to contact me?
+          h2: a(href='#contact') Want to contact me?
 
-      .section#frontends
+      .section#interfaces
         hr
         h1 {{ dato.section[0].title }}
         .info: p(md) {{ dato.section[0].blurb }}
@@ -71,7 +69,7 @@ html.no-js(lang='en')
               h2(md) {{ game.title }}
               p(md) {{ game.description }}
 
-      #stories
+      .section#words
         hr
         h1 {{ dato.section[2].title }}
         .info: p(md) {{ dato.section[2].blurb }}
@@ -107,7 +105,7 @@ html.no-js(lang='en')
 
           .column
             a(href='https://github.com/EnMod')
-              img(src='img/frontends-avatar.png')
+              img(src='img/interfaces-avatar.png')
             h2: a(href='https://github.com/EnMod') GitHub
 
     footer

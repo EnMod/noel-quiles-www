@@ -1,6 +1,6 @@
 # Noel Quiles (.com)
 
-I make stories for the monitor and page.  On this site you can peruse my recently completed projects as well as some in progress.
+I make stories for the monitor and page, in the form of interfaces, games, words, and sounds.  On this site you can peruse my recently completed projects as well as some in progress.
 
 ## How I made this
 - Developed with the [Spike](https://spike.cf) build tool and all of its standard tooling. 

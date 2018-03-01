@@ -1,0 +1,40 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    title Noel Quiles (.com)
+    meta(content='I make frontends, games, stories, and sounds.' name='description')
+    meta(content='Noel Quiles' name='author')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name="application-name" content="Noel Quiles (.com)")
+    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=wAOoxmobdP")
+    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=wAOoxmobdP")
+    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=wAOoxmobdP")
+    link(rel="manifest" href="/manifest.json?v=wAOoxmobdP")
+    link(rel="mask-icon" href="/safari-pinned-tab.svg?v=wAOoxmobdP" color="#000000")
+    link(rel="shortcut icon" href="/favicon.ico?v=wAOoxmobdP")
+    meta(name="theme-color" content="#ffffff")
+
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Palanquin")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Quando")
+    link(rel="stylesheet", href="css/bulma.min.css")
+    link(rel="stylesheet", href="css/style.css")
+
+  body
+    main
+      block(name='content')
+    footer
+      p(md).
+        [v3.4.0](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
+      .columns.badges
+        .column.contentful
+          a(href="https://www.contentful.com/" rel="nofollow" target=“_blank”)
+            img(src="https://images.contentful.com/fo9twyrwpveg/7Htleo27dKYua8gio8UEUy/0797152a2d2f8e41db49ecbf1ccffdaa/PoweredByContentful_DarkBackground_MonochromeLogo.svg" style="max-width:100px;width:100%;" alt="Powered by Contentful")
+        .column
+          a(href="https://bulma.io")
+            img(src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24")
+        .column
+          a(href="https://www.netlify.com")
+            img(src="https://www.netlify.com/img/global/badges/netlify-light.svg")
+
+    script(src='js/main.js')

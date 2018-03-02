@@ -8,25 +8,22 @@
   },
   "bugs": "https://github.com/EnMod/noel-quiles-s-portfolio/issues",
   "dependencies": {
-    "animate.css-js": "^0.0.9",
     "dotenv": "^5.0.1",
-    "markdown-js": "^0.0.4",
-    "marked": "^0.3.6",
-    "reshape-standard": "^3.3.0",
-    "spike": "^2.0.2",
-    "spike-contentful": "^3.1.0",
+    "reshape-standard": "^3.0.0",
+    "spike": "^2.0.0",
     "spike-css-standards": "^3.0.0",
     "spike-datocms": "^2.2.2",
     "spike-js-standards": "^2.0.2",
+    "spike-optimize": "^0.1.2",
     "spike-page-id": "^1.0.0",
-    "webpack": "^3.4.0"
+    "sugarml": "^0.6.0",
+    "sugarss": "^1.0.1"
   },
   "devDependencies": {
-    "ava": "^0.19.0",
-    "rimraf": "^2.6.0",
-    "snazzy": "^6.0.0",
-    "spike-core": "^1.0.0",
-    "standard": "^10.0.0"
+    "ava": "^0.19.1",
+    "rimraf": "^2.6.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
   },
   "homepage": "https://github.com/EnMod/noel-quiles-s-portfolio",
   "main": "app.js",

@@ -4,7 +4,9 @@ This project's changelog follows the guidelines set by [Keep a Changelog](http:/
 ## 3.4.0 - 2018-02-28
 ### Changed
 - Matched the fonts on this site with the ones for my blog.  I REALLY like the combination.
-- Converted the CMS I'm using to
+- Converted the CMS I'm using to DatoCMS due to some compelling arguments from @jescalan (and my own good experiences with it).
+- Added in my new bio for the introductory line below my name
+- Changed the Contact description font to the body font (no idea why it wasn't that)
 
 ## 3.3.2 - 2018-02-27
 ### Changed

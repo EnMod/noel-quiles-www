@@ -2,8 +2,7 @@ extends(src='layout.sgr')
   block(name='content')
     #title-screen
       h1 noel quiles
-      h3 I make stories for the monitor and page, in the form of...
-    #stage-select
+      h2 I make stories for the monitor and page, in the form of...
       .columns.is-mobile
         .column
           a(href='#interfaces')
@@ -14,17 +13,16 @@ extends(src='layout.sgr')
       .columns.is-mobile
         .column
           a(href='#stories')
-            img(src='img/stories.png')
+            img(src='img/words.png')
         .column
           a(href='#sounds')
             img(src='img/sounds.png')
-      .contact
-        h2: a(href='#contact') Want to contact me?
+      h2: a(href='#contact') Want to contact me?
 
     .section#interfaces
       hr
       h1 {{ dato.section[0].title }}
-      .info: p(md) {{ dato.section[0].blurb }}
+      .info: .text(md) {{ dato.section[0].blurb }}
 
       each(loop='interface of dato.interface')
         .columns
@@ -59,7 +57,7 @@ extends(src='layout.sgr')
 
       each(loop='sound of dato.sound')
         .columns
-          .column
+          .column.is-7
             strong {{ sound.title }}
           .column
             audio(controls='controls')
@@ -69,7 +67,7 @@ extends(src='layout.sgr')
     hr
     .section#contact
       h1 {{ dato.section[4].title }}
-      .info(style='text-align:center;'): h3(md) {{ dato.section[4].blurb }}
+      .info(style='text-align:center;'): p(md) {{ dato.section[4].blurb }}
       .columns
         .column
           a(href='mailto:contact@noelquiles.com')

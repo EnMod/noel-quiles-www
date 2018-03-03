@@ -29,13 +29,13 @@ module.exports = {
     css: '*(**/)*.sss'
   },
   vendor: ['assets/twine/**'],
-  ignore: ['**/layout.sgr', 'assets/css/_*', 'views/**/_*', '**/.*', 'readme.md', 'yarn.lock'],
-  reshape: htmlStandards({ 
+  ignore: ['**/layout.sgr', 'assets/css/_*', 'views/**/_*', '**/.*', 'README.md', 'CHANGELOG.md', 'yarn*'],
+  reshape: htmlStandards({
     parser: sugarml,
-    locals: () => locals 
+    locals: () => locals
   }),
   postcss: cssStandards({
-    parser: sugarss  
+    parser: sugarss
   }),
   babel: jsStandards()
 }

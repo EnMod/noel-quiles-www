@@ -1,6 +1,13 @@
 # Noel Quiles (.com) Changelog
 This project's changelog follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.4.0 - 2018-03-02
+### Changed
+- Matched the fonts on this site with the ones for my blog.  I REALLY like the combination.
+- Converted the CMS I'm using to DatoCMS due to some compelling arguments from @jescalan (and my own good experiences with it).
+- Added in my new bio for the introductory line below my name
+- Changed the Contact description font to the body font (no idea why it wasn't that)
+
 ## 3.3.2 - 2018-02-27
 ### Changed
 - Made my contact info clearer, I felt like the pertinent information wasn't where it needed to be (read: actually visible on the page)

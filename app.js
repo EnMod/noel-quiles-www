@@ -3,57 +3,39 @@ const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const pageId = require('spike-page-id')
 const dotenv = require('dotenv').config()
+const sugarml = require('sugarml')
+const sugarss = require('sugarss')
 
-const Contentful = require('spike-contentful')
+const SpikeDatoCMS = require('spike-datocms')
 const locals = {}
 
 module.exports = {
   plugins: [
-    new Contentful({
+    new SpikeDatoCMS({
       addDataTo: locals,
-      accessToken: process.env.accessToken,
-      spaceId: process.env.spaceId,
-      contentTypes: [
-        {
-          name: 'sounds',
-          id: 'homeSound',
-          filters: {
-            order: '-fields.order'
-          }
-        },
-        {
-          name: 'frontends',
-          id: 'homeFrontend',
-          filters: {
-            order: '-fields.order'
-          }
-        },
-        {
-          name: 'games',
-          id: 'homeGame',
-          filters: {
-            order: '-fields.order'
-          }
-        },
-        {
-          name: 'sections',
-          id: 'homeSection',
-          filters: {
-            order: '-fields.order'
-          }
-        }
+      token: process.env.datoRO,
+      models: [
+        { type: 'interface' },
+        { type: 'game' },
+        { type: 'word' },
+        { type: 'sound' },
+        { type: 'section' }
       ],
       json: 'data.json'
     })
   ],
-  devtool: 'source-map',
   matchers: {
     html: '*(**/)*.sgr',
     css: '*(**/)*.sss'
   },
   vendor: ['assets/twine/**'],
-  ignore: ['**/layout.sgr', 'assets/css/_*', 'views/**/_*', '**/.*', 'readme.md', 'yarn.lock'],
-  reshape: htmlStandards({ locals: () => locals }),
-  postcss: cssStandards(),
+  ignore: ['**/layout.sgr', 'assets/css/_*', 'views/**/_*', '**/.*', 'README.md', 'CHANGELOG.md', 'yarn*'],
+  reshape: htmlStandards({
+    parser: sugarml,
+    locals: () => locals
+  }),
+  postcss: cssStandards({
+    parser: sugarss
+  }),
   babel: jsStandards()
 }

@@ -1,132 +1,85 @@
-doctype html
-html.no-js(lang='en')
-  head
-    meta(charset='utf-8')
-    title Noel Quiles (.com)
-    meta(content='I make frontends, games, stories, and sounds.' name='description')
-    meta(content='Noel Quiles' name='author')
-    meta(name='viewport' content='width=device-width, initial-scale=1')
-    meta(name="application-name" content="Noel Quiles (.com)")
-    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=wAOoxmobdP")
-    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=wAOoxmobdP")
-    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=wAOoxmobdP")
-    link(rel="manifest" href="/manifest.json?v=wAOoxmobdP")
-    link(rel="mask-icon" href="/safari-pinned-tab.svg?v=wAOoxmobdP" color="#000000")
-    link(rel="shortcut icon" href="/favicon.ico?v=wAOoxmobdP")
-    meta(name="theme-color" content="#ffffff")
+extends(src='layout.sgr')
+  block(name='content')
+    #title-screen
+      h1 noel quiles
+      h2 I make stories for the monitor and page, in the form of...
+      .columns.is-mobile
+        .column
+          a(href='#interfaces')
+            img(src='img/interfaces.png')
+        .column
+          a(href='#games')
+            img(src='img/games.png')
+      .columns.is-mobile
+        .column
+          a(href='#stories')
+            img(src='img/words.png')
+        .column
+          a(href='#sounds')
+            img(src='img/sounds.png')
+      h2: a(href='#contact') Want to contact me?
 
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bitter")
-    link(rel="stylesheet", href="css/animate.min.css")
-    link(rel="stylesheet", href="css/bulma.min.css")
-    link(rel="stylesheet", href="css/style.css")
-
-  body
-    main
-      #title-screen
-        h1 noel quiles
-        h3 I make . . .
-      #stage-select
-        .columns.is-mobile
-          .column
-            a(href='#frontends')
-              img(src='img/frontends.png')
-          .column
-            a(href='#games')
-              img(src='img/games.png')
-        .columns.is-mobile
-          .column
-            a(href='#stories')
-              img(src='img/stories.png')
-          .column
-            a(href='#sounds')
-              img(src='img/sounds.png')
-        .contact
-          a(href='#contact')
-            h2 Want to contact me?
-
-      .section#frontends
-        hr
-        h1 {{ contentful.sections[0].fields.heading }}
-        .info: p(md) {{ contentful.sections[0].fields.blurb }}
-
-        each(loop='frontend of contentful.frontends')
-          .columns
-            .column
-              img(src='{{ frontend.fields.image.fields.file.url }}' caption='{{ frontend.fields.title }}' alt='{{ frontend.fields.title }}')
-            .column
-              a(href='{{ frontend.fields.link }}')
-                h2 {{ frontend.fields.title }}
-              h3(md) {{ frontend.fields.client }}
-              p(md) {{ frontend.fields.info }}
-
-      .section#games
-        hr
-        h1 {{ contentful.sections[1].fields.heading }}
-        .info: p(md) {{ contentful.sections[1].fields.blurb }}
-
-        each(loop='game of contentful.games')
-          .columns
-            .column
-              img(src='{{ game.fields.image.fields.file.url }}' caption='{{ game.fields.title }}' alt='{{ game.fields.title }}')
-            .column
-              if(condition="{{ game.fields.link }} == undefined")
-                a(href='{{ game.fields.link }}')
-                  h2 {{ game.fields.title }}
-              else
-                h2 {{ game.fields.title }}
-              p(md) {{ game.fields.info }}
-
-      #stories
-        hr
-        h1 {{ contentful.sections[2].fields.heading }}
-        .info: p(md) {{ contentful.sections[2].fields.blurb }}
-
-      .section#sounds
-        hr
-        h1 {{ contentful.sections[3].fields.heading }}
-        .info: p(md) {{ contentful.sections[3].fields.blurb }}
-
-        each(loop='sound of contentful.sounds')
-          .columns
-            .column
-              strong {{ sound.fields.title }}
-            .column
-              audio(controls='controls')
-                source(src='{{ sound.fields.songmp3.fields.file.url }}' type='audio/mpeg')
-                source(src='{{ sound.fields.songogg.fields.file.url }}' type='audio/ogg')
-
+    .section#interfaces
       hr
-      .section#contact
-        h1 {{ contentful.sections[4].fields.heading }}
-        .info(style='text-align:center;'): h3(md) {{ contentful.sections[4].fields.blurb }}
+      h1 {{ dato.section[0].title }}
+      .info: .text(md) {{ dato.section[0].blurb }}
+
+      each(loop='interface of dato.interface')
         .columns
           .column
-            a(href='mailto:contact@noelquiles.com')
-              img(src='img/email.png')
-            h2: a(href='mailto:contact@noelquiles.com') Email
-
+            img(src='https://{{ dato._meta.imgixHost + interface.sample.path }}' caption='{{ interface.title }}' alt='{{ interface.title }}')
           .column
-            a(href='https://twitter.com/NoelQuiles')
-              img(src='img/logo.png')
-            h2: a(href='https://twitter.com/NoelQuiles') Twitter
+            h2(md) {{ interface.title }}
+            p(md) {{ interface.description }}
 
+    .section#games
+      hr
+      h1 {{ dato.section[1].title }}
+      .info: p(md) {{ dato.section[1].blurb }}
+
+      each(loop='game of dato.game')
+        .columns
           .column
-            a(href='https://github.com/EnMod')
-              img(src='img/frontends-avatar.png')
-            h2: a(href='https://github.com/EnMod') GitHub
+            img(src='https://{{ dato._meta.imgixHost + game.sample.path }}' caption='{{ game.title }}' alt='{{ game.title }}')
+          .column
+            h2(md) {{ game.title }}
+            p(md) {{ game.description }}
 
-    footer
-      p(md).
-        [v3.3.2](https://github.com/enmod/noelquiles.com). Made with [Spike](https://www.spike.cf/) and some help:
-      .columns.badges
-        .column.contentful
-          a(href="https://www.contentful.com/" rel="nofollow" target=“_blank”)
-            img(src="https://images.contentful.com/fo9twyrwpveg/7Htleo27dKYua8gio8UEUy/0797152a2d2f8e41db49ecbf1ccffdaa/PoweredByContentful_DarkBackground_MonochromeLogo.svg" style="max-width:100px;width:100%;" alt="Powered by Contentful")
-        .column
-          a(href="https://bulma.io")
-            img(src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24")
-        .column
-          a(href="https://www.netlify.com")
-            img(src="https://www.netlify.com/img/global/badges/netlify-light.svg")
+    .section#words
+      hr
+      h1 {{ dato.section[2].title }}
+      .info: p(md) {{ dato.section[2].blurb }}
 
-    script(src='js/main.js')
+    .section#sounds
+      hr
+      h1 {{ dato.section[3].title }}
+      .info: p(md) {{ dato.section[3].blurb }}
+
+      each(loop='sound of dato.sound')
+        .columns
+          .column.is-7
+            strong {{ sound.title }}
+          .column
+            audio(controls='controls')
+              source(src='https://{{ dato._meta.imgixHost + sound.mp3.path }}' type='audio/mpeg')
+              source(src='https://{{ dato._meta.imgixHost + sound.ogg.path }}' type='audio/ogg')
+
+    hr
+    .section#contact
+      h1 {{ dato.section[4].title }}
+      .info(style='text-align:center;'): p(md) {{ dato.section[4].blurb }}
+      .columns
+        .column
+          a(href='mailto:contact@noelquiles.com')
+            img(src='img/email.png')
+          h2: a(href='mailto:contact@noelquiles.com') Email
+
+        .column
+          a(href='https://twitter.com/NoelQuiles')
+            img(src='img/logo.png')
+          h2: a(href='https://twitter.com/NoelQuiles') Twitter
+
+        .column
+          a(href='https://github.com/EnMod')
+            img(src='img/interfaces-avatar.png')
+          h2: a(href='https://github.com/EnMod') GitHub

@@ -1,3 +1,7 @@
+:root
+  --bodyColor: #333
+  --accentColor: #aaa
+
 @font-face
   font-family: enmod
   src: url('enmod.woff') format('woff'), url('enmod.ttf') format('truetype')
@@ -7,10 +11,10 @@
 
 body
   margin: 0
-  line-height: 1.4
-  font-size: 21px
-  font-family: 'Bitter'
-  color: #111
+  line-height: 1.6
+  font-size: 18px
+  font-family: 'Quando'
+  color: var(--bodyColor)
   background-color: #f8f8f8
 
 main
@@ -19,6 +23,7 @@ main
   max-width: 800px
 
 h1, h2, h3, h4, h5, h6
+  font-family: 'Palanquin'
   line-height: 1.2
 
 h1
@@ -28,7 +33,8 @@ h1
 
 h2
   margin-top: 0px
-  margin-bottom: 0px
+  & p
+    margin-top: 0px
 
 footer
   margin-top: 3em
@@ -48,45 +54,34 @@ footer
     margin: 0
 
 a
-  color: #333
+  color: var(--bodyColor)
   &:link,
   &:visited
-    color: #333
+    color: var(--bodyColor)
   &:hover
-    color: #aaa
-
-hr
-  height: 3px
-  border: 1px #ddd solid
-  background-color: #ddd
-  margin: 2.5em auto
-
-#title-screen
-  font-size: 135%
-  text-align: center
-
-#stage-select
-  max-width: 70%
-  margin: 0 auto
-
-.section .info
-  margin-bottom: 2em
+    color: var(--accentColor)
 
 img
   max-width: 100%
 
+hr
+  height: 3px
+  border: 1px var(--accentColor) solid
+  background-color: var(--accentColor)
+  margin: 2.5em auto
+
+#title-screen
+  text-align: center
+  max-width: 70%
+  margin: 0 auto
+  text-align: center
+
+.section .info
+  margin-bottom: 2em
+
+
 #contact .columns .column
   text-align: center
-  & h2
-    margin-top: 1em
-    margin-bottom: 0
-  & h3
-    margin-top: 0
   & img
     max-width: 70%
-
-
-.contact
-  text-align: center
-  margin-bottom: 1.5em
 

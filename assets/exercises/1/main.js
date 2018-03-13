@@ -54,8 +54,8 @@ function playIt (e) {
   const key = document.querySelector(`div[data-key="${e.keyCode}"]`)
 
   // then, add the effect class to the key
-  // remember jQ's .{x}Class() ? YOU DON'T NEED THAT SHIT.
-  // just do .classList.{x}()
+  // remember jQ's .someActionClass() ? YOU DON'T NEED THAT.
+  // just do .classList.someAction()
   key.classList.add('playing');
 
 }
@@ -81,7 +81,7 @@ function removeTransition(e) {
 const allKeys = document.querySelectorAll('.key');
 
 // on keydown of anything pressed, execute playIt()
-window.addEventListener('keydown',playIt);
+window.addEventListener('keydown', playIt);
 
 // finally, for the effect cleanup listener, you can't do the following because allKeys is an array, 
 // and the array isn't what's transitioning, it's the items in it
@@ -94,6 +94,5 @@ window.addEventListener('keydown',playIt);
 // but since we don't need an array to be returned we don't need .map()
 
 // ES6: the thing in the () is an arrow function, like the usual function declaration
-// but without this, arguments, super, or new.target 
-// (more here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+// but with differences outlined here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 allKeys.forEach(key => key.addEventListener('transitionend',removeTransition));

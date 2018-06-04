@@ -3,20 +3,13 @@ extends(src='layout.sgr')
     #title-screen
       h1 noel quiles
       h2 I make stories for the monitor and page, in the form of...
+    #stage-select
       .columns.is-mobile
-        .column
-          a(href='#interfaces')
-            img(src='img/interfaces.png')
-        .column
-          a(href='#games')
-            img(src='img/games.png')
+        .column: a(href='#interfaces'): img(src='img/interfaces.png')
+        .column: a(href='#games'): img(src='img/games.png')
       .columns.is-mobile
-        .column
-          a(href='#stories')
-            img(src='img/words.png')
-        .column
-          a(href='#sounds')
-            img(src='img/sounds.png')
+        .column: a(href='#words'): img(src='img/words.png')
+        .column: a(href='#sounds'): img(src='img/sounds.png')
       h2: a(href='#contact') Want to contact me?
 
     .section#interfaces

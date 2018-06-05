@@ -1,85 +1,34 @@
-extends(src='layout.sgr')
-  block(name='content')
-    #title-screen
-      h1 noel quiles
-      h2 I make stories for the monitor and page, in the form of...
-      .columns.is-mobile
-        .column
-          a(href='#interfaces')
-            img(src='img/interfaces.png')
-        .column
-          a(href='#games')
-            img(src='img/games.png')
-      .columns.is-mobile
-        .column
-          a(href='#stories')
-            img(src='img/words.png')
-        .column
-          a(href='#sounds')
-            img(src='img/sounds.png')
-      h2: a(href='#contact') Want to contact me?
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    title Noel Quiles's JavaScript30 Archive
+    meta(content='In which I complete twenty-three CSS Grid exercises and tell everyone about it.' name='description')
+    meta(content='Noel Quiles' name='author')
+    meta(content='width=device-width initial-scale=1' name='viewport')
+    meta(content="Noel Quiles's cssgrid.io archive" name='application-name')
+    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=wAOoxmobdP")
+    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=wAOoxmobdP")
+    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=wAOoxmobdP")
+    link(rel="manifest" href="/manifest.json?v=wAOoxmobdP")
+    link(rel="mask-icon" href="/safari-pinned-tab.svg?v=wAOoxmobdP" color="#000000")
+    link(rel="shortcut icon" href="/favicon.ico?v=wAOoxmobdP")
+    meta(name="theme-color" content="#ffffff")
 
-    .section#interfaces
-      hr
-      h1 {{ dato.section[0].title }}
-      .info: .text(md) {{ dato.section[0].blurb }}
+    link(href='css/style.css' rel='stylesheet')
+  body
+    each(loop='info in dato.info')
+      h1
+        |{{ info.title1 }}
+        br
+        |{{ info.title2 }}
+      p(md) {{ info.body }}
 
-      each(loop='interface of dato.interface')
-        .columns
-          .column
-            img(src='https://{{ dato._meta.imgixHost + interface.sample.path }}' caption='{{ interface.title }}' alt='{{ interface.title }}')
-          .column
-            h2(md) {{ interface.title }}
-            p(md) {{ interface.description }}
+    each(loop='exercise in dato.exercise')
+      h2(md) {{ exercise.title }}
+      p(md) {{ exercise.body }}
 
-    .section#games
-      hr
-      h1 {{ dato.section[1].title }}
-      .info: p(md) {{ dato.section[1].blurb }}
-
-      each(loop='game of dato.game')
-        .columns
-          .column
-            img(src='https://{{ dato._meta.imgixHost + game.sample.path }}' caption='{{ game.title }}' alt='{{ game.title }}')
-          .column
-            h2(md) {{ game.title }}
-            p(md) {{ game.description }}
-
-    .section#words
-      hr
-      h1 {{ dato.section[2].title }}
-      .info: p(md) {{ dato.section[2].blurb }}
-
-    .section#sounds
-      hr
-      h1 {{ dato.section[3].title }}
-      .info: p(md) {{ dato.section[3].blurb }}
-
-      each(loop='sound of dato.sound')
-        .columns
-          .column.is-7
-            strong {{ sound.title }}
-          .column
-            audio(controls='controls')
-              source(src='https://{{ dato._meta.imgixHost + sound.mp3.path }}' type='audio/mpeg')
-              source(src='https://{{ dato._meta.imgixHost + sound.ogg.path }}' type='audio/ogg')
-
-    hr
-    .section#contact
-      h1 {{ dato.section[4].title }}
-      .info(style='text-align:center;'): p(md) {{ dato.section[4].blurb }}
-      .columns
-        .column
-          a(href='mailto:contact@noelquiles.com')
-            img(src='img/email.png')
-          h2: a(href='mailto:contact@noelquiles.com') Email
-
-        .column
-          a(href='https://twitter.com/NoelQuiles')
-            img(src='img/logo.png')
-          h2: a(href='https://twitter.com/NoelQuiles') Twitter
-
-        .column
-          a(href='https://github.com/EnMod')
-            img(src='img/interfaces-avatar.png')
-          h2: a(href='https://github.com/EnMod') GitHub
+    br
+    br
+    br
+    script(src='main.js')

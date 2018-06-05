@@ -1,87 +1,42 @@
-:root
-  --bodyColor: #333
-  --accentColor: #aaa
-
-@font-face
-  font-family: enmod
-  src: url('enmod.woff') format('woff'), url('enmod.ttf') format('truetype')
-
-*, *::after, *::before
+@import url(https://fonts.googleapis.com/css?family=Play)
+html
   box-sizing: border-box
 
-body
-  margin: 0
-  line-height: 1.6
-  font-size: 18px
-  font-family: 'Quando'
-  color: var(--bodyColor)
-  background-color: #f8f8f8
+*,*::after,*::before
+  box-sizing: inherit
 
-main
-  padding: 0 1em
-  margin: 0 auto
-  max-width: 800px
-
-h1, h2, h3, h4, h5, h6
-  font-family: 'Palanquin'
+h1,h2,h3,h4,h5,h6
   line-height: 1.2
 
 h1
-  font-family: 'enmod'
+  font-weight: bold
   text-align: center
-  font-size: 1.5em
 
 h2
   margin-top: 0px
-  & p
-    margin-top: 0px
+  margin-bottom: 0px
 
-footer
-  margin-top: 3em
-  text-align: center
-  background-color: #ddd
-  width: 100%
-  padding: 1em
-  & .badges
-    max-width: 450px
-    margin: 0 auto
-    display: flex
-    align-items: center
-    justify-content: center
-    & .contentful
-      filter: invert(1)
-  & p
-    margin: 0
+body
+  line-height: 1.4
+  margin: 0 auto
+  max-width: 800px
+  font-size: 18px
+  font-family: 'Play'
+  padding: 0 20px
+  color: #333
 
-a
-  color: var(--bodyColor)
-  &:link,
-  &:visited
-    color: var(--bodyColor)
-  &:hover
-    color: var(--accentColor)
+a,a:link,a:visited
+  color: #333
+
+a:hover
+  color: #aaa
+
+hr
+  height: 0.5px
+  border: 1px #aaa solid
 
 img
   max-width: 100%
 
-hr
-  height: 3px
-  border: 1px var(--accentColor) solid
-  background-color: var(--accentColor)
-  margin: 2.5em auto
-
-#title-screen
-  text-align: center
-  max-width: 70%
-  margin: 0 auto
-  text-align: center
-
-.section .info
-  margin-bottom: 2em
-
-
-#contact .columns .column
-  text-align: center
-  & img
-    max-width: 70%
-
+code
+  background: #eee

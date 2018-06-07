@@ -22,7 +22,7 @@ module.exports = {
     html: "*(**/)*.sgr",
     css: "*(**/)*.sss"
   },
-  vendor: ["assets/**"],
+  vendor: ["assets/ex/**"],
   ignore: [
     "**/layout.sgr",
     "assets/css/_*",

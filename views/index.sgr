@@ -25,7 +25,7 @@ html.no-js(lang='en')
       p(md) {{ info.body }}
 
     each(loop='exercise in dato.exercise')
-      h2(md) {{ exercise.title }}
+      a(href='https://wtflex.noelquiles.com/ex/{{exercise.num}}'): h2(md) Exercise {{ '#' + exercise.num }}: {{ exercise.title }}
       p(md) {{ exercise.body }}
 
     br

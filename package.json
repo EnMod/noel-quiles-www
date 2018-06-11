@@ -8,10 +8,10 @@
   },
   "bugs": "https://github.com/EnMod/noel-quiles-s-portfolio/issues",
   "dependencies": {
-    "dotenv": "^5.0.1",
+    "dotenv": "^6.0.0",
     "reshape-standard": "^3.0.0",
     "spike": "^2.0.0",
-    "spike-css-standards": "^3.0.0",
+    "spike-css-standards": "^4.0.0",
     "spike-datocms": "^2.2.2",
     "spike-js-standards": "^2.0.2",
     "spike-optimize": "^0.1.2",
@@ -20,10 +20,10 @@
     "sugarss": "^1.0.1"
   },
   "devDependencies": {
-    "ava": "^0.19.1",
+    "ava": "^0.25.0",
     "rimraf": "^2.6.1",
     "snazzy": "^7.0.0",
-    "standard": "^10.0.2"
+    "standard": "^11.0.1"
   },
   "homepage": "https://github.com/EnMod/noel-quiles-s-portfolio",
   "main": "app.js",
@@ -34,7 +34,7 @@
     "precommit": "npm run lint -s",
     "pretest": "npm run lint -s",
     "test": "NODE_ENV=test ava",
-    "compile": "spike compile",
-    "start": "spike watch"
+    "build": "spike compile",
+    "dev": "spike watch"
   }
 }

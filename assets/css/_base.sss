@@ -48,8 +48,8 @@ footer
     display: flex
     align-items: center
     justify-content: center
-    & .contentful
-      filter: invert(1)
+    & .datocms
+      filter: brightness(0%)
   & p
     margin: 0
 
@@ -76,12 +76,19 @@ hr
   margin: 0 auto
   text-align: center
 
-.section .info
-  margin-bottom: 2em
+.section
+  max-width: 800px
+  margin: 0 auto
+  & .info
+    margin-bottom: 2em
 
 
 #contact .columns .column
   text-align: center
   & img
     max-width: 70%
+
+.columns
+  max-width: 800px
+  margin: 0 auto
 

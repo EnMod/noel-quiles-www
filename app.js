@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new SpikeDatoCMS({
       addDataTo: locals,
-      token: process.env.datoRO,
+      token: process.env.datoROwtflex,
       models: [{ type: "exercise" }, { type: "info" }]
       // json: "data.json"
     })

@@ -5,7 +5,6 @@ _cache
 .env
 JavaScript30_source
 *.log
-*.log
 yarn-error.log
-yarn-error.log
-yarn-error.log
+
+

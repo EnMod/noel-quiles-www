@@ -1,5 +1,5 @@
 # What the Flexbox?! Archive
 
-My comments on @wesbos's excellent primer to flexbox are in this repo, along with some of my own commentary on them
+My comments on @wesbos's excellent primer to flexbox are in this repo, sprinkled throughout each exercise's code.
 
-Check out the exercises in action at [wtflex.noelquiles.com](wtflex.noelquiles.com)
+Check out the exercises in action at [wtflex.noelquiles.com](wtflex.noelquiles.com)!

@@ -1,6 +1,6 @@
 # Noel Quiles (.com)
 
-I make stories for the monitor and page, through interfaces, games, words, and sounds.  On this site you can peruse my recently completed projects as well as some in progress.
+I bring stories to life through code, words, and sound.  On this site you can peruse my recently completed projects as well as some in progress.
 
 You can also browse this repo's branches for the sources of my subdomains, including:
 - [My Blog](https://blog.noelquiles.com)
@@ -18,4 +18,4 @@ You can also browse this repo's branches for the sources of my subdomains, inclu
 
 ## Note: This repo is mirrored
 
-Main development happens on [GitLab](https://gitlab.com/enmod/noelquiles.com) with changes mirrored to [GitHub](https://github.com/EnMod/noelquiles.com). Feel free to send me a PR, write me an issue, or otherwise get in touch in both places!
+Main development happens on [GitHub](https://github.com/EnMod/noelquiles.com) with changes mirrored to [GitLab](https://gitlab.com/enmod/noelquiles.com). Feel free to send me a PR, write me an issue, or otherwise get in touch in both places!

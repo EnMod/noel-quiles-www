@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
+import Layout from "../components/Layout"
 
 export default () => (
-  <React.Fragment>
-    <Link to="/about">About</Link>
+  <Layout>
     <div style={{ color: "cyan" }}>Hello world!</div>
-  </React.Fragment>
+  </Layout>
 )

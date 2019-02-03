@@ -1,24 +1,5 @@
 import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
-import styled from "styled-components"
-
-const AppWrap = styled.div`
-  @import url("https://fonts.googleapis.com/css?family=Questrial");
-  @import url("https://fonts.googleapis.com/css?family=Alice");
-
-  & h1,
-  & h2,
-  & h3,
-  & h4,
-  & h5,
-  & h6 {
-    font-family: Questrial;
-  }
-
-  p {
-    font-family: Alice;
-  }
-`
 
 /*
  to get graphQL data into non-pages like layouts,
@@ -43,7 +24,7 @@ export default props => (
       }
     `}
     render={data => (
-      <AppWrap>
+      <>
         <h1>Welcome to {data.site.siteMetadata.title}</h1>
         <nav>
           <Link to="/">Home</Link>
@@ -51,7 +32,7 @@ export default props => (
           <Link to="/contact">Contact</Link>
         </nav>
         {props.children}
-      </AppWrap>
+      </>
     )}
   />
 )

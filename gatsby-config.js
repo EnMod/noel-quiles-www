@@ -1,16 +1,20 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   // put common bits in the siteMetadata
   siteMetadata: {
     title: `Noel Quiles (.com)`
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-datocms`,
       options: {
         // You can find your read-only API token under the Settings > API tokens
         // section of your administrative area:
-        apiToken: `${process.env.DATO_RO}`,
+        apiToken: process.env.DATO_RO,
 
         // If you are working on development/staging environment, you might want to
         // preview the latest version of records instead of the published one:

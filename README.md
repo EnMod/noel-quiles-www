@@ -1,5 +1,5 @@
-# Modified Musings
-## On webdev, gamedev, life, and writing.
+# Musings Evinced
+## Thoughts on webdev, gamedev, life, and writing.
 
 This is my static blog!
 

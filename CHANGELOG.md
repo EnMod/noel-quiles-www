@@ -3,14 +3,16 @@
 This project's changelog follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.1.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- Think of this as some "changelog-driven development" -->
+
 ## 4.0.0 - 2019-11-xx
 
 ### Changed
 
 - **Code Architecture: A Focus On Components and Now**
+
   - Convert the whole thing to React/Next.js for a robust, rapid component-oriented workflow
     - Shift any Spike conventions to the equivalent in Next.js, including locals, data fetching, page routing, etc
-    - Break each discipline out into pages
+    - Break each discipline out into "pages"
     - Implement a proper nav, its design modeled after my original vision for this site, as its own component
     - Have the header and footer be components as well
   - Integrate with Zeit's Now to take advantage of their Next.js-specific features (and general features/usability)

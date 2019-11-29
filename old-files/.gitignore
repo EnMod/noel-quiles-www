@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+public
+_cache
+.env
+JavaScript30_source
+*.log
+yarn-error.log
+
+

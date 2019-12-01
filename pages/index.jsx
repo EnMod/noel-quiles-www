@@ -1,10 +1,5 @@
-import "./style.css";
+import Home from "./home";
 
-const Home = () => (
-  <div id="p-home">
-    'Tis but{" "}
-    <span className="testing-nesting">a test{process.env.testEnv}</span>
-  </div>
-);
-
-export default Home;
+export default function HomePage() {
+  return <Home />;
+}

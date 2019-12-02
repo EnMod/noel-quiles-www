@@ -1,3 +1,4 @@
+import "../styles/style.css";
 import App from "next/app";
 import BaseLayout from "../layouts/BaseLayout.jsx";
 

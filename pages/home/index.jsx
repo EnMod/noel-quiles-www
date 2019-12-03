@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.css"
 
 export default function HomePage({ disciplines }) {
   return (
@@ -6,5 +6,5 @@ export default function HomePage({ disciplines }) {
       'Tis but{" "}
       <span className="testing-nesting">a test{process.env.testEnv}</span>
     </div>
-  );
+  )
 }

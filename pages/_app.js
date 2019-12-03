@@ -1,14 +1,15 @@
-import "../styles/style.css";
-import App from "next/app";
-import BaseLayout from "../layouts/BaseLayout.jsx";
+import "../styles/style.css"
+import App from "next/app"
+import AppLayout from "../layouts/AppLayout.jsx"
 
 export default class MyApp extends App {
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps } = this.props
+
     return (
-      <BaseLayout>
+      <AppLayout chosenLayout={Component.layout}>
         <Component {...pageProps} />
-      </BaseLayout>
-    );
+      </AppLayout>
+    )
   }
 }

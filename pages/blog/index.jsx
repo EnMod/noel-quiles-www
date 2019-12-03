@@ -1,3 +1,5 @@
 export default function BlogPage() {
-  return <div id="p-blog">Blog here</div>;
+  return <div id="p-blog">Blog here</div>
 }
+
+BlogPage.layout = "BlogLayout"

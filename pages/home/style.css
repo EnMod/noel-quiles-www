@@ -1,7 +1,2 @@
 #p-home {
-  color: cyan;
-
-  & .testing-nesting {
-    color: red;
-  }
 }

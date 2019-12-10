@@ -1,10 +1,10 @@
 import "./style.css"
 
-export default function HomePage({ disciplines }) {
+export default function HomePage() {
   return (
     <div id="p-home">
-      'Tis but{" "}
-      <span className="testing-nesting">a test{process.env.testEnv}</span>
+      <h1 className="headline">I'm Noel Quiles, and</h1>
+      <div className="manifesto">I connect to create.</div>
     </div>
   )
 }

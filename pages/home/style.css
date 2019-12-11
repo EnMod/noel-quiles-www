@@ -10,4 +10,11 @@
   & .headline {
     margin-top: 0;
   }
+
+  & .disciplines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
 }

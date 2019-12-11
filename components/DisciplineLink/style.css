@@ -1,0 +1,35 @@
+.g-discipline-link {
+  & a {
+    position: relative;
+  }
+
+  & .title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background: var(--yang);
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.audio {
+      color: var(--wind-9);
+    }
+
+    &.websites {
+      color: var(--water-9);
+    }
+
+    &.games {
+      color: var(--fire-9);
+    }
+
+    &.writing {
+      color: var(--earth-9);
+    }
+  }
+}

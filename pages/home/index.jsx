@@ -1,9 +1,9 @@
 import "./style.css"
-import fetchFromCms from "../lib/cmsClient"
+import fetchFromCms from "../../lib/cmsClient"
 import DisciplineLink from "../../components/DisciplineLink"
 import query from "./query.graphql"
 
-export default function HomePage({ disciplines }) {
+function HomePage({ disciplines }) {
   return (
     <div id="p-home">
       <h1 className="headline">I'm Noel Quiles, and</h1>
@@ -26,3 +26,5 @@ export async function unstable_getStaticProps() {
     }
   }
 }
+
+export default HomePage

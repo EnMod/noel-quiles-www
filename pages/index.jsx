@@ -1,7 +1,13 @@
-import Home from "./home"
+import Home, { unstable_getStaticProps as staticProps } from "./home"
+
+function HomePage(props) {
+  return <Home {...props} />
+}
+
+export async function unstable_getStaticProps() {
+  return staticProps()
+}
 
 HomePage.layout = "BareLayout"
 
-export default function HomePage() {
-  return <Home />
-}
+export default HomePage

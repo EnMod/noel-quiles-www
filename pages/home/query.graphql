@@ -1,4 +1,3 @@
-# Doesn't work yet! Needs a GraphQL query loader (unless Next has one built in?)
 query HomePage {
   allDisciplines {
     title

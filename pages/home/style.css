@@ -11,10 +11,18 @@
     margin-top: 0;
   }
 
+  & .manifesto {
+    margin-bottom: 3rem;
+  }
+
   & .disciplines {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+
+    & .g-discipline-link:not(:last-of-type) {
+      margin-right: 3rem;
+    }
   }
 }

@@ -6,12 +6,10 @@ export default function DisciplineLink({ image, title }) {
 
   return (
     <div className="g-discipline-link">
+      <img src={image.url} alt={image.alt} />
+
       <Link href={`/${disciplineSlug}`}>
         <a>
-          <picture>
-            <source srcSet={image.url} alt={image.alt} />
-            <img src={image.url} alt={image.alt} />
-          </picture>
           <div className={`title ${disciplineSlug}`}>
             <span>{title}</span>
           </div>

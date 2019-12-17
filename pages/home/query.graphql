@@ -1,7 +1,15 @@
 query HomePage {
-  allDisciplines {
+  disciplines: allDisciplines {
     title
     material
+    image {
+      alt
+      url
+    }
+  }
+
+  details: allDetails {
+    title
     image {
       alt
       url

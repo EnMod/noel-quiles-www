@@ -1,3 +1,7 @@
+:root {
+  --gap: 3rem;
+}
+
 #p-home {
   display: flex;
   flex-direction: column;
@@ -12,17 +16,21 @@
   }
 
   & .manifesto {
-    margin-bottom: 3rem;
+    margin-bottom: calc(var(--gap) * 2);
   }
 
-  & .disciplines {
+  & .link-row {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 
-    & .g-discipline-link:not(:last-of-type) {
-      margin-right: 3rem;
+    &:not(:last-of-type) {
+      margin-bottom: var(--gap);
     }
+  }
+
+  & .g-page-icon-link:not(:last-of-type) {
+    margin-right: var(--gap);
   }
 }

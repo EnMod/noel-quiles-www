@@ -2,7 +2,7 @@
 :root {
   --size: 120px;
 }
-.g-discipline-link {
+.g-page-icon-link {
   width: var(--size);
   height: var(--size);
   position: relative;
@@ -14,8 +14,9 @@
     align-items: center;
     opacity: 0;
     background: var(--qi-1);
+    color: var(--qi-9);
     top: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
     width: var(--size);
     height: var(--size);
     z-index: 2;

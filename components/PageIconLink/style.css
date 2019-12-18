@@ -45,8 +45,4 @@
       background: var(--earth-1);
     }
   }
-
-  & img {
-    width: 100%;
-  }
 }

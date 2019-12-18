@@ -19,18 +19,26 @@
     margin-bottom: calc(var(--gap) * 2);
   }
 
-  & .link-row {
+  & .links {
+    width: calc(480px + var(--gap) * 3);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
-    &:not(:last-of-type) {
-      margin-bottom: var(--gap);
-    }
+    flex-wrap: wrap;
   }
 
-  & .g-page-icon-link:not(:last-of-type) {
+  & .g-page-icon-link {
+    margin-bottom: var(--gap);
     margin-right: var(--gap);
+
+    &:nth-child(4n),
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 }

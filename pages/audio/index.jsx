@@ -6,7 +6,7 @@ function AudioPage({ pageData }) {
   return <div id="p-audio">Audio page</div>
 }
 
-export async function unstable_getStaticProps() {
+export async function getStaticProps() {
   const { pageData } = await fetchFromCms(query)
 
   return {

@@ -1,6 +1,6 @@
-import BaseLayout from "./BaseLayout"
-import BlogLayout from "./BlogLayout"
-import BareLayout from "./BareLayout"
+import BaseLayout from "./base"
+import BlogLayout from "./blog"
+import BareLayout from "./bare"
 
 export default function AppLayout({ chosenLayout, children }) {
   const CustomLayouts = {

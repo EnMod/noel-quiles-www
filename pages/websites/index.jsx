@@ -6,7 +6,7 @@ function WebsitesPage({ pageData }) {
   return <div id="p-websites">Websites page</div>
 }
 
-export async function unstable_getStaticProps() {
+export async function getStaticProps() {
   const { pageData } = await fetchFromCms(query)
 
   return {

@@ -4,7 +4,7 @@ This project's changelog follows the guidelines set by [Keep a Changelog](http:/
 
 <!-- Think of this as some "changelog-driven development" -->
 
-## 4.0.0 - 2019-11-xx
+## 4.0.0 - 2020-xx-xx
 
 ### Changed
 

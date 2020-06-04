@@ -1,7 +1,7 @@
-import "./style.css"
-import fetchFromCms from "../../lib/cmsClient"
-import PageIconLink from "../../components/PageIconLink"
-import query from "./query.graphql"
+import './style.css'
+import fetchFromCms from '../../lib/cmsClient'
+import PageIconLink from '../../components/page-icon-link'
+import query from './query.graphql'
 
 function HomePage({ pageLinks }) {
   return (
@@ -17,7 +17,7 @@ function HomePage({ pageLinks }) {
   )
 }
 
-export async function unstable_getStaticProps() {
+export async function getStaticProps() {
   const { disciplines, details } = await fetchFromCms(query)
 
   return {

@@ -6,7 +6,7 @@ function WritingPage({ pageData }) {
   return <div id="p-writing">Writing page</div>
 }
 
-export async function unstable_getStaticProps() {
+export async function getStaticProps() {
   const { pageData } = await fetchFromCms(query)
 
   return {

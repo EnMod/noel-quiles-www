@@ -1,8 +1,8 @@
-import Home, { unstable_getStaticProps as staticProps } from "./home"
+import Home, { getStaticProps as staticProps } from "./home"
 
 Home.layout = "BareLayout"
 
-export async function unstable_getStaticProps() {
+export async function getStaticProps() {
   return staticProps()
 }
 

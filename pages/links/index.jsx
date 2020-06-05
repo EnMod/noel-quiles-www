@@ -9,7 +9,9 @@ function LinksPage({ links }) {
       <ul>
         {links.map((link) => (
           <li key={link.url} className="link">
-            <a href={link.url}>{link.title}</a>
+            <a href={link.url}>
+              <button>{link.title}</button>
+            </a>
           </li>
         ))}
       </ul>

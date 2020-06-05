@@ -9,28 +9,28 @@
   }
 
   & ul {
-    padding-top: 1rem;
     padding-left: 0;
     margin: 0 auto;
     max-width: 500px;
 
     & .link {
-      font-family: var(--heading-font);
       list-style-type: none;
-      height: 70px;
-      margin-bottom: 1rem;
 
-      & a {
+      & button {
         border-radius: 35px;
-        border: 1px solid var(--yin);
+        border: 2px solid var(--yin);
+        background: none;
         color: var(--yin);
+        font-family: var(--heading-font);
+        font-size: 1rem;
         padding: 1.5rem;
         text-decoration: none;
         transition: 0.15s ease;
         transition-property: border-color, color, background-color;
+        margin-bottom: 1rem;
 
         &:hover {
-          border-color: var(--qi-1);
+          border-color: var(--qi-5);
           background-color: var(--yin);
           color: var(--qi-1);
         }

@@ -1,6 +1,31 @@
 # Noel Quiles (.com) Changelog
 
-This project's changelog follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+This project's changelog follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.1.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+<!-- Think of this as some "changelog-driven development" -->
+
+## 4.0.0 - 2020-xx-xx
+
+### Changed
+
+- **Code Architecture: A Focus On Components and Now**
+
+  - Convert the whole thing to React/Next.js for a robust, rapid component-oriented workflow
+    - Shift any Spike conventions to the equivalent in Next.js, including locals, data fetching, page routing, etc
+    - Break each discipline out into "pages"
+    - Implement a proper nav, its design modeled after my original vision for this site, as its own component
+    - Have the header and footer be components as well
+  - Integrate with Zeit's Now to take advantage of their Next.js-specific features (and general features/usability)
+    - Reconfigure to deploy to Now
+    - Adjust redirects to reflect Now conventions
+  - Incorporate each subdomain into this main domain as subdirectories
+    - Place the exercises for `js30` and `wtflex` in their own `public` directories
+    - Integrate `blog` into the site as a subdirectory
+
+- **Design: Expression of Self**
+  - Adjust colors/typography to reflect a recent, total shift in my identity design
+  - Paint each discipline with a specific, monochrome color theme
+  - Incorporate motion into each page transition, with smooth blending between the colors
 
 ## 3.4.1 - 2018-06-11
 
@@ -15,7 +40,7 @@ This project's changelog follows the guidelines set by [Keep a Changelog](http:/
 
   - Adjusted bio line again (I'm going to completely change it at some point, I haven't yet come up with one I'm 5000% happy with)
   - Changed Contentful shoutout to DatoCMS shoutout in the footer
-  - Changed the filter on it to compensate
+  - Changed the filter on it to compensate for the footer background
 
 - **Styles:** Made some IE11 compat changes so the layout doesn't completely fall over
 

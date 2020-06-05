@@ -1,0 +1,40 @@
+@import '../../styles/custom-properties/colors.css';
+
+#p-links {
+  text-align: center;
+  padding: 128px 20px 20px 20px;
+
+  & h1 {
+    margin-top: 0;
+  }
+
+  & ul {
+    padding-top: 1rem;
+    padding-left: 0;
+    margin: 0 auto;
+    max-width: 500px;
+
+    & .link {
+      font-family: var(--heading-font);
+      list-style-type: none;
+      height: 70px;
+      margin-bottom: 1rem;
+
+      & a {
+        border-radius: 35px;
+        border: 1px solid var(--yin);
+        color: var(--yin);
+        padding: 1.5rem;
+        text-decoration: none;
+        transition: 0.15s ease;
+        transition-property: border-color, color, background-color;
+
+        &:hover {
+          border-color: var(--qi-1);
+          background-color: var(--yin);
+          color: var(--qi-1);
+        }
+      }
+    }
+  }
+}

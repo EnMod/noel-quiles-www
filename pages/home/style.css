@@ -1,0 +1,22 @@
+:root {
+  --gap: 3rem;
+}
+
+#p-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+
+  & .headline {
+    margin-top: 0;
+  }
+
+  & .more-info {
+    margin-top: 0;
+    font-family: var(--body-font);
+  }
+}

@@ -2,11 +2,7 @@
 
 #p-links {
   text-align: center;
-  padding: 128px 20px 20px 20px;
-
-  & h1 {
-    margin-top: 0;
-  }
+  padding: 20px;
 
   & ul {
     padding-left: 0;

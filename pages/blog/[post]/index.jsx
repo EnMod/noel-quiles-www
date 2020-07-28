@@ -1,3 +1,3 @@
 export default function BlogPost() {
-  return <div className="g-blog-post">Post here</div>
+  return <div id="p-blog-post">Post here</div>
 }

@@ -1,8 +1,6 @@
-:root {
-  --gap: 3rem;
-}
-
 #p-home {
+  --gap: 3rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

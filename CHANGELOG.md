@@ -1,4 +1,4 @@
-# Noel Quiles (.com) Changelog
+# Noel Quiles's Page Changelog
 
 This project's changelog follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.1.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
@@ -15,12 +15,14 @@ This project's changelog follows the guidelines set by [Keep a Changelog](http:/
     - Break each discipline out into "pages"
     - Implement a proper nav, its design modeled after my original vision for this site, as its own component
     - Have the header and footer be components as well
+    - Implement a persistent layout pattern to get the page transitions and intended design to work. Use [Adam Wathan's excellent writeup](https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/) as a guide for lack of a native Next.js solution
   - Integrate with Zeit's Now to take advantage of their Next.js-specific features (and general features/usability)
     - Reconfigure to deploy to Now
     - Adjust redirects to reflect Now conventions
   - Incorporate each subdomain into this main domain as subdirectories
     - Place the exercises for `js30` and `wtflex` in their own `public` directories
     - Integrate `blog` into the site as a subdirectory
+      - Use MDX to achieve some really fun posts and get a collaborative workflow going for edits in the future
 
 - **Design: Expression of Self**
   - Adjust colors/typography to reflect a recent, total shift in my identity design

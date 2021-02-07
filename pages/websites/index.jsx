@@ -1,15 +1,26 @@
 import s from './style.module.css'
+import fetchFromCms from '../../lib/cmsClient'
+import query from './query.graphql'
+import ProjectInfoCard from '../../components/project-info-card'
 
-function WebsitesPage({ pageData }) {
-  return <div id="p-websites">Websites page</div>
+function WebsitesPage({ allWebsites }) {
+  return (
+    <div className={s.websites}>
+      <h1>Websites</h1>
+      <p>And heeeere they are:</p>
+      {allWebsites.map((website) => (
+        <ProjectInfoCard key={website.title} {...website} />
+      ))}
+    </div>
+  )
 }
 
 export async function getStaticProps() {
-  const { pageData } = await fetchFromCms(query)
+  const { allWebsites } = await fetchFromCms(query)
 
   return {
     props: {
-      pageData
+      allWebsites
     }
   }
 }

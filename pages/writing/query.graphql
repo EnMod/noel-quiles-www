@@ -1,0 +1,13 @@
+query WebsitesPageQuery {
+  allWritings {
+    title
+    description
+    showcase {
+      files {
+        url
+        alt
+        mimeType
+      }
+    }
+  }
+}

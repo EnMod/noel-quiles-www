@@ -1,0 +1,15 @@
+query WebsitesPageQuery {
+  allWebsites {
+    title
+    url
+    client
+    description
+    showcase {
+      files {
+        url
+        alt
+        mimeType
+      }
+    }
+  }
+}

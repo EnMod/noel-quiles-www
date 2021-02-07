@@ -1,0 +1,13 @@
+query AudioPageQuery {
+  allAudios {
+    title
+    description
+    showcase {
+      files {
+        url
+        alt
+        mimeType
+      }
+    }
+  }
+}

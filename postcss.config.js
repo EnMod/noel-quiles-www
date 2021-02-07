@@ -1,11 +1,10 @@
+/* eslint-disable no-undef */
 module.exports = {
   plugins: {
-    "postcss-import": {},
-    "postcss-preset-env": {
+    'postcss-preset-env': {
       stage: 0,
       features: {
-        "custom-properties": { preserve: false },
-        "nesting-rules": true
+        'nesting-rules': true
       }
     }
   }

@@ -1,6 +1,4 @@
-import "./style.css"
-import fetchFromCms from "../../lib/cmsClient"
-import query from "./query.graphql"
+import s from './style.module.css'
 
 function WritingPage({ pageData }) {
   return <div id="p-writing">Writing page</div>

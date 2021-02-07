@@ -1,22 +1,25 @@
-const withPlugins = require("next-compose-plugins")
-const withCSS = require("@zeit/next-css")
+/* eslint-disable no-undef */
 
-require("dotenv").config()
+require('dotenv').config()
 
 const nextConfig = {
-  exportTrailingSlash: true,
+  trailingSlash: true,
   env: {
     DATO_TOKEN: process.env.DATO_TOKEN
   },
-  webpack: (config, options) => {
+  images: {
+    loader: 'imgix',
+    domains: ['www.datocms-assets.com']
+  },
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.(graphql|gql)$/,
       exclude: /node_modules/,
-      loader: "graphql-tag/loader"
+      loader: 'graphql-tag/loader'
     })
 
     return config
   }
 }
 
-module.exports = withPlugins([[withCSS]], nextConfig)
+module.exports = nextConfig

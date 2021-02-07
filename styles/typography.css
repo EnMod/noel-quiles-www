@@ -1,11 +1,3 @@
-@import "./custom-properties/fonts.css";
-@import "./custom-properties/colors.css";
-
-:root {
-  --heading-font: "Questrial", "Century Gothic", sans;
-  --body-font: "Lustria", serif;
-}
-
 body {
   font-family: var(--body-font);
   color: var(--qi-8);

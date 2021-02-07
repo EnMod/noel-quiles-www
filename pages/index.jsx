@@ -1,6 +1,7 @@
+import BareLayout from '../layouts/bare'
 import Home, { getStaticProps as staticProps } from "./home"
 
-Home.layout = "BareLayout"
+Home.layout = BareLayout
 
 export async function getStaticProps() {
   return staticProps()

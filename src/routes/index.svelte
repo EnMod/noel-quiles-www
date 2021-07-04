@@ -1,5 +1,5 @@
 <script>
-  import PageIconLink from '$lib/components/page-icon-link.svelte'
+  import PageIconLink from '$c/page-icon-link.svelte'
   export let pageLinks
 </script>
 

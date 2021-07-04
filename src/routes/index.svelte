@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   /* TODO Refactor to use Grid */
   .home {
     --gap: 3rem;
@@ -42,19 +42,19 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+  }
 
-    & > div {
-      margin-bottom: var(--gap);
-      margin-right: var(--gap);
+  :global(.page-icon-link) {
+    margin-bottom: var(--gap);
+    margin-right: var(--gap);
 
-      &:nth-child(4n),
-      &:last-child {
-        margin-right: 0;
-      }
+    &:nth-child(4n),
+    &:last-child {
+      margin-right: 0;
+    }
 
-      &:nth-last-child(-n + 2) {
-        margin-bottom: 0;
-      }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
 </style>

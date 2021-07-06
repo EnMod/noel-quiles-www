@@ -1,5 +1,51 @@
 <script>
   import PageIconLink from '$lib/components/page-icon-link.svelte'
+  // TODO Get pageLinks in here through load hook
+  // export let pageLinks
+  const pageLinks = [
+    {
+      image: {
+        url: 'https://placekitten.com/200/200',
+        alt: 'aww look at the kitten'
+      },
+      title: 'websites'
+    },
+    {
+      image: {
+        url: 'https://placekitten.com/200/200',
+        alt: 'aww look at the kitten'
+      },
+      title: 'writing'
+    },
+    {
+      image: {
+        url: 'https://placekitten.com/200/200',
+        alt: 'aww look at the kitten'
+      },
+      title: 'audio'
+    },
+    {
+      image: {
+        url: 'https://placekitten.com/200/200',
+        alt: 'aww look at the kitten'
+      },
+      title: 'games'
+    },
+    {
+      image: {
+        url: 'https://placekitten.com/200/200',
+        alt: 'aww look at the kitten'
+      },
+      title: 'about'
+    },
+    {
+      image: {
+        url: 'https://placekitten.com/200/200',
+        alt: 'aww look at the kitten'
+      },
+      title: 'contact'
+    }
+  ]
 </script>
 
 <div class="home">

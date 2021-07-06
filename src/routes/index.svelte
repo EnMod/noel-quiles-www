@@ -1,6 +1,5 @@
 <script>
-  import PageIconLink from '$c/page-icon-link.svelte'
-  export let pageLinks
+  import PageIconLink from '$lib/components/page-icon-link.svelte'
 </script>
 
 <div class="home">

@@ -1,5 +1,5 @@
 <script>
-  import MediaTemplate from '$c/project-info-card/media-template.svelte'
+  import MediaTemplate from '$lib/components/project-info-card/media-template.svelte'
   export let files
 
   const mimeCategory = files[0].mimeType.split('/')[0]

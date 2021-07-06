@@ -1,5 +1,5 @@
 <script>
-  import ShowcaseItem from '$c/project-info-card/showcase-item.svelte'
+  import ShowcaseItem from '$lib/components/project-info-card/showcase-item.svelte'
 
   export let title
   export let description

@@ -15,13 +15,17 @@
   </a>
 </div>
 
-<style>
+<style lang="postcss">
   .page-icon-link {
     --size: 120px;
 
     width: var(--size);
     height: var(--size);
     position: relative;
+
+    & > img {
+      max-width: 100%;
+    }
   }
 
   .title {

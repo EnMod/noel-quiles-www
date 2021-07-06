@@ -1,0 +1,6 @@
+@import url("https://ve-fonts.vercel.app/css?family=Questrial|Lustria");
+
+:root {
+  --heading-font: "Questrial", "Century Gothic", sans;
+  --body-font: "Lustria", serif;
+}

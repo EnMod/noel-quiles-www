@@ -16,7 +16,7 @@
       <li>
         <a {href}>{label}</a>
       </li>
-    {/each}}
+    {/each}
   </ul>
 </nav>
 

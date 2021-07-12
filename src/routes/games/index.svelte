@@ -1,7 +1,10 @@
 <script>
   // TODO Convert this prop to a getStaticProps-style data-fetch
-  export let allGames
-  import ProjectInfoCard from '$lib/components/project-info-card'
+  // export let allGames
+  import ProjectInfoCard from '$lib/components/project-info-card/index.svelte'
+  import { genWorks } from '$lib/placeholder/data'
+
+  const allGames = genWorks(5)
 </script>
 
 <div class="games">

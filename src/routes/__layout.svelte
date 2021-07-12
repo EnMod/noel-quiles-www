@@ -15,10 +15,10 @@
 
 <!-- Make exception for homepage  -->
 {#if isHome}
-  <slot />
+  <main><slot /></main>
 {:else}
   <Nav />
   <input type="text" placeholder="test input to test layout persistence!" />
-  <slot />
-  <div>Footer?</div>
+  <main><slot /></main>
+  <footer>Footer?</footer>
 {/if}

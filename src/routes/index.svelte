@@ -59,7 +59,6 @@
 </div>
 
 <style lang="postcss">
-  /* TODO Refactor to use Grid */
   .home {
     --gap: 3rem;
 
@@ -81,25 +80,13 @@
   }
 
   .links {
-    width: calc(480px + var(--gap) * 3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  :global(.page-icon-link) {
-    margin-bottom: var(--gap);
-    margin-right: var(--gap);
-
-    &:nth-child(4n),
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
+  /* Skip a cell in the second row */
+  :global(.page-icon-link):nth-child(5) {
+    grid-column: 2;
   }
 </style>

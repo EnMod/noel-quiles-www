@@ -2,19 +2,19 @@
   // TODO: Create a proper nav
   // export let links
   const links = [
-    { href: '/', label: 'Home' },
-    { href: '/websites', label: 'Websites' },
-    { href: '/games', label: 'Games' },
-    { href: '/audio', label: 'Audio' },
-    { href: '/writing', label: 'Writing' }
+    { slug: '', label: 'Home' },
+    { slug: 'websites', label: 'Websites' },
+    { slug: 'games', label: 'Games' },
+    { slug: 'audio', label: 'Audio' },
+    { slug: 'writing', label: 'Writing' }
   ]
 </script>
 
 <nav>
   <ul>
-    {#each links as href, label (label)}
+    {#each links as { slug, label } (label)}
       <li>
-        <a {href}>{label}</a>
+        <a href="/{slug}">{label}</a>
       </li>
     {/each}
   </ul>

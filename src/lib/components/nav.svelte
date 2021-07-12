@@ -4,9 +4,9 @@
   const links = [
     { slug: '', label: 'Home' },
     { slug: 'websites', label: 'Websites' },
-    { slug: 'games', label: 'Games' },
+    { slug: 'writing', label: 'Writing' },
     { slug: 'audio', label: 'Audio' },
-    { slug: 'writing', label: 'Writing' }
+    { slug: 'games', label: 'Games' }
   ]
 </script>
 

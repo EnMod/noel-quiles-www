@@ -6,7 +6,7 @@
 </script>
 
 {#if mimeCategory === 'audio'}
-  <!-- TODO Maybe apply some video-specific CSS here -->
+  <!-- TODO Maybe apply some audio-specific CSS here -->
   <audio controls>
     <!-- TODO prepare lyrics for any hosted audio -->
     <track kind="captions" />
@@ -21,7 +21,7 @@
   </video>
 {:else if mimeCategory === 'image'}
   <figure>
-    {#each files as url, mimeType (url)}
+    {#each files as { mimeType, url }, i (i)}
       <!-- ? Might throw in srcSet here later idk -->
 
       <source src={url} type={mimeType} />

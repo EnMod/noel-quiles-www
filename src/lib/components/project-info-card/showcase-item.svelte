@@ -1,5 +1,6 @@
 <script>
   import MediaTemplate from '$lib/components/project-info-card/media-template.svelte'
+
   export let files
 
   const mimeCategory = files[0].mimeType.split('/')[0]
@@ -10,22 +11,19 @@
   <audio controls>
     <!-- TODO prepare lyrics for any hosted audio -->
     <track kind="captions" />
-    <MediaTemplate type="audio" {files} />
+    <MediaTemplate type={mimeCategory} {files} />
   </audio>
 {:else if mimeCategory === 'video'}
   <!-- TODO Maybe apply some video-specific CSS here -->
   <video controls>
     <!-- TODO prepare captions for any hosted videos -->
     <track kind="captions" />
-    <MediaTemplate type="video" {files} />
+    <MediaTemplate type={mimeCategory} {files} />
   </video>
 {:else if mimeCategory === 'image'}
   <figure>
-    {#each files as { mimeType, url }, i (i)}
-      <!-- ? Might throw in srcSet here later idk -->
-
-      <source src={url} type={mimeType} />
-    {/each}
+    <!-- ? Might throw in srcSet here later idk -->
+    <MediaTemplate type={mimeCategory} {files} />
     <img src={files[0].url} alt={files[0].alt || 'Project image'} width="100" height="100" />
   </figure>
 {/if}

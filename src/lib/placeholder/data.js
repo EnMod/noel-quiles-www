@@ -1,5 +1,5 @@
 export function genWorks(desiredLength) {
-  const results = []
+  const works = []
   let key = 1
 
   const template = {
@@ -16,7 +16,7 @@ export function genWorks(desiredLength) {
     ]
   }
 
-  while (results.length < desiredLength) {
+  while (works.length < desiredLength) {
     const newEntry = { ...template }
     newEntry.key = key
 
@@ -38,9 +38,9 @@ export function genWorks(desiredLength) {
       }
     })
 
-    results.push(newEntry)
+    works.push(newEntry)
     key++
   }
 
-  return results
+  return works
 }

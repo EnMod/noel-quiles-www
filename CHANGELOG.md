@@ -1,4 +1,4 @@
-# Noel Quiles's Page Changelog
+# `noel-quiles-www` Changelog
 
 This project's changelog follows the guidelines set by [Keep a Changelog](http://keepachangelog.com/en/1.1.0/) with version numbers adherent to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 

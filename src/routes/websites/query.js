@@ -1,6 +1,10 @@
+// TODO Make this a proper graphql file at some point
+export default `
 query WebsitesPageQuery {
-  allWritings {
+  allWebsites {
     title
+    url
+    client
     description
     showcase {
       files {
@@ -11,3 +15,4 @@ query WebsitesPageQuery {
     }
   }
 }
+`

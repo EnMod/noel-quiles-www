@@ -1,12 +1,14 @@
-import { GraphQLClient } from "graphql-request"
+import { GraphQLClient, gql } from "graphql-request"
 
-let client = new GraphQLClient(process.env.GQL_ENDPOINT, {
+let client = new GraphQLClient(import.meta.env.VITE_GQL_ENDPOINT, {
   headers: {
-    Authorization: `Bearer ${process.env.DATO_RO}`
+    Authorization: `Bearer ${import.meta.env.VITE_GQL_AUTH}`
   }
 })
 
-export default function gqlr(query, variables) {
+
+export default function gqlr(gqlStr, variables) {
+  const query = gql`${gqlStr}`
   return client.request(query, variables)
 }
 

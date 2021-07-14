@@ -1,15 +1,23 @@
-<script>
-  // TODO Convert this prop to a getStaticProps-style data-fetch
-  // export let allAudios
-  import ProjectInfoCard from '$lib/components/project-info-card/index.svelte'
-  import { genWorks } from '$lib/placeholder/data'
+<script context="module">
+  import query from './query'
+  import gqlr from '$lib/utils/gql-request'
 
-  const allAudios = genWorks(4)
+  export async function load() {
+    const { allAudios } = await gqlr(query)
+    return { props: { allAudios } }
+  }
+</script>
+
+<script>
+  import ProjectInfoCard from '$lib/components/project-info-card/index.svelte'
+
+  export let allAudios
 </script>
 
 <div class="audio">
   <h1>(Sick animation to create the title)</h1>
   <p>And heeeere they are:</p>
+
   {#each allAudios as audio (audio.title)}
     <ProjectInfoCard {...audio} />
   {/each}

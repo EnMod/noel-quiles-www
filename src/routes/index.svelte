@@ -1,51 +1,17 @@
+<script context="module">
+  import query from './query'
+  import gqlr from '$lib/utils/gql-request'
+
+  export async function load() {
+    const { disciplines, details } = await gqlr(query)
+    return { props: { pageLinks: [...disciplines, ...details] } }
+  }
+</script>
+
 <script>
   import PageIconLink from '$lib/components/page-icon-link.svelte'
-  // TODO Get pageLinks in here through load hook
-  // export let pageLinks
-  const pageLinks = [
-    {
-      image: {
-        url: 'https://placekitten.com/200/200',
-        alt: 'aww look at the kitten'
-      },
-      title: 'websites'
-    },
-    {
-      image: {
-        url: 'https://placekitten.com/200/200',
-        alt: 'aww look at the kitten'
-      },
-      title: 'writing'
-    },
-    {
-      image: {
-        url: 'https://placekitten.com/200/200',
-        alt: 'aww look at the kitten'
-      },
-      title: 'audio'
-    },
-    {
-      image: {
-        url: 'https://placekitten.com/200/200',
-        alt: 'aww look at the kitten'
-      },
-      title: 'games'
-    },
-    {
-      image: {
-        url: 'https://placekitten.com/200/200',
-        alt: 'aww look at the kitten'
-      },
-      title: 'about'
-    },
-    {
-      image: {
-        url: 'https://placekitten.com/200/200',
-        alt: 'aww look at the kitten'
-      },
-      title: 'contact'
-    }
-  ]
+
+  export let pageLinks
 </script>
 
 <div class="home">

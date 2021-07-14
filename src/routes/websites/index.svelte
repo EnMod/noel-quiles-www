@@ -1,10 +1,17 @@
-<script>
-  // TODO Convert this prop to a getStaticProps-style data-fetch
-  // export let allWebsites
-  import ProjectInfoCard from '$lib/components/project-info-card/index.svelte'
-  import { genWorks } from '$lib/placeholder/data'
+<script context="module">
+  import query from './query'
+  import gqlr from '$lib/utils/gql-request'
 
-  const allWebsites = genWorks(2)
+  export async function load() {
+    const { allWebsites } = await gqlr(query)
+    return { props: { allWebsites } }
+  }
+</script>
+
+<script>
+  import ProjectInfoCard from '$lib/components/project-info-card/index.svelte'
+
+  export let allWebsites
 </script>
 
 <div class="websites">

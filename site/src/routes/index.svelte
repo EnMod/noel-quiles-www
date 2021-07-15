@@ -9,7 +9,7 @@
 </script>
 
 <script>
-  import PageIconLink from '$lib/components/page-icon-link.svelte'
+  import Molecule from '$lib/components/molecule/index.svelte'
 
   export let pageLinks
 </script>
@@ -19,7 +19,7 @@
   <div class="manifesto g-text-hero">I connect to create.</div>
   <div class="links">
     {#each pageLinks as link (link.title)}
-      <PageIconLink {...link} />
+      <Molecule {...link} />
     {/each}
   </div>
 </div>

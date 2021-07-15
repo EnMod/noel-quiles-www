@@ -4,6 +4,7 @@ query HomePage {
   disciplines: allDisciplines {
     title
     material
+    theme
     image {
       alt
       url
@@ -12,6 +13,7 @@ query HomePage {
 
   details: allDetails {
     title
+    theme
     image {
       alt
       url

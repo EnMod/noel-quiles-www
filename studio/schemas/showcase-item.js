@@ -1,6 +1,6 @@
 export default {
-  title: "Detail",
-  name: "detail",
+  title: "Showcase Item",
+  name: "showcaseItem",
   type: "object",
   fields: [
     { title: "Title", name: "title", type: "string" },

@@ -3,11 +3,14 @@ import showcaseItemFields from '$lib/components/project-info-card/showcase-item/
 
 export default `
 query WebsitesPageQuery {
-  allWebsites {
-    title
-    url
+  websites: allClientProject(where: {discipline: {slug: {eq: "websites"}}}) {
     client
+    title
     description
+    url
+    discipline {
+      slug
+    }
     showcase {
       ${showcaseItemFields}
     }

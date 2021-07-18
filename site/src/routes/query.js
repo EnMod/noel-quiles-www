@@ -1,20 +1,17 @@
 // TODO Make this a proper graphql file at some point
 export default `
 query HomePage {
-  disciplines: allDisciplines {
+  disciplines: allDiscipline {
     title
-    material
-    theme
-    image {
+    icon {
       alt
       url
     }
   }
 
-  details: allDetails {
+  details: allDetail {
     title
-    theme
-    image {
+    icon {
       alt
       url
     }

@@ -3,10 +3,13 @@ import showcaseItemFields from '$lib/components/project-info-card/showcase-item/
 
 export default `
 query GamesPageQuery {
-  allGames {
+  games: allGameProject(sort: [ {releaseDate: DESC } ]) {
     title
     description
     url
+    discipline {
+      slug
+    }
     showcase {
       ${showcaseItemFields}
     }

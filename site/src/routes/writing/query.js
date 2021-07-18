@@ -2,10 +2,14 @@
 import showcaseItemFields from '$lib/components/project-info-card/showcase-item/fragment'
 
 export default `
-query WebsitesPageQuery {
-  allWritings {
+query WritingPageQuery {
+  writings: allBasicProject(where: {discipline: {slug: {eq: "writing"}}}) {
     title
     description
+    url
+    discipline {
+      slug
+    }
     showcase {
       ${showcaseItemFields}
     }

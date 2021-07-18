@@ -3,9 +3,13 @@ import showcaseItemFields from '$lib/components/project-info-card/showcase-item/
 
 export default `
 query AudioPageQuery {
-  allAudios {
+  audio: allBasicProject(where: {discipline: {slug: {eq: "audio"}}}) {
     title
     description
+    url
+    discipline {
+      slug
+    }
     showcase {
       ${showcaseItemFields}
     }

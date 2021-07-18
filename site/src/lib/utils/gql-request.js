@@ -1,5 +1,6 @@
 import { GraphQLClient, gql } from "graphql-request"
-import {dev} from '$app/env'
+import { dev } from '$app/env'
+
 const gqlEndpoint = dev ? import.meta.env.VITE_GQL_ENDPOINT_DEV : import.meta.env.VITE_GQL_ENDPOINT_PROD
 
 let client = new GraphQLClient(gqlEndpoint, {

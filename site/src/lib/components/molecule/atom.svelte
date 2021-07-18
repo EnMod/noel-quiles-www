@@ -5,7 +5,7 @@
 
 <div class="atom {theme}" />
 
-<style>
+<style lang="postcss">
   .atom {
     border-radius: 50%;
     border: 5px solid;

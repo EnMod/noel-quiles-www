@@ -22,7 +22,8 @@ export default {
     {
       title: "Description",
       name: "description",
-      type: "text",
+      type: "array",
+      of: [{type:'block'}]
     },
     {
       title: "Showcase",

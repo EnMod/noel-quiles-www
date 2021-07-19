@@ -8,6 +8,7 @@ import clientProject from './client-project'
 import detail from './detail'
 import discipline from './discipline'
 import gameProject from './game-project'
+import icon from './icon'
 import showcaseItem from './showcase-item'
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -22,6 +23,7 @@ export default createSchema({
     clientProject,
     detail,
     discipline,
+    icon,
     gameProject,
   ]),
 })

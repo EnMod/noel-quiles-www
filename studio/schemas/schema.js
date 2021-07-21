@@ -4,6 +4,8 @@ import createSchema from 'part:@sanity/base/schema-creator'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import basicProject from './basic-project'
+import blogCategory from './blog/category'
+import blogPost from './blog/post'
 import clientProject from './client-project'
 import detail from './detail'
 import discipline from './discipline'
@@ -20,10 +22,12 @@ export default createSchema({
   types: schemaTypes.concat([
     showcaseItem,
     basicProject,
+    blogCategory,
+    blogPost,
     clientProject,
     detail,
     discipline,
-    icon,
     gameProject,
-  ]),
+    icon
+  ])
 })

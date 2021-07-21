@@ -1,35 +1,35 @@
 export default {
-  title: "Basic Project",
-  name: "basicProject",
-  type: "document",
+  title: 'Basic Project',
+  name: 'basicProject',
+  type: 'document',
   fields: [
     {
-      title: "Discipline",
-      name: "discipline",
-      type: "reference",
-      to: [{ type: "discipline" }],
+      title: 'Discipline',
+      name: 'discipline',
+      type: 'reference',
+      to: [{ type: 'discipline' }]
     },
     {
-      title: "Title",
-      name: "title",
-      type: "string",
+      title: 'Showcase',
+      name: 'showcase',
+      type: 'array',
+      of: [{ type: 'showcaseItem' }]
     },
     {
-      title: "URL",
-      name: "url",
-      type: "url",
+      title: 'Title',
+      name: 'title',
+      type: 'string'
     },
     {
-      title: "Description",
-      name: "description",
-      type: "array",
-      of: [{type:'block'}]
+      title: 'URL',
+      name: 'url',
+      type: 'url'
     },
     {
-      title: "Showcase",
-      name: "showcase",
-      type: "array",
-      of: [{ type: "showcaseItem" }],
-    },
-  ],
+      title: 'Description',
+      name: 'description',
+      type: 'array',
+      of: [{ type: 'block' }]
+    }
+  ]
 }

@@ -22,6 +22,7 @@ export default {
       type: 'slug',
       options: { source: 'title' }
     },
-    { title: 'Description', name: 'description', type: 'array', of: [{ type: 'block' }] }
+    { title: 'Subheading', name: 'subheading', type: 'array', of: [{ type: 'block' }] },
+    { title: 'Page copy', name: 'pageCopy', type: 'array', of: [{ type: 'block' }] }
   ]
 }

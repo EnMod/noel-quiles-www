@@ -12,7 +12,10 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "media",
+    "dark-mode",
+    "order-documents"
   ],
   "env": {
     "development": {

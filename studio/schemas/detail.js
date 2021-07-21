@@ -1,5 +1,3 @@
-import icon from './icon'
-
 export default {
   title: 'Detail',
   name: 'detail',
@@ -8,8 +6,7 @@ export default {
     {
       title: 'Icon',
       name: 'icon',
-      type: 'icon',
-      ...icon.fields
+      type: 'icon'
     },
     {
       title: 'Title',

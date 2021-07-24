@@ -19,7 +19,18 @@ export default {
       title: 'Category',
       name: 'category',
       type: 'array',
-      to: [{ type: 'reference', to: [{ type: 'category' }] }]
+      of: [{ type: 'reference', to: [{ type: 'blogCategory' }] }]
+    },
+    {
+      title: 'Excerpt',
+      name: 'excerpt',
+      type: 'array',
+      of: [{ type: 'block' }]
+    },
+    {
+      title: 'Include excerpt',
+      name: 'includeExcerpt',
+      type: 'boolean'
     },
     {
       title: 'Body',

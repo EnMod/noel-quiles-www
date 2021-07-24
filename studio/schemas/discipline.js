@@ -21,6 +21,12 @@ export default {
     },
     { title: 'Subheading', name: 'subheading', type: 'array', of: [{ type: 'block' }] },
     { title: 'Page copy', name: 'pageCopy', type: 'array', of: [{ type: 'block' }] },
-    { title: 'Concept', name: 'concept', type: 'text' }
+    { title: 'Concept', name: 'concept', type: 'text' },
+    {
+      name: 'order',
+      title: 'Order',
+      type: 'number',
+      hidden: true
+    }
   ]
 }

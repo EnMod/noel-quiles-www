@@ -32,6 +32,12 @@ export default {
       name: 'description',
       type: 'array',
       of: [{ type: 'block' }]
+    },
+    {
+      name: 'order',
+      title: 'Order',
+      type: 'number',
+      hidden: true
     }
   ]
 }

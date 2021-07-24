@@ -20,6 +20,12 @@ export default {
       options: { source: 'title' }
     },
     { title: 'Subheading', name: 'subheading', type: 'array', of: [{ type: 'block' }] },
-    { title: 'Page copy', name: 'pageCopy', type: 'array', of: [{ type: 'block' }] }
+    { title: 'Page copy', name: 'pageCopy', type: 'array', of: [{ type: 'block' }] },
+    {
+      name: 'order',
+      title: 'Order',
+      type: 'number',
+      hidden: true
+    }
   ]
 }

@@ -9,4 +9,4 @@ const config = {
   preprocess: sveltePreprocess({ postcss: true })
 }
 
-export default config;
+export default config

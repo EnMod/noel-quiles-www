@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "restoreTerminals.terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "site",
+            "commands": ["cd site", "npm i", "npm run dev"]
+          },
+          {
+            "name": "studio",
+            "commands": ["cd studio", "npm i", "npm run start"]
+          }
+        ]
+      }
+    ]
+  }
+}

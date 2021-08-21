@@ -7,7 +7,7 @@
   "author": "Noel Quiles <contact@noelquiles.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
+    "dev": "sanity start",
     "build": "sanity build",
     "dep": "sanity graphql deploy --no-playground && sanity deploy"
   },

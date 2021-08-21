@@ -5,9 +5,11 @@ I connect to create: [websites](https://noelquiles.com), [writing](https://noelq
 In this repo is the source for my landing page, blog, and other fun destinations:
 - Various past iterations of the landing page
 - Twine experiments
+- Old course workspaces and projects
 - Maybe an easter egg or two?
 
 ## How I made this
 - Developed with [SvelteKit](https://kit.svelte.dev/)
 - Designed with [Figma](https://www.figma.com/)
-- Hosting and delivery handled by [Netlify](https://www.netlify.com) ([Vercel](https://vercel.com/) soon)
+- Site data/assets hosted on and managed by [Sanity](https://sanity.io)
+- Hosting and delivery handled by [Vercel](https://vercel.com/)

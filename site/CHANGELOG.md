@@ -4,29 +4,29 @@ This project's changelog follows the guidelines set by [Keep a Changelog](http:/
 
 <!-- Think of this as some "changelog-driven development" -->
 
-## 4.0.0 - 2020-xx-xx
+## 4.0.0 - 2021-xx-xx
 
 ### Changed
 
-- **Code Architecture: A Focus On Components and Now**
+- **Code Architecture: A Focus On Components and Vercel**
 
-  - Convert the whole thing to React/Next.js for a robust, rapid component-oriented workflow
-    - Shift any Spike conventions to the equivalent in Next.js, including locals, data fetching, page routing, etc
-    - Break each discipline out into "pages"
+  - Convert the whole thing to Svelte/SvelteKit for a robust, rapid component-oriented workflow
+    - Shift any Spike conventions to the equivalent in SvelteKit, including locals, data fetching, page routing, etc
+    - Break each molecule out into pages
     - Implement a proper nav, its design modeled after my original vision for this site, as its own component
     - Have the header and footer be components as well
-    - Implement a persistent layout pattern to get the page transitions and intended design to work. Use [Adam Wathan's excellent writeup](https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/) as a guide for lack of a native Next.js solution
-  - Integrate with Zeit's Now to take advantage of their Next.js-specific features (and general features/usability)
-    - Reconfigure to deploy to Now
-    - Adjust redirects to reflect Now conventions
+  - Integrate with Vercel
+    - Reconfigure to deploy to Vercel
+    - Adjust redirects to reflect Vercel conventions
   - Incorporate each subdomain into this main domain as subdirectories
-    - Place the exercises for `js30` and `wtflex` in their own `public` directories
+    - Place the exercises for `js30` and `wtflex` in a `websites/journey` directory...?
+    - Have `journey` or `history` or whatever subdirectories for each molecule to chronicle past projects
     - Integrate `blog` into the site as a subdirectory
-      - Use MDX to achieve some really fun posts and get a collaborative workflow going for edits in the future
+      - Use Sanity block content serializers to achieve some really fun posts, having custom blocks to model component data.  If only Sanity supported Svelte...this will have to do
 
 - **Design: Expression of Self**
   - Adjust colors/typography to reflect a recent, total shift in my identity design
-  - Paint each discipline with a specific, monochrome color theme
+  - Paint each molecule with a specific, monochrome color theme
   - Incorporate motion into each page transition, with smooth blending between the colors
 
 ## 3.4.1 - 2018-06-11

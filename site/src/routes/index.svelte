@@ -3,23 +3,23 @@
   import gqlr from '$lib/utils/gql-request'
 
   export async function load() {
-    const { disciplines, details } = await gqlr(query)
-    return { props: { pageLinks: [...disciplines, ...details] } }
+    const { molecules } = await gqlr(query)
+    return { props: { molecules } }
   }
 </script>
 
 <script>
   import Molecule from '$lib/components/molecule/index.svelte'
 
-  export let pageLinks
+  export let molecules
 </script>
 
 <div class="home">
   <h1 class="headline">I&apos;m Noel Quiles, and</h1>
   <div class="manifesto g-text-hero">I connect to create.</div>
-  <div class="links">
-    {#each pageLinks as link (link.title)}
-      <Molecule {...link} />
+  <div class="molecules">
+    {#each molecules as molecule (molecule.title)}
+      <Molecule theme={molecule.slug.current} {...molecule} />
     {/each}
   </div>
 </div>
@@ -45,7 +45,7 @@
     margin-bottom: calc(var(--gap) * 2);
   }
 
-  .links {
+  .molecules {
     display: grid;
     gap: var(--gap);
     grid-template-columns: repeat(4, 1fr);

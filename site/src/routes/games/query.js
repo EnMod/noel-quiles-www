@@ -7,9 +7,6 @@ query GamesPageQuery {
     title
     description
     url
-    discipline {
-      slug
-    }
     showcase {
       ${showcaseItemFields}
     }

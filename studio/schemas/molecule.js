@@ -1,6 +1,6 @@
 export default {
-  title: 'Discipline',
-  name: 'discipline',
+  title: 'Molecule',
+  name: 'molecule',
   type: 'document',
   fields: [
     {
@@ -18,6 +18,12 @@ export default {
       name: 'slug',
       type: 'slug',
       options: { source: 'title' }
+    },
+    {
+      title: 'Atoms',
+      name: 'atoms',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'atom' }] }]
     },
     { title: 'Subheading', name: 'subheading', type: 'array', of: [{ type: 'block' }] },
     { title: 'Page copy', name: 'pageCopy', type: 'array', of: [{ type: 'block' }] },

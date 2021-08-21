@@ -4,10 +4,10 @@ export default {
   type: 'document',
   fields: [
     {
-      title: 'Discipline',
-      name: 'discipline',
+      title: 'Molecule',
+      name: 'molecule',
       type: 'reference',
-      to: [{ type: 'discipline' }]
+      to: [{ type: 'molecule' }]
     },
     {
       title: 'Showcase',

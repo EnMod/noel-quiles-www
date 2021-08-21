@@ -3,11 +3,11 @@ import showcaseItemFields from '$lib/components/project-info-card/showcase-item/
 
 export default `
 query WritingPageQuery {
-  writings: allBasicProject(where: {discipline: {slug: {eq: "writing"}}}) {
+  writings: allBasicProject(where: {molecule: {slug: {eq: "writing"}}}) {
     title
     description
     url
-    discipline {
+    molecule {
       slug
     }
     showcase {

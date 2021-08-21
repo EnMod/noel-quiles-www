@@ -1,19 +1,14 @@
 // TODO Make this a proper graphql file at some point
 export default `
 query HomePage {
-  disciplines: allDiscipline {
+  molecules: allMolecule(sort: [ {order: ASC } ]) {
     title
+    slug { current }
     icon {
-      alt
-      url
+      caption
     }
-  }
-
-  details: allDetail {
-    title
-    icon {
-      alt
-      url
+    atoms {
+      title
     }
   }
 }

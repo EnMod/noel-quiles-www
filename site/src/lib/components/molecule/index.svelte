@@ -7,7 +7,7 @@
 
 <div class="molecule">
   {#each atoms as atom}
-    <Atom {theme} label={atom} />
+    <Atom {theme} {...atom} />
   {/each}
 </div>
 

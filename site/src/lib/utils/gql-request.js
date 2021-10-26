@@ -1,7 +1,9 @@
-import { GraphQLClient, gql } from "graphql-request"
+import { GraphQLClient, gql } from 'graphql-request'
 import { dev } from '$app/env'
 
-const gqlEndpoint = dev ? import.meta.env.VITE_GQL_ENDPOINT_DEV : import.meta.env.VITE_GQL_ENDPOINT_PROD
+const gqlEndpoint = dev
+  ? import.meta.env.VITE_GQL_ENDPOINT_DEV
+  : import.meta.env.VITE_GQL_ENDPOINT_PROD
 
 let client = new GraphQLClient(gqlEndpoint, {
   headers: {
@@ -10,7 +12,8 @@ let client = new GraphQLClient(gqlEndpoint, {
 })
 
 export default function gqlr(gqlStr, variables) {
-  const query = gql`${gqlStr}`
+  const query = gql`
+    ${gqlStr}
+  `
   return client.request(query, variables)
 }
-

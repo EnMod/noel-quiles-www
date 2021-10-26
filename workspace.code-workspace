@@ -14,7 +14,7 @@
           },
           {
             "name": "studio",
-            "commands": ["cd studio", "npm i", "npm run start"]
+            "commands": ["cd studio", "npm i", "npm run dev"]
           }
         ]
       }

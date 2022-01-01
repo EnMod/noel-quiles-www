@@ -1,4 +1,4 @@
-<script context="module">
+<script lang="ts" context="module">
   import query from './query'
   import gqlr from '$lib/utils/gql-request'
 

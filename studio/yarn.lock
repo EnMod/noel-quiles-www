@@ -1278,7 +1278,7 @@
   "resolved" "https://registry.npmjs.org/@sanity/asset-utils/-/asset-utils-1.1.5.tgz"
   "version" "1.1.5"
 
-"@sanity/base@^2.13.0", "@sanity/base@>= 0.135.x", "@sanity/base@>= 2.0.2", "@sanity/base@2.15.0":
+"@sanity/base@^2.0.0", "@sanity/base@^2.13.0", "@sanity/base@>= 0.135.x", "@sanity/base@>= 2.0.2", "@sanity/base@2.15.0":
   "integrity" "sha512-cYJvzuPAn2+9OPyjXUZueh40Zqw7aAAB94zdFT8MliDNyOry2V9szI6GGWyZXv2n2dgUNVXf+iZERhTSRQrplg=="
   "resolved" "https://registry.npmjs.org/@sanity/base/-/base-2.15.0.tgz"
   "version" "2.15.0"
@@ -3136,7 +3136,7 @@
   "resolved" "https://registry.npmjs.org/character-reference-invalid/-/character-reference-invalid-1.1.4.tgz"
   "version" "1.1.4"
 
-"chokidar@^2.1.8", "chokidar@^3.0.0", "chokidar@^3.4.0":
+"chokidar@^3.0.0", "chokidar@^3.4.0":
   "integrity" "sha512-ekGhOnNVPgT77r4K/U3GDhu+FQ2S8TnK/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84DpEP7rLeCt2UI6bJ8GwbQ=="
   "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.2.tgz"
   "version" "3.5.2"

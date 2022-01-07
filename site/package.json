@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.24",
-    "@sveltejs/kit": "next",
     "@tsconfig/svelte": "^3.0.0",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
@@ -25,6 +24,7 @@
   "type": "module",
   "dependencies": {
     "@sanity/block-content-to-html": "^2.0.0",
+    "@sveltejs/kit": "^1.0.0-next.216",
     "graphql-request": "^3.7.0",
     "postcss-load-config": "^3.1.1",
     "postcss-preset-env": "^7.2.0"

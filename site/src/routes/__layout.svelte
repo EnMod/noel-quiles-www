@@ -2,8 +2,8 @@
   // /**
   //  * @type {import('@sveltejs/kit').Load}
   //  */
-  export async function load({ page }) {
-    return { props: { isHome: page.path === '/' } }
+  export async function load({ url }) {
+    return { props: { isHome: url.pathname === '/' } }
   }
 </script>
 

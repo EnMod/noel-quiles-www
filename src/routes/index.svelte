@@ -19,7 +19,9 @@
   <div class="manifesto g-text-hero">I connect to create.</div>
   <div class="molecules">
     {#each molecules as molecule (molecule.title)}
-      <Molecule theme={molecule.slug} {...molecule} />
+      <!-- TODO Change formation to homeOpen when testing full animation! -->
+      <!-- TODO Perhaps leave alone for now -->
+      <Molecule formation="homeClosed" theme={molecule.slug} {...molecule} />
     {/each}
   </div>
 </div>

@@ -3,14 +3,12 @@
   //  * @type {import('@sveltejs/kit').Load}
   //  */
   export async function load({ url }) {
-    let slug = '/'
+    let isHome = url.pathname === '/'
+    let slug = isHome ? '/' : url.pathname.split('/')[1]
 
-    if (url.pathname !== '/') {
-      slug = url.pathname.split('/')[1]
-    }
     return {
       props: {
-        isHome: url.pathname === '/',
+        isHome,
         slug
       }
     }
@@ -29,42 +27,74 @@
 {#if isHome}
   <main><slot /></main>
 {:else}
-  <Header />
-  <!-- TODO Change body class instead? Refresh memory on theme toggling at the <body> level 😅 -->
-  <main class={slug}>
-    <slot />
-  </main>
-  <Footer />
+  <div class="body-wrap {slug}">
+    <Header />
+    <!-- TODO Change body class instead? Refresh memory on theme toggling at the <body> level 😅 -->
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </div>
 {/if}
 
 <style lang="postcss">
-  main {
+  .body-wrap {
+    transition: 0.25s ease;
+    transition-property: color, border-color, background-color;
     border-color: var(--qi-9);
     color: var(--qi-9);
     background-color: var(--qi-1);
 
-    &.websites {
-      border-color: var(--water-9);
-      color: var(--water-9);
-      background-color: var(--water-2);
+    &.light {
+      &.websites {
+        border-color: var(--water-9);
+        color: var(--water-9);
+        background-color: var(--water-2);
+      }
+
+      &.writing {
+        border-color: var(--earth-9);
+        color: var(--earth-9);
+        background-color: var(--earth-2);
+      }
+
+      &.audio {
+        border-color: var(--wind-9);
+        color: var(--wind-9);
+        background-color: var(--wind-2);
+      }
+
+      &.games {
+        border-color: var(--fire-9);
+        color: var(--fire-9);
+        background-color: var(--fire-2);
+      }
     }
 
-    &.writing {
-      border-color: var(--earth-9);
-      color: var(--earth-9);
-      background-color: var(--earth-2);
-    }
+    &.dark {
+      &.websites {
+        border-color: var(--water-9);
+        color: var(--water-9);
+        background-color: var(--water-2);
+      }
 
-    &.audio {
-      border-color: var(--wind-9);
-      color: var(--wind-9);
-      background-color: var(--wind-2);
-    }
+      &.writing {
+        border-color: var(--earth-9);
+        color: var(--earth-9);
+        background-color: var(--earth-2);
+      }
 
-    &.games {
-      border-color: var(--fire-9);
-      color: var(--fire-9);
-      background-color: var(--fire-2);
+      &.audio {
+        border-color: var(--wind-9);
+        color: var(--wind-9);
+        background-color: var(--wind-2);
+      }
+
+      &.games {
+        border-color: var(--fire-9);
+        color: var(--fire-9);
+        background-color: var(--fire-2);
+      }
     }
   }
 </style>

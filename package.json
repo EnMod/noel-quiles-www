@@ -1,5 +1,5 @@
 {
-  "name": "~TODO~",
+  "name": "noel-quiles-www",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev --open",
@@ -11,22 +11,23 @@
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.24",
     "@tsconfig/svelte": "^3.0.0",
-    "eslint": "^8.6.0",
+    "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-svelte3": "^3.3.0",
+    "eslint-plugin-svelte3": "^3.4.0",
     "prettier": "~2.5.1",
-    "prettier-plugin-svelte": "^2.5.1",
-    "svelte": "^3.45.0",
-    "svelte-check": "^2.2.11",
-    "svelte-preprocess": "^4.10.1",
-    "typescript": "^4.5.4"
+    "prettier-plugin-svelte": "^2.6.0",
+    "svelte": "^3.46.2",
+    "svelte-check": "^2.3.0",
+    "svelte-preprocess": "^4.10.2",
+    "typescript": "^4.5.5"
   },
   "type": "module",
   "dependencies": {
     "@sveltejs/kit": "^1.0.0-next.216",
-    "datocms-structured-text-to-html-string": "^1.2.0",
+    "datocms-structured-text-to-html-string": "^2.0.0",
     "graphql-request": "^3.7.0",
     "postcss-load-config": "^3.1.1",
-    "postcss-preset-env": "^7.2.0"
+    "postcss-preset-env": "^7.2.3",
+    "svelte-themer": "^0.4.13"
   }
 }

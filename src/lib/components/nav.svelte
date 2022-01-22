@@ -1,4 +1,6 @@
 <script lang="ts">
+  import ThemeToggle from '$lib/components/theme-toggle/index.svelte'
+
   // TODO: Create a proper nav
   // export let links
   const links = [
@@ -17,6 +19,7 @@
         <a href="/{slug}">{label}</a>
       </li>
     {/each}
+    <ThemeToggle />
   </ul>
 </nav>
 
@@ -29,6 +32,7 @@
     display: flex;
     justify-content: space-between;
     padding: 4px 16px;
+    margin: 0;
   }
 
   li {

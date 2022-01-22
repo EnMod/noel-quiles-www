@@ -5,13 +5,13 @@ let gqlEndpoint: string | boolean = ''
 if (isDev) gqlEndpoint = import.meta.env.VITE_GQL_ENDPOINT_DEV
 else gqlEndpoint = import.meta.env.VITE_GQL_ENDPOINT_PROD
 
-const mainClient = new GraphQLClient(gqlEndpoint, {
+const mainClient = new GraphQLClient(String(gqlEndpoint), {
   headers: {
     Authorization: `Bearer ${import.meta.env.VITE_GQL_AUTH_MAIN}`
   }
 })
 
-const blogClient = new GraphQLClient(gqlEndpoint, {
+const blogClient = new GraphQLClient(String(gqlEndpoint), {
   headers: {
     Authorization: `Bearer ${import.meta.env.VITE_GQL_AUTH_BLOG}`
   }

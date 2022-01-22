@@ -27,7 +27,8 @@
 {#if isHome}
   <main><slot /></main>
 {:else}
-  <div class="body-wrap {slug}">
+  <!-- TODO Get the color mode (light/dark) from theme context -->
+  <div class="body-wrap light {slug}">
     <Header />
     <!-- TODO Change body class instead? Refresh memory on theme toggling at the <body> level 😅 -->
     <main>

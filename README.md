@@ -11,5 +11,5 @@ In this repo is the source for my landing page, blog, and other fun destinations
 ## How I made this
 - Developed with [SvelteKit](https://kit.svelte.dev/)
 - Designed with [Figma](https://www.figma.com/)
-- Site data/assets hosted on and managed by [Sanity](https://sanity.io)
+- Site data/assets hosted on and managed by [DatoCMS](https://datocms.com)
 - Hosting and delivery handled by [Vercel](https://vercel.com/)

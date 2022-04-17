@@ -46,7 +46,7 @@
   <div class="body-wrap light {slug}">
     <Header {navLinks} />
     <!-- TODO Change body class instead? Refresh memory on theme toggling at the <body> level 😅 -->
-    <main>
+    <main id="main">
       <slot />
     </main>
     <Footer />

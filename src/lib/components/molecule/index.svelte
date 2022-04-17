@@ -53,9 +53,9 @@
     <div class="header">
       <h1 class="title">{title}</h1>
       {#if description}
-        <h5 class="description">
+        <span class="description">
           {description} <span aria-hidden="true">evinced through</span>
-        </h5>
+        </span>
       {/if}
     </div>
   {/if}

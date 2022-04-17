@@ -55,61 +55,93 @@
 
 <style lang="postcss">
   .body-wrap {
+    --text-color: var(--yin);
+    --background-color: var(--qi-1);
+    --link: var(--qi-5);
+    --text-secondary-color: var(--qi-8);
+
     transition: 0.25s ease;
     transition-property: color, border-color, background-color;
-    border-color: var(--qi-9);
-    color: var(--qi-9);
-    background-color: var(--qi-1);
+
+    border-color: var(--text-color);
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+    & .secondary {
+      color: var(--text-secondary-color);
+    }
+
+    & a {
+      color: var(--link);
+    }
 
     &.light {
+      --text-color: var(--yin);
+      --background-color: var(--qi-1);
+      --link: var(--qi-5);
+      --text-secondary-color: var(--qi-8);
+
       &.websites {
-        border-color: var(--water-9);
-        color: var(--water-9);
-        background-color: var(--water-2);
+        --text-color: var(--water-9);
+        --background-color: var(--water-1);
+        --link: var(--water-5);
+        --text-secondary-color: var(--water-8);
       }
 
       &.writing {
-        border-color: var(--earth-9);
-        color: var(--earth-9);
-        background-color: var(--earth-2);
+        --text-color: var(--earth-9);
+        --background-color: var(--earth-1);
+        --link: var(--earth-7);
+        --text-secondary-color: var(--earth-8);
       }
 
       &.audio {
-        border-color: var(--wind-9);
-        color: var(--wind-9);
-        background-color: var(--wind-2);
+        --text-color: var(--wind-9);
+        --background-color: var(--wind-1);
+        --link: var(--wind-8);
+        --text-secondary-color: var(--wind-7);
       }
 
       &.games {
-        border-color: var(--fire-9);
-        color: var(--fire-9);
-        background-color: var(--fire-2);
+        --text-color: var(--fire-9);
+        --background-color: var(--fire-1);
+        --link: var(--fire-6);
+        --text-secondary-color: var(--fire-8);
       }
     }
 
     &.dark {
+      --text-color: var(--yang);
+      --background-color: var(--qi-9);
+      --link: var(--qi-5);
+      --text-secondary-color: var(--qi-3);
+
       &.websites {
-        border-color: var(--water-9);
-        color: var(--water-9);
-        background-color: var(--water-2);
+        --text-color: var(--water-1);
+        --background-color: var(--water-9);
+        --link: var(--water-4);
+        --text-secondary-color: var(--water-3);
       }
 
       &.writing {
-        border-color: var(--earth-9);
-        color: var(--earth-9);
-        background-color: var(--earth-2);
+        --text-color: var(--earth-1);
+        --background-color: var(--earth-9);
+        --link: var(--earth-7);
+        --text-secondary-color: var(--earth-4);
       }
 
       &.audio {
-        border-color: var(--wind-9);
-        color: var(--wind-9);
-        background-color: var(--wind-2);
+        --text-color: var(--wind-1);
+        --background-color: var(--wind-9);
+        --link: var(--wind-6);
+        --text-secondary-color: var(--wind-3);
       }
 
       &.games {
-        border-color: var(--fire-9);
-        color: var(--fire-9);
-        background-color: var(--fire-2);
+        --text-color: var(--fire-1);
+        --background-color: var(--fire-9);
+        --link: var(--fire-6);
+        --text-secondary-color: var(--fire-3);
       }
     }
   }

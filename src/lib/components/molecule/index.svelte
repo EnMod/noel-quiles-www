@@ -1,18 +1,33 @@
+<script context="module" lang="ts">
+  export interface MoleculeProps {
+    formation: string
+    image: {
+      url: string
+      alt: string
+    }
+    atoms: Array<{
+      title: string
+    }>
+    title: string
+    description: string
+    theme: string
+  }
+</script>
+
 <script lang="ts">
   // import { onMount } from 'svelte'
   import { getRandomIntInc } from '$lib/utils/helpers'
   import MoleculeLink from '../molecule-link.svelte'
-  import { Atom, Icon } from './types'
 
   // Local props
-  export let formation: string
+  export let formation: MoleculeProps['formation']
 
   // Dato-level props
-  export let image: Icon
-  export let atoms: Atom[]
-  export let title: string
-  export let description: string
-  export let theme: string
+  export let image: MoleculeProps['image']
+  export let atoms: MoleculeProps['atoms']
+  export let title: MoleculeProps['title']
+  export let description: MoleculeProps['description']
+  export let theme: MoleculeProps['theme']
 
   // TODO Will be handy later
   function randomizePosition() {

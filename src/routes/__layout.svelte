@@ -6,10 +6,24 @@
     let isHome = url.pathname === '/'
     let slug = isHome ? '/' : url.pathname.split('/')[1]
 
+    // TODO Fetch this
+    let navLinks = [
+      { slug: '', label: 'Home' },
+      { slug: 'websites', label: 'Websites' },
+      { slug: 'writing', label: 'Writing' },
+      { slug: 'audio', label: 'Audio' },
+      { slug: 'games', label: 'Games' },
+      { slug: 'about', label: 'Games' },
+      { slug: 'contact', label: 'Games' },
+      { slug: 'atoms', label: 'Games' },
+      { slug: 'links', label: 'Games' }
+    ]
+
     return {
       props: {
         isHome,
-        slug
+        slug,
+        navLinks
       }
     }
   }
@@ -19,8 +33,9 @@
   import Header from '$lib/components/header.svelte'
   import Footer from '$lib/components/footer.svelte'
 
-  export let isHome
-  export let slug
+  export let isHome: boolean
+  export let slug: string
+  export let navLinks
 </script>
 
 <!-- Make exception for homepage  -->
@@ -29,7 +44,7 @@
 {:else}
   <!-- TODO Get the color mode (light/dark) from theme context -->
   <div class="body-wrap light {slug}">
-    <Header />
+    <Header {navLinks} />
     <!-- TODO Change body class instead? Refresh memory on theme toggling at the <body> level 😅 -->
     <main>
       <slot />

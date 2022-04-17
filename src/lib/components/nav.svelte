@@ -3,13 +3,10 @@
 
   // TODO: Create a proper nav
   // export let links
-  const links = [
-    { slug: '', label: 'Home' },
-    { slug: 'websites', label: 'Websites' },
-    { slug: 'writing', label: 'Writing' },
-    { slug: 'audio', label: 'Audio' },
-    { slug: 'games', label: 'Games' }
-  ]
+  export let links: Array<{
+    slug: string
+    label: string
+  }>
 </script>
 
 <nav>

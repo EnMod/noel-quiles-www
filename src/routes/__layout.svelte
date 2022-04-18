@@ -42,7 +42,7 @@
 {#if isHome}
   <main><slot /></main>
 {:else}
-  <!-- TODO Get the color mode (light/dark) from theme context -->
+  <!-- TODO Get the color mode (light/dark) from theme store? Context? -->
   <div class="body-wrap light {slug}">
     <Header {navLinks} />
     <!-- TODO Change body class instead? Refresh memory on theme toggling at the <body> level 😅 -->

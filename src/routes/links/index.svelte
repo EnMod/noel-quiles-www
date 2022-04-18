@@ -21,7 +21,12 @@
       <h2 class="category-title">{category.title}</h2>
       <ul class="link-list">
         {#each category.links as link (link.title)}
-          <a {...link}>{link.title}</a>
+          <a
+            class="link"
+            href={link.href}
+            {...link.target === 'external' ? { rel: 'noopener', target: '_blank' } : {}}
+            >{link.title}</a
+          >
         {/each}
       </ul>
     </section>

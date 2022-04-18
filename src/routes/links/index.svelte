@@ -6,10 +6,22 @@
     const { linkCategories } = await mainGqlr(query)
     return { props: { linkCategories } }
   }
+
+  interface LinksPageProps {
+    linkCategories: Array<{
+      title: string
+      theme: { title: string }
+      links: Array<{
+        title: string
+        href: string
+        target: string
+      }>
+    }>
+  }
 </script>
 
 <script lang="ts">
-  export let linkCategories
+  export let linkCategories: LinksPageProps['linkCategories']
 </script>
 
 <div class="links-page">

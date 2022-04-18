@@ -12,7 +12,7 @@
   export let linkCategories
 </script>
 
-<div class="links">
+<div class="links-page">
   <h1>(Sick animation to create the title)</h1>
   <p>And heeeere they are:</p>
 
@@ -34,18 +34,24 @@
 </div>
 
 <style lang="postcss">
-  .links {
+  .links-page {
+    /* Maybe nothing here? We'll see */
   }
 
-  section {
+  .link-category {
+    /* Styles TBD */
+    /* TODO Figure out how to share the theme styles and apply them as utility classes */
   }
 
-  h2 {
+  .category-title {
+    /* Styles TBD */
   }
 
-  ul {
+  .link-list {
+    /* Styles TBD */
   }
 
-  a {
+  .link {
+    /* Styles TBD */
   }
 </style>

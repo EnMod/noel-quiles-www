@@ -1,10 +1,13 @@
 <script lang="ts" context="module">
+  import { theme } from '$lib/stores/theme'
   // /**
   //  * @type {import('@sveltejs/kit').Load}
   //  */
   export async function load({ url }) {
     let isHome = url.pathname === '/'
     let slug = isHome ? '/' : url.pathname.split('/')[1]
+    // TODO Set mode based on preferences
+    theme.set({ mode: 'light', scheme: slug })
 
     // TODO Fetch this
     let navLinks = [
@@ -45,10 +48,8 @@
 {#if isHome}
   <main><slot /></main>
 {:else}
-  <!-- TODO Get the color mode (light/dark) from theme store? Context? -->
-  <div class="body-wrap light {slug}">
+  <div class="body-wrap {$theme.mode} {$theme.scheme}">
     <Header {navLinks} />
-    <!-- TODO Change body class instead? Refresh memory on theme toggling at the <body> level 😅 -->
     <main id="main">
       <slot />
     </main>

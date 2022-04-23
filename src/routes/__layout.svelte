@@ -35,7 +35,10 @@
 
   export let isHome: boolean
   export let slug: string
-  export let navLinks
+  export let navLinks: Array<{
+    slug: string
+    label: string
+  }>
 </script>
 
 <!-- Make exception for homepage  -->

@@ -26,7 +26,7 @@
 
 <div class="links-page">
   <h1>(Sick animation to create the title)</h1>
-  <p>And heeeere they are:</p>
+  <p>Links</p>
 
   {#each linkCategories as category (category.title)}
     <section class="link-category {category.theme}">

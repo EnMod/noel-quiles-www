@@ -1,6 +1,6 @@
 <script lang="ts">
   import ShowcaseItem from '$lib/components/project-info-card/showcase-item/index.svelte'
-  import { render } from 'datocms-structured-text-to-html-string'
+  import { render as renderStructuredText } from 'datocms-structured-text-to-html-string'
 
   export let title
   export let description
@@ -28,7 +28,7 @@
     <h3>{client}</h3>
   {/if}
 
-  {@html render(description)}
+  {@html renderStructuredText(description)}
 </div>
 
 <!-- TODO implement theming -->

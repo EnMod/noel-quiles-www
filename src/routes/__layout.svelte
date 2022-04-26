@@ -15,10 +15,10 @@
       { slug: 'writing', label: 'Writing' },
       { slug: 'audio', label: 'Audio' },
       { slug: 'games', label: 'Games' },
-      { slug: 'about', label: 'Games' },
-      { slug: 'contact', label: 'Games' },
-      { slug: 'atoms', label: 'Games' },
-      { slug: 'links', label: 'Games' }
+      { slug: 'about', label: 'About' },
+      { slug: 'contact', label: 'Contact' },
+      { slug: 'atoms', label: 'Atoms' },
+      { slug: 'links', label: 'Links' }
     ]
 
     return {

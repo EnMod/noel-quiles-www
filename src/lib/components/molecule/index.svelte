@@ -10,7 +10,7 @@
     }>
     title: string
     description: string
-    theme: string
+    slug: string
   }
 </script>
 
@@ -27,7 +27,7 @@
   export let atoms: MoleculeProps['atoms']
   export let title: MoleculeProps['title']
   export let description: MoleculeProps['description']
-  export let theme: MoleculeProps['theme']
+  export let slug: MoleculeProps['slug']
 
   // TODO Will be handy later
   function randomizePosition() {
@@ -61,13 +61,13 @@
   {/if}
 
   {#if formation === 'homeClosed'}
-    <MoleculeLink {image} {theme} {title} />
+    <MoleculeLink {image} {slug} {title} />
   {/if}
 
   {#if formation === 'open' || formation === 'homeOpen'}
     <div class="atoms">
       {#each atoms as atom (atom.title)}
-        <div class="atom {theme}">
+        <div class="atom {slug}">
           <span>{atom.title}</span>
         </div>
       {/each}

@@ -1,12 +1,24 @@
-<script lang="ts">
-  import { Icon } from '$lib/components/molecule/types'
-
-  export let theme: string
-  export let title: string
-  export let image: Icon
+<script context="module" lang="ts">
+  interface MoleculeLinkProps {
+    slug: string
+    title: string
+    image: {
+      url: string
+      alt: string
+    }
+  }
 </script>
 
-<a class="link" href={`/${theme}`} {title}>
+<script lang="ts">
+  import { MoleculeProps } from '$lib/components/molecule/index.svelte'
+
+  export let slug: MoleculeLinkProps['slug']
+  export let title: MoleculeLinkProps['title']
+  // TODO Refactor to general image props?
+  export let image: MoleculeLinkProps['image']
+</script>
+
+<a class="link" href={`/${slug}`} {title}>
   <img class="moleculeImage" src={image.url} alt={image.alt} />
   <span class="caption">{title}</span>
 </a>

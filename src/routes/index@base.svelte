@@ -9,9 +9,9 @@
 </script>
 
 <script lang="ts">
-  import Molecule from '$lib/components/molecule/index.svelte'
+  import Molecule, { MoleculeProps } from '$lib/components/molecule/index.svelte'
 
-  export let molecules
+  export let molecules: Array<MoleculeProps>
 </script>
 
 <div class="home">
@@ -21,7 +21,14 @@
     {#each molecules as molecule (molecule.title)}
       <!-- TODO Change formation to homeOpen when testing full animation! -->
       <!-- TODO Perhaps leave alone for now -->
-      <Molecule formation="homeClosed" theme={molecule.slug} {...molecule} />
+      <Molecule
+        formation="homeClosed"
+        title={molecule.title}
+        description={molecule.description}
+        slug={molecule.slug}
+        image={molecule.image}
+        atoms={molecule.atoms}
+      />
     {/each}
   </div>
 </div>
@@ -51,10 +58,5 @@
     display: grid;
     gap: var(--gap);
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  /* Skip a cell in the second row */
-  :global(.page-icon-link):nth-child(5) {
-    grid-column: 2;
   }
 </style>

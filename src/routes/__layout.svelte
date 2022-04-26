@@ -4,8 +4,7 @@
   //  * @type {import('@sveltejs/kit').Load}
   //  */
   export async function load({ url }) {
-    let isHome = url.pathname === '/'
-    let slug = isHome ? '/' : url.pathname.split('/')[1]
+    let slug = url.pathname.split('/')[1]
     // TODO Set mode based on preferences
     theme.set({ mode: 'light', scheme: slug })
 
@@ -24,7 +23,6 @@
 
     return {
       props: {
-        isHome,
         slug,
         navLinks
       }
@@ -44,18 +42,13 @@
   }>
 </script>
 
-<!-- Make exception for homepage  -->
-{#if isHome}
-  <main><slot /></main>
-{:else}
-  <div class="body-wrap {$theme.mode} {$theme.scheme}">
-    <Header {navLinks} />
-    <main id="main">
-      <slot />
-    </main>
-    <Footer />
-  </div>
-{/if}
+<div class="body-wrap {$theme.mode} {$theme.scheme}">
+  <Header {navLinks} />
+  <main id="main">
+    <slot />
+  </main>
+  <Footer />
+</div>
 
 <style lang="postcss">
   .body-wrap {

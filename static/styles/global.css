@@ -2,37 +2,3 @@
 @import "./typography.css";
 @import "./custom-properties/colors.css";
 @import "./custom-properties/fonts.css";
-
-body {
-  --border-color: var(--qi-9);
-  --color: var(--qi-9);
-  --background-color: var(--qi-1);
-
-  border-color: var(--border-color);
-  color: var(--color);
-  background-color: var(--background-color);
-
-  &.websites {
-    --border-color: var(--water-9);
-    --color: var(--water-9);
-    --background-color: var(--water-2);
-  }
-
-  &.writing {
-    --border-color: var(--earth-9);
-    --color: var(--earth-9);
-    --background-color: var(--earth-2);
-  }
-
-  &.audio {
-    --border-color: var(--wind-9);
-    --color: var(--wind-9);
-    --background-color: var(--wind-2);
-  }
-
-  &.games {
-    --border-color: var(--fire-9);
-    --color: var(--fire-9);
-    --background-color: var(--fire-2);
-  }
-}

@@ -6,7 +6,7 @@
   export async function load({ url }) {
     let slug = url.pathname.split('/')[1]
     // TODO Set mode based on preferences
-    theme.set({ mode: 'light', scheme: slug })
+    theme.set({ mode: get(theme).mode, scheme: slug })
 
     // TODO Fetch this
     let navLinks = [
@@ -33,8 +33,8 @@
 <script lang="ts">
   import Header from '$lib/components/header.svelte'
   import Footer from '$lib/components/footer.svelte'
+  import { get } from 'svelte/store'
 
-  export let isHome: boolean
   export let slug: string
   export let navLinks: Array<{
     slug: string

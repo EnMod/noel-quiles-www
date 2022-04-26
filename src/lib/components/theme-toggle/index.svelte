@@ -1,13 +1,13 @@
 <script lang="ts">
-  let mode = 'light'
+  import { theme } from '$lib/stores/theme'
   let buttonImg = 'dark'
 
   function toggleTheme() {
-    if (mode === 'light') {
-      mode = 'dark'
+    if ($theme.mode === 'light') {
+      $theme.mode = 'dark'
       buttonImg = 'light'
     } else {
-      mode = 'light'
+      $theme.mode = 'light'
       buttonImg = 'dark'
     }
   }

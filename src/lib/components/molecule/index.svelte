@@ -54,17 +54,17 @@
       <h1 class="title">{title}</h1>
       {#if description}
         <span class="description">
-          {description} <span aria-hidden="true">evinced through</span>
+          {description}
         </span>
       {/if}
     </div>
   {/if}
 
-  {#if formation === 'homeClosed'}
+  {#if formation === 'closed'}
     <MoleculeLink {image} {slug} {title} />
   {/if}
 
-  {#if formation === 'open' || formation === 'homeOpen'}
+  {#if formation === 'open'}
     <div class="atoms">
       {#each atoms as atom (atom.title)}
         <div class="atom {slug}">
@@ -78,12 +78,6 @@
 <style lang="postcss">
   .molecule {
     --transition-timing: 0.3s;
-
-    &.homeOpen {
-    }
-
-    &.homeClosed {
-    }
 
     &.open {
     }

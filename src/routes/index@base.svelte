@@ -22,7 +22,7 @@
       <!-- TODO Change formation to homeOpen when testing full animation! -->
       <!-- TODO Perhaps leave alone for now -->
       <Molecule
-        formation="homeClosed"
+        formation="closed"
         title={molecule.title}
         description={molecule.description}
         slug={molecule.slug}

@@ -9,12 +9,19 @@
 </script>
 
 <script lang="ts">
+  import { theme } from '$lib/stores/theme'
   import Molecule, { MoleculeProps } from '$lib/components/molecule/index.svelte'
+  import ModeToggle from '$lib/components/mode-toggle/index.svelte'
 
   export let molecules: Array<MoleculeProps>
 </script>
 
-<div class="home">
+<div class="home {$theme.mode}">
+  <p>
+    Testing mode toggle:
+    <ModeToggle />
+    {$theme.mode}
+  </p>
   <h1 class="headline">I&apos;m Noel Quiles, and</h1>
   <div class="manifesto g-text-hero">I connect to create.</div>
   <div class="molecules">
@@ -44,6 +51,12 @@
     text-align: center;
     height: 100vh;
     width: 100%;
+
+    transition: 0.25s ease;
+    transition-property: color, border-color, background-color;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
   }
 
   .headline {

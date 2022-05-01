@@ -5,12 +5,12 @@
   //  * @type {import('@sveltejs/kit').Load}
   //  */
   export async function load({ url }) {
-    let slug = url.pathname.split('/')[1]
+    const slug = url.pathname.split('/')[1]
     // TODO Set mode based on preferences
     theme.set({ mode: get(theme).mode, scheme: slug })
 
     // TODO Fetch this
-    let navLinks = [
+    const navLinks = [
       { slug: '', label: 'Home' },
       { slug: 'websites', label: 'Websites' },
       { slug: 'writing', label: 'Writing' },
@@ -24,7 +24,6 @@
 
     return {
       props: {
-        slug,
         navLinks
       }
     }

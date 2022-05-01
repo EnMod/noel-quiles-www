@@ -24,32 +24,26 @@
   export let linkCategories: LinksPageProps['linkCategories']
 </script>
 
-<div class="links-page">
-  <h1>(Sick animation to create the title)</h1>
-  <p>Links</p>
-
-  {#each linkCategories as category (category.title)}
-    <section class="link-category {category.theme}">
-      <h2 class="category-title">{category.title}</h2>
-      <ul class="link-list">
-        {#each category.links as link (link.title)}
-          <a
-            class="link"
-            href={link.href}
-            {...link.target === 'external' ? { rel: 'noopener', target: '_blank' } : {}}
-            >{link.title}</a
-          >
-        {/each}
-      </ul>
-    </section>
-  {/each}
-</div>
+<!-- HTML -->
+<h1>(Sick animation to create the title)</h1>
+<p>Links</p>
+{#each linkCategories as category (category.title)}
+  <section class="link-category {category.theme}">
+    <h2 class="category-title">{category.title}</h2>
+    <ul class="link-list">
+      {#each category.links as link (link.title)}
+        <a
+          class="link"
+          href={link.href}
+          {...link.target === 'external' ? { rel: 'noopener', target: '_blank' } : {}}
+          >{link.title}</a
+        >
+      {/each}
+    </ul>
+  </section>
+{/each}
 
 <style lang="postcss">
-  .links-page {
-    /* Maybe nothing here? We'll see */
-  }
-
   .link-category {
     /* Styles TBD */
     /* TODO Figure out how to share the theme styles and apply them as utility classes */

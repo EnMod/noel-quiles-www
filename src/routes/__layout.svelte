@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
   import { theme } from '$lib/stores/theme'
+
   // /**
   //  * @type {import('@sveltejs/kit').Load}
   //  */
@@ -68,27 +69,36 @@
       color: var(--text-secondary-color);
     }
 
-    & a {
+    /* ? TODO Re-assess if this is a bit much */
+    & :global(a) {
+      transition: color 0.25s ease;
       color: var(--link);
+
+      &:hover {
+        color: var(--link-hover);
+      }
     }
 
     &.light {
       --text-color: var(--yin);
       --background-color: var(--qi-1);
       --link: var(--qi-5);
+      --link-hover: var(--qi-4);
       --text-secondary-color: var(--qi-8);
 
       &.websites {
         --text-color: var(--water-9);
         --background-color: var(--water-1);
         --link: var(--water-5);
+        --link-hover: var(--water-4);
         --text-secondary-color: var(--water-8);
       }
 
       &.writing {
         --text-color: var(--earth-9);
         --background-color: var(--earth-1);
-        --link: var(--earth-7);
+        --link: var(--earth-8);
+        --link-hover: var(--earth-7);
         --text-secondary-color: var(--earth-8);
       }
 
@@ -96,6 +106,7 @@
         --text-color: var(--wind-9);
         --background-color: var(--wind-1);
         --link: var(--wind-8);
+        --link-hover: var(--wind-7);
         --text-secondary-color: var(--wind-7);
       }
 
@@ -103,6 +114,7 @@
         --text-color: var(--fire-9);
         --background-color: var(--fire-1);
         --link: var(--fire-6);
+        --link-hover: var(--fire-5);
         --text-secondary-color: var(--fire-8);
       }
     }
@@ -110,34 +122,39 @@
     &.dark {
       --text-color: var(--yang);
       --background-color: var(--qi-9);
-      --link: var(--qi-5);
+      --link: var(--qi-3);
+      --link-hover: var(--qi-4);
       --text-secondary-color: var(--qi-3);
 
       &.websites {
         --text-color: var(--water-1);
         --background-color: var(--water-9);
-        --link: var(--water-4);
+        --link: var(--water-3);
+        --link-hover: var(--water-4);
         --text-secondary-color: var(--water-3);
       }
 
       &.writing {
         --text-color: var(--earth-1);
         --background-color: var(--earth-9);
-        --link: var(--earth-7);
+        --link: var(--earth-6);
+        --link-hover: var(--earth-7);
         --text-secondary-color: var(--earth-4);
       }
 
       &.audio {
         --text-color: var(--wind-1);
         --background-color: var(--wind-9);
-        --link: var(--wind-6);
+        --link: var(--wind-4);
+        --link-hover: var(--wind-5);
         --text-secondary-color: var(--wind-3);
       }
 
       &.games {
         --text-color: var(--fire-1);
         --background-color: var(--fire-9);
-        --link: var(--fire-6);
+        --link: var(--fire-4);
+        --link-hover: var(--fire-5);
         --text-secondary-color: var(--fire-3);
       }
     }

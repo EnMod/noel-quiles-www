@@ -14,10 +14,8 @@
   export let audios
 </script>
 
-<div class="audio">
-  <h1>(Sick animation to create the title)</h1>
-  <p>And heeeere they are:</p>
-  {#each audios as audio (audio.title)}
-    <ProjectInfoCard {...audio} />
-  {/each}
-</div>
+<h1>(Sick animation to create the title)</h1>
+<p>And heeeere they are:</p>
+{#each audios as audio (audio.title)}
+  <ProjectInfoCard {...audio} />
+{/each}

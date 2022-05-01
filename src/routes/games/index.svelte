@@ -14,10 +14,8 @@
   export let games
 </script>
 
-<div class="games">
-  <h1>(Sick animation to create the title)</h1>
-  <p>And heeeere they are:</p>
-  {#each games as game (game.title)}
-    <ProjectInfoCard {...game} />
-  {/each}
-</div>
+<h1>(Sick animation to create the title)</h1>
+<p>And heeeere they are:</p>
+{#each games as game (game.title)}
+  <ProjectInfoCard {...game} />
+{/each}

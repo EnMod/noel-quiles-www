@@ -12,7 +12,5 @@
   export let content
 </script>
 
-<div class="page">
-  <h1>(Sick animation to create the title)</h1>
-  <p>Contact info: {content}</p>
-</div>
+<h1>(Sick animation to create the title)</h1>
+<p>Contact info: {content}</p>

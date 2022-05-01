@@ -10,7 +10,7 @@
 </script>
 
 <script lang="ts">
-  import { MoleculeProps } from '$lib/components/molecule/index.svelte'
+  import { theme } from '$lib/stores/theme'
 
   export let slug: MoleculeLinkProps['slug']
   export let title: MoleculeLinkProps['title']
@@ -18,7 +18,7 @@
   export let image: MoleculeLinkProps['image']
 </script>
 
-<a class="link" href={`/${slug}`} {title}>
+<a class="link {$theme.mode} {slug}" href={`/${slug}`} {title}>
   <img class="moleculeImage" src={image.url} alt={image.alt} />
   <span class="caption">{title}</span>
 </a>
@@ -49,6 +49,7 @@
 
     transition: var(--transition-timing) ease;
     transition-property: transform, opacity;
+    color: var(--link);
   }
 
   .moleculeImage {

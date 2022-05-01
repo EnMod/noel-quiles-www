@@ -1,10 +1,10 @@
 /** @type {import('@sveltejs/kit').Config} */
 import sveltePreprocess from 'svelte-preprocess'
-import adapter from '@sveltejs/adapter-auto'
+import adapterVercel from '@sveltejs/adapter-vercel'
 
 const config = {
   kit: {
-    adapter: adapter()
+    adapter: adapterVercel()
   },
   preprocess: sveltePreprocess({ postcss: true })
 }

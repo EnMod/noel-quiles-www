@@ -1,16 +1,13 @@
 <script context="module" lang="ts">
-  export interface MoleculeProps {
+  import { MoleculeLinkProps } from '../molecule-link.svelte'
+
+  // TODO Look into using a Union instead
+  export interface MoleculeProps extends MoleculeLinkProps {
     formation: string
-    image: {
-      url: string
-      alt: string
-    }
     atoms: Array<{
       title: string
     }>
-    title: string
     description: string
-    slug: string
   }
 </script>
 
@@ -19,14 +16,14 @@
   import { getRandomIntInc } from '$lib/utils/helpers'
   import MoleculeLink from '../molecule-link.svelte'
 
-  // Local props
+  // Locally-set props
   export let formation: MoleculeProps['formation']
 
-  // Dato-level props
-  export let image: MoleculeProps['image']
+  // Dato-set props
   export let atoms: MoleculeProps['atoms']
-  export let title: MoleculeProps['title']
   export let description: MoleculeProps['description']
+  export let title: MoleculeProps['title']
+  export let image: MoleculeProps['image']
   export let slug: MoleculeProps['slug']
 
   // TODO Will be handy later

@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  interface MoleculeLinkProps {
+  export interface MoleculeLinkProps {
     slug: string
     title: string
     image: {

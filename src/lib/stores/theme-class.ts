@@ -1,7 +1,11 @@
-import { theme } from '$lib/stores/theme'
+import theme from '$lib/stores/theme'
 import { derived } from 'svelte/store'
 
-// Exploratory example of a derived store
-export const themeClass = derived(theme, ($theme) => {
+/**
+ * Exploratory example of a derived store
+ */
+const themeClass = derived(theme, ($theme) => {
   return `${$theme.mode} ${$theme.scheme}`
 })
+
+export default themeClass

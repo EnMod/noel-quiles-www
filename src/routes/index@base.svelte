@@ -9,7 +9,7 @@
 </script>
 
 <script lang="ts">
-  import { theme } from '$lib/stores/theme'
+  import { theme } from '$lib/stores'
   import Molecule, { MoleculeProps } from '$lib/components/molecule/index.svelte'
   import ModeToggle from '$lib/components/mode-toggle/index.svelte'
 

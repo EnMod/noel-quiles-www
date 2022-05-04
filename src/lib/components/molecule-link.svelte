@@ -10,7 +10,7 @@
 </script>
 
 <script lang="ts">
-  import { theme } from '$lib/stores/theme'
+  import { theme } from '$lib/stores'
 
   export let slug: MoleculeLinkProps['slug']
   export let title: MoleculeLinkProps['title']

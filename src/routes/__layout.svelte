@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-  import { theme } from '$lib/stores/theme'
+  import { theme } from '$lib/stores'
   import { get } from 'svelte/store'
 
   // /**

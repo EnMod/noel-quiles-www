@@ -54,10 +54,6 @@
     color: var(--text-color);
     background-color: var(--background-color);
 
-    & .secondary {
-      color: var(--text-secondary-color);
-    }
-
     /* ? TODO Re-assess if this is a bit much */
     & :global(a) {
       transition: color 0.25s ease;

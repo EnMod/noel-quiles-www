@@ -1,11 +1,10 @@
 <script context="module" lang="ts">
+  import { ImageProps } from '$lib/types/types'
+
   export interface MoleculeLinkProps {
     slug: string
     title: string
-    image: {
-      url: string
-      alt: string
-    }
+    image: ImageProps
   }
 </script>
 

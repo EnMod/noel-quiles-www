@@ -1,6 +1,8 @@
 <script lang="ts" context="module">
-  import { theme } from '$lib/stores'
   import { get } from 'svelte/store'
+  import { theme } from '$lib/stores'
+  import { mainGqlr } from '$lib/utils/gql-request'
+  import navQuery from './nav-query'
 
   // /**
   //  * @type {import('@sveltejs/kit').Load}
@@ -10,18 +12,12 @@
     // TODO Set mode based on preferences
     theme.set({ mode: get(theme).mode, scheme: slug })
 
-    // TODO Fetch this
-    const navLinks = [
-      { slug: '', label: 'Home' },
-      { slug: 'websites', label: 'Websites' },
-      { slug: 'writing', label: 'Writing' },
-      { slug: 'audio', label: 'Audio' },
-      { slug: 'games', label: 'Games' },
-      { slug: 'about', label: 'About' },
-      { slug: 'contact', label: 'Contact' },
-      { slug: 'atoms', label: 'Atoms' },
-      { slug: 'links', label: 'Links' }
-    ]
+    // Fetch nav links
+    const { molecules } = await mainGqlr(navQuery)
+
+    const navLinks = molecules.map((molecule) => {
+      return { slug: molecule.slug, label: molecule.title }
+    })
 
     return {
       props: {

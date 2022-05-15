@@ -13,6 +13,7 @@
 
 <script lang="ts">
   // import { onMount } from 'svelte'
+  import { theme } from '$lib/stores'
   import { getRandomIntInc } from '$lib/utils/helpers'
   import MoleculeLink from '../molecule-link.svelte'
 
@@ -45,7 +46,7 @@
   // onMount(() => (ready = true))
 </script>
 
-<div class="molecule {formation || ''}">
+<div class="molecule {$theme.mode} {slug} {formation || ''}">
   {#if formation === 'open'}
     <div class="header">
       <h1 class="title">{title}</h1>
@@ -64,7 +65,7 @@
   {#if formation === 'open'}
     <div class="atoms">
       {#each atoms as atom (atom.title)}
-        <div class="atom {slug}">
+        <div class="atom">
           <span>{atom.title}</span>
         </div>
       {/each}
@@ -90,7 +91,7 @@
 
   .atom {
     border-radius: 50%;
-    border: 4px solid var(--qi-9);
+    border: 4px solid var(--text-color);
     width: 100px;
     height: 100px;
     display: flex;
@@ -101,31 +102,8 @@
     font-weight: bold;
     text-transform: uppercase;
 
-    color: var(--qi-9);
-    background-color: var(--qi-1);
-
-    &.websites {
-      border-color: var(--water-9);
-      color: var(--water-9);
-      background-color: var(--water-2);
-    }
-
-    &.writing {
-      border-color: var(--earth-9);
-      color: var(--earth-9);
-      background-color: var(--earth-2);
-    }
-
-    &.audio {
-      border-color: var(--wind-9);
-      color: var(--wind-9);
-      background-color: var(--wind-2);
-    }
-
-    &.games {
-      border-color: var(--fire-9);
-      color: var(--fire-9);
-      background-color: var(--fire-2);
-    }
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-color: var(--text-color);
   }
 </style>

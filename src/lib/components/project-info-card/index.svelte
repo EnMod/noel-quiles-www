@@ -1,14 +1,29 @@
+<script context="module" lang="ts">
+  import { ShowcaseItemProps } from '$lib/components/project-info-card/showcase-item/index.svelte'
+
+  export interface ProjectInfoCardProps {
+    title: string
+    description: any // $TSFixMe
+    client?: string
+    url?: string
+    showcase: Array<{
+      files: ShowcaseItemProps['files']
+    }>
+  }
+</script>
+
 <script lang="ts">
   import ShowcaseItem from '$lib/components/project-info-card/showcase-item/index.svelte'
   import { render as renderStructuredText } from 'datocms-structured-text-to-html-string'
 
-  export let title
-  export let description
-  export let client
-  export let url
-  export let showcase
+  export let title: ProjectInfoCardProps['title']
+  export let description: ProjectInfoCardProps['description']
+  export let client: ProjectInfoCardProps['client']
+  export let url: ProjectInfoCardProps['url']
+  export let showcase: ProjectInfoCardProps['showcase']
 </script>
 
+<!-- HTML -->
 <div class="project-info-card">
   <div class="showcase">
     {#each showcase as { files }, i (i)}

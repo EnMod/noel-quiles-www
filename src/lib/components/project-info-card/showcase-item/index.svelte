@@ -1,11 +1,23 @@
+<script context="module" lang="ts">
+  export interface ShowcaseItemProps {
+    files: Array<{
+      url: string
+      alt?: string
+      mimeType: string
+    }>
+    title?: string
+  }
+</script>
+
 <script lang="ts">
   import MediaTemplate from '$lib/components/project-info-card/media-template.svelte'
 
-  export let files
+  export let files: ShowcaseItemProps['files']
 
   const mimeCategory = files[0].mimeType.split('/')[0]
 </script>
 
+<!-- HTML -->
 {#if mimeCategory === 'audio'}
   <!-- TODO Maybe apply some audio-specific CSS here -->
   <audio controls>

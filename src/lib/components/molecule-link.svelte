@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  import { ImageProps } from '$lib/types/types'
+  import type { ImageProps } from '$lib/types/types'
 
   export interface MoleculeLinkProps {
     slug: string

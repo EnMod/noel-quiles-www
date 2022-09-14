@@ -10,7 +10,8 @@
 
 <script lang="ts">
   import { theme } from '$lib/stores'
-  import Molecule, { MoleculeProps } from '$lib/components/molecule/index.svelte'
+  import Molecule from '$lib/components/molecule/index.svelte'
+  import type { MoleculeProps } from '$lib/components/molecule/index.svelte'
   import ModeToggle from '$lib/components/mode-toggle/index.svelte'
 
   export let molecules: Array<MoleculeProps>

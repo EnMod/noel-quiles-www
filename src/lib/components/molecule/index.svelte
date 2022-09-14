@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  import { MoleculeLinkProps } from '../molecule-link.svelte'
+  import type { MoleculeLinkProps } from '../molecule-link.svelte'
 
   // TODO Look into using a Union instead
   export interface MoleculeProps extends MoleculeLinkProps {

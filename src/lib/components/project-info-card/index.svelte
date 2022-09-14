@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  import { ShowcaseItemProps } from '$lib/components/project-info-card/showcase-item/index.svelte'
+  import type { ShowcaseItemProps } from '$lib/components/project-info-card/showcase-item/index.svelte'
 
   export interface ProjectInfoCardProps {
     title: string

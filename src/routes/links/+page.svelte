@@ -1,12 +1,4 @@
-<script lang="ts" context="module">
-  import query from './query'
-  import { mainGqlr } from '$lib/utils/gql-request'
-
-  export async function load() {
-    const { linkCategories } = await mainGqlr(query)
-    return { props: { linkCategories } }
-  }
-
+<script lang="ts">
   interface LinksPageProps {
     linkCategories: Array<{
       title: string
@@ -18,10 +10,9 @@
       }>
     }>
   }
-</script>
 
-<script lang="ts">
-  export let linkCategories: LinksPageProps['linkCategories']
+  export let data
+  let { linkCategories }: LinksPageProps = data
 </script>
 
 <!-- HTML -->

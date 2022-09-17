@@ -1,5 +1,5 @@
 import { GraphQLClient, gql } from 'graphql-request'
-import { dev as isDev } from '$app/env'
+import { dev as isDev } from '$app/environment'
 
 let gqlEndpoint: string | boolean = ''
 if (isDev) gqlEndpoint = import.meta.env.VITE_GQL_ENDPOINT_DEV

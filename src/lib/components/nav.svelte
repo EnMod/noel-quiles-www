@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ModeToggle from '$lib/components/mode-toggle/index.svelte'
+  import ModeToggle from '$lib/components/appearance-toggle/index.svelte'
 
   // TODO: Create a proper nav
   // export let links

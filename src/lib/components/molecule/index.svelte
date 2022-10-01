@@ -46,7 +46,7 @@
   // onMount(() => (ready = true))
 </script>
 
-<div class="molecule {$theme.mode} {slug} {formation || ''}">
+<div class="molecule {$theme.appearance} {slug} {formation || ''}">
   {#if formation === 'open'}
     <div class="header">
       <h1 class="title">{title}</h1>

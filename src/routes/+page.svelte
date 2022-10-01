@@ -2,7 +2,7 @@
   import { theme } from '$lib/stores'
   import Molecule from '$lib/components/molecule/index.svelte'
   import type { MoleculeProps } from '$lib/components/molecule/index.svelte'
-  import ModeToggle from '$lib/components/mode-toggle/index.svelte'
+  import ModeToggle from '$lib/components/appearance-toggle/index.svelte'
   import BareLayout from '$lib/layouts/bare-layout/index.svelte'
 
   interface HomepageProps {
@@ -14,11 +14,11 @@
 </script>
 
 <BareLayout>
-  <div class="home {$theme.mode}">
+  <div class="home {$theme.appearance}">
     <p>
       Testing mode toggle:
       <ModeToggle />
-      {$theme.mode}
+      {$theme.appearance}
     </p>
     <h1 class="headline">I&apos;m Noel Quiles, and</h1>
     <div class="manifesto g-text-hero">I connect to create.</div>

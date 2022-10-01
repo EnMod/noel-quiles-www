@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store'
 
 const theme = writable({
-  mode: 'light',
+  appearance: 'light',
   scheme: ''
 })
 

@@ -17,7 +17,7 @@
   export let image: MoleculeLinkProps['image']
 </script>
 
-<a class="link {$theme.mode} {slug}" href={`/${slug}`} {title}>
+<a class="link {$theme.appearance} {slug}" href={`/${slug}`} {title}>
   <img class="moleculeImage" src={image.url} alt={image.alt} />
   <span class="caption">{title}</span>
 </a>

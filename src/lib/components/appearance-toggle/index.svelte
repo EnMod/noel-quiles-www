@@ -1,20 +1,20 @@
 <script lang="ts">
   import { theme } from '$lib/stores'
-  let buttonImg = $theme.mode === 'light' ? 'dark' : 'light'
+  let buttonImg = $theme.appearance === 'light' ? 'dark' : 'light'
 
   function toggleMode() {
-    if ($theme.mode === 'light') {
-      $theme.mode = 'dark'
+    if ($theme.appearance === 'light') {
+      $theme.appearance = 'dark'
       buttonImg = 'light'
     } else {
-      $theme.mode = 'light'
+      $theme.appearance = 'light'
       buttonImg = 'dark'
     }
   }
 </script>
 
 <button on:click={toggleMode}>
-  <img class="icon" alt="{buttonImg} mode icon" src="./img/mode-toggle/{buttonImg}.svg" />
+  <img class="icon" alt="{buttonImg} mode icon" src="./img/appearance-toggle/{buttonImg}.svg" />
 </button>
 
 <style lang="postcss">

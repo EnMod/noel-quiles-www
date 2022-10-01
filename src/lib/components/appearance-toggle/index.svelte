@@ -2,7 +2,7 @@
   import { theme } from '$lib/stores'
   let buttonImg = $theme.appearance === 'light' ? 'dark' : 'light'
 
-  function toggleMode() {
+  function toggleAppearance() {
     if ($theme.appearance === 'light') {
       $theme.appearance = 'dark'
       buttonImg = 'light'
@@ -13,7 +13,7 @@
   }
 </script>
 
-<button on:click={toggleMode}>
+<button on:click={toggleAppearance}>
   <img class="icon" alt="{buttonImg} mode icon" src="./img/appearance-toggle/{buttonImg}.svg" />
 </button>
 

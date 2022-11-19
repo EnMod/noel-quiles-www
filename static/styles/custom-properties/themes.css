@@ -65,15 +65,15 @@
 .dark.writing {
   --text-color: var(--earth-1);
   --background-color: var(--earth-9);
-  --link: var(--earth-6);
-  --link-hover: var(--earth-7);
+  --link: var(--earth-7);
+  --link-hover: var(--earth-5);
   --text-secondary-color: var(--earth-4);
 }
 
 .dark.audio {
   --text-color: var(--wind-1);
   --background-color: var(--wind-9);
-  --link: var(--wind-4);
+  --link: var(--wind-6);
   --link-hover: var(--wind-5);
   --text-secondary-color: var(--wind-3);
 }
@@ -82,6 +82,6 @@
   --text-color: var(--fire-1);
   --background-color: var(--fire-9);
   --link: var(--fire-4);
-  --link-hover: var(--fire-5);
+  --link-hover: var(--fire-3);
   --text-secondary-color: var(--fire-3);
 }

@@ -5,6 +5,6 @@ export type ImageProps = {
 
 // ? TODO do something with this type
 export type Theme = {
-  mode: 'light' | 'dark'
+  appearance: 'light' | 'dark'
   scheme: 'websites' | 'writing' | 'audio' | 'games' | 'neutral' | undefined
 }

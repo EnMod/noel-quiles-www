@@ -8,8 +8,8 @@ import navQuery from './nav-query'
  */
 export async function load({ url }) {
   const slug = url.pathname.split('/')[1]
-  // TODO Set mode based on preferences
-  theme.set({ mode: get(theme).mode, scheme: slug })
+  // TODO Set appearance based on preferences
+  theme.set({ appearance: get(theme).appearance, scheme: slug })
 
   // Fetch nav links
   const { molecules } = await mainGqlr(navQuery)

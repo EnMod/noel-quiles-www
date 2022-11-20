@@ -17,7 +17,7 @@
   <img srcset={image.url} alt={image.alt} />
 
   {#if caption}
-    <figcaption class="caption">{caption}</figcaption>
+    <figcaption class="caption g-label">{caption}</figcaption>
   {/if}
 </figure>
 
@@ -43,7 +43,6 @@
   }
 
   .caption {
-    composes: label from global;
     padding-top: 8px;
     color: var(--qi-5);
   }

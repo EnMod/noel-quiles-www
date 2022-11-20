@@ -10,7 +10,7 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
-  font-weight: 400
+  font-weight: 400;
 }
 
 h1 {
@@ -40,4 +40,9 @@ h6 {
 .g-text-hero {
   font-size: 4rem;
   font-family: var(--heading-font);
+}
+
+.g-label {
+  font-size: 12px;
+  /* Other styles TBD */
 }

@@ -31,6 +31,8 @@
     color: var(--text-color);
     background-color: var(--background-color);
 
+    min-height: 100vh;
+
     /* ? TODO Re-assess if this is a bit much */
     & :global(a) {
       transition: color 0.25s ease;

@@ -1,9 +1,9 @@
 import query from './query'
+import gqlr from '$lib/utils/gql-request'
 import { error } from '@sveltejs/kit'
-import { blogGqlr } from '$lib/utils/gql-request'
 
 export async function load({ params: { post: postSlug } }) {
-  const { postData, allPosts } = await blogGqlr(query, { slug: postSlug })
+  const { postData, allPosts } = await gqlr(query, { variables: { slug: postSlug }, type: 'blog' })
 
   const allPostSlugs = allPosts.map((post) => post.slug)
 

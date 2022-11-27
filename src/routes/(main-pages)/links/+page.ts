@@ -1,9 +1,8 @@
-
 import query from './query'
-import { mainGqlr } from '$lib/utils/gql-request'
+import gqlr from '$lib/utils/gql-request'
 
 export async function load() {
-  const { linkCategories } = await mainGqlr(query)
+  const { linkCategories } = await gqlr(query)
   return { linkCategories }
 }
 

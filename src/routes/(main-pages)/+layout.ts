@@ -1,6 +1,6 @@
 import { get } from 'svelte/store'
 import { theme } from '$lib/stores'
-import { mainGqlr } from '$lib/utils/gql-request'
+import gqlr from '$lib/utils/gql-request'
 import navQuery from './nav-query'
 
 /**
@@ -12,7 +12,7 @@ export async function load({ url }) {
   theme.set({ appearance: get(theme).appearance, scheme: slug })
 
   // Fetch nav links
-  const { molecules } = await mainGqlr(navQuery)
+  const { molecules } = await gqlr(navQuery)
 
   const navLinks = molecules.map((molecule) => {
     return { slug: molecule.slug, label: molecule.title }

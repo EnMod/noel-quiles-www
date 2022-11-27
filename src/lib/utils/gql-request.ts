@@ -7,31 +7,30 @@ else gqlEndpoint = import.meta.env.VITE_GQL_ENDPOINT_PROD
 
 type GqlRequest = {
   gqlStr: string
-  variables?: { [key: string]: string | number }
+  config: {
+    variables?: { [key: string]: string | number }
+    type?: 'main' | 'blog'
+  }
 }
 
-const mainClient = new GraphQLClient(String(gqlEndpoint), {
-  headers: {
-    Authorization: `Bearer ${import.meta.env.VITE_GQL_AUTH_MAIN}`
-  }
-})
+export default function gqlr(gqlStr: GqlRequest['gqlStr'], config?: GqlRequest['config']) {
+  let authToken: string = import.meta.env.VITE_GQL_AUTH_MAIN
 
-const blogClient = new GraphQLClient(String(gqlEndpoint), {
-  headers: {
-    Authorization: `Bearer ${import.meta.env.VITE_GQL_AUTH_BLOG}`
+  switch (config.type) {
+    case 'blog':
+      authToken = import.meta.env.VITE_GQL_AUTH_BLOG
+    default:
+      break
   }
-})
 
-export function mainGqlr(gqlStr: GqlRequest['gqlStr'], variables?: GqlRequest['variables']) {
+  const client = new GraphQLClient(String(gqlEndpoint), {
+    headers: {
+      Authorization: `Bearer ${authToken}`
+    }
+  })
+
   const query = gql`
     ${gqlStr}
   `
-  return mainClient.request(query, variables)
-}
-
-export function blogGqlr(gqlStr: GqlRequest['gqlStr'], variables?: GqlRequest['variables']) {
-  const query = gql`
-    ${gqlStr}
-  `
-  return blogClient.request(query, variables)
+  return client.request(query, config.variables || null)
 }

@@ -1,7 +1,7 @@
 // import query from './query'
-// import { mainGqlr } from '$lib/utils/gql-request'
+// import gqlr from '$lib/utils/gql-request'
 
 export async function load() {
-  // const { content } = await mainGqlr(query)
+  // const { content } = await gqlr(query)
   return { content: '' }
 }

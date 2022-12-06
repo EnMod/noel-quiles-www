@@ -11,25 +11,25 @@
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.48",
     "@tsconfig/svelte": "^3.0.0",
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
-    "prettier": "~2.7.1",
+    "prettier": "~2.8.0",
     "prettier-plugin-svelte": "^2.8.1",
-    "svelte": "^3.53.1",
-    "svelte-check": "^2.9.2",
+    "svelte": "^3.54.0",
+    "svelte-check": "^2.10.1",
     "svelte-preprocess": "^4.10.7",
     "typescript": "^4.9.3"
   },
   "type": "module",
   "dependencies": {
-    "@sveltejs/adapter-vercel": "^1.0.0-next.81",
-    "@sveltejs/kit": "^1.0.0-next.553",
+    "@sveltejs/adapter-vercel": "^1.0.0-next.84",
+    "@sveltejs/kit": "^1.0.0-next.572",
     "datocms-structured-text-to-html-string": "^2.1.11",
     "graphql-request": "^5.0.0",
     "postcss-load-config": "^4.0.1",
     "postcss-preset-env": "^7.8.3",
     "svelte-themer": "^0.5.5",
-    "vite": "^3.2.4"
+    "vite": "^3.2.5"
   }
 }

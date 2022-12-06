@@ -16,11 +16,13 @@ type GqlRequest = {
 export default function gqlr(gqlStr: GqlRequest['gqlStr'], config?: GqlRequest['config']) {
   let authToken: string = import.meta.env.VITE_GQL_AUTH_MAIN
 
-  switch (config.type) {
-    case 'blog':
-      authToken = import.meta.env.VITE_GQL_AUTH_BLOG
-    default:
-      break
+  if (config?.type) {
+    switch (config.type) {
+      case 'blog':
+        authToken = import.meta.env.VITE_GQL_AUTH_BLOG
+      default:
+        break
+    }
   }
 
   const client = new GraphQLClient(String(gqlEndpoint), {
@@ -32,5 +34,5 @@ export default function gqlr(gqlStr: GqlRequest['gqlStr'], config?: GqlRequest['
   const query = gql`
     ${gqlStr}
   `
-  return client.request(query, config.variables || null)
+  return client.request(query, config?.variables || null)
 }

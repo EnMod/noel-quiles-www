@@ -5,7 +5,25 @@ query BlogIndexPage($slug: String) {
     id
     title
     slug
-    body { value }
+    body { 
+      value
+      blocks {
+        __typename
+        ... on ImageRecord {
+          id
+          image {
+            alt
+            url
+          }
+          caption
+          imagePosition
+        }
+        ... on VideoRecord {
+          id
+          url
+        }
+      }
+    }
     _status
   }
 

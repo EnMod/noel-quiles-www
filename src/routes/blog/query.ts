@@ -4,6 +4,7 @@ query BlogIndexPage {
   allPosts {
     id
     title
+    slug
     excerpt { value }
     _status
   }

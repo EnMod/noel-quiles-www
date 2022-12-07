@@ -26,9 +26,11 @@
     "@sveltejs/adapter-vercel": "^1.0.0-next.84",
     "@sveltejs/kit": "^1.0.0-next.572",
     "datocms-structured-text-to-html-string": "^2.1.11",
+    "datocms-structured-text-utils": "^2.0.4",
     "graphql-request": "^5.0.0",
     "postcss-load-config": "^4.0.1",
     "postcss-preset-env": "^7.8.3",
+    "svelte-react-player": "^1.4.1",
     "svelte-themer": "^0.5.5",
     "vite": "^3.2.5"
   }

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { render as renderStructuredText } from 'datocms-structured-text-to-html-string'
+  import BlogBody from '$lib/components/blog-body/index.svelte'
 
   export let data
 
@@ -8,5 +8,5 @@
 
 <div class="blog-post">
   <h1>{title}</h1>
-  {@html renderStructuredText(body)}
+  <BlogBody {body} />
 </div>

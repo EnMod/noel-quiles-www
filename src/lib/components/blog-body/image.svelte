@@ -4,16 +4,16 @@
       url: string
       alt?: string
     }
-    floatPosition?: 'left' | 'right' | 'center'
+    imagePosition?: 'left' | 'right' | 'center'
     caption?: string
   }
 
   export let image: BlogImageProps['image']
-  export let floatPosition: BlogImageProps['floatPosition'] = 'center'
+  export let imagePosition: BlogImageProps['imagePosition'] = 'center'
   export let caption: BlogImageProps['caption'] = ''
 </script>
 
-<figure class="blog-image {floatPosition}">
+<figure class="blog-image {imagePosition}">
   <img srcset={image.url} alt={image.alt} />
 
   {#if caption}

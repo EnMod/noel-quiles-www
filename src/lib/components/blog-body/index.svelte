@@ -7,11 +7,13 @@
   export let body
 
   const formattedBody = body.value.document.children.map((node) => {
+    const newNode = node
+
     if (isBlock(node)) {
-      node.blockData = body.blocks.find((item) => item.id === node.item)
+      newNode.blockData = body.blocks.find((item) => item.id === node.item)
     }
 
-    return node
+    return newNode
   })
 </script>
 

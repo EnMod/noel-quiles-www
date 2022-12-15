@@ -1,9 +1,15 @@
 <script lang="ts">
   import VideoPlayer from 'svelte-react-player'
+
+  interface BlogVideoProps {
+    url: string
+  }
+
+  export let url: BlogVideoProps['url']
 </script>
 
 <div class="blog-video">
-  <VideoPlayer fluid={true} width="100%" height="100%" {...$$props} />
+  <VideoPlayer playIcon={true} fluid={true} width="100%" height="100%" {url} />
 </div>
 
 <style lang="postcss">

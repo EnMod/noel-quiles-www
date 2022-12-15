@@ -4,6 +4,7 @@
   import BlogVideo from './video.svelte'
   import BlogImage from './image.svelte'
 
+  // TODO Type this
   export let body
 
   const formattedBody = body.value.document.children.map((node) => {

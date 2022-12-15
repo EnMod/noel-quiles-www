@@ -1,9 +1,9 @@
 import { GraphQLClient, gql } from 'graphql-request'
 import { dev as isDev } from '$app/environment'
 
-let gqlEndpoint: string | boolean = ''
-if (isDev) gqlEndpoint = import.meta.env.VITE_GQL_ENDPOINT_DEV
-else gqlEndpoint = import.meta.env.VITE_GQL_ENDPOINT_PROD
+let gqlEndpoint: string = isDev
+  ? import.meta.env.VITE_GQL_ENDPOINT_DEV
+  : import.meta.env.VITE_GQL_ENDPOINT_PROD
 
 type GqlRequest = {
   gqlStr: string

@@ -14,7 +14,7 @@
 </script>
 
 <button on:click={toggleAppearance}>
-  <img class="icon" alt="{buttonImg} mode icon" src="./img/appearance-toggle/{buttonImg}.svg" />
+  <img class="icon" alt="{buttonImg} mode icon" src="/img/appearance-toggle/{buttonImg}.svg" />
 </button>
 
 <style lang="postcss">

@@ -33,17 +33,17 @@
 
     &.left {
       float: left;
-      margin-right: 16px;
+      margin-right: var(--sz-s-05);
     }
 
     &.right {
       float: right;
-      margin-left: 16px;
+      margin-left: var(--sz-s-05);
     }
   }
 
   .caption {
-    padding-top: 8px;
+    padding-top: var(--sz-s-04);
     color: var(--qi-5);
   }
 </style>

@@ -14,35 +14,35 @@ h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: var(--sz-m-04);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: var(--sz-m-02);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: var(--sz-m-01);
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: var(--sz-s-05);
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: var(--sz-s-04);
 }
 
 h6 {
-  font-size: 0.75rem;
+  font-size: var(--sz-s-04);
 }
 
 .g-text-hero {
-  font-size: 4rem;
+  font-size: var(--sz-l-01);
   font-family: var(--heading-font);
 }
 
 .g-label {
-  font-size: 12px;
+  font-size: var(--sz-s-04);
   /* Other styles TBD */
 }

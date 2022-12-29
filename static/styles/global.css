@@ -1,4 +1,5 @@
 @import './reset.css';
+@import './sizing.css';
 @import './typography.css';
 @import './custom-properties/colors.css';
 @import './custom-properties/fonts.css';

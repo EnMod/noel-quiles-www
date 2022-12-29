@@ -19,7 +19,7 @@
     /* TODO Or, keep but make configurable? 🤷*/
     max-width: 640px;
     margin: 0 auto;
-    border-radius: 4px;
+    border-radius: var(--sz-s-02);
     overflow: hidden;
   }
 </style>

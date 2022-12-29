@@ -30,7 +30,7 @@
 
     & :global(ul) {
       margin: 0;
-      padding-left: 24px;
+      padding-left: var(--sz-m-01);
 
       & :global(li) {
         & :global(p) {
@@ -44,8 +44,8 @@
       white-space: normal;
       margin: 0;
       background-color: var(--text-highlight-color);
-      padding: 4px;
-      border-radius: 2px;
+      padding: var(--sz-s-02);
+      border-radius: var(--sz-s-01);
       line-height: 1;
     }
 

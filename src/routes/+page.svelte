@@ -54,7 +54,7 @@
 
 <style lang="postcss">
   .home {
-    --gap: 3rem;
+    --gap: var(--sz-m-04);
 
     display: flex;
     flex-direction: column;
@@ -72,12 +72,12 @@
   }
 
   .details {
-    margin-top: 32px;
+    margin-top: var(--sz-m-02);
   }
 
   p {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: var(--sz-s-03);
   }
 
   .headline {

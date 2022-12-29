@@ -35,11 +35,12 @@
     </p>
   </div>
 
-  <div class="molecules">
+  <!-- TODO Come back to molecules as the pages return -->
+  <!-- <div class="molecules">
     {#each molecules as molecule (molecule.title)}
       <!-- TODO Change formation to homeOpen when testing full animation! -->
-      <!-- TODO Perhaps leave alone for now -->
-      <!-- <Molecule
+  <!-- TODO Perhaps leave alone for now -->
+  <!-- <Molecule
         formation="closed"
         title={molecule.title}
         description={molecule.description}
@@ -47,8 +48,8 @@
         image={molecule.image}
         atoms={molecule.atoms}
       /> -->
-    {/each}
-  </div>
+  <!-- {/each} -->
+  <!-- </div>  -->
 </div>
 
 <style lang="postcss">

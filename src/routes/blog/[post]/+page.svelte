@@ -43,7 +43,7 @@
       display: inline-block;
       white-space: normal;
       margin: 0;
-      background-color: var(--qi-1);
+      background-color: var(--text-highlight-color);
       padding: 4px;
       border-radius: 2px;
       line-height: 1;

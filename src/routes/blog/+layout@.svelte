@@ -6,7 +6,7 @@
 <div class="blog-page {$theme.appearance} {$theme.scheme}">
   <div>Header?</div>
   <div>Nav! <AppearanceToggle /></div>
-  <main id="main">
+  <main id="main" class="g-container">
     <slot />
   </main>
   <div>Footer?</div>

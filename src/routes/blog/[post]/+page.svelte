@@ -24,6 +24,9 @@
 
 <style lang="postcss">
   .blog-post {
+    max-width: calc(var(--sz-l-01) * 10);
+    margin: 0 auto;
+
     & :global(p) {
       line-height: 1.6;
     }

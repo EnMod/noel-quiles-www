@@ -1,11 +1,11 @@
 <script lang="ts">
-  import BlogImage from '$lib/components/blog-body/image.svelte'
   import { base as basePath } from '$app/paths'
 
   interface BlogIndexPageProps {
     posts: Array<{
-      title: any
+      title: string
       excerpt: any
+      slug: string
     }>
   }
 
@@ -15,7 +15,6 @@
 
 <div class="blog-index">
   <h1>Blog here</h1>
-  <BlogImage image={{ url: 'https://placekitten.com/400/400' }} caption="This is a caption" />
   {#each posts as post}
     <a href={`${basePath}/blog/${post.slug}`}>{post.title}</a><br />
   {/each}

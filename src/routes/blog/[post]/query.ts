@@ -22,6 +22,12 @@ query BlogIndexPage($slug: String) {
           id
           url
         }
+        ... on SectionHeadingRecord {
+          id
+          level
+          text
+          hash
+        }
       }
     }
     _status

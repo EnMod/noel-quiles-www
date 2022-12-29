@@ -1,21 +1,21 @@
 <script lang="ts">
   import { theme } from '$lib/stores'
-  import Molecule from '$lib/components/molecule/index.svelte'
-  import type { MoleculeProps } from '$lib/components/molecule/index.svelte'
-  import ModeToggle from '$lib/components/appearance-toggle/index.svelte'
+  // import Molecule from '$lib/components/molecule/index.svelte'
+  // import type { MoleculeProps } from '$lib/components/molecule/index.svelte'
+  // import AppearanceToggle from '$lib/components/appearance-toggle/index.svelte'
 
-  interface HomepageProps {
-    molecules: Array<MoleculeProps>
-  }
+  // interface HomepageProps {
+  //   molecules: Array<MoleculeProps>
+  // }
 
-  export let data
-  let { molecules }: HomepageProps = data
+  // export let data
+  // let { molecules }: HomepageProps = data
 </script>
 
 <div class="home {$theme.appearance}">
   <!-- <p>
-    Testing mode toggle:
-    <ModeToggle />
+    Testing appearance toggle:
+    <AppearanceToggle />
     {$theme.appearance}
   </p> -->
   <h1 class="headline">

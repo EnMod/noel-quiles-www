@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Questrial|Lustria');
+@import url('https://fonts.googleapis.com/css?family=Questrial|Atkinson+Hyperlegible');
 
 :root {
   --heading-font: 'Questrial', 'Century Gothic', sans;
-  --body-font: 'Lustria', serif;
+  --body-font: 'Atkinson Hyperlegible', serif;
 }

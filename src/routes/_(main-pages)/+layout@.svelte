@@ -25,9 +25,8 @@
 <style lang="postcss">
   .body-wrap {
     transition: 0.25s ease;
-    transition-property: color, border-color, background-color;
+    transition-property: color, background-color;
 
-    border-color: var(--text-color);
     color: var(--text-color);
     background-color: var(--background-color);
 

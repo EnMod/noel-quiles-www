@@ -32,6 +32,19 @@
     max-width: calc(var(--sz-l-01) * 10);
     margin: 0 auto;
 
+    & :global(h1),
+    & :global(h2),
+    & :global(h3),
+    & :global(h4),
+    & :global(h5),
+    & :global(h6) {
+      margin-bottom: 0;
+    }
+
+    & :global(h1) {
+      margin-top: 0;
+    }
+
     & :global(p) {
       line-height: 1.6;
     }

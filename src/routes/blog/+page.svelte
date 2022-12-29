@@ -13,6 +13,9 @@
   let { posts }: BlogIndexPageProps = data
 </script>
 
+<div>Hero!</div>
+<div>Filters?</div>
+<div>Featured?</div>
 <div class="blog-index">
   <h1>Blog here</h1>
   {#each posts as post}

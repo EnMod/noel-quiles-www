@@ -44,5 +44,6 @@ h6 {
 
 .g-label {
   font-size: var(--sz-s-04);
-  /* Other styles TBD */
+  text-transform: uppercase;
+  color: var(--text-secondary-color);
 }

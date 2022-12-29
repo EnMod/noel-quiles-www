@@ -11,5 +11,5 @@ export async function load({ params: { post: postSlug } }) {
     throw error(404, 'Post not available')
   }
 
-  return { title: postData.title, body: postData.body }
+  return { postData }
 }

@@ -1,10 +1,14 @@
 // TODO Make this a proper graphql file at some point
 export default `
-query BlogIndexPage($slug: String) {
+query BlogPostPage($slug: String) {
   postData: post(filter: { slug: { eq: $slug }, _status: { eq: published } }) {
     id
     title
     slug
+    category {
+      title
+      slug
+    }
     body { 
       value
       blocks {

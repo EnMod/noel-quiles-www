@@ -1,5 +1,6 @@
 <script lang="ts">
   import StructuredText from 'svelte-datocms/StructuredText/StructuredText.svelte'
+  import Eyebrow from '$lib/components/eyebrow.svelte'
   import BlogVideo from './components/video.svelte'
   import BlogImage from './components/image.svelte'
   import SectionHeading from './components/section-heading.svelte'
@@ -7,10 +8,14 @@
   // TODO Type this
   export let data
 
-  let { title, body } = data
+  let { title, body, category } = data.postData
 </script>
 
 <div class="blog-post">
+  <div class="details">
+    <Eyebrow text={category.title} url={`category/${category.slug}`} />
+  </div>
+
   <h1>{title}</h1>
   <StructuredText
     data={body}

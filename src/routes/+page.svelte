@@ -72,12 +72,12 @@
   }
 
   .details {
-    margin-top: var(--sz-m-02);
+    margin-top: var(--sz-gap-m);
   }
 
   p {
     margin-top: 0;
-    margin-bottom: var(--sz-s-03);
+    margin-bottom: var(--sz-gap-xs);
   }
 
   .headline {

@@ -1,6 +1,6 @@
 .g-container {
   max-width: calc(var(--sz-l-05) * 10);
-  padding-left: var(--sz-m-01);
-  padding-right: var(--sz-m-01);
+  padding-left: var(--sz-gap-m);
+  padding-right: var(--sz-gap-m);
   margin: 0 auto;
 }

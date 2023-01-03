@@ -18,7 +18,7 @@
 .light.websites {
   --text-color: var(--water-9);
   --text-secondary-color: var(--water-8);
-  --text-highlight-color: var(--water-4);
+  --text-highlight-color: var(--water-2);
   --background-color: var(--water-1);
   --link: var(--water-5);
   --link-hover: var(--water-4);
@@ -27,7 +27,7 @@
 .light.writing {
   --text-color: var(--earth-9);
   --text-secondary-color: var(--earth-8);
-  --text-highlight-color: var(--earth-7);
+  --text-highlight-color: var(--earth-3);
   --background-color: var(--earth-1);
   --link: var(--earth-8);
   --link-hover: var(--earth-7);
@@ -36,7 +36,7 @@
 .light.audio {
   --text-color: var(--wind-9);
   --text-secondary-color: var(--wind-7);
-  --text-highlight-color: var(--wind-7);
+  --text-highlight-color: var(--wind-2);
   --background-color: var(--wind-1);
   --link: var(--wind-8);
   --link-hover: var(--wind-7);
@@ -45,7 +45,7 @@
 .light.games {
   --text-color: var(--fire-9);
   --text-secondary-color: var(--fire-8);
-  --text-highlight-color: var(--fire-5);
+  --text-highlight-color: var(--fire-2);
   --background-color: var(--fire-1);
   --link: var(--fire-6);
   --link-hover: var(--fire-5);

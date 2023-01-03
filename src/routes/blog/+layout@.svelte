@@ -1,11 +1,12 @@
 <script lang="ts">
   import { theme } from '$lib/stores'
   import AppearanceToggle from '$lib/components/appearance-toggle/index.svelte'
+  import ThemeSelector from '$lib/components/theme-selector.svelte'
 </script>
 
 <div class="blog-page {$theme.appearance} {$theme.scheme}">
   <div>Header?</div>
-  <div>Nav! <AppearanceToggle /></div>
+  <div>Nav! <ThemeSelector /><AppearanceToggle /></div>
   <main id="main" class="g-container">
     <slot />
   </main>

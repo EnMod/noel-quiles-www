@@ -8,45 +8,47 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.g-heading-1,
+.g-heading-2,
+.g-heading-3,
+.g-heading-4,
+.g-heading-5,
+.g-heading-6
+ {
   font-family: var(--heading-font);
   font-weight: 400;
   line-height: 1.2;
 }
 
-h1 {
+h1, .g-heading-1 {
   margin-top: calc(var(--sz-heading-1) * 2);
   font-size: var(--sz-heading-1);
 }
 
-h2 {
+h2, .g-heading-2 {
   margin-top: calc(var(--sz-heading-2) * 2);
   font-size: var(--sz-heading-2);
 }
 
-h3 {
+h3, .g-heading-3 {
   margin-top: calc(var(--sz-heading-3) * 2);
   font-size: var(--sz-heading-3);
 }
 
-h4 {
+h4, .g-heading-4 {
   margin-top: calc(var(--sz-heading-4) * 2);
   font-size: var(--sz-heading-4);
 }
 
-h5 {
+h5, .g-heading-5 {
   margin-top: calc(var(--sz-heading-5) * 2);
   font-size: var(--sz-heading-5);
 }
 
-h6 {
+h6, .g-heading-6 {
   margin-top: calc(var(--sz-heading-6) * 2);
   font-size: var(--sz-heading-6);
-}
-
-.g-text-hero {
-  font-size: var(--sz-heading-1);
-  font-family: var(--heading-font);
 }
 
 .g-label {

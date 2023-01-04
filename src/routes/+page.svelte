@@ -13,15 +13,15 @@
 </script>
 
 <div class="home {$theme.appearance}">
-  <!-- <p>
-    Testing appearance toggle:
-    <AppearanceToggle />
-    {$theme.appearance}
-  </p> -->
-  <h1 class="headline">
-    <span>I&apos;m Noel Quiles, and</span>
-    <span class="manifesto g-text-hero">I connect to create.</span>
-  </h1>
+  <div class="headline">
+    <div>
+      <h1 class="g-heading-2">
+        I&apos;m Noel Quiles
+      </h1>
+      <span class="g-heading-2">, and</span>
+    </div>
+    <p class="g-heading-1">I connect to create.</p>
+  </div>
 
   <div class="details">
     <p>
@@ -81,19 +81,10 @@
   }
 
   .headline {
-    margin-top: 0;
-    margin-bottom: 0;
-    display: grid;
-    gap: calc(var(--gap) / 2);
-
-    & span {
-      display: block;
+    & h1, & span {
+      margin: 0;
     }
   }
-
-  /* .manifesto {
-    margin-bottom: calc(var(--gap) * 2);
-  } */
 
   .molecules {
     display: grid;

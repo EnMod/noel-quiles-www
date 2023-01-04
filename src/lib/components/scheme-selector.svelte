@@ -12,19 +12,17 @@
   }
 </script>
 
-<div>
+<div class="scheme-selector">
   <button
     on:click={() => {
       selectionsOpen = !selectionsOpen
     }}
   >
     <img
-      class="icon"
       alt="{selectedScheme} scheme icon"
-      src="/img/theme-selector/{selectedScheme}.svg"
+      src="/img/scheme-selector/{selectedScheme}.svg"
     />
   </button>
-
   {#if selectionsOpen}
     {#each schemeOptions as option}
       <button
@@ -32,7 +30,7 @@
           selectScheme(option)
         }}
       >
-        <img class="icon" alt="{option} scheme icon" src="/img/theme-selector/{option}.svg" />
+        <img alt="{option} scheme icon" src="/img/scheme-selector/{option}.svg" />
       </button>
     {/each}
   {/if}
@@ -43,9 +41,11 @@
     border: 0;
     background: none;
     cursor: pointer;
+    padding: 0;
   }
 
-  .icon {
-    min-width: var(--sz-gap-m);
+  .scheme-selector {
+    display: flex;
+    gap: 0;
   }
 </style>

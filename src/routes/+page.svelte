@@ -16,9 +16,8 @@
   <div class="headline">
     <div>
       <h1 class="g-heading-2">
-        I&apos;m Noel Quiles
+        I&apos;m Noel Quiles, and
       </h1>
-      <span class="g-heading-2">, and</span>
     </div>
     <p class="g-heading-1">I connect to create.</p>
   </div>

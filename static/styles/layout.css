@@ -1,6 +1,12 @@
 .g-container {
-  max-width: calc(var(--sz-l-05) * 10);
-  padding-left: var(--sz-gap-m);
-  padding-right: var(--sz-gap-m);
+  --padding-x: var(--sz-05);
+
+  max-width: calc(var(--sz-14) * 10);
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
   margin: 0 auto;
+
+  @media (--tablet-up) {
+    --padding-x: var(--sz-07);
+  }
 }

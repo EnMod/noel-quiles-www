@@ -29,7 +29,7 @@
 
 <style lang="postcss">
   .blog-post {
-    max-width: calc(var(--sz-gap-l) * 10);
+    max-width: calc(var(--sz-10) * 10);
     margin: 0 auto;
 
     & :global(h1),
@@ -51,7 +51,7 @@
 
     & :global(ul) {
       margin: 0;
-      padding-left: var(--sz-gap-m);
+      padding-left: var(--sz-07);
 
       & :global(li) {
         & :global(p) {
@@ -65,8 +65,8 @@
       white-space: normal;
       margin: 0;
       background-color: var(--text-highlight-color);
-      padding: var(--sz-gap-xxs);
-      border-radius: var(--sz-gap-xxxs);
+      padding: var(--sz-02);
+      border-radius: var(--sz-01);
       line-height: 1;
     }
 

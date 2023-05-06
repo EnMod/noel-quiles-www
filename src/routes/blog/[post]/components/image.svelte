@@ -33,12 +33,12 @@
 
     &.left {
       float: left;
-      margin-right: var(--sz-gap-s);
+      margin-right: var(--sz-05);
     }
 
     &.right {
       float: right;
-      margin-left: var(--sz-gap-s);
+      margin-left: var(--sz-05);
     }
   }
 

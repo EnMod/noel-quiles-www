@@ -12,12 +12,11 @@
   // let { molecules }: HomepageProps = data
 </script>
 
-<div class="home {$theme.appearance}">
+<div class="home g-container {$theme.appearance}">
   <div class="headline">
     <div>
-      <h1 class="g-heading-2">
-        I&apos;m Noel Quiles, and
-      </h1>
+      <h1 class="g-heading-2">I&apos;m Noel Quiles</h1>
+      <span class="g-heading-2">, and</span>
     </div>
     <p class="g-heading-1">I connect to create.</p>
   </div>
@@ -53,7 +52,7 @@
 
 <style lang="postcss">
   .home {
-    --gap: var(--sz-m-04);
+    --gap: var(--sz-09);
 
     display: flex;
     flex-direction: column;
@@ -71,15 +70,18 @@
   }
 
   .details {
-    margin-top: var(--sz-gap-m);
+    margin-top: var(--sz-07);
   }
 
   p {
     margin-top: 0;
-    margin-bottom: var(--sz-gap-xs);
+    margin-bottom: var(--sz-03);
   }
 
   .headline {
+    & h1 {
+      display: inline;
+    }
     & h1, & span {
       margin: 0;
     }

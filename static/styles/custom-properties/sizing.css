@@ -1,43 +1,33 @@
 :root {
-  --sz-s-01: 2px;
-  --sz-s-02: 4px;
-  --sz-s-03: 8px;
-  --sz-s-04: 12px;
-  --sz-s-05: 16px;
-  --sz-m-01: 24px;
-  --sz-m-02: 32px;
-  --sz-m-03: 40px;
-  --sz-m-04: 48px;
-  --sz-l-01: 64px;
-  --sz-l-02: 80px;
-  --sz-l-03: 96px;
-  --sz-l-04: 112px;
-  --sz-l-05: 128px;
+  --sz-01: 2px;
+  --sz-02: 4px;
+  --sz-03: 8px;
+  --sz-04: 12px;
+  --sz-05: 16px;
+  --sz-06: 24px;
+  --sz-07: 32px;
+  --sz-08: 40px;
+  --sz-09: 48px;
+  --sz-10: 64px;
+  --sz-11: 80px;
+  --sz-12: 96px;
+  --sz-13: 112px;
+  --sz-14: 128px;
 }
 
 /* Aliases */
 :root {
-  /* Gaps */
-  --sz-gap-xxxs: var(--sz-s-01);
-  --sz-gap-xxs: var(--sz-s-02);
-  --sz-gap-xs: var(--sz-s-03);
-  --sz-gap-s: var(--sz-s-05);
-  --sz-gap-m: var(--sz-m-02);
-  --sz-gap-l: var(--sz-l-01);
-  --sz-gap-xl: var(--sz-l-03);
-  --sz-gap-xxl: var(--sz-l-05);
-
   /* Headings */
-  --sz-heading-1: var(--sz-m-04);
-  --sz-heading-2: var(--sz-m-02);
-  --sz-heading-3: var(--sz-m-01);
-  --sz-heading-4: var(--sz-s-05);
-  --sz-heading-5: var(--sz-s-04);
-  --sz-heading-6: var(--sz-s-04);
+  --sz-heading-1: var(--sz-09);
+  --sz-heading-2: var(--sz-07);
+  --sz-heading-3: var(--sz-06);
+  --sz-heading-4: var(--sz-05);
+  --sz-heading-5: var(--sz-04);
+  --sz-heading-6: var(--sz-04);
 
   /* Body copy */
-  --sz-body-s: var(--sz-s-04);
-  --sz-body-m: var(--sz-s-05);
-  --sz-body-l: var(--sz-m-01);
-  --sz-body-xl: var(--sz-m-04);
+  --sz-body-s: var(--sz-04);
+  --sz-body-m: var(--sz-05);
+  --sz-body-l: var(--sz-06);
+  --sz-body-xl: var(--sz-09);
 }

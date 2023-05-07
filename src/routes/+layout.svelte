@@ -3,3 +3,9 @@
 </script>
 
 <main id="main"><slot /></main>
+
+<style lang="postcss">
+  main {
+    background-color: var(--background-color);
+  }
+</style>

@@ -65,7 +65,6 @@
     transition: 0.25s ease;
     transition-property: color, border-color, background-color;
 
-    background-color: var(--background-color);
     color: var(--text-color);
   }
 
@@ -82,7 +81,9 @@
     & h1 {
       display: inline;
     }
-    & h1, & span {
+
+    & h1,
+    & span {
       margin: 0;
     }
   }

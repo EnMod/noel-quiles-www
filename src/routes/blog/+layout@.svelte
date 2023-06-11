@@ -5,12 +5,11 @@
 </script>
 
 <div class="blog-page {$theme.appearance} {$theme.scheme}">
-  <div>Header?</div>
-  <div>Nav! <SchemeSelector /><AppearanceToggle /></div>
-  <main id="main" class="g-container">
+  <nav>Nav! <SchemeSelector /><AppearanceToggle /></nav>
+  <div id="main" class="g-container">
     <slot />
-  </main>
-  <div>Footer?</div>
+  </div>
+  <footer>Footer?</footer>
 </div>
 
 <style lang="postcss">
@@ -19,6 +18,7 @@
     transition-property: color, border-color, background-color;
     background-color: var(--background-color);
     color: var(--text-color);
+    height: 100%;
 
     /* ? TODO Re-assess if this is a bit much */
     & :global(a) {

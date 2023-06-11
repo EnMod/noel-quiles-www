@@ -18,7 +18,7 @@
     transition-property: color, border-color, background-color;
     background-color: var(--background-color);
     color: var(--text-color);
-    height: 100%;
+    min-height: 100vh;
 
     /* ? TODO Re-assess if this is a bit much */
     & :global(a) {

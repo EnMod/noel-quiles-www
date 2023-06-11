@@ -7,6 +7,6 @@
 <style lang="postcss">
   main {
     background-color: var(--background-color);
-    height: 100vh;
+    min-height: 100vh;
   }
 </style>

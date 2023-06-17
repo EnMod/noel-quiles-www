@@ -1,36 +1,34 @@
 <script lang="ts">
   import { theme } from '$lib/stores'
+  import { tweened } from 'svelte/motion'
 
-  let iconAppearance = $theme.appearance === 'light' ? 'dark' : 'light'
-  let flipAnim = ''
+  let iconAppearance = getOppositeAppearance()
+
+  const rotationValue = tweened(0, {
+    duration: 150
+  })
 
   function toggleAppearance() {
-    if ($theme.appearance === 'light') {
-      setAnimClass('dark')
-    } else {
-      setAnimClass('light')
-    }
+    animateToAppearance(getOppositeAppearance())
   }
 
-  function setAnimClass(appearance) {
-    flipAnim = 'flip-it'
-    setTimeout(() => {
+  function animateToAppearance(appearance) {
+    rotationValue.set(-90).then(() => {
       $theme.appearance = appearance
-      iconAppearance = getOppositeAppearance(appearance)
-    }, 150)
-    setTimeout(() => {
-      flipAnim = ''
-    }, 300)
+      iconAppearance = getOppositeAppearance()
+      rotationValue.set(0)
+    })
   }
 
-  function getOppositeAppearance(appearance) {
-    return appearance === 'light' ? 'dark' : 'light'
+  function getOppositeAppearance() {
+    return $theme.appearance === 'light' ? 'dark' : 'light'
   }
 </script>
 
 <button on:click={toggleAppearance}>
   <img
-    class="icon {flipAnim}"
+    class="icon"
+    style="transform:rotateY({$rotationValue}deg)"
     src="/img/appearance-toggle/{iconAppearance}.svg"
     alt="{iconAppearance} toggle icon"
   />
@@ -48,23 +46,5 @@
     width: 32px;
     height: 32px;
     transform-style: preserve-3d;
-  }
-
-  .flip-it {
-    animation-name: flip-it;
-    animation-timing-function: linear;
-    animation-duration: 300ms;
-  }
-
-  @keyframes flip-it {
-    0% {
-      transform: rotateY(0deg);
-    }
-    50% {
-      transform: rotateY(-90deg);
-    }
-    100% {
-      transform: rotateY(0deg);
-    }
   }
 </style>

@@ -1,6 +1,12 @@
 <script lang="ts">
   import { get } from 'svelte/store'
   import { theme } from '$lib/stores'
+  import WritingIcon from '$lib/img/scheme-selector/writing.svelte'
+  import WebsitesIcon from '$lib/img/scheme-selector/websites.svelte'
+  import AudioIcon from '$lib/img/scheme-selector/audio.svelte'
+  import GamesIcon from '$lib/img/scheme-selector/games.svelte'
+  import NeutralIcon from '$lib/img/scheme-selector/neutral.svelte'
+
   let selectionsOpen = false
   const schemeOptions = ['websites', 'audio', 'games', 'writing', 'neutral']
   let selectedScheme = 'writing'
@@ -10,6 +16,14 @@
     selectedScheme = option
     selectionsOpen = false
   }
+
+  const SCHEME_ICON_MAP = {
+    websites: WebsitesIcon,
+    audio: AudioIcon,
+    games: GamesIcon,
+    writing: WritingIcon,
+    neutral: NeutralIcon
+  }
 </script>
 
 <div class="scheme-selector">
@@ -18,10 +32,7 @@
       selectionsOpen = !selectionsOpen
     }}
   >
-    <img
-      alt="{selectedScheme} scheme icon"
-      src="/img/scheme-selector/{selectedScheme}.svg"
-    />
+    <svelte:component this={SCHEME_ICON_MAP[selectedScheme]} />
   </button>
   {#if selectionsOpen}
     {#each schemeOptions as option}
@@ -30,7 +41,7 @@
           selectScheme(option)
         }}
       >
-        <img alt="{option} scheme icon" src="/img/scheme-selector/{option}.svg" />
+        <svelte:component this={SCHEME_ICON_MAP[option]} />
       </button>
     {/each}
   {/if}

@@ -49,10 +49,16 @@
 
 <style lang="postcss">
   button {
+    width: 32px;
+    height: 32px;
     border: 0;
     background: none;
     cursor: pointer;
     padding: 0;
+
+    & svg {
+      width: 100%;
+    }
   }
 
   .scheme-selector {

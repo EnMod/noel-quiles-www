@@ -1,7 +1,9 @@
 :root {
   --text-color: var(--yin);
   --text-secondary-color: var(--qi-8);
+  --text-highlight-color: var(--qi-2);
   --background-color: var(--qi-1);
+  --separator: var(--qi-3);
   --link: var(--qi-5);
   --link-hover: var(--qi-4);
 }
@@ -11,6 +13,7 @@
   --text-secondary-color: var(--qi-8);
   --text-highlight-color: var(--qi-2);
   --background-color: var(--qi-1);
+  --separator: var(--qi-3);
   --link: var(--qi-5);
   --link-hover: var(--qi-4);
 
@@ -19,6 +22,7 @@
     --text-secondary-color: var(--water-8);
     --text-highlight-color: var(--water-2);
     --background-color: var(--water-1);
+    --separator: var(--water-4);
     --link: var(--water-5);
     --link-hover: var(--water-4);
   }
@@ -28,6 +32,7 @@
     --text-secondary-color: var(--earth-8);
     --text-highlight-color: var(--earth-3);
     --background-color: var(--earth-1);
+    --separator: var(--earth-7);
     --link: var(--earth-8);
     --link-hover: var(--earth-7);
   }
@@ -37,6 +42,7 @@
     --text-secondary-color: var(--wind-7);
     --text-highlight-color: var(--wind-2);
     --background-color: var(--wind-1);
+    --separator: var(--wind-7);
     --link: var(--wind-8);
     --link-hover: var(--wind-7);
   }
@@ -46,6 +52,7 @@
     --text-secondary-color: var(--fire-8);
     --text-highlight-color: var(--fire-2);
     --background-color: var(--fire-1);
+    --separator: var(--fire-3);
     --link: var(--fire-6);
     --link-hover: var(--fire-5);
   }
@@ -56,6 +63,7 @@
   --text-secondary-color: var(--qi-3);
   --text-highlight-color: var(--qi-8);
   --background-color: var(--qi-9);
+  --separator: var(--qi-7);
   --link: var(--qi-3);
   --link-hover: var(--qi-4);
 
@@ -64,6 +72,7 @@
     --text-secondary-color: var(--water-3);
     --text-highlight-color: var(--water-8);
     --background-color: var(--water-9);
+    --separator: var(--water-7);
     --link: var(--water-3);
     --link-hover: var(--water-4);
   }
@@ -73,6 +82,7 @@
     --text-secondary-color: var(--earth-4);
     --text-highlight-color: var(--earth-8);
     --background-color: var(--earth-9);
+    --separator: var(--earth-7);
     --link: var(--earth-7);
     --link-hover: var(--earth-5);
   }
@@ -82,6 +92,7 @@
     --text-secondary-color: var(--wind-3);
     --text-highlight-color: var(--wind-8);
     --background-color: var(--wind-9);
+    --separator: var(--wind-7);
     --link: var(--wind-6);
     --link-hover: var(--wind-5);
   }
@@ -91,6 +102,7 @@
     --text-secondary-color: var(--fire-3);
     --text-highlight-color: var(--fire-8);
     --background-color: var(--fire-9);
+    --separator: var(--fire-7);
     --link: var(--fire-4);
     --link-hover: var(--fire-3);
   }

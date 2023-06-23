@@ -40,8 +40,11 @@
 
 <style lang="postcss">
   button {
+    width: 32px;
+    height: 32px;
     border: 0;
     background: none;
+    padding: 0;
     cursor: pointer;
     perspective: 1200px;
   }

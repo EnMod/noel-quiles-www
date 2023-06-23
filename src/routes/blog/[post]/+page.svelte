@@ -29,8 +29,15 @@
 
 <style lang="postcss">
   .blog-post {
+    --padding-y: var(--sz-10);
     max-width: calc(var(--sz-10) * 10);
     margin: 0 auto;
+    padding-top: var(--padding-y);
+    padding-bottom: var(--padding-y);
+
+    @media (--tablet-up) {
+      --padding-y: var(--sz-14);
+    }
 
     & :global(h1),
     & :global(h2),

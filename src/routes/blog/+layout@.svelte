@@ -1,11 +1,35 @@
 <script lang="ts">
-  import { theme } from '$lib/stores'
+  import { mediaQuery, theme } from '$lib/stores'
   import AppearanceToggle from '$lib/components/appearance-toggle/index.svelte'
   import SchemeSelector from '$lib/components/scheme-selector.svelte'
+  import VariantMusingsLogoHorizontal from '$lib/img/navigation/variant-musings-horizontal.svelte'
+  import VariantMusingsLogo from '$lib/img/navigation/variant-musings.svelte'
+
+  const isDesktop = mediaQuery('tablet-up')
 </script>
 
 <div class="blog-page {$theme.appearance} {$theme.scheme}">
-  <nav>Nav! <SchemeSelector /><AppearanceToggle /></nav>
+  <div class="nav-wrap">
+    <nav class="g-container">
+      <a href="/blog">
+        {#if $isDesktop}
+          <VariantMusingsLogoHorizontal height="22" />
+        {:else}
+          <VariantMusingsLogo height="44" />
+        {/if}
+      </a>
+
+      <menu>
+        <li>
+          <SchemeSelector />
+        </li>
+        <li>
+          <AppearanceToggle />
+        </li>
+      </menu>
+    </nav>
+  </div>
+
   <div id="main" class="g-container">
     <slot />
   </div>
@@ -28,6 +52,38 @@
       &:hover {
         color: var(--link-hover);
       }
+    }
+  }
+
+  .nav-wrap {
+    width: 100%;
+    border-bottom: 1px solid var(--separator);
+    transition: 0.25s ease;
+    transition-property: border-color;
+  }
+
+  nav {
+    --padding-y: var(--sz-03);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    padding-top: var(--padding-y);
+    padding-bottom: var(--padding-y);
+  }
+
+  menu {
+    justify-self: end;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: var(--sz-03);
+
+    & li {
+      display: flex;
     }
   }
 </style>

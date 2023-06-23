@@ -8,3 +8,8 @@ export type Theme = {
   appearance: 'light' | 'dark'
   scheme: 'websites' | 'writing' | 'audio' | 'games' | 'neutral' | undefined
 }
+
+export type SVGProps = {
+  width?: string
+  height?: string
+}

@@ -1,22 +1,14 @@
 <script lang="ts">
-  import { mediaQuery, theme } from '$lib/stores'
+  import { theme } from '$lib/stores'
   import AppearanceToggle from '$lib/components/appearance-toggle/index.svelte'
   import SchemeSelector from '$lib/components/scheme-selector.svelte'
-  import VariantMusingsLogoHorizontal from '$lib/img/navigation/variant-musings-horizontal.svelte'
   import VariantMusingsLogo from '$lib/img/navigation/variant-musings.svelte'
-
-  const isDesktop = mediaQuery('tablet-up')
 </script>
 
 <div class="blog-page {$theme.appearance} {$theme.scheme}">
   <div class="nav-wrap">
     <nav class="g-container">
-      <a href="/blog">
-        {#if $isDesktop}
-          <VariantMusingsLogoHorizontal height="22" />
-        {:else}
-          <VariantMusingsLogo height="44" />
-        {/if}
+        <VariantMusingsLogo />
       </a>
 
       <menu>

@@ -68,6 +68,7 @@
   }
 
   .home-link {
+    display: flex;
     width: max-content;
   }
 

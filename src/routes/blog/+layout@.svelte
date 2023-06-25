@@ -8,6 +8,7 @@
 <div class="blog-page {$theme.appearance} {$theme.scheme}">
   <div class="nav-wrap">
     <nav class="g-container">
+      <a class="home-link" href="/blog">
         <VariantMusingsLogo />
       </a>
 
@@ -64,6 +65,10 @@
     align-items: center;
     padding-top: var(--padding-y);
     padding-bottom: var(--padding-y);
+  }
+
+  .home-link {
+    width: max-content;
   }
 
   menu {

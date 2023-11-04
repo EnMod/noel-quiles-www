@@ -34,8 +34,8 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    background: var(--qi-1);
-    color: var(--qi-9);
+    background: var(--metal-1);
+    color: var(--metal-9);
     top: 0;
     transition: opacity 0.15s ease-in-out;
     width: var(--size);

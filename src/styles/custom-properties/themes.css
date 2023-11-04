@@ -1,21 +1,21 @@
 :root {
-  --text-color: var(--yin);
-  --text-secondary-color: var(--qi-8);
-  --text-highlight-color: var(--qi-2);
-  --background-color: var(--qi-1);
-  --separator: var(--qi-3);
-  --link: var(--qi-5);
-  --link-hover: var(--qi-4);
+  --text-color: var(--metal-10);
+  --text-secondary-color: var(--metal-8);
+  --text-highlight-color: var(--metal-2);
+  --background-color: var(--metal-1);
+  --separator: var(--metal-3);
+  --link: var(--metal-5);
+  --link-hover: var(--metal-4);
 }
 
 .light {
-  --text-color: var(--yin);
-  --text-secondary-color: var(--qi-8);
-  --text-highlight-color: var(--qi-2);
-  --background-color: var(--qi-1);
-  --separator: var(--qi-3);
-  --link: var(--qi-5);
-  --link-hover: var(--qi-4);
+  --text-color: var(--metal-10);
+  --text-secondary-color: var(--metal-8);
+  --text-highlight-color: var(--metal-2);
+  --background-color: var(--metal-1);
+  --separator: var(--metal-3);
+  --link: var(--metal-5);
+  --link-hover: var(--metal-4);
 
   &.websites {
     --text-color: var(--water-9);
@@ -59,13 +59,13 @@
 }
 
 .dark {
-  --text-color: var(--qi-1);
-  --text-secondary-color: var(--qi-3);
-  --text-highlight-color: var(--qi-8);
-  --background-color: var(--qi-9);
-  --separator: var(--qi-7);
-  --link: var(--qi-3);
-  --link-hover: var(--qi-4);
+  --text-color: var(--metal-1);
+  --text-secondary-color: var(--metal-3);
+  --text-highlight-color: var(--metal-8);
+  --background-color: var(--metal-9);
+  --separator: var(--metal-7);
+  --link: var(--metal-3);
+  --link-hover: var(--metal-4);
 
   &.websites {
     --text-color: var(--water-1);

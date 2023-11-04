@@ -43,7 +43,7 @@
   }
 
   .caption {
-    padding-top: var(--sz-body-s);
-    color: var(--qi-5);
+    padding-top: var(--sz-04);
+    color: var(--metal-5);
   }
 </style>

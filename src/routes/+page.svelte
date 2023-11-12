@@ -66,6 +66,14 @@
 		transition-property: color, border-color, background-color;
 
 		color: var(--text-color);
+
+		& a {
+			color: var(--link);
+
+			&:hover {
+				color: var(--link-hover);
+			}
+		}
 	}
 
 	.details {

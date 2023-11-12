@@ -17,7 +17,7 @@ function createClient(type: 'main' | 'blog') {
 			authToken = GQL_AUTH_MAIN
 			break
 
-		case 'main':
+		case 'blog':
 			authToken = GQL_AUTH_BLOG
 			break
 

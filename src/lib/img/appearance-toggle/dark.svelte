@@ -20,8 +20,9 @@
 </svg>
 
 <style lang="postcss">
-  path {
-    transition: 0.25s ease;
-    transition-property: fill;
-  }
+	path,
+	circle {
+		transition: 0.25s ease;
+		transition-property: fill;
+	}
 </style>

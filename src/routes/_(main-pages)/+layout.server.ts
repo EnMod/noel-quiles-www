@@ -3,9 +3,7 @@ import { theme } from '$lib/stores'
 import { cmsMain } from '$lib/utils/gql-clients'
 import navQuery from './nav-query'
 
-/**
- * @type {import('@sveltejs/kit').Load}
- */
+/** @type {import('./$types').ServerLoad} */
 export async function load({ url }) {
 	const slug = url.pathname.split('/')[1]
 	// TODO Set appearance based on preferences

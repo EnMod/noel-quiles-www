@@ -1,9 +1,7 @@
 import query from './query'
 import { cmsBlog } from '$lib/utils/gql-clients'
 
-/**
- * @type {import('@sveltejs/kit').Load}
- */
+/** @type {import('./$types').PageServerLoad} */
 export async function load() {
 	const {
 		data: { allPosts }

@@ -1,10 +1,10 @@
 <script lang="ts">
-  interface AtomsPageProps {
-    content: any
-  }
+	interface AtomsPageProps {
+		content: any
+	}
 
-  export let data
-  let { content }: AtomsPageProps = data
+	export let data
+	let { content }: AtomsPageProps = data
 </script>
 
 <h1>(Sick animation to create the title)</h1>

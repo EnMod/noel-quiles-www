@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Nav from '$lib/components/nav.svelte'
+	import Nav from '$lib/components/nav.svelte'
 
-  export let navLinks
+	export let navLinks
 </script>
 
 <header>
-  <Nav links={navLinks} />
+	<Nav links={navLinks} />
 </header>

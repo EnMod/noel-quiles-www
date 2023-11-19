@@ -1,10 +1,10 @@
 <script lang="ts">
-  interface AboutPageProps {
-    content: any
-  }
+	interface AboutPageProps {
+		content: any
+	}
 
-  export let data
-  let { content }: AboutPageProps = data
+	export let data
+	let { content }: AboutPageProps = data
 </script>
 
 <h1>(Sick animation to create the title)</h1>

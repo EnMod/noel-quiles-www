@@ -1,44 +1,44 @@
 <script lang="ts">
-  import ModeToggle from '$lib/components/appearance-toggle/index.svelte'
+	import ModeToggle from '$lib/components/appearance-toggle/index.svelte'
 
-  // TODO: Create a proper nav
-  // export let links
-  export let links: Array<{
-    slug: string
-    label: string
-  }>
+	// TODO: Create a proper nav
+	// export let links
+	export let links: Array<{
+		slug: string
+		label: string
+	}>
 </script>
 
 <nav>
-  <ul>
-    {#each links as { slug, label } (label)}
-      <li>
-        <a href="/{slug}">{label}</a>
-      </li>
-    {/each}
-    <ModeToggle />
-  </ul>
+	<ul>
+		{#each links as { slug, label } (label)}
+			<li>
+				<a href="/{slug}">{label}</a>
+			</li>
+		{/each}
+		<ModeToggle />
+	</ul>
 </nav>
 
 <style>
-  nav {
-    text-align: center;
-  }
+	nav {
+		text-align: center;
+	}
 
-  ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 4px 16px;
-    margin: 0;
-  }
+	ul {
+		display: flex;
+		justify-content: space-between;
+		padding: 4px 16px;
+		margin: 0;
+	}
 
-  li {
-    display: flex;
-    padding: 6px 8px;
-  }
+	li {
+		display: flex;
+		padding: 6px 8px;
+	}
 
-  a {
-    text-decoration: none;
-    font-size: 13px;
-  }
+	a {
+		text-decoration: none;
+		font-size: 13px;
+	}
 </style>

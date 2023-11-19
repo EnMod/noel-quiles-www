@@ -1,6 +1,6 @@
 body {
-  font-family: var(--body-font);
-  color: var(--metal-8);
+	font-family: var(--body-font);
+	color: var(--metal-8);
 }
 
 h1,
@@ -15,49 +15,49 @@ h6,
 .g-heading-4,
 .g-heading-5,
 .g-heading-6 {
-  font-family: var(--heading-font);
-  font-weight: 400;
-  line-height: 1.2;
+	font-family: var(--heading-font);
+	font-weight: 400;
+	line-height: 1.2;
 }
 
 h1,
 .g-heading-1 {
-  margin-top: calc(var(--sz-heading-1) * 2);
-  font-size: var(--sz-heading-1);
+	margin-top: calc(var(--sz-heading-1) * 2);
+	font-size: var(--sz-heading-1);
 }
 
 h2,
 .g-heading-2 {
-  margin-top: calc(var(--sz-heading-2) * 2);
-  font-size: var(--sz-heading-2);
+	margin-top: calc(var(--sz-heading-2) * 2);
+	font-size: var(--sz-heading-2);
 }
 
 h3,
 .g-heading-3 {
-  margin-top: calc(var(--sz-heading-3) * 2);
-  font-size: var(--sz-heading-3);
+	margin-top: calc(var(--sz-heading-3) * 2);
+	font-size: var(--sz-heading-3);
 }
 
 h4,
 .g-heading-4 {
-  margin-top: calc(var(--sz-heading-4) * 2);
-  font-size: var(--sz-heading-4);
+	margin-top: calc(var(--sz-heading-4) * 2);
+	font-size: var(--sz-heading-4);
 }
 
 h5,
 .g-heading-5 {
-  margin-top: calc(var(--sz-heading-5) * 2);
-  font-size: var(--sz-heading-5);
+	margin-top: calc(var(--sz-heading-5) * 2);
+	font-size: var(--sz-heading-5);
 }
 
 h6,
 .g-heading-6 {
-  margin-top: calc(var(--sz-heading-6) * 2);
-  font-size: var(--sz-heading-6);
+	margin-top: calc(var(--sz-heading-6) * 2);
+	font-size: var(--sz-heading-6);
 }
 
 .g-label {
-  font-size: var(--sz-body-s);
-  text-transform: uppercase;
-  color: var(--text-secondary-color);
+	font-size: var(--sz-body-s);
+	text-transform: uppercase;
+	color: var(--text-secondary-color);
 }

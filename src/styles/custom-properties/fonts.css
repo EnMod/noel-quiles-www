@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial|Atkinson+Hyperlegible');
 
+/* TODO Improve these font stacks to include more system/default fonts */
 :root {
-  --heading-font: 'Questrial', 'Century Gothic', sans;
-  --body-font: 'Atkinson Hyperlegible', serif;
+	--heading-font: 'Questrial', 'Century Gothic', sans;
+	--body-font: 'Atkinson Hyperlegible', serif;
 }

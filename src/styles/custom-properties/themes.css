@@ -1,22 +1,22 @@
 :root {
-	--text-color: var(--metal-10);
-	--text-secondary-color: var(--metal-8);
-	--text-highlight-color: var(--metal-2);
-	--background-color: var(--metal-1);
-	--separator: var(--metal-3);
-	--link: var(--metal-5);
-	--link-hover: var(--metal-4);
-	--border: var(--metal-9);
+	--text-color: var(--void-10);
+	--text-secondary-color: var(--void-8);
+	--text-highlight-color: var(--void-2);
+	--background-color: var(--void-1);
+	--separator: var(--void-3);
+	--link: var(--void-5);
+	--link-hover: var(--void-4);
+	--border: var(--void-9);
 }
 
 .light {
-	--text-color: var(--metal-10);
-	--text-secondary-color: var(--metal-8);
-	--text-highlight-color: var(--metal-2);
-	--background-color: var(--metal-1);
-	--separator: var(--metal-3);
-	--link: var(--metal-5);
-	--link-hover: var(--metal-4);
+	--text-color: var(--void-10);
+	--text-secondary-color: var(--void-8);
+	--text-highlight-color: var(--void-2);
+	--background-color: var(--void-1);
+	--separator: var(--void-3);
+	--link: var(--void-5);
+	--link-hover: var(--void-4);
 
 	&.websites {
 		--text-color: var(--water-9);
@@ -60,13 +60,13 @@
 }
 
 .dark {
-	--text-color: var(--metal-1);
-	--text-secondary-color: var(--metal-3);
-	--text-highlight-color: var(--metal-8);
-	--background-color: var(--metal-9);
-	--separator: var(--metal-7);
-	--link: var(--metal-3);
-	--link-hover: var(--metal-4);
+	--text-color: var(--void-1);
+	--text-secondary-color: var(--void-3);
+	--text-highlight-color: var(--void-8);
+	--background-color: var(--void-9);
+	--separator: var(--void-7);
+	--link: var(--void-3);
+	--link-hover: var(--void-4);
 
 	&.websites {
 		--text-color: var(--water-1);

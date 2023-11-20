@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@datocms/svelte": "^1.2.0",
 		"@sveltejs/adapter-vercel": "^3.0.3",
 		"@sveltejs/kit": "^1.27.5",
 		"@urql/svelte": "^4.0.4",
@@ -32,7 +33,6 @@
 		"postcss": "^8.4.31",
 		"postcss-load-config": "^4.0.1",
 		"postcss-preset-env": "^9.3.0",
-		"svelte-datocms": "^0.6.4",
 		"svelte-react-player": "^1.4.1",
 		"vite": "^4.5.0"
 	}

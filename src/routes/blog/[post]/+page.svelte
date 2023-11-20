@@ -1,9 +1,8 @@
 <script lang="ts">
-	import StructuredText from 'svelte-datocms/StructuredText/StructuredText.svelte'
+	import { StructuredText } from '@datocms/svelte'
+	import { isBlock } from 'datocms-structured-text-utils'
 	import Eyebrow from '$lib/components/eyebrow.svelte'
-	import BlogVideo from './components/video.svelte'
-	import BlogImage from './components/image.svelte'
-	import SectionHeading from './components/section-heading.svelte'
+	import StructuredTextBlock from '$lib/components/structured-text/blocks/index.svelte'
 
 	// TODO Type this
 	export let data
@@ -17,14 +16,7 @@
 	</div>
 
 	<h1>{title}</h1>
-	<StructuredText
-		data={body}
-		components={{
-			SectionHeadingRecord: SectionHeading,
-			ImageRecord: BlogImage,
-			VideoRecord: BlogVideo
-		}}
-	/>
+	<StructuredText data={body} components={[[isBlock, StructuredTextBlock]]} />
 </div>
 
 <style lang="postcss">

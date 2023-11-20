@@ -7,59 +7,45 @@
 	--link: var(--void-5);
 	--link-hover: var(--void-4);
 	--border: var(--void-9);
+
+	--text-color-water: var(--water-9);
+	--text-secondary-color-water: var(--water-8);
+	--text-highlight-color-water: var(--water-2);
+	--background-color-water: var(--water-1);
+	--separator-water: var(--water-4);
+	--link-water: var(--water-5);
+	--link-hover-water: var(--water-4);
+	--border-water: var(--water-8);
+
+	--text-color-earth: var(--earth-9);
+	--text-secondary-color-earth: var(--earth-8);
+	--text-highlight-color-earth: var(--earth-3);
+	--background-color-earth: var(--earth-1);
+	--separator-earth: var(--earth-7);
+	--link-earth: var(--earth-8);
+	--link-hover-earth: var(--earth-7);
+	--border-earth: var(--earth-8);
+
+	--text-color-wind: var(--wind-9);
+	--text-secondary-color-wind: var(--wind-7);
+	--text-highlight-color-wind: var(--wind-2);
+	--background-color-wind: var(--wind-1);
+	--separator-wind: var(--wind-7);
+	--link-wind: var(--wind-8);
+	--link-hover-wind: var(--wind-7);
+	--border-wind: var(--wind-8);
+
+	--text-color-fire: var(--fire-9);
+	--text-secondary-color-fire: var(--fire-8);
+	--text-highlight-color-fire: var(--fire-2);
+	--background-color-fire: var(--fire-1);
+	--separator-fire: var(--fire-3);
+	--link-fire: var(--fire-6);
+	--link-hover-fire: var(--fire-5);
+	--border-fire: var(--fire-8);
 }
 
-.light {
-	--text-color: var(--void-10);
-	--text-secondary-color: var(--void-8);
-	--text-highlight-color: var(--void-2);
-	--background-color: var(--void-1);
-	--separator: var(--void-3);
-	--link: var(--void-5);
-	--link-hover: var(--void-4);
-
-	&.websites {
-		--text-color: var(--water-9);
-		--text-secondary-color: var(--water-8);
-		--text-highlight-color: var(--water-2);
-		--background-color: var(--water-1);
-		--separator: var(--water-4);
-		--link: var(--water-5);
-		--link-hover: var(--water-4);
-	}
-
-	&.writing {
-		--text-color: var(--earth-9);
-		--text-secondary-color: var(--earth-8);
-		--text-highlight-color: var(--earth-3);
-		--background-color: var(--earth-1);
-		--separator: var(--earth-7);
-		--link: var(--earth-8);
-		--link-hover: var(--earth-7);
-	}
-
-	&.audio {
-		--text-color: var(--wind-9);
-		--text-secondary-color: var(--wind-7);
-		--text-highlight-color: var(--wind-2);
-		--background-color: var(--wind-1);
-		--separator: var(--wind-7);
-		--link: var(--wind-8);
-		--link-hover: var(--wind-7);
-	}
-
-	&.games {
-		--text-color: var(--fire-9);
-		--text-secondary-color: var(--fire-8);
-		--text-highlight-color: var(--fire-2);
-		--background-color: var(--fire-1);
-		--separator: var(--fire-3);
-		--link: var(--fire-6);
-		--link-hover: var(--fire-5);
-	}
-}
-
-.dark {
+[data-appearance='dark'] {
 	--text-color: var(--void-1);
 	--text-secondary-color: var(--void-3);
 	--text-highlight-color: var(--void-8);
@@ -67,44 +53,81 @@
 	--separator: var(--void-7);
 	--link: var(--void-3);
 	--link-hover: var(--void-4);
+	--border: var(--void-1);
 
-	&.websites {
-		--text-color: var(--water-1);
-		--text-secondary-color: var(--water-3);
-		--text-highlight-color: var(--water-8);
-		--background-color: var(--water-9);
-		--separator: var(--water-4);
-		--link: var(--water-3);
-		--link-hover: var(--water-4);
-	}
+	--text-color-water: var(--water-1);
+	--text-secondary-color-water: var(--water-3);
+	--text-highlight-color-water: var(--water-8);
+	--background-color-water: var(--water-9);
+	--separator-water: var(--water-4);
+	--link-water: var(--water-3);
+	--link-hover-water: var(--water-4);
+	--border-water: var(--water-1);
 
-	&.writing {
-		--text-color: var(--earth-1);
-		--text-secondary-color: var(--earth-4);
-		--text-highlight-color: var(--earth-8);
-		--background-color: var(--earth-9);
-		--separator: var(--earth-7);
-		--link: var(--earth-7);
-		--link-hover: var(--earth-5);
-	}
+	--text-color-earth: var(--earth-1);
+	--text-secondary-color-earth: var(--earth-4);
+	--text-highlight-color-earth: var(--earth-8);
+	--background-color-earth: var(--earth-9);
+	--separator-earth: var(--earth-7);
+	--link-earth: var(--earth-7);
+	--link-hover-earth: var(--earth-5);
+	--border-earth: var(--earth-1);
 
-	&.audio {
-		--text-color: var(--wind-1);
-		--text-secondary-color: var(--wind-3);
-		--text-highlight-color: var(--wind-8);
-		--background-color: var(--wind-9);
-		--separator: var(--wind-7);
-		--link: var(--wind-6);
-		--link-hover: var(--wind-5);
-	}
+	--text-color-wind: var(--wind-1);
+	--text-secondary-color-wind: var(--wind-3);
+	--text-highlight-color-wind: var(--wind-8);
+	--background-color-wind: var(--wind-9);
+	--separator-wind: var(--wind-7);
+	--link-wind: var(--wind-6);
+	--link-hover-wind: var(--wind-5);
+	--border-wind: var(--wind-1);
 
-	&.games {
-		--text-color: var(--fire-1);
-		--text-secondary-color: var(--fire-3);
-		--text-highlight-color: var(--fire-8);
-		--background-color: var(--fire-9);
-		--separator: var(--fire-7);
-		--link: var(--fire-4);
-		--link-hover: var(--fire-3);
-	}
+	--text-color-fire: var(--fire-1);
+	--text-secondary-color-fire: var(--fire-3);
+	--text-highlight-color-fire: var(--fire-8);
+	--background-color-fire: var(--fire-9);
+	--separator-fire: var(--fire-7);
+	--link-fire: var(--fire-4);
+	--link-hover-fire: var(--fire-3);
+	--border-fire: var(--fire-1);
+}
+
+[data-scheme='water'] {
+	--text-color: var(--text-color-water);
+	--text-secondary-color: var(--text-secondary-color-water);
+	--text-highlight-color: var(--text-highlight-color-water);
+	--background-color: var(--background-color-water);
+	--separator: var(--separator-water);
+	--link: var(--link-water);
+	--link-hover: var(--link-hover-water);
+}
+
+[data-scheme='earth'] {
+	--text-color: var(--text-color-earth);
+	--text-secondary-color: var(--text-secondary-color-earth);
+	--text-highlight-color: var(--text-highlight-color-earth);
+	--background-color: var(--background-color-earth);
+	--separator: var(--separator-earth);
+	--link: var(--link-earth);
+	--link-hover: var(--link-hover-earth);
+}
+
+[data-scheme='wind'] {
+	--text-color: var(--text-color-wind);
+	--text-secondary-color: var(--text-secondary-color-wind);
+	--text-highlight-color: var(--text-highlight-color-wind);
+	--background-color: var(--background-color-wind);
+	--separator: var(--separator-wind);
+	--link: var(--link-wind);
+	--link-hover: var(--link-hover-wind);
+}
+
+[data-scheme='fire'] {
+	--text-color: var(--text-color-fire);
+	--text-secondary-color: var(--text-secondary-color-fire);
+	--text-highlight-color: var(--text-highlight-color-fire);
+	--background-color: var(--background-color-fire);
+	--separator: var(--separator-fire);
+	--link: var(--link-fire);
+	--link-hover: var(--link-hover-fire);
 }

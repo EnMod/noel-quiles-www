@@ -17,6 +17,13 @@
 	import { getRandomIntInc } from '$lib/utils/helpers'
 	import MoleculeLink from '../molecule-link.svelte'
 
+	const SCHEME_MAP = new Map<string, string>([
+		['websites', 'water'],
+		['writing', 'earth'],
+		['audio', 'wind'],
+		['games', 'fire']
+	])
+
 	// Locally-set props
 	export let formation: MoleculeProps['formation']
 
@@ -46,7 +53,11 @@
 	// onMount(() => (ready = true))
 </script>
 
-<div class="molecule {$theme.appearance} {slug} {formation || ''}">
+<div
+	data-appearance={$theme.appearance}
+	data-scheme={SCHEME_MAP.get(slug) || 'void'}
+	class="molecule {formation || ''}"
+>
 	{#if formation === 'open'}
 		<div class="header">
 			<h1 class="title">{title}</h1>

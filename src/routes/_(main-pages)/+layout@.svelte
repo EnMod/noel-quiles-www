@@ -14,7 +14,7 @@
 	let { navLinks }: MainLayoutProps = data
 </script>
 
-<div class="body-wrap {$theme.appearance} {$theme.scheme}">
+<div data-appearance={$theme.appearance} data-scheme={$theme.scheme} class="body-wrap">
 	<Header {navLinks} />
 	<main id="main">
 		<slot />

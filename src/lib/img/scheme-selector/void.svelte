@@ -1,5 +1,12 @@
 <svg width="32" height="32" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"
-	><circle cx="64" cy="64" r="62" fill="#F2F2F2" stroke="#1A1A1A" stroke-width="4" /><mask
+	><circle
+		cx="64"
+		cy="64"
+		r="62"
+		fill="var(--background-color)"
+		stroke="var(--border)"
+		stroke-width="4"
+	/><mask
 		id="prefix__a"
 		style="mask-type:alpha"
 		maskUnits="userSpaceOnUse"
@@ -7,8 +14,15 @@
 		y="4"
 		width="120"
 		height="120"
-		><circle cx="64" cy="64" r="58" fill="#EBF5FF" stroke="#009" stroke-width="4" /></mask
-	><g mask="url(#prefix__a)" fill="#1A1A1A"
+		><circle
+			cx="64"
+			cy="64"
+			r="58"
+			fill="var(--background-color)"
+			stroke="#009"
+			stroke-width="4"
+		/></mask
+	><g mask="url(#prefix__a)" fill="var(--border)"
 		><path
 			d="M80.295 42.4c3.373-1.551 6.856 1.931 5.305 5.305L78.876 62.33a4 4 0 000 3.342L85.6 80.295c1.551 3.373-1.931 6.856-5.305 5.305L65.67 78.876a4 4 0 00-3.342 0L47.705 85.6c-3.373 1.551-6.856-1.931-5.305-5.305l6.724-14.624a4 4 0 000-3.342L42.4 47.705c-1.551-3.373 1.931-6.856 5.305-5.305l14.624 6.724a4 4 0 003.342 0L80.295 42.4z"
 		/><path
@@ -16,3 +30,11 @@
 		/></g
 	></svg
 >
+
+<style lang="postcss">
+	path,
+	circle {
+		transition: 0.25s ease;
+		transition-property: fill, stroke;
+	}
+</style>

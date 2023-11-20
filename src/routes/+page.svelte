@@ -12,7 +12,7 @@
 	let { molecules }: HomepageProps = data
 </script>
 
-<div class="home g-container {$theme.appearance}">
+<div data-appearance={$theme.appearance} class="home g-container">
 	<div class="headline">
 		<div>
 			<h1 class="g-heading-2">I&apos;m Noel Quiles</h1>

@@ -11,13 +11,26 @@
 <script lang="ts">
 	import { theme } from '$lib/stores'
 
+	const SCHEME_MAP = new Map<string, string>([
+		['websites', 'water'],
+		['writing', 'earth'],
+		['audio', 'wind'],
+		['games', 'fire']
+	])
+
 	export let slug: MoleculeLinkProps['slug']
 	export let title: MoleculeLinkProps['title']
 	// TODO Refactor to general image props?
 	export let image: MoleculeLinkProps['image']
 </script>
 
-<a class="link {$theme.appearance} {slug}" href={`/${slug}`} {title}>
+<a
+	data-appearance={$theme.appearance}
+	data-scheme={SCHEME_MAP.get(slug) || 'void'}
+	class="link"
+	href={`/${slug}`}
+	{title}
+>
 	<img class="moleculeImage" src={image.url} alt={image.alt} />
 	<span class="caption">{title}</span>
 </a>

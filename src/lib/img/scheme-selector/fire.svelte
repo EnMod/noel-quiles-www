@@ -1,8 +1,23 @@
 <svg width="32" height="32" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"
-	><circle cx="64" cy="64" r="62" fill="#FFEEEB" stroke="#850007" stroke-width="4" /><path
+	><circle
+		cx="64"
+		cy="64"
+		r="62"
+		fill="var(--background-color-fire)"
+		stroke="var(--border-fire)"
+		stroke-width="4"
+	/><path
 		fill-rule="evenodd"
 		clip-rule="evenodd"
 		d="M50.947 60.287c2.315-8.245-2.674-27.256-6.6-31.238 0 0 24.023 6.956 31.71 26.138 8.967-11.42 22.395-14.389 22.395-14.389-4.834 4.913-9.215 16.595-3.985 26.401 5.054 9.474-4.036 31.752-31.87 31.752-27.834 0-32.407-13.23-30.098-24.028 2.31-10.798 5.78-19.786-1.268-34.125 0 0 15.104 6.405 19.716 19.489z"
-		fill="#850007"
+		fill="var(--border-fire)"
 	/></svg
 >
+
+<style lang="postcss">
+	path,
+	circle {
+		transition: 0.25s ease;
+		transition-property: fill, stroke;
+	}
+</style>

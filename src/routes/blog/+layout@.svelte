@@ -5,7 +5,7 @@
 	import VariantMusingsLogo from '$lib/img/navigation/variant-musings.svelte'
 </script>
 
-<div class="blog-page {$theme.appearance} {$theme.scheme}">
+<div data-appearance={$theme.appearance} data-scheme={$theme.scheme || 'earth'} class="blog-page">
 	<div class="nav-wrap">
 		<nav class="g-container">
 			<a class="home-link" href="/blog">

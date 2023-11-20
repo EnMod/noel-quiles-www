@@ -1,15 +1,16 @@
 <script lang="ts">
 	import { get } from 'svelte/store'
 	import { theme } from '$lib/stores'
-	import WritingIcon from '$lib/img/scheme-selector/writing.svelte'
-	import WebsitesIcon from '$lib/img/scheme-selector/websites.svelte'
-	import AudioIcon from '$lib/img/scheme-selector/audio.svelte'
-	import GamesIcon from '$lib/img/scheme-selector/games.svelte'
-	import NeutralIcon from '$lib/img/scheme-selector/neutral.svelte'
+	import WaterIcon from '$lib/img/scheme-selector/water.svelte'
+	import EarthIcon from '$lib/img/scheme-selector/earth.svelte'
+	import WindIcon from '$lib/img/scheme-selector/wind.svelte'
+	import FireIcon from '$lib/img/scheme-selector/fire.svelte'
+	import VoidIcon from '$lib/img/scheme-selector/void.svelte'
+	import type { ComponentType } from 'svelte'
 
 	let selectionsOpen = false
-	const schemeOptions = ['websites', 'audio', 'games', 'writing', 'neutral']
-	let selectedScheme = 'writing'
+	const schemeOptions = ['water', 'wind', 'fire', 'earth', 'void']
+	let selectedScheme = 'earth'
 
 	function selectScheme(option) {
 		theme.set({ appearance: get(theme).appearance, scheme: option })
@@ -17,13 +18,13 @@
 		selectionsOpen = false
 	}
 
-	const SCHEME_ICON_MAP = {
-		websites: WebsitesIcon,
-		audio: AudioIcon,
-		games: GamesIcon,
-		writing: WritingIcon,
-		neutral: NeutralIcon
-	}
+	const SCHEME_ICON_MAP = new Map<string, ComponentType>([
+		['water', WaterIcon],
+		['earth', EarthIcon],
+		['wind', WindIcon],
+		['fire', FireIcon],
+		['void', VoidIcon]
+	])
 </script>
 
 <div class="scheme-selector">
@@ -32,7 +33,7 @@
 			selectionsOpen = !selectionsOpen
 		}}
 	>
-		<svelte:component this={SCHEME_ICON_MAP[selectedScheme]} />
+		<svelte:component this={SCHEME_ICON_MAP.get(selectedScheme)} />
 	</button>
 	{#if selectionsOpen}
 		{#each schemeOptions as option}
@@ -41,7 +42,7 @@
 					selectScheme(option)
 				}}
 			>
-				<svelte:component this={SCHEME_ICON_MAP[option]} />
+				<svelte:component this={SCHEME_ICON_MAP.get(option)} />
 			</button>
 		{/each}
 	{/if}

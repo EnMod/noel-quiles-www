@@ -27,9 +27,9 @@
 			<a href="/blog">my blog</a>!
 		</p>
 		<p>
-			Follow along in <a href="#TODO-actually-add-the-blog-post">my first new blog post</a>, updated
-			as I go. Or check out
-			<a href="#TODO-actually-make-the-PR">the PR on GitHub</a>!
+			Follow along in <a href="/blog/once-more-from-the-top">my first new blog post</a>, updated as
+			I go. Or check out
+			<a href="https://github.com/EnMod/noel-quiles-www/pull/19">the PR on GitHub</a>!
 		</p>
 	</div>
 

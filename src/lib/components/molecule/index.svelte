@@ -14,15 +14,9 @@
 <script lang="ts">
 	// import { onMount } from 'svelte'
 	import { theme } from '$lib/stores'
+	import { SCHEME_MAP } from '$lib/utils/constants'
 	import { getRandomIntInc } from '$lib/utils/helpers'
 	import MoleculeLink from '../molecule-link.svelte'
-
-	const SCHEME_MAP = new Map<string, string>([
-		['websites', 'water'],
-		['writing', 'earth'],
-		['audio', 'wind'],
-		['games', 'fire']
-	])
 
 	// Locally-set props
 	export let formation: MoleculeProps['formation']

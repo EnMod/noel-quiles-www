@@ -2,13 +2,7 @@ import { get } from 'svelte/store'
 import { theme } from '$lib/stores'
 import { cmsMain } from '$lib/utils/gql-clients'
 import navQuery from './nav-query'
-
-const SCHEME_MAP = new Map<string, string>([
-	['websites', 'water'],
-	['writing', 'earth'],
-	['audio', 'wind'],
-	['games', 'fire']
-])
+import { SCHEME_MAP } from '$lib/utils/constants'
 
 /** @type {import('./$types').ServerLoad} */
 export async function load({ url }) {

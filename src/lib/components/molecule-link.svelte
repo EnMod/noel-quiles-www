@@ -10,13 +10,7 @@
 
 <script lang="ts">
 	import { theme } from '$lib/stores'
-
-	const SCHEME_MAP = new Map<string, string>([
-		['websites', 'water'],
-		['writing', 'earth'],
-		['audio', 'wind'],
-		['games', 'fire']
-	])
+	import { SCHEME_MAP } from '$lib/utils/constants'
 
 	export let slug: MoleculeLinkProps['slug']
 	export let title: MoleculeLinkProps['title']
